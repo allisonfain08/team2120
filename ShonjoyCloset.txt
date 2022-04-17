@@ -1,0 +1,5 @@
+INSERT INTO shonjoyCloset VALUES 
+
+('shonjoy', 'uniqlo', 'shirt', 'L', 'casual', 'lilac', 'cotton'),
+('shonjoy', 'hollister', 'shorts', 'L', 'casual', 'black', 'polyester'),
+('shonjoy', 'asos', 'jacket', 'L', 'casual', 'blue', 'jean'),
