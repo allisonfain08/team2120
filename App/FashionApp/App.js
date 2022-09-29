@@ -1,24 +1,3 @@
-// import React, {useState} from 'react';
-// import { StatusBar } from 'expo-status-bar';
-// import { StyleSheet, Text, View } from 'react-native';
-
-// export default function App() {
-//   return (
-//     <View style={styles.container}>
-//       <Text>Open up App.js to start working on your app!</Text>
-//       <StatusBar style="auto" />
-//     </View>
-//   );
-// }
-
-// const styles = StyleSheet.create({
-//   container: {
-//     flex: 1,
-//     backgroundColor: '#fff',
-//     alignItems: 'center',
-//     justifyContent: 'center',
-//   },
-// });
 import { StatusBar } from "expo-status-bar";
 import React, { useState } from "react";
 import {
@@ -30,11 +9,10 @@ import {
   Button,
   TouchableOpacity,
 } from "react-native";
+import { NavigationContainer } from "@react-navigation/native";
+import { createNativeStackNavigator } from "@react-navigation/native-stack";
  
-export default function App() {
-  const [email, setEmail] = useState("");
-  const [password, setPassword] = useState("");
- 
+const LoginScreen = ({navigation}) => {
   return (
     <View style={styles.container}>
       <StatusBar style="auto" />
@@ -43,28 +21,93 @@ export default function App() {
           style={styles.TextInput}
           placeholder="Email"
           placeholderTextColor="#003f5c"
-          onChangeText={(email) => setEmail(email)}
+          // onChangeText={(email) => setEmail(email)}
         />
       </View>
- 
+
       <View style={styles.inputView}>
         <TextInput
           style={styles.TextInput}
           placeholder="Password"
           placeholderTextColor="#003f5c"
           secureTextEntry={true}
-          onChangeText={(password) => setPassword(password)}
+          // onChangeText={(password) => setPassword(password)}
         />
       </View>
- 
+
       <TouchableOpacity>
         <Text style={styles.forgot_button}>Forgot Password?</Text>
       </TouchableOpacity>
- 
-      <TouchableOpacity style={styles.loginBtn}>
+
+      <TouchableOpacity style={styles.loginBtn} onPress={() => navigation.navigate("Home")}>
         <Text style={styles.loginText}>LOGIN</Text>
       </TouchableOpacity>
+
+      <TouchableOpacity style={styles.loginBtn} onPress={() => navigation.navigate("Register")}>
+        <Text style={styles.loginText}>REGISTER</Text>
+      </TouchableOpacity>
     </View>
+  );
+}
+
+const RegisterScreen = ({navigation}) => {
+  return(
+    <View style={styles.container}>
+      <StatusBar style="auto" />
+      <View style={styles.inputView}>
+        <TextInput
+          style={styles.TextInput}
+          placeholder="Email"
+          placeholderTextColor="#003f5c"
+          // onChangeText={(email) => setEmail(email)}
+        />
+      </View>
+
+      <View style={styles.inputView}>
+        <TextInput
+          style={styles.TextInput}
+          placeholder="Password"
+          placeholderTextColor="#003f5c"
+          secureTextEntry={true}
+          // onChangeText={(password) => setPassword(password)}
+        />
+      </View>
+
+      <TouchableOpacity style={styles.loginBtn} onPress={() => navigation.navigate("Home")}>
+        <Text style={styles.loginText}>CREATE ACCOUNT</Text>
+      </TouchableOpacity>
+
+      <TouchableOpacity onPress={() => navigation.navigate("Login")}>
+        <Text style={styles.forgot_button}>Back to Login</Text>
+      </TouchableOpacity>
+
+
+    </View>
+  );
+}
+
+const HomeScreen = ({navigation}) => {
+  return(
+    <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
+      <Text>Home Screen</Text>
+    </View>
+  );
+}
+
+const Stack = createNativeStackNavigator();
+
+export default function App() {
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+ 
+  return (
+    <NavigationContainer>
+      <Stack.Navigator>
+        <Stack.Screen name="Login" component={LoginScreen} />
+        <Stack.Screen name="Register" component={RegisterScreen} />
+        <Stack.Screen name="Home" component={HomeScreen} />
+      </Stack.Navigator>
+    </NavigationContainer>
   );
 }
  
