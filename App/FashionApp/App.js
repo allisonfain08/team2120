@@ -11,43 +11,49 @@ import {
 } from "react-native";
 import { NavigationContainer } from "@react-navigation/native";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
- 
+//const [name, setName] = useState("");
+
 const LoginScreen = ({navigation}) => {
+  const [email, setEmail] = useState("");
+  //const [name, setName] = useState("");
   return (
     <View style={styles.container}>
-      <StatusBar style="auto" />
-      <View style={styles.inputView}>
-        <TextInput
-          style={styles.TextInput}
-          placeholder="Email"
-          placeholderTextColor="#003f5c"
-          // onChangeText={(email) => setEmail(email)}
-        />
-      </View>
+          <StatusBar style="auto" />
+          <View style={styles.inputView}>
+            <TextInput
+              style={styles.TextInput}
+              placeholder="Email"
+              placeholderTextColor="#003f5c"
+              onChangeText={(value) => setEmail(value)}
 
-      <View style={styles.inputView}>
-        <TextInput
-          style={styles.TextInput}
-          placeholder="Password"
-          placeholderTextColor="#003f5c"
-          secureTextEntry={true}
-          // onChangeText={(password) => setPassword(password)}
-        />
-      </View>
+            />
+          </View>
+    
+          <View style={styles.inputView}>
+            <TextInput
+              style={styles.TextInput}
+              placeholder="Password"
+              placeholderTextColor="#003f5c"
+              secureTextEntry={true}
+            />
+          </View>
+    
+          <TouchableOpacity>
+            <Text style={styles.forgot_button}>Forgot Password?</Text>
+          </TouchableOpacity>
+    
+          <TouchableOpacity style={styles.loginBtn} onPress={() => navigation.navigate('Home', {
+              paramKey: email,
+            })}>
+            <Text style={styles.loginText}>LOGIN</Text>
+          </TouchableOpacity>
+    
+          <TouchableOpacity style={styles.loginBtn} onPress={() => this.props.navigation.navigate("Register")}>
+            <Text style={styles.loginText}>REGISTER</Text>
+          </TouchableOpacity>
+        </View>
+    );
 
-      <TouchableOpacity>
-        <Text style={styles.forgot_button}>Forgot Password?</Text>
-      </TouchableOpacity>
-
-      <TouchableOpacity style={styles.loginBtn} onPress={() => navigation.navigate("Home")}>
-        <Text style={styles.loginText}>LOGIN</Text>
-      </TouchableOpacity>
-
-      <TouchableOpacity style={styles.loginBtn} onPress={() => navigation.navigate("Register")}>
-        <Text style={styles.loginText}>REGISTER</Text>
-      </TouchableOpacity>
-    </View>
-  );
 }
 
 const RegisterScreen = ({navigation}) => {
@@ -82,14 +88,17 @@ const RegisterScreen = ({navigation}) => {
       </TouchableOpacity>
 
 
-    </View>
+    </View> 
   );
 }
 
-const HomeScreen = ({navigation}) => {
+const HomeScreen = ({route}) => {
   return(
     <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
       <Text>Home Screen</Text>
+      <Text style={styles.textStyle}>
+          Welcome, {route.params.paramKey}
+        </Text>
     </View>
   );
 }
@@ -97,7 +106,7 @@ const HomeScreen = ({navigation}) => {
 const Stack = createNativeStackNavigator();
 
 export default function App() {
-  const [email, setEmail] = useState("");
+  //const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
  
   return (
