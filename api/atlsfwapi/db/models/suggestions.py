@@ -1,5 +1,6 @@
 from atlsfwapi import db
 
+//new comment so that i can commit
 class suggestions(db.Model):
     __tablename__ = 'suggestions'
     id = db.Column(db.Integer, primary_key=True, unique=True)
