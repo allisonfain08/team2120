@@ -50,6 +50,55 @@ const LoginScreen = ({navigation}) => {
   );
 }
 
+//booleans to check pass requirements 
+const [containsCaseC, setContainsCaseC] = useState(false)
+const [containsCaseL, setContainsCaseL] = useState(false)
+const [containsNum, setContainsNum] = useState(false)
+const [containsSpecialChar, setContainsSpecialChar] = useState(false)
+const [minPassLength, setMinPassLength] = useState(false)
+const [passMatch, setPassMatch] = useState(false)
+const [allPass, setAllPass] = useState(false)
+
+// strings associated with each check
+const mustContainErrorStr = [
+  ["Password must contain an upper case letter.", containsCaseC]
+  ["Password must contain a lower case letter.", containsCaseL]
+  ["Password must contain a number.", containsNum]
+  ["Password must contain a special character.", containsSpecialChar]
+  ["Password must contain at least 8 characters.", minPassLength]
+  ["Entered passwords must match.", passMatch]
+]
+
+// password validation checks:
+const validatePassword = () => {
+  //check case: 
+  if (password.toLowerCase() != password) setContainsCaseC(true)
+  else setContainsCaseC(false)
+  
+  if (password.toUpperCase() != password) setContainsCaseL(true)
+  else setContainsCaseL(false)
+
+  //check if has numbers: 
+  if (/\d/.test(password)) setContainsNum(true)
+  else setContainsNum(false)
+
+  //check if has special characters 
+  if (/[~`!#$%\^&*+=\-\[\]\\';,/{}|\\":<>\?]/g.test(password)) setContainsSpecialChar(true)
+  else setContainsSpecialChar(false)
+
+  //check pass meets min length 
+  if (password.length >= 8) setMinPassLength(true)
+  else setMinPassLength(false)
+
+  //check if passwords match
+  if (password !== "" && password == confirmPass) setPassMatch(true)
+  else setPassMatch(false)
+
+  //check if all conditions pass
+  if (containsCaseC && containsCaseL && containsNum && containsSpecialChar && minPassLength && passMatch) setAllPass(true)
+  else setAllPass(false)
+}
+
 const RegisterScreen = ({navigation}) => {
   return(
     <View style={styles.container}>
