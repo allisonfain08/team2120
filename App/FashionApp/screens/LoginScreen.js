@@ -15,6 +15,7 @@ import { createNativeStackNavigator } from "@react-navigation/native-stack";
 const LoginScreen = (props) => {
     const [email, setEmail] = useState("");
     //const [name, setName] = useState("");
+   
     return (
       <View style={styles.container}>
             <StatusBar style="auto" />
@@ -24,6 +25,7 @@ const LoginScreen = (props) => {
                 placeholder="Email"
                 placeholderTextColor="#003f5c"
                 onChangeText={(value) => setEmail(value)}
+                
   
               />
             </View>
