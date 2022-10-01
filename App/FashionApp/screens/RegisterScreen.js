@@ -11,10 +11,29 @@ import {
 } from "react-native";
 import { NavigationContainer } from "@react-navigation/native";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
+import auth from '@react-native-firebase/auth';
 
 
-const RegisterScreen = (props) => {
-    return(
+auth()
+  .createUserWithEmailAndPassword('jane.doe@example.com', 'SuperSecretPassword!')
+  .then(() => {
+    console.log('User account created & signed in!');
+  })
+  .catch(error => {
+    if (error.code === 'auth/email-already-in-use') {
+      console.log('That email address is already in use!');
+    }
+
+    if (error.code === 'auth/invalid-email') {
+      console.log('That email address is invalid!');
+    }
+
+    console.error(error);
+  });
+  
+const RegisterScreen = (props) => { 
+  return(
+
         <View style={styles.container}>
           <StatusBar style="auto" />
           <View style={styles.inputView}>
@@ -46,7 +65,7 @@ const RegisterScreen = (props) => {
         </View> 
       );
   }
-
+  
 
 const styles = StyleSheet.create({
     container: {
@@ -93,5 +112,6 @@ const styles = StyleSheet.create({
     },
   });
 
+  
 
 export default RegisterScreen;
