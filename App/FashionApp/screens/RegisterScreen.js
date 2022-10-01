@@ -14,6 +14,8 @@ import { createNativeStackNavigator } from "@react-navigation/native-stack";
 
 
 const RegisterScreen = (props) => {
+
+
     return(
         <View style={styles.container}>
           <StatusBar style="auto" />
@@ -22,7 +24,7 @@ const RegisterScreen = (props) => {
               style={styles.TextInput}
               placeholder="Email"
               placeholderTextColor="#003f5c"
-              // onChangeText={(email) => setEmail(email)}
+              onChangeText={(email) => setEmail(email)}
             />
           </View>
     
@@ -32,7 +34,7 @@ const RegisterScreen = (props) => {
               placeholder="Password"
               placeholderTextColor="#003f5c"
               secureTextEntry={true}
-              // onChangeText={(password) => setPassword(password)}
+              onChangeText={(password) => setPassword(password)}
             />
           </View>
     
