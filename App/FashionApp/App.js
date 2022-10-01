@@ -15,10 +15,12 @@ import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import LoginScreen from "./screens/LoginScreen";
 import RegisterScreen from "./screens/RegisterScreen";
 import HomeScreen from "./screens/HomeScreen";
+import {firebase} from "../FashionApp/Firebase/firebase"; 
 
 const Stack = createNativeStackNavigator();
 
 export default function App() {
+  console.log(firebase); 
   //const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
  
