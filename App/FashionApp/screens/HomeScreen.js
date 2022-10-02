@@ -11,6 +11,8 @@ import {
 } from "react-native";
 import { NavigationContainer } from "@react-navigation/native";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
+import { firebase } from "../Firebase/firebase";
+import { auth } from "../Firebase/firebase";
 
 const HomeScreen = (props) => {
     return(
