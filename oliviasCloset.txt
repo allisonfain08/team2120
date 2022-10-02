@@ -1,0 +1,6 @@
+INSERT INTO oliviaCloset VALUES
+	('olivia', 'zara', 'dress', '4', 'short sleeve', 'yellow', 'cotton'), 
+	('olivia', 'gucci, 'slides', '10', 'shoes, 'black', 'leather'), 
+	('olivia', 'chloe', 'purse', 'NULL', 'NULL', 'brown, 'leather'); 
+
+
