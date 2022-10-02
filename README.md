@@ -17,7 +17,7 @@
 </ul>
 <h3>Known Issues</h3>
 <ul>
-<li> changed ovrall design of project (switched from PostgreSQL and Python API to Firebase) so need to update and reconfigure overall design
+<li> changed overall design of project (switched from PostgreSQL and Python API to Firebase) so need to update and reconfigure overall design
 </ul>
 
 <h2>Version 0.1.0</h2>
