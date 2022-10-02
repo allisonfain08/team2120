@@ -6,7 +6,8 @@
 <h2>Version 0.2.0</h2>
 <h3>Features</h3>
 <ul>
-<li> login screens via React app
+<li> login screen via React app
+<li> account registration screen via React app
 <li> login database
 <li> login data validation
 </ul>
