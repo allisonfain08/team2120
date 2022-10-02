@@ -9,12 +9,26 @@ import {
   Button,
   TouchableOpacity,
 } from "react-native";
+
 import { NavigationContainer } from "@react-navigation/native";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
+import { firebase } from "../Firebase/firebase";
+import auth from "../Firebase/firebase";
 
+const handleRegister = () => { 
+  auth 
+    .createUserWithEmailandPassword(email, password)
+    .then(userCredentials => {
+      const user = userCredentials.user; 
+      console.log(user.email); 
+    })
+    .catch(error => alert(error.message))
 
+}
 const RegisterScreen = (props) => {
 
+  const [email, setEmail] = useState('')
+  const [password, setPassword] = useState('')
 
     return(
         <View style={styles.container}>
@@ -24,7 +38,7 @@ const RegisterScreen = (props) => {
               style={styles.TextInput}
               placeholder="Email"
               placeholderTextColor="#003f5c"
-              onChangeText={(email) => setEmail(email)}
+              onChangeText={(text) => setEmail(text)}
             />
           </View>
     
@@ -34,21 +48,20 @@ const RegisterScreen = (props) => {
               placeholder="Password"
               placeholderTextColor="#003f5c"
               secureTextEntry={true}
-              onChangeText={(password) => setPassword(password)}
+              onChangeText={(text) => setPassword(text)}
             />
           </View>
-    
+
           <TouchableOpacity style={styles.loginBtn} onPress={() => props.navigation.navigate("Home")}>
             <Text style={styles.loginText}>CREATE ACCOUNT</Text>
           </TouchableOpacity>
     
-          <TouchableOpacity onPress={() => props.navigation.navigate("Login")}>
+          <TouchableOpacity onPress={handleRegister}>
             <Text style={styles.forgot_button}>Back to Login</Text>
           </TouchableOpacity>
         </View> 
       );
   }
-
 
 const styles = StyleSheet.create({
     container: {
@@ -96,4 +109,4 @@ const styles = StyleSheet.create({
   });
 
 
-export default RegisterScreen;
+export default RegisterScreen; 
