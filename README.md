@@ -14,6 +14,7 @@
 <ul>
 <li> issues with environment setup and download versions
 <li> issues with connection to database
+</ul>
 <h3>Known Issues</h3>
 <ul>
 <li> changed ovrall design of project (switched from PostgreSQL and Python API to Firebase) so need to update and reconfigure overall design
