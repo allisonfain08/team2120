@@ -8,7 +8,8 @@
 <ul>
 <li> login screen via React app
 <li> account registration screen via React app
-<li> login database
+<li> logout and create new account capabilities
+<li> database table for login capabilities
 <li> login data validation
 </ul>
 <h3>Bug Fixes</h3>
@@ -30,4 +31,10 @@
 <h3>Bug Fixes</h3>
 <ul>
 <li> issues with SQL table integration between members
+</ul>
+
+<h2>Open source code currently being used</h2>
+<ul>
+<li><a href= "https://www.positronx.io/react-native-firebase-login-and-user-registration-tutorial/" >User and Login React Native screens</a>
+<li><a href= "https://github.com/SinghDigamber/rnFirebaseAuth#readme" >Firebase Authentication</a>
 </ul>
