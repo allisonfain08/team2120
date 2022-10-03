@@ -6,8 +6,8 @@
 <h2>Version 0.2.0</h2>
 <h3>Features</h3>
 <ul>
-<li> login screen via React app
-<li> account registration screen via React app
+<li> login screen via React Native app
+<li> account registration screen via React Native app
 <li> logout and create new account capabilities
 <li> database table for login capabilities
 <li> login data validation
