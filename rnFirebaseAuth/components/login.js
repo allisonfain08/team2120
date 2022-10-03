@@ -72,7 +72,7 @@ export default class Login extends Component {
         />   
         <Text 
           style={styles.loginText}
-          onPress={() => this.props.navigation.navigate('Signup')}>
+          onPress={() => this.props.navigation.navigate('Sign-up')}>
           Don't have account? Click here to signup
         </Text>                          
       </View>
@@ -86,7 +86,7 @@ const styles = StyleSheet.create({
     flexDirection: "column",
     justifyContent: "center",
     padding: 35,
-    backgroundColor: '#fff'
+    backgroundColor: '#FAF9F6'
   },
   inputStyle: {
     width: '100%',
@@ -109,6 +109,6 @@ const styles = StyleSheet.create({
     position: 'absolute',
     alignItems: 'center',
     justifyContent: 'center',
-    backgroundColor: '#fff'
+    backgroundColor: '#FAF9F6'
   }
 });
