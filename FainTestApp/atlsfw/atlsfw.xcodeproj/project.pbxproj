@@ -14,6 +14,8 @@
 		2AA2EC0B28EBE29900DEFD49 /* atlsfwTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AA2EC0A28EBE29900DEFD49 /* atlsfwTests.swift */; };
 		2AA2EC1528EBE29900DEFD49 /* atlsfwUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AA2EC1428EBE29900DEFD49 /* atlsfwUITests.swift */; };
 		2AA2EC1728EBE29900DEFD49 /* atlsfwUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AA2EC1628EBE29900DEFD49 /* atlsfwUITestsLaunchTests.swift */; };
+		2AA2EC2428EC61F200DEFD49 /* home.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2AA2EC2328EC61F200DEFD49 /* home.xib */; };
+		2AA2EC2628EC656A00DEFD49 /* main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2AA2EC2528EC656A00DEFD49 /* main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +47,8 @@
 		2AA2EC1028EBE29900DEFD49 /* atlsfwUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = atlsfwUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2AA2EC1428EBE29900DEFD49 /* atlsfwUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = atlsfwUITests.swift; sourceTree = "<group>"; };
 		2AA2EC1628EBE29900DEFD49 /* atlsfwUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = atlsfwUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		2AA2EC2328EC61F200DEFD49 /* home.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = home.xib; sourceTree = "<group>"; };
+		2AA2EC2528EC656A00DEFD49 /* main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = main.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +104,8 @@
 				2AA2EBFC28EBE29900DEFD49 /* Assets.xcassets */,
 				2AA2EBFE28EBE29900DEFD49 /* atlsfw.entitlements */,
 				2AA2EBFF28EBE29900DEFD49 /* Preview Content */,
+				2AA2EC2528EC656A00DEFD49 /* main.storyboard */,
+				2AA2EC2328EC61F200DEFD49 /* home.xib */,
 			);
 			path = atlsfw;
 			sourceTree = "<group>";
@@ -233,8 +239,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2AA2EC2428EC61F200DEFD49 /* home.xib in Resources */,
 				2AA2EC0128EBE29900DEFD49 /* Preview Assets.xcassets in Resources */,
 				2AA2EBFD28EBE29900DEFD49 /* Assets.xcassets in Resources */,
+				2AA2EC2628EC656A00DEFD49 /* main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

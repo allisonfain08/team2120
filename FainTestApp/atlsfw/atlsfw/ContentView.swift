@@ -9,13 +9,21 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack {
+        VStack {    // goes top to bottom on the screen
             Image(systemName: "globe")
                 .imageScale(.large)
                 .foregroundColor(.accentColor)
-            Text("Hello, world!")
+            
+            Text("EKlozet")
+                .font(.title)
+            
+            Text("Welcome to your \n sustainable closet!")
+                .font(.subheadline)
+            
+            Button("Let's Go!") {
+                
+            }
         }
-        .padding()
     }
 }
 
