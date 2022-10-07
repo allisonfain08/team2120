@@ -16,6 +16,22 @@ class LoginViewController: UIViewController {
     }
     
 
+    @IBOutlet weak var user_label: UILabel!
+    
+    @IBAction func user_entryfield(_ sender: Any) {
+    }
+    
+    @IBOutlet weak var pass_label: UILabel!
+    
+    @IBAction func pass_entryfield(_ sender: Any) {
+    }
+    
+    @IBAction func login_button(_ sender: Any) {
+    }
+    
+    @IBAction func register_button(_ sender: Any) {
+    }
+    
     /*
     // MARK: - Navigation
 

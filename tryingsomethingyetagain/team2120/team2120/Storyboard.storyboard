@@ -36,6 +36,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Let's Go!"/>
                                 <connections>
+                                    <action selector="lets_go:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="Tis-Bb-WEw"/>
                                     <segue destination="ieQ-Bh-XsA" kind="show" id="rKB-Jn-Nyt"/>
                                 </connections>
                             </button>
@@ -43,6 +44,10 @@
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <connections>
+                        <outlet property="eklozet_title" destination="wuR-N9-Zwl" id="lLy-74-Av6"/>
+                        <outlet property="welcome_msg" destination="snJ-Eh-Qcp" id="bZS-cA-D2B"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -62,6 +67,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Register"/>
                                 <connections>
+                                    <action selector="register_button:" destination="ieQ-Bh-XsA" eventType="touchUpInside" id="7Cg-MH-QmR"/>
                                     <segue destination="uFm-vK-lB0" kind="show" id="2aM-tv-TMB"/>
                                 </connections>
                             </button>
@@ -71,6 +77,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Login"/>
                                 <connections>
+                                    <action selector="login_button:" destination="ieQ-Bh-XsA" eventType="touchUpInside" id="4fD-F9-o3R"/>
                                     <segue destination="lLm-qS-kzS" kind="show" id="dff-Ya-YNI"/>
                                 </connections>
                             </button>
@@ -79,6 +86,9 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="pass_entryfield:" destination="ieQ-Bh-XsA" eventType="editingDidEnd" id="2Tr-Ab-lkA"/>
+                                </connections>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O3s-3k-mkc">
                                 <rect key="frame" x="158" y="394" width="74" height="21"/>
@@ -92,6 +102,10 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="login_entryfield:" destination="ieQ-Bh-XsA" eventType="editingDidEnd" id="bfN-Tj-Vnb"/>
+                                    <action selector="user_entryfield:" destination="ieQ-Bh-XsA" eventType="editingDidEnd" id="us3-ai-ujl"/>
+                                </connections>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Username" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ahE-ah-rTN">
                                 <rect key="frame" x="156" y="303" width="79" height="21"/>
@@ -105,6 +119,10 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="5ym-Y8-vMX"/>
+                    <connections>
+                        <outlet property="pass_label" destination="O3s-3k-mkc" id="Bgh-Ec-af5"/>
+                        <outlet property="user_label" destination="ahE-ah-rTN" id="FRk-EV-STs"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Yay-7F-KyX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -123,12 +141,18 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="user_entryfield:" destination="uFm-vK-lB0" eventType="editingDidEnd" id="9dO-3x-OtF"/>
+                                </connections>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="q9m-dM-X1s">
                                 <rect key="frame" x="66" y="409" width="259" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="pass_entryfield:" destination="uFm-vK-lB0" eventType="editingDidEnd" id="YYV-oD-f0c"/>
+                                </connections>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Username" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="arD-rA-94t">
                                 <rect key="frame" x="156" y="312" width="79" height="21"/>
@@ -150,6 +174,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Submit"/>
                                 <connections>
+                                    <action selector="submit_button:" destination="uFm-vK-lB0" eventType="touchUpInside" id="Ywd-xZ-IXe"/>
                                     <segue destination="lLm-qS-kzS" kind="show" id="DWB-QT-j9F"/>
                                 </connections>
                             </button>
@@ -167,6 +192,11 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="N9D-D5-kMW"/>
+                    <connections>
+                        <outlet property="pass_label" destination="VQ8-NE-Atk" id="agO-Nj-6pA"/>
+                        <outlet property="register_label" destination="arD-rA-94t" id="N5p-iU-o6b"/>
+                        <outlet property="user_label" destination="arD-rA-94t" id="vdR-fV-h3h"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0co-gE-fEM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -186,6 +216,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Take style quiz now"/>
                                 <connections>
+                                    <action selector="take_quiz_button:" destination="lLm-qS-kzS" eventType="touchUpInside" id="GaL-TH-osT"/>
                                     <segue destination="cyj-e6-uDm" kind="show" id="F0A-z9-QoB"/>
                                 </connections>
                             </button>
@@ -195,6 +226,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Dress for the weather"/>
                                 <connections>
+                                    <action selector="weather_button:" destination="lLm-qS-kzS" eventType="touchUpInside" id="5yn-5P-c3H"/>
                                     <segue destination="3LC-Sv-g8i" kind="show" id="vkS-3L-yh1"/>
                                 </connections>
                             </button>
@@ -204,6 +236,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="View your calendar"/>
                                 <connections>
+                                    <action selector="calendar_button:" destination="lLm-qS-kzS" eventType="touchUpInside" id="tas-is-XfK"/>
                                     <segue destination="jk0-eJ-mNZ" kind="show" id="Als-1d-dHc"/>
                                 </connections>
                             </button>
@@ -213,6 +246,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Today's recommended outfit"/>
                                 <connections>
+                                    <action selector="outfit_rec_button:" destination="lLm-qS-kzS" eventType="touchUpInside" id="bqt-TH-mWA"/>
                                     <segue destination="5vM-Dg-G2T" kind="show" id="1He-6c-QNg"/>
                                 </connections>
                             </button>
@@ -222,6 +256,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="back"/>
                                 <connections>
+                                    <action selector="back_button:" destination="lLm-qS-kzS" eventType="touchUpInside" id="h9z-T7-dcj"/>
                                     <segue destination="ieQ-Bh-XsA" kind="show" id="XLt-dH-V5h"/>
                                 </connections>
                             </button>
@@ -265,7 +300,7 @@
         <!--reccomendation-->
         <scene sceneID="tjI-tJ-Fi4">
             <objects>
-                <viewController title="reccomendation" id="5vM-Dg-G2T" sceneMemberID="viewController">
+                <viewController title="reccomendation" id="5vM-Dg-G2T" customClass="ClosetViewController" customModule="team2120" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="OQ7-Oq-xLT">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="787"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -276,6 +311,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="back"/>
                                 <connections>
+                                    <action selector="back_button:" destination="qeQ-2a-uep" eventType="touchUpInside" id="vBN-wl-bhP"/>
                                     <segue destination="lLm-qS-kzS" kind="show" id="ev4-VP-Yl0"/>
                                 </connections>
                             </button>
@@ -286,6 +322,7 @@
                     <navigationItem key="navigationItem" id="uKN-Z8-lSa"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MWp-BJ-vdv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="qeQ-2a-uep" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="2662" y="1403"/>
         </scene>
@@ -303,6 +340,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="back"/>
                                 <connections>
+                                    <action selector="back_button:" destination="3LC-Sv-g8i" eventType="touchUpInside" id="PEx-j9-HpU"/>
                                     <segue destination="lLm-qS-kzS" kind="show" id="pQt-Qa-km0"/>
                                 </connections>
                             </button>
@@ -330,6 +368,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="back"/>
                                 <connections>
+                                    <action selector="back_button:" destination="cyj-e6-uDm" eventType="touchUpInside" id="6DO-kU-9cZ"/>
                                     <segue destination="lLm-qS-kzS" kind="show" id="p6P-tP-ijt"/>
                                 </connections>
                             </button>
@@ -525,12 +564,11 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="phc-qV-BRs"/>
         <segue reference="9UK-um-ghS"/>
         <segue reference="1Ds-q4-myK"/>
         <segue reference="fDp-vG-atD"/>
-        <segue reference="dII-nG-dR8"/>
-        <segue reference="BeI-Nr-JhZ"/>
+        <segue reference="F0A-z9-QoB"/>
+        <segue reference="p6P-tP-ijt"/>
         <segue reference="XLt-dH-V5h"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" systemColor="systemMintColor"/>
