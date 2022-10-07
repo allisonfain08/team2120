@@ -6,8 +6,10 @@
 <h2>Version 0.2.0</h2>
 <h3>Features</h3>
 <ul>
-<li> login screens via React app
-<li> login database
+<li> login screen via React Native app
+<li> account registration screen via React Native app
+<li> logout and create new account capabilities
+<li> database table for login capabilities
 <li> login data validation
 </ul>
 <h3>Bug Fixes</h3>
@@ -29,4 +31,10 @@
 <h3>Bug Fixes</h3>
 <ul>
 <li> issues with SQL table integration between members
+</ul>
+
+<h2>Open source code currently being used</h2>
+<ul>
+<li><a href= "https://www.positronx.io/react-native-firebase-login-and-user-registration-tutorial/" >User and Login React Native screens</a>
+<li><a href= "https://github.com/SinghDigamber/rnFirebaseAuth#readme" >Firebase Authentication</a>
 </ul>
