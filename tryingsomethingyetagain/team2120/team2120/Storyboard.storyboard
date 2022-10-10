@@ -371,6 +371,42 @@
                                     <segue destination="lLm-qS-kzS" kind="show" id="pQt-Qa-km0"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vNV-A6-qWF">
+                                <rect key="frame" x="126" y="587" width="139" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="gray" title="Go to Calendar"/>
+                                <connections>
+                                    <action selector="CalendarNav:" destination="S4M-QJ-0Nm" eventType="touchUpInside" id="ghg-L1-9Es"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Need to see what you have planned this week? " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="80g-Ph-ydE">
+                                <rect key="frame" x="16" y="526" width="360" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gKL-BB-0d4">
+                                <rect key="frame" x="75" y="295" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Where are you located? " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cl1-98-yy9">
+                                <rect key="frame" x="105" y="142" width="182" height="19"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4Km-re-X48">
+                                <rect key="frame" x="148" y="204" width="97" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="CityInput:" destination="S4M-QJ-0Nm" eventType="editingDidEnd" id="Xvz-If-D50"/>
+                                </connections>
+                            </textField>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6K9-ks-vPJ"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -378,8 +414,9 @@
                     <navigationItem key="navigationItem" id="1rO-Kh-yqH"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nVN-sH-71g" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="S4M-QJ-0Nm" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="2682" y="-128"/>
+            <point key="canvasLocation" x="2681.5384615384614" y="-128.67298578199052"/>
         </scene>
         <!--styleQuiz-->
         <scene sceneID="i6y-E9-0dB">
@@ -604,8 +641,7 @@
         <segue reference="1JE-oy-ebb"/>
         <segue reference="S2K-mu-mdg"/>
         <segue reference="F0A-z9-QoB"/>
-        <segue reference="m6A-bF-nbe"/>
-        <segue reference="dvQ-ZI-RuN"/>
+
         <segue reference="XLt-dH-V5h"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" systemColor="systemMintColor"/>
