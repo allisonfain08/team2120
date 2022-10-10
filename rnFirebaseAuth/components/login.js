@@ -109,6 +109,6 @@ const styles = StyleSheet.create({
     position: 'absolute',
     alignItems: 'center',
     justifyContent: 'center',
-    backgroundColor: '#BCA77E'
+    backgroundColor: '#FAF9F6'
   }
 });

@@ -50,3 +50,5 @@ export default function App() {
     </NavigationContainer>
   );
 }
+
+// figure out with shonjoy about how to be able to implement the swiping feature using images from tanjuria

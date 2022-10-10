@@ -11,11 +11,13 @@
 <li> logout and create new account capabilities
 <li> database table for login capabilities
 <li> login data validation
+<li> added visual additions to sign in screen
 </ul>
 <h3>Bug Fixes</h3>
 <ul>
 <li> issues with environment setup and download versions
 <li> issues with connection to database
+<li> fixed visual issue with ui bug that caused from showing too big.
 </ul>
 <h3>Known Issues</h3>
 <ul>
