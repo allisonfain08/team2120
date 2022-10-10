@@ -24,7 +24,7 @@ function MyStack() {
       <Stack.Screen 
         name="Signup" 
         component={Signup} 
-        options={{ title: 'Sign-up' }}
+        options={{ title: 'Signup' }}
       />       
       <Stack.Screen 
         name="Login" 
