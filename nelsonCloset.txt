@@ -1,0 +1,5 @@
+INSERT INTO nelsonCloset VALUES 
+
+('nelson', 'uniqlo', 'shirt', 'S', 'casual', 'white', 'cotton'),
+('nelson', 'akashi kama', 'cardigan', 'S', 'formal', 'green', 'cotton'),
+('nelson', 'Roen', 'jacket', 'S', 'casual', 'black', 'leather'),
