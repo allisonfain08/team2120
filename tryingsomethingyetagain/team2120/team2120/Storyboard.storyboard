@@ -287,15 +287,41 @@
                                     <segue destination="lLm-qS-kzS" kind="show" id="S2Y-1u-Vr2"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ymE-na-7Au">
+                                <rect key="frame" x="95" y="132" width="201" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="tinted" title="Go To Today's Weather"/>
+                                <connections>
+                                    <action selector="weatherGo:" destination="jk0-eJ-mNZ" eventType="touchUpInside" id="rNG-tq-0t4"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Your Week at a Glance: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cdB-KF-Qh7">
+                                <rect key="frame" x="95" y="277" width="201" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Your Week at a Glance" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VgG-Ed-xin">
+                                <rect key="frame" x="-3245" y="333" width="3506" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="3ws-R2-RAn"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="SKu-qD-flc"/>
+                    <connections>
+                        <outlet property="WeekView" destination="shu-5a-ToN" id="AKp-82-mIU"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sF7-g7-Se6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2663" y="660"/>
+            <point key="canvasLocation" x="2661.5384615384614" y="659.71563981042652"/>
         </scene>
         <!--reccomendation-->
         <scene sceneID="tjI-tJ-Fi4">
@@ -574,10 +600,7 @@
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="9UK-um-ghS"/>
-        <segue reference="1Ds-q4-myK"/>
-        <segue reference="S2K-mu-mdg"/>
-        <segue reference="dII-nG-dR8"/>
-        <segue reference="p6P-tP-ijt"/>
+
         <segue reference="XLt-dH-V5h"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" systemColor="systemMintColor"/>
