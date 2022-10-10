@@ -437,10 +437,19 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="G1c-ZB-xlI"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <gestureRecognizers/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="IkZ-z0-1rJ" appends="YES" id="r1b-9X-6a9"/>
+                        </connections>
                     </view>
                     <navigationItem key="navigationItem" id="QXu-S0-ffd"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xsF-fo-cLQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="right" id="IkZ-z0-1rJ">
+                    <connections>
+                        <action selector="swipeToNextQuestion:" destination="8Mx-Tw-LDb" id="C8d-gd-jDX"/>
+                    </connections>
+                </swipeGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="3461.5384615384614" y="-901.42180094786727"/>
         </scene>
@@ -591,10 +600,7 @@
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="9UK-um-ghS"/>
-        <segue reference="1JE-oy-ebb"/>
-        <segue reference="fDp-vG-atD"/>
-        <segue reference="F0A-z9-QoB"/>
-        <segue reference="S2Y-1u-Vr2"/>
+
         <segue reference="XLt-dH-V5h"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" systemColor="systemMintColor"/>
