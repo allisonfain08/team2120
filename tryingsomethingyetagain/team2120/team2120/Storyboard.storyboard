@@ -411,6 +411,14 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="1rO-Kh-yqH"/>
+                    <connections>
+                        <outlet property="CalendarGo" destination="FQq-XQ-cpu" id="Ai8-Uw-Jmq"/>
+                        <outlet property="CalendarNavW" destination="FQq-XQ-cpu" id="ejR-Bj-nZk"/>
+                        <outlet property="CityInput" destination="FQq-XQ-cpu" id="TYN-cS-fOA"/>
+                        <outlet property="GotoCal" destination="FQq-XQ-cpu" id="WCd-W4-zxa"/>
+                        <outlet property="Intro" destination="FQq-XQ-cpu" id="YKI-aB-Drt"/>
+                        <outlet property="WeatherPic" destination="FQq-XQ-cpu" id="v2q-c1-0NU"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nVN-sH-71g" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="S4M-QJ-0Nm" userLabel="Exit" sceneMemberID="exit"/>
