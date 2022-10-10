@@ -284,7 +284,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="back"/>
                                 <connections>
-                                    <segue destination="lLm-qS-kzS" kind="show" id="S2Y-1u-Vr2"/>
+                                    <segue destination="lLm-qS-kzS" kind="show" id="dvQ-ZI-RuN"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ymE-na-7Au">
@@ -600,7 +600,10 @@
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="9UK-um-ghS"/>
-
+        <segue reference="1JE-oy-ebb"/>
+        <segue reference="S2K-mu-mdg"/>
+        <segue reference="F0A-z9-QoB"/>
+        <segue reference="dvQ-ZI-RuN"/>
         <segue reference="XLt-dH-V5h"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" systemColor="systemMintColor"/>
