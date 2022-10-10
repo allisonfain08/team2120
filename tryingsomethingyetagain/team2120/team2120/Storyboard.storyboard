@@ -294,6 +294,7 @@
                                 <buttonConfiguration key="configuration" style="tinted" title="Go To Today's Weather"/>
                                 <connections>
                                     <action selector="weatherGo:" destination="jk0-eJ-mNZ" eventType="touchUpInside" id="rNG-tq-0t4"/>
+                                    <segue destination="3LC-Sv-g8i" kind="show" id="m6A-bF-nbe"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Your Week at a Glance: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cdB-KF-Qh7">
@@ -640,7 +641,7 @@
         <segue reference="1JE-oy-ebb"/>
         <segue reference="S2K-mu-mdg"/>
         <segue reference="F0A-z9-QoB"/>
-        <segue reference="pQt-Qa-km0"/>
+
         <segue reference="XLt-dH-V5h"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" systemColor="systemMintColor"/>
