@@ -15,8 +15,14 @@ class WeatherViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
+    @IBOutlet var GotoCal: UIView!
+    @IBOutlet var WeatherPic: UIView!
+    @IBOutlet var CityInput: UIView!
+    @IBOutlet var Intro: UIView!
+    @IBOutlet var CalendarGo: UIView!
     @IBAction func back_button(_ sender: Any) {
     }
+    @IBOutlet var CalendarNavW: UIView!
     
     /*
     // MARK: - Navigation
