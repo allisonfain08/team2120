@@ -26,7 +26,7 @@ export default class Dashboard extends Component {
           Hello, {this.state.displayName}
         </Text>
         <Button
-          color="#3740FE"
+          color="#BCA77E"
           title="Logout"
           onPress={() => this.signOut()}
         />
@@ -41,7 +41,7 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center',
     padding: 35,
-    backgroundColor: '#fff'
+    backgroundColor: '#FFF',
   },
   textStyle: {
     fontSize: 15,

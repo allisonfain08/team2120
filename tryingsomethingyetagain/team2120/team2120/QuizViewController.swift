@@ -15,7 +15,11 @@ class QuizViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-
+    @IBAction func swipeToNextQuestion(_ sender: Any) {
+    }
+    @IBAction func back_button(_ sender: Any) {
+    }
+    
     /*
     // MARK: - Navigation
 

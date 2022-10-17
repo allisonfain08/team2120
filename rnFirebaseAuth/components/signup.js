@@ -1,6 +1,6 @@
 // components/signup.js
 import React, { Component } from 'react';
-import { StyleSheet, Text, View, TextInput, Button, Alert, ActivityIndicator } from 'react-native';
+import { StyleSheet, Text, View, TextInput, Button, Alert, Image, ActivityIndicator } from 'react-native';
 import firebase from '../database/firebase';
 
 export default class Signup extends Component {
@@ -50,11 +50,16 @@ export default class Signup extends Component {
       return(
         <View style={styles.preloader}>
           <ActivityIndicator size="large" color="#9E9E9E"/>
+          
         </View>
       )
     }    
     return (
-      <View style={styles.container}>  
+      <View style={styles.container}>
+        <Image 
+          style={styles.mainLogo}
+          source={require('./eKlozet.png')}
+        /> 
         <TextInput
           style={styles.inputStyle}
           placeholder="Name"
@@ -76,7 +81,7 @@ export default class Signup extends Component {
           secureTextEntry={true}
         />   
         <Button
-          color="#3740FE"
+          color="#BCA77E"
           title="Signup"
           onPress={() => this.registerUser()}
         />
@@ -96,7 +101,7 @@ const styles = StyleSheet.create({
     flexDirection: "column",
     justifyContent: "center",
     padding: 35,
-    backgroundColor: '#fff'
+    backgroundColor: '#FFF'
   },
   inputStyle: {
     width: '100%',
@@ -107,7 +112,7 @@ const styles = StyleSheet.create({
     borderBottomWidth: 1
   },
   loginText: {
-    color: '#3740FE',
+    color: '#BCA77E',
     marginTop: 25,
     textAlign: 'center'
   },
@@ -119,6 +124,14 @@ const styles = StyleSheet.create({
     position: 'absolute',
     alignItems: 'center',
     justifyContent: 'center',
-    backgroundColor: '#fff'
+    backgroundColor: '#FFF'
+  },
+  mainLogo: {
+    flexDirection: 'column',
+    justifyContent: 'center', 
+    alignItems: 'center',
+    alignSelf: 'center',
+    height: 400,
+    width: 400
   }
 });

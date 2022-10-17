@@ -14,8 +14,20 @@ class HomeViewController: UIViewController {
 
         // Do any additional setup after loading the view.
     }
+    @IBAction func back_button(_ sender: Any) {
+    }
     
-
+    @IBAction func take_quiz_button(_ sender: Any) {
+    }
+    
+    @IBAction func weather_button(_ sender: Any) {
+    }
+    
+    @IBAction func calendar_button(_ sender: Any) {
+    }
+    
+    @IBAction func outfit_rec_button(_ sender: Any) {
+    }
     /*
     // MARK: - Navigation
 

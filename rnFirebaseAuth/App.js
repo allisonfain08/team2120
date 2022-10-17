@@ -5,17 +5,18 @@ import { createStackNavigator } from '@react-navigation/stack';
 import Login from './components/login';
 import Signup from './components/signup';
 import Dashboard from './components/dashboard';
+
 const Stack = createStackNavigator();
 function MyStack() {
   return (
     <Stack.Navigator
-      initialRouteName="Signup"
+      initialRouteName="Sign-up"
       screenOptions={{
         headerTitleAlign: 'center',
         headerStyle: {
-          backgroundColor: '#3740FE',
+          backgroundColor: '#BCA77E',
         },
-        headerTintColor: '#fff',
+        headerTintColor: '#000',
         headerTitleStyle: {
           fontWeight: 'bold',
         },
@@ -23,7 +24,7 @@ function MyStack() {
       <Stack.Screen 
         name="Signup" 
         component={Signup} 
-        options={{ title: 'Signup' }}
+        options={{ title: 'Sign-up' }}
       />       
       <Stack.Screen 
         name="Login" 
