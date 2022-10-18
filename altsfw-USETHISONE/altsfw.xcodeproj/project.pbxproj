@@ -21,6 +21,7 @@
 		2A2637B628F9215700A8D2A6 /* WeatherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A2637B528F9215700A8D2A6 /* WeatherViewController.swift */; };
 		2A2637B828F9216800A8D2A6 /* RecommendedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A2637B728F9216800A8D2A6 /* RecommendedViewController.swift */; };
 		2A2637BA28F9217600A8D2A6 /* ClosetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A2637B928F9217600A8D2A6 /* ClosetViewController.swift */; };
+		B31F0A2B28FF11370043AA85 /* SwipeTracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = B31F0A2A28FF11370043AA85 /* SwipeTracker.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +41,7 @@
 		2A2637B528F9215700A8D2A6 /* WeatherViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherViewController.swift; sourceTree = "<group>"; };
 		2A2637B728F9216800A8D2A6 /* RecommendedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendedViewController.swift; sourceTree = "<group>"; };
 		2A2637B928F9217600A8D2A6 /* ClosetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClosetViewController.swift; sourceTree = "<group>"; };
+		B31F0A2A28FF11370043AA85 /* SwipeTracker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeTracker.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +85,7 @@
 				2A2637B528F9215700A8D2A6 /* WeatherViewController.swift */,
 				2A2637B728F9216800A8D2A6 /* RecommendedViewController.swift */,
 				2A2637B928F9217600A8D2A6 /* ClosetViewController.swift */,
+				B31F0A2A28FF11370043AA85 /* SwipeTracker.swift */,
 				2A26379D28F9040B00A8D2A6 /* Main.storyboard */,
 				2A2637A028F9040D00A8D2A6 /* Assets.xcassets */,
 				2A2637A228F9040D00A8D2A6 /* LaunchScreen.storyboard */,
@@ -167,6 +170,7 @@
 				2A2637AC28F90D9600A8D2A6 /* LoginViewController.swift in Sources */,
 				2A2637B228F9212F00A8D2A6 /* QuizViewController.swift in Sources */,
 				2A2637AE28F91DEF00A8D2A6 /* RegisterViewController.swift in Sources */,
+				B31F0A2B28FF11370043AA85 /* SwipeTracker.swift in Sources */,
 				2A2637BA28F9217600A8D2A6 /* ClosetViewController.swift in Sources */,
 				2A26379C28F9040B00A8D2A6 /* ViewController.swift in Sources */,
 				2A26379828F9040B00A8D2A6 /* AppDelegate.swift in Sources */,

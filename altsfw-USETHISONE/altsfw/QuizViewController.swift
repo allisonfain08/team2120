@@ -6,15 +6,34 @@
 //
 
 import UIKit
+import SwiftUI
 
+var swipeTracker = SwipeTracker()
 class QuizViewController: UIViewController {
-
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        let swipeRight = UISwipeGestureRecognizer(target: self, action: #selector(swipeFunc))
+        swipeRight.direction = .right
+        self.view.addGestureRecognizer(swipeRight)
+        let swipeLeft = UISwipeGestureRecognizer(target: self, action: #selector(swipeFunc))
+        swipeLeft.direction = .left
+        self.view.addGestureRecognizer(swipeLeft)
+
     }
     
+    @objc func swipeFunc(gesture: UISwipeGestureRecognizer){
+        if gesture.direction == .right {
+            swipeTracker.addSwipe(swipeType: "Right")
+            print(swipeTracker.getSwipeArray())
+            performSegue(withIdentifier: "nextQuestion", sender: self)
+        } else if gesture.direction == .left {
+            swipeTracker.addSwipe(swipeType: "Left")
+            print(swipeTracker.getSwipeArray())
+            performSegue(withIdentifier: "nextQuestion", sender: self)
+        }
+    }
     @IBAction func back(_ sender: Any) {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
             let HomeViewController = storyboard.instantiateViewController(identifier: "HomeViewController")

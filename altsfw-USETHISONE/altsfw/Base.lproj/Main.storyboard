@@ -192,7 +192,7 @@
         <!--Quiz View Controller-->
         <scene sceneID="AK3-EM-Kro">
             <objects>
-                <viewController storyboardIdentifier="QuizViewController" title="Quiz View Controller" id="HP9-AR-WXy" customClass="QuizViewController" customModule="altsfw" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="QuizViewController" title="Quiz View Controller" modalTransitionStyle="flipHorizontal" id="HP9-AR-WXy" customClass="QuizViewController" customModule="altsfw" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="32K-wK-NG1">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="787"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -213,23 +213,41 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="next"/>
                                 <connections>
-                                    <segue destination="h4e-yP-1tg" kind="show" id="KRg-VC-jKp"/>
+                                    <segue destination="h4e-yP-1tg" kind="show" id="UJR-9w-uSB"/>
                                 </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Rd9-mO-xl2"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <gestureRecognizers/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="RQq-d9-E7p" appends="YES" id="Ccp-7X-ZvP"/>
+                            <outletCollection property="gestureRecognizers" destination="ulh-4G-7sL" appends="YES" id="nyt-c8-wdb"/>
+                        </connections>
                     </view>
                     <navigationItem key="navigationItem" id="VyZ-Uk-fb6"/>
+                    <connections>
+                        <outlet property="view" destination="32K-wK-NG1" id="BVQ-25-iyb"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2oi-aW-MrM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="right" id="RQq-d9-E7p">
+                    <connections>
+                        <segue destination="h4e-yP-1tg" kind="show" identifier="nextQuestion" id="hab-l8-GzH"/>
+                    </connections>
+                </swipeGestureRecognizer>
+                <swipeGestureRecognizer direction="left" id="ulh-4G-7sL">
+                    <connections>
+                        <segue destination="h4e-yP-1tg" kind="show" identifier="nextQuestion" id="65z-6y-lCf"/>
+                    </connections>
+                </swipeGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="2524" y="-741"/>
         </scene>
-        <!--View Controller-->
+        <!--Quiz View Controller-->
         <scene sceneID="P0m-IE-FBP">
             <objects>
-                <viewController id="h4e-yP-1tg" sceneMemberID="viewController">
+                <viewController modalTransitionStyle="flipHorizontal" id="h4e-yP-1tg" customClass="QuizViewController" customModule="altsfw" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="i7F-TT-qpD">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="787"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -255,17 +273,35 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="mjf-Hq-Uud"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <gestureRecognizers/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="wDk-G1-e8Z" appends="YES" id="00E-a8-ero"/>
+                            <outletCollection property="gestureRecognizers" destination="T2C-8d-Wdq" appends="YES" id="1yn-Mq-srF"/>
+                        </connections>
                     </view>
                     <navigationItem key="navigationItem" id="f84-Rn-iJk"/>
+                    <connections>
+                        <segue destination="HP9-AR-WXy" kind="show" identifier="Left" id="OtI-iS-ptb"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nif-48-Fbi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="right" id="wDk-G1-e8Z">
+                    <connections>
+                        <segue destination="V3R-Gf-qKU" kind="show" identifier="nextQuestion" id="P9B-ea-pzl"/>
+                    </connections>
+                </swipeGestureRecognizer>
+                <swipeGestureRecognizer direction="left" id="T2C-8d-Wdq">
+                    <connections>
+                        <segue destination="V3R-Gf-qKU" kind="show" identifier="nextQuestion" id="gyu-Y2-MG7"/>
+                    </connections>
+                </swipeGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="3305" y="-741"/>
         </scene>
-        <!--View Controller-->
+        <!--Quiz View Controller-->
         <scene sceneID="pMz-f2-QmM">
             <objects>
-                <viewController id="V3R-Gf-qKU" sceneMemberID="viewController">
+                <viewController modalTransitionStyle="flipHorizontal" id="V3R-Gf-qKU" customClass="QuizViewController" customModule="altsfw" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="4UV-57-I9j">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="787"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -291,17 +327,35 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="dyJ-If-yCM"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <gestureRecognizers/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="aDo-OM-9fH" appends="YES" id="9TJ-n2-uqy"/>
+                            <outletCollection property="gestureRecognizers" destination="86v-bn-3Af" appends="YES" id="g4T-7e-4ff"/>
+                        </connections>
                     </view>
                     <navigationItem key="navigationItem" id="EON-p9-GbV"/>
+                    <connections>
+                        <segue destination="h4e-yP-1tg" kind="show" identifier="Left" id="C66-nA-hAQ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Mq4-4F-OCr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="right" id="aDo-OM-9fH">
+                    <connections>
+                        <segue destination="mOW-zn-3xc" kind="show" identifier="nextQuestion" id="jJ7-gF-2IM"/>
+                    </connections>
+                </swipeGestureRecognizer>
+                <swipeGestureRecognizer direction="left" id="86v-bn-3Af">
+                    <connections>
+                        <segue destination="mOW-zn-3xc" kind="show" identifier="nextQuestion" id="t39-OW-ASU"/>
+                    </connections>
+                </swipeGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="4085" y="-741"/>
         </scene>
-        <!--View Controller-->
+        <!--Quiz View Controller-->
         <scene sceneID="Og1-cW-eEe">
             <objects>
-                <viewController id="mOW-zn-3xc" sceneMemberID="viewController">
+                <viewController modalTransitionStyle="flipHorizontal" id="mOW-zn-3xc" customClass="QuizViewController" customModule="altsfw" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="bqy-H3-2Hg">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="787"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -327,17 +381,35 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="0Qi-qj-crK"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <gestureRecognizers/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="iji-LU-9od" appends="YES" id="SG8-Wg-rmQ"/>
+                            <outletCollection property="gestureRecognizers" destination="RbU-j7-ged" appends="YES" id="eiY-Ld-oVU"/>
+                        </connections>
                     </view>
                     <navigationItem key="navigationItem" id="yZe-Hk-2ee"/>
+                    <connections>
+                        <segue destination="V3R-Gf-qKU" kind="show" identifier="Left" id="Mci-I7-GNE"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ax6-RU-cCY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="right" id="iji-LU-9od">
+                    <connections>
+                        <segue destination="OVk-YU-bOx" kind="show" identifier="nextQuestion" id="zTi-k8-meo"/>
+                    </connections>
+                </swipeGestureRecognizer>
+                <swipeGestureRecognizer direction="left" id="RbU-j7-ged">
+                    <connections>
+                        <segue destination="OVk-YU-bOx" kind="show" identifier="nextQuestion" id="wRz-hb-exm"/>
+                    </connections>
+                </swipeGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="4874" y="-741"/>
         </scene>
-        <!--View Controller-->
+        <!--Quiz View Controller-->
         <scene sceneID="ba4-WD-kid">
             <objects>
-                <viewController id="OVk-YU-bOx" sceneMemberID="viewController">
+                <viewController modalTransitionStyle="flipHorizontal" id="OVk-YU-bOx" customClass="QuizViewController" customModule="altsfw" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="WOt-dA-izs">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="787"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -363,17 +435,35 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="8Pe-gy-maP"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <gestureRecognizers/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="Fea-wr-Oic" appends="YES" id="xCV-MQ-oQN"/>
+                            <outletCollection property="gestureRecognizers" destination="wVf-Zp-MoY" appends="YES" id="WPI-ht-0hx"/>
+                        </connections>
                     </view>
                     <navigationItem key="navigationItem" id="KJB-m9-qT6"/>
+                    <connections>
+                        <segue destination="mOW-zn-3xc" kind="show" identifier="Left" id="Em6-74-YpA"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uhp-Kl-FrD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="right" id="Fea-wr-Oic">
+                    <connections>
+                        <segue destination="1gg-Bf-vbD" kind="show" identifier="nextQuestion" id="efA-5Z-ALS"/>
+                    </connections>
+                </swipeGestureRecognizer>
+                <swipeGestureRecognizer direction="left" id="wVf-Zp-MoY">
+                    <connections>
+                        <segue destination="1gg-Bf-vbD" kind="show" identifier="nextQuestion" id="1ho-HF-Rqw"/>
+                    </connections>
+                </swipeGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="5655" y="-741"/>
         </scene>
-        <!--View Controller-->
+        <!--Quiz View Controller-->
         <scene sceneID="cz9-Si-pwi">
             <objects>
-                <viewController id="1gg-Bf-vbD" sceneMemberID="viewController">
+                <viewController modalTransitionStyle="flipHorizontal" id="1gg-Bf-vbD" customClass="QuizViewController" customModule="altsfw" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="XU2-yP-JL9">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="787"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -399,10 +489,28 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="0lh-WP-q7H"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <gestureRecognizers/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="2xr-8t-mKd" appends="YES" id="0VJ-ak-kmW"/>
+                            <outletCollection property="gestureRecognizers" destination="ybO-yv-SAy" appends="YES" id="9JF-FX-lG4"/>
+                        </connections>
                     </view>
                     <navigationItem key="navigationItem" id="LJ8-Xk-Trq"/>
+                    <connections>
+                        <segue destination="OVk-YU-bOx" kind="show" identifier="Left" id="rTu-9t-81I"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sHL-ts-6bQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="right" id="2xr-8t-mKd">
+                    <connections>
+                        <segue destination="iMB-Mi-xCE" kind="show" identifier="nextQuestion" id="ECH-u3-XaW"/>
+                    </connections>
+                </swipeGestureRecognizer>
+                <swipeGestureRecognizer direction="left" id="ybO-yv-SAy">
+                    <connections>
+                        <segue destination="iMB-Mi-xCE" kind="show" identifier="nextQuestion" id="FHs-eW-Qc3"/>
+                    </connections>
+                </swipeGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="6458" y="-741"/>
         </scene>
@@ -561,12 +669,14 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="StL-Oo-Z7M"/>
+        <segue reference="FHs-eW-Qc3"/>
+        <segue reference="1ho-HF-Rqw"/>
         <segue reference="wME-Gv-Qje"/>
         <segue reference="3Ie-hv-Y7n"/>
-        <segue reference="ZXO-fP-ok2"/>
-        <segue reference="KRg-VC-jKp"/>
-        <segue reference="Svp-Zx-2j8"/>
+        <segue reference="Mci-I7-GNE"/>
+        <segue reference="C66-nA-hAQ"/>
+        <segue reference="NOG-KR-Ivi"/>
+        <segue reference="Plo-ju-dfM"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="favicon" width="48" height="48"/>
