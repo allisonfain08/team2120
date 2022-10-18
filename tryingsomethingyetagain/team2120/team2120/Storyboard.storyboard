@@ -645,12 +645,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="9UK-um-ghS"/>
-        <segue reference="1JE-oy-ebb"/>
-        <segue reference="S2K-mu-mdg"/>
-        <segue reference="F0A-z9-QoB"/>
 
-        <segue reference="XLt-dH-V5h"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" systemColor="systemMintColor"/>
     <resources>

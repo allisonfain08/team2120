@@ -20,6 +20,11 @@ class QuizViewController: UIViewController {
     @IBAction func back_button(_ sender: Any) {
     }
     
+    @IBAction func swipeHandler(_ gestureRecognizer : UISwipeGestureRecognizer) {
+        if gestureRecognizer.state == .ended {
+            // Perform action.
+        }
+    }
     /*
     // MARK: - Navigation
 
