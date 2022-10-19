@@ -6,11 +6,44 @@
 //
 
 import UIKit
+<<<<<<< HEAD
 
 class CalendarViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+=======
+import EventKit
+import EventKitUI
+
+class CalendarViewController: UIViewController, EKEventEditViewDelegate {
+    func eventEditViewController(_ controller: EKEventEditViewController, didCompleteWith action: EKEventEditViewAction) {
+        controller.dismiss(animated: true, completion: nil)
+    }
+    
+    let eventStore = EKEventStore()
+    var time = Date()
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        eventStore.requestAccess( to: EKEntityType.event, completion:{(granted, error) in
+                    DispatchQueue.main.async {
+                        if (granted) && (error == nil) {
+                            let event = EKEvent(eventStore: self.eventStore)
+                            event.title = "Outfit for the Day - eKlozet"
+                            //event.startDate = self.time
+                            event.url = URL(string: "https://apple.com")
+                            //event.endDate = self.time
+                            event.isAllDay = true
+                            let eventController = EKEventEditViewController()
+                            eventController.event = event
+                            eventController.eventStore = self.eventStore
+                            eventController.editViewDelegate = self
+                            self.present(eventController, animated: true, completion: nil)
+                            
+                        }
+                    }
+                })
+>>>>>>> f7f2b23344b4cb2c99332dae0c6623ff22754278
 
         // Do any additional setup after loading the view.
     }
