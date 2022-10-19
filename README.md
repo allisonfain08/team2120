@@ -6,31 +6,31 @@
 <h2>Version 0.2.0</h2>
 <h3>Features</h3>
 <ul>
-<li> login screen via React Native app
-<li> account registration screen via React Native app
-<li> logout and create new account capabilities
-<li> database table for login capabilities
-<li> login data validation
+<li> Login screen via React Native app
+<li> Account registration screen via React Native app
+<li> Logout and create new account capabilities
+<li> Database table for login capabilities
+<li> Login data validation
 </ul>
 <h3>Bug Fixes</h3>
 <ul>
-<li> issues with environment setup and download versions
-<li> issues with connection to database
+<li> Issues with environment setup and download versions
+<li> Issues with connection to database
 </ul>
 <h3>Known Issues</h3>
 <ul>
-<li> changed overall design of project (switched from PostgreSQL and Python API to Firebase) so need to update and reconfigure overall design
+<li> Changed overall design of project (switched from PostgreSQL and Python API to Firebase) so need to update and reconfigure overall design
 </ul>
 
 <h2>Version 0.1.0</h2>
 <h3>Features</h3>
 <ul>
 <li> SQL database initial design
-<li> <a href= "https://www.figma.com/file/snzsmB2PUUnOGsu8471SiR/team-2120?node-id=0%3A1" >prototype final version </a>
+<li> <a href= "https://www.figma.com/file/snzsmB2PUUnOGsu8471SiR/team-2120?node-id=0%3A1" >Prototype final version </a>
 </ul>
 <h3>Bug Fixes</h3>
 <ul>
-<li> issues with SQL table integration between members
+<li> Issues with SQL table integration between members
 </ul>
 
 <h2>Open source code currently being used</h2>
