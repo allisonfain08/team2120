@@ -100,6 +100,7 @@
                                 <buttonConfiguration key="configuration" style="filled" title="Submit"/>
                                 <connections>
                                     <action selector="submit:" destination="WzQ-RO-nG0" eventType="touchUpInside" id="neM-76-VrS"/>
+                                    <segue destination="iMB-Mi-xCE" kind="show" id="B5C-5O-Tz5"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QSP-7U-Hoc">
@@ -157,7 +158,7 @@
                                 <buttonConfiguration key="configuration" style="filled" title="Register"/>
                                 <connections>
                                     <action selector="register:" destination="4ni-CA-P27" eventType="touchUpInside" id="rVQ-bR-7Nt"/>
-                                    <segue destination="WzQ-RO-nG0" kind="show" id="B4N-zP-s1m"/>
+                                    <segue destination="WzQ-RO-nG0" kind="show" id="gcc-Gl-Rpg"/>
                                 </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wJr-FI-hC6">
@@ -552,7 +553,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DLk-Yf-j63">
-                                <rect key="frame" x="16" y="128" width="358" height="157"/>
+                                <rect key="frame" x="16" y="108" width="358" height="157"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Take style quiz now"/>
@@ -562,7 +563,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PNa-M9-8hX">
-                                <rect key="frame" x="16" y="293" width="358" height="157"/>
+                                <rect key="frame" x="16" y="273" width="358" height="157"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Dress for the weather"/>
@@ -572,23 +573,13 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QQz-JC-iYi">
-                                <rect key="frame" x="16" y="458" width="358" height="157"/>
+                                <rect key="frame" x="16" y="438" width="358" height="157"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="View your calendar"/>
                                 <connections>
                                     <action selector="calendar:" destination="iMB-Mi-xCE" eventType="touchUpInside" id="pGv-iQ-Umc"/>
                                     <segue destination="RbO-aj-gwU" kind="show" id="gFb-xg-OOv"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GuD-IQ-907">
-                                <rect key="frame" x="16" y="623" width="358" height="157"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="Today's recommended outfit"/>
-                                <connections>
-                                    <action selector="recommendation:" destination="iMB-Mi-xCE" eventType="touchUpInside" id="h5X-Mf-dTa"/>
-                                    <segue destination="jrI-5Y-nbY" kind="show" id="wsF-3o-sIs"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r3D-Hs-hCx">
@@ -598,6 +589,16 @@
                                 <buttonConfiguration key="configuration" style="filled" title="back"/>
                                 <connections>
                                     <action selector="back:" destination="iMB-Mi-xCE" eventType="touchUpInside" id="C7s-ej-Skm"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GuD-IQ-907">
+                                <rect key="frame" x="16" y="603" width="358" height="157"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Today's recommended outfit"/>
+                                <connections>
+                                    <action selector="recommendation:" destination="iMB-Mi-xCE" eventType="touchUpInside" id="h5X-Mf-dTa"/>
+                                    <segue destination="jrI-5Y-nbY" kind="show" id="wsF-3o-sIs"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -669,14 +670,14 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="FHs-eW-Qc3"/>
+        <segue reference="oZF-AX-p2T"/>
         <segue reference="1ho-HF-Rqw"/>
         <segue reference="wME-Gv-Qje"/>
         <segue reference="3Ie-hv-Y7n"/>
-        <segue reference="Mci-I7-GNE"/>
-        <segue reference="C66-nA-hAQ"/>
+        <segue reference="ZXO-fP-ok2"/>
+        <segue reference="65z-6y-lCf"/>
         <segue reference="NOG-KR-Ivi"/>
-        <segue reference="Plo-ju-dfM"/>
+        <segue reference="Svp-Zx-2j8"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="favicon" width="48" height="48"/>

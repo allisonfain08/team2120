@@ -26,12 +26,15 @@ class QuizViewController: UIViewController {
     @objc func swipeFunc(gesture: UISwipeGestureRecognizer){
         if gesture.direction == .right {
             swipeTracker.addSwipe(swipeType: "Right")
-            print(swipeTracker.getSwipeArray())
             performSegue(withIdentifier: "nextQuestion", sender: self)
         } else if gesture.direction == .left {
             swipeTracker.addSwipe(swipeType: "Left")
-            print(swipeTracker.getSwipeArray())
             performSegue(withIdentifier: "nextQuestion", sender: self)
+        }
+        if(swipeTracker.getSwipeArray().count == 6){
+            swipeTracker.printSwipeArray()
+            swipeTracker.currQuizResults = swipeTracker.swipeArray
+            swipeTracker.swipeArray = [String]()
         }
     }
     @IBAction func back(_ sender: Any) {
