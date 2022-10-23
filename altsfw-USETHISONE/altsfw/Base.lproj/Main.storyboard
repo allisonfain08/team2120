@@ -210,7 +210,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bHV-6E-YmL">
-                                <rect key="frame" x="138" y="648" width="114" height="35"/>
+                                <rect key="frame" x="138" y="699" width="114" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Let's Begin!"/>
@@ -218,6 +218,23 @@
                                     <segue destination="h4e-yP-1tg" kind="show" id="UJR-9w-uSB"/>
                                 </connections>
                             </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="rectangle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="fQM-TH-MkO">
+                                <rect key="frame" x="-19" y="221" width="428" height="497"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" red="0.57995259759999995" green="0.66206520800000002" blue="0.45879018310000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="rectangle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="wrM-9d-7y3">
+                                <rect key="frame" x="-19" y="241.66666666666652" width="428" height="116"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" red="0.38280608919999998" green="0.43726325760000001" blue="0.30374868150000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="How to Take the Style Quiz:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wr1-ZM-mWU">
+                                <rect key="frame" x="25" y="283" width="340" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="26"/>
+                                <color key="textColor" systemColor="systemBackgroundColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Rd9-mO-xl2"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -244,7 +261,7 @@
                     </connections>
                 </swipeGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="2524" y="-741"/>
+            <point key="canvasLocation" x="2523.0769230769229" y="-741.46919431279616"/>
         </scene>
         <!--Quiz View Controller-->
         <scene sceneID="P0m-IE-FBP">
@@ -762,12 +779,12 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="FHs-eW-Qc3"/>
+        <segue reference="ok6-VE-G5O"/>
         <segue reference="1ho-HF-Rqw"/>
         <segue reference="wME-Gv-Qje"/>
         <segue reference="Em6-74-YpA"/>
         <segue reference="Mci-I7-GNE"/>
-        <segue reference="Use-hJ-ysl"/>
+        <segue reference="65z-6y-lCf"/>
         <segue reference="NOG-KR-Ivi"/>
         <segue reference="Ne9-w9-xix"/>
     </inferredMetricsTieBreakers>
@@ -776,6 +793,7 @@
         <image name="chevron.left" catalog="system" width="97" height="128"/>
         <image name="chevron.right" catalog="system" width="97" height="128"/>
         <image name="favicon" width="48" height="48"/>
+        <image name="rectangle.fill" catalog="system" width="128" height="93"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
