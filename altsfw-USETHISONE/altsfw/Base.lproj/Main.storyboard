@@ -235,7 +235,9 @@
                                 <rect key="frame" x="75" y="637" width="235" height="83"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="Let's Begin!"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Let's Begin!">
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="30"/>
+                                </buttonConfiguration>
                                 <connections>
                                     <segue destination="h4e-yP-1tg" kind="show" id="KRg-VC-jKp"/>
                                 </connections>
@@ -977,7 +979,7 @@
         <segue reference="Woq-dS-dnM"/>
         <segue reference="ygF-N8-tcZ"/>
         <segue reference="fna-qC-HlU"/>
-        <segue reference="XhI-Kd-26A"/>
+        <segue reference="ok6-VE-G5O"/>
         <segue reference="VMo-cm-cr9"/>
         <segue reference="Xa2-cF-WdJ"/>
         <segue reference="4rU-jQ-llM"/>
