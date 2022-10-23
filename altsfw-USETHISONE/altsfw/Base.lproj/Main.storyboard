@@ -665,7 +665,10 @@
                                 <rect key="frame" x="16" y="108" width="358" height="157"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="Take style quiz now"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Take style quiz now">
+                                    <color key="baseForegroundColor" systemColor="labelColor"/>
+                                    <color key="baseBackgroundColor" red="0.9529411793" green="0.96470588450000005" blue="0.83529412749999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </buttonConfiguration>
                                 <connections>
                                     <action selector="styleQuiz:" destination="iMB-Mi-xCE" eventType="touchUpInside" id="UJ5-BZ-zBG"/>
                                     <segue destination="4ni-CA-P27" kind="show" id="Svp-Zx-2j8"/>
@@ -675,7 +678,12 @@
                                 <rect key="frame" x="16" y="273" width="358" height="157"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="Dress for the weather"/>
+                                <buttonConfiguration key="configuration" style="filled" imagePlacement="leading" title="Dress for the weather">
+                                    <imageReference key="image" image="cloud.sun.fill" catalog="system" symbolScale="large"/>
+                                    <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage"/>
+                                    <color key="baseForegroundColor" systemColor="labelColor"/>
+                                    <color key="baseBackgroundColor" red="0.82745099070000006" green="0.87843137979999997" blue="0.8392156959" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </buttonConfiguration>
                                 <connections>
                                     <action selector="weather:" destination="iMB-Mi-xCE" eventType="touchUpInside" id="OBK-9H-2Tg"/>
                                     <segue destination="bvO-HN-FiE" kind="show" id="VKd-HM-p9D"/>
@@ -685,7 +693,10 @@
                                 <rect key="frame" x="16" y="438" width="358" height="157"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="View your calendar"/>
+                                <buttonConfiguration key="configuration" style="filled" image="calendar" catalog="system" title="View your calendar">
+                                    <color key="baseForegroundColor" systemColor="labelColor"/>
+                                    <color key="baseBackgroundColor" red="0.87058818339999999" green="0.74901962280000001" blue="0.63529413940000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </buttonConfiguration>
                                 <connections>
                                     <action selector="calendar:" destination="iMB-Mi-xCE" eventType="touchUpInside" id="pGv-iQ-Umc"/>
                                     <segue destination="RbO-aj-gwU" kind="show" id="gFb-xg-OOv"/>
@@ -704,7 +715,10 @@
                                 <rect key="frame" x="16" y="603" width="358" height="157"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="Today's recommended outfit"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Today's recommended outfit">
+                                    <color key="baseForegroundColor" systemColor="labelColor"/>
+                                    <color key="baseBackgroundColor" red="0.43921568989999998" green="0.41176474089999998" blue="0.47450977560000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </buttonConfiguration>
                                 <connections>
                                     <action selector="recommendation:" destination="iMB-Mi-xCE" eventType="touchUpInside" id="h5X-Mf-dTa"/>
                                     <segue destination="jrI-5Y-nbY" kind="show" id="wsF-3o-sIs"/>
@@ -786,14 +800,19 @@
         <segue reference="Mci-I7-GNE"/>
         <segue reference="65z-6y-lCf"/>
         <segue reference="NOG-KR-Ivi"/>
-        <segue reference="Ne9-w9-xix"/>
+        <segue reference="Svp-Zx-2j8"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="arrowshape.left.fill" catalog="system" width="128" height="104"/>
+        <image name="calendar" catalog="system" width="128" height="107"/>
         <image name="chevron.left" catalog="system" width="97" height="128"/>
         <image name="chevron.right" catalog="system" width="97" height="128"/>
+        <image name="cloud.sun.fill" catalog="system" width="128" height="96"/>
         <image name="favicon" width="48" height="48"/>
         <image name="rectangle.fill" catalog="system" width="128" height="93"/>
+        <systemColor name="labelColor">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
