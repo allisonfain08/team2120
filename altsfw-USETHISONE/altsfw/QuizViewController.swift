@@ -6,19 +6,37 @@
 //
 
 import UIKit
+import SwiftUI
 
+var swipeTracker = SwipeTracker()
 class QuizViewController: UIViewController {
-    
-    @IBOutlet weak var welcome: UILabel!
-    @IBOutlet weak var welcomeText: UITextView!
     override func viewDidLoad() {
         super.viewDidLoad()
-        welcomeText.textColor = UIColor.purple
-        welcomeText.font = UIFont(name: "Callout", size: 60)
 
         // Do any additional setup after loading the view.
+        let swipeRight = UISwipeGestureRecognizer(target: self, action: #selector(swipeFunc))
+        swipeRight.direction = .right
+        self.view.addGestureRecognizer(swipeRight)
+        let swipeLeft = UISwipeGestureRecognizer(target: self, action: #selector(swipeFunc))
+        swipeLeft.direction = .left
+        self.view.addGestureRecognizer(swipeLeft)
+
     }
     
+    @objc func swipeFunc(gesture: UISwipeGestureRecognizer){
+        if gesture.direction == .right {
+            swipeTracker.addSwipe(swipeType: "Right")
+            performSegue(withIdentifier: "nextQuestion", sender: self)
+        } else if gesture.direction == .left {
+            swipeTracker.addSwipe(swipeType: "Left")
+            performSegue(withIdentifier: "nextQuestion", sender: self)
+        }
+        if(swipeTracker.getSwipeArray().count == 6){
+            swipeTracker.printSwipeArray()
+            swipeTracker.currQuizResults = swipeTracker.swipeArray
+            swipeTracker.swipeArray = [String]()
+        }
+    }
     @IBAction func back(_ sender: Any) {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
             let HomeViewController = storyboard.instantiateViewController(identifier: "HomeViewController")
@@ -27,9 +45,7 @@ class QuizViewController: UIViewController {
             // then call the change root view controller function to change to main tab bar
             (UIApplication.shared.connectedScenes.first?.delegate as? SceneDelegate)?.changeRootViewController(HomeViewController)
     }
-
     
-   
     /*
     // MARK: - Navigation
 
