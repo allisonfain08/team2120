@@ -21,6 +21,7 @@
 		2A2637B628F9215700A8D2A6 /* WeatherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A2637B528F9215700A8D2A6 /* WeatherViewController.swift */; };
 		2A2637B828F9216800A8D2A6 /* RecommendedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A2637B728F9216800A8D2A6 /* RecommendedViewController.swift */; };
 		2A2637BA28F9217600A8D2A6 /* ClosetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A2637B928F9217600A8D2A6 /* ClosetViewController.swift */; };
+		9E304CF32905AF9C0060209F /* BeginQuizViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E304CF22905AF9C0060209F /* BeginQuizViewController.swift */; };
 		B31F0A2B28FF11370043AA85 /* SwipeTracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = B31F0A2A28FF11370043AA85 /* SwipeTracker.swift */; };
 /* End PBXBuildFile section */
 
@@ -41,6 +42,7 @@
 		2A2637B528F9215700A8D2A6 /* WeatherViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherViewController.swift; sourceTree = "<group>"; };
 		2A2637B728F9216800A8D2A6 /* RecommendedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendedViewController.swift; sourceTree = "<group>"; };
 		2A2637B928F9217600A8D2A6 /* ClosetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClosetViewController.swift; sourceTree = "<group>"; };
+		9E304CF22905AF9C0060209F /* BeginQuizViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeginQuizViewController.swift; sourceTree = "<group>"; };
 		B31F0A2A28FF11370043AA85 /* SwipeTracker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeTracker.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -90,6 +92,7 @@
 				2A2637A028F9040D00A8D2A6 /* Assets.xcassets */,
 				2A2637A228F9040D00A8D2A6 /* LaunchScreen.storyboard */,
 				2A2637A528F9040D00A8D2A6 /* Info.plist */,
+				9E304CF22905AF9C0060209F /* BeginQuizViewController.swift */,
 			);
 			path = altsfw;
 			sourceTree = "<group>";
@@ -172,6 +175,7 @@
 				2A2637AE28F91DEF00A8D2A6 /* RegisterViewController.swift in Sources */,
 				B31F0A2B28FF11370043AA85 /* SwipeTracker.swift in Sources */,
 				2A2637BA28F9217600A8D2A6 /* ClosetViewController.swift in Sources */,
+				9E304CF32905AF9C0060209F /* BeginQuizViewController.swift in Sources */,
 				2A26379C28F9040B00A8D2A6 /* ViewController.swift in Sources */,
 				2A26379828F9040B00A8D2A6 /* AppDelegate.swift in Sources */,
 				2A26379A28F9040B00A8D2A6 /* SceneDelegate.swift in Sources */,

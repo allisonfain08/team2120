@@ -12,7 +12,11 @@ import UIKit
 class SwipeTracker {
     var swipeArray = [String]()
     var currQuizResults = [String]()
+    var currQuestion = 0
     
+    func incrementQuestion() {
+        currQuestion += 1
+    }
     func addSwipe(swipeType: String){
         swipeArray.append(swipeType)
     }

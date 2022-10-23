@@ -14,6 +14,22 @@ class QuizViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        
+        switch (swipeTracker.currQuestion) {
+        case 0:
+            view.backgroundColor = .blue
+            
+        case 1:
+            view.backgroundColor = .red
+            
+        case 2:
+            view.backgroundColor = .green
+            
+        default:
+            view.backgroundColor = .purple
+        }
+        
+        //swipe functionality
         let swipeRight = UISwipeGestureRecognizer(target: self, action: #selector(swipeFunc))
         swipeRight.direction = .right
         self.view.addGestureRecognizer(swipeRight)
@@ -26,9 +42,11 @@ class QuizViewController: UIViewController {
     @objc func swipeFunc(gesture: UISwipeGestureRecognizer){
         if gesture.direction == .right {
             swipeTracker.addSwipe(swipeType: "Right")
+            swipeTracker.incrementQuestion()
             performSegue(withIdentifier: "nextQuestion", sender: self)
         } else if gesture.direction == .left {
             swipeTracker.addSwipe(swipeType: "Left")
+            swipeTracker.incrementQuestion()
             performSegue(withIdentifier: "nextQuestion", sender: self)
         }
         if(swipeTracker.getSwipeArray().count == 6){
