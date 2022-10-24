@@ -202,7 +202,7 @@
         <!--Quiz View Controller-->
         <scene sceneID="AK3-EM-Kro">
             <objects>
-                <viewController storyboardIdentifier="QuizViewController" title="Quiz View Controller" modalTransitionStyle="flipHorizontal" id="HP9-AR-WXy" customClass="QuizViewController" customModule="altsfw" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="QuizViewController" title="Quiz View Controller" modalTransitionStyle="flipHorizontal" id="HP9-AR-WXy" customClass="BeginQuizViewController" customModule="altsfw" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="32K-wK-NG1">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="787"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -260,10 +260,6 @@
                         <viewLayoutGuide key="safeArea" id="Rd9-mO-xl2"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <gestureRecognizers/>
-                        <connections>
-                            <outletCollection property="gestureRecognizers" destination="RQq-d9-E7p" appends="YES" id="Ccp-7X-ZvP"/>
-                            <outletCollection property="gestureRecognizers" destination="ulh-4G-7sL" appends="YES" id="nyt-c8-wdb"/>
-                        </connections>
                     </view>
                     <navigationItem key="navigationItem" id="VyZ-Uk-fb6"/>
                     <connections>
@@ -271,16 +267,6 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2oi-aW-MrM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-                <swipeGestureRecognizer direction="right" id="RQq-d9-E7p">
-                    <connections>
-                        <segue destination="h4e-yP-1tg" kind="show" identifier="nextQuestion" id="hab-l8-GzH"/>
-                    </connections>
-                </swipeGestureRecognizer>
-                <swipeGestureRecognizer direction="left" id="ulh-4G-7sL">
-                    <connections>
-                        <segue destination="h4e-yP-1tg" kind="show" identifier="nextQuestion" id="65z-6y-lCf"/>
-                    </connections>
-                </swipeGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="2523.0769230769229" y="-741.46919431279616"/>
         </scene>
@@ -573,42 +559,28 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uhp-Kl-FrD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <swipeGestureRecognizer direction="left" id="wVf-Zp-MoY">
-                    <userDefinedRuntimeAttributes>
-                        <userDefinedRuntimeAttribute type="boolean" keyPath="keyPath" value="NO"/>
-                    </userDefinedRuntimeAttributes>
                     <connections>
                         <outlet property="delegate" destination="wMz-2g-keC" id="ZRs-Ra-BgI"/>
-                        <segue destination="FFN-6r-Z0P" kind="showDetail" id="fda-NC-ikb"/>
+                        <segue destination="FFN-6r-Z0P" kind="show" identifier="nextQuestion" id="NoX-me-Qfo"/>
                     </connections>
                 </swipeGestureRecognizer>
                 <swipeGestureRecognizer direction="right" id="1cQ-Wi-JoT">
                     <connections>
                         <outlet property="delegate" destination="wMz-2g-keC" id="zMc-Gr-R0w"/>
-                        <segue destination="FFN-6r-Z0P" kind="show" id="zgc-yG-WCZ"/>
+                        <segue destination="FFN-6r-Z0P" kind="show" identifier="nextQuestion" id="zgc-yG-WCZ"/>
                     </connections>
                 </swipeGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="5655" y="-741"/>
         </scene>
-        <!--Quiz View Controller-->
+        <!--Results View Controller-->
         <scene sceneID="cz9-Si-pwi">
             <objects>
-                <viewController modalTransitionStyle="flipHorizontal" id="1gg-Bf-vbD" customClass="QuizViewController" customModule="altsfw" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalTransitionStyle="flipHorizontal" id="1gg-Bf-vbD" customClass="ResultsViewController" customModule="altsfw" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="XU2-yP-JL9">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="787"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xGz-oX-hoU">
-                                <rect key="frame" x="73" y="125" width="245" height="253"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Your Style Quiz Resuls!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0FE-cb-xOU">
-                                <rect key="frame" x="27" y="47" width="336" height="36"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="30"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7xr-mG-3Bw">
                                 <rect key="frame" x="264" y="694" width="54" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -633,6 +605,13 @@
                                     <segue destination="aBz-WP-Vrk" kind="showDetail" id="j8g-LK-VmI"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Your Style Quiz Results!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jnK-xp-RG8">
+                                <rect key="frame" x="14" y="46" width="347" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="0lh-WP-q7H"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -656,7 +635,7 @@
                     </connections>
                 </swipeGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="10812" y="-741"/>
+            <point key="canvasLocation" x="10810.76923076923" y="-741.46919431279616"/>
         </scene>
         <!--weather view controller-->
         <scene sceneID="uNf-Ed-2ZI">
@@ -960,8 +939,16 @@
                     <navigationItem key="navigationItem" id="EQY-I3-kSs"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7Eh-wn-5ne" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-                <swipeGestureRecognizer direction="right" id="Ceh-9Y-4sP"/>
-                <swipeGestureRecognizer direction="left" id="wGy-eU-FfS"/>
+                <swipeGestureRecognizer direction="right" id="Ceh-9Y-4sP">
+                    <connections>
+                        <segue destination="ppy-nM-Yth" kind="show" identifier="nextQuestion" id="Q27-fH-5kT"/>
+                    </connections>
+                </swipeGestureRecognizer>
+                <swipeGestureRecognizer direction="left" id="wGy-eU-FfS">
+                    <connections>
+                        <segue destination="ppy-nM-Yth" kind="show" identifier="nextQuestion" id="W0H-7v-Dji"/>
+                    </connections>
+                </swipeGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="6369" y="-741"/>
         </scene>
@@ -1024,8 +1011,16 @@
                     <navigationItem key="navigationItem" id="M00-VJ-MUL"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kbT-KA-l3a" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-                <swipeGestureRecognizer direction="right" id="dUt-Rs-OMK"/>
-                <swipeGestureRecognizer direction="left" id="jyF-2o-OPe"/>
+                <swipeGestureRecognizer direction="right" id="dUt-Rs-OMK">
+                    <connections>
+                        <segue destination="Eu6-54-xDC" kind="show" identifier="nextQuestion" id="d1e-gG-Fq5"/>
+                    </connections>
+                </swipeGestureRecognizer>
+                <swipeGestureRecognizer direction="left" id="jyF-2o-OPe">
+                    <connections>
+                        <segue destination="Eu6-54-xDC" kind="show" identifier="nextQuestion" id="KSm-ea-szE"/>
+                    </connections>
+                </swipeGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="7111" y="-741"/>
         </scene>
@@ -1088,8 +1083,16 @@
                     <navigationItem key="navigationItem" id="HJe-gI-4Hh"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BT9-MK-dZ1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-                <swipeGestureRecognizer direction="right" id="Ofj-6I-c8h"/>
-                <swipeGestureRecognizer direction="left" id="fJr-g2-V5J"/>
+                <swipeGestureRecognizer direction="right" id="Ofj-6I-c8h">
+                    <connections>
+                        <segue destination="UnK-Gm-iMZ" kind="show" identifier="nextQuestion" id="AuX-uf-Atu"/>
+                    </connections>
+                </swipeGestureRecognizer>
+                <swipeGestureRecognizer direction="left" id="fJr-g2-V5J">
+                    <connections>
+                        <segue destination="UnK-Gm-iMZ" kind="show" identifier="nextQuestion" id="PWw-cl-WxQ"/>
+                    </connections>
+                </swipeGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="7840" y="-741"/>
         </scene>
@@ -1152,8 +1155,16 @@
                     <navigationItem key="navigationItem" id="pzO-Hz-ao0"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gx2-yy-ub7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-                <swipeGestureRecognizer direction="right" id="zOZ-HQ-mTa"/>
-                <swipeGestureRecognizer direction="left" id="b3t-49-Nk3"/>
+                <swipeGestureRecognizer direction="right" id="zOZ-HQ-mTa">
+                    <connections>
+                        <segue destination="OKB-Vy-g5F" kind="show" identifier="nextQuestion" id="B9b-oJ-6x8"/>
+                    </connections>
+                </swipeGestureRecognizer>
+                <swipeGestureRecognizer direction="left" id="b3t-49-Nk3">
+                    <connections>
+                        <segue destination="OKB-Vy-g5F" kind="show" identifier="nextQuestion" id="KXn-5y-lbA"/>
+                    </connections>
+                </swipeGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="8578" y="-741"/>
         </scene>
@@ -1216,8 +1227,16 @@
                     <navigationItem key="navigationItem" id="GJo-h2-lXy"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9O1-WK-2db" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-                <swipeGestureRecognizer direction="right" id="8Wb-eF-iuy"/>
-                <swipeGestureRecognizer direction="left" id="Hl8-nw-WUr"/>
+                <swipeGestureRecognizer direction="right" id="8Wb-eF-iuy">
+                    <connections>
+                        <segue destination="aBz-WP-Vrk" kind="show" identifier="nextQuestion" id="VRz-BF-ixM"/>
+                    </connections>
+                </swipeGestureRecognizer>
+                <swipeGestureRecognizer direction="left" id="Hl8-nw-WUr">
+                    <connections>
+                        <segue destination="aBz-WP-Vrk" kind="show" identifier="nextQuestion" id="NCk-Pi-nOa"/>
+                    </connections>
+                </swipeGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="9291" y="-741"/>
         </scene>
@@ -1280,21 +1299,30 @@
                     <navigationItem key="navigationItem" id="OTw-fm-AMT"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0ws-DT-BRz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-                <swipeGestureRecognizer direction="right" id="eLp-Hw-w4p"/>
-                <swipeGestureRecognizer direction="left" id="09b-PU-bP3"/>
+                <swipeGestureRecognizer direction="right" id="eLp-Hw-w4p">
+                    <connections>
+                        <segue destination="1gg-Bf-vbD" kind="show" identifier="nextQuestion" id="Kt2-Xz-DzQ"/>
+                    </connections>
+                </swipeGestureRecognizer>
+                <swipeGestureRecognizer direction="left" id="09b-PU-bP3">
+                    <connections>
+                        <segue destination="1gg-Bf-vbD" kind="show" identifier="nextQuestion" id="4Y0-Vi-RZK"/>
+                    </connections>
+                </swipeGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="10003" y="-741"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="j8g-LK-VmI"/>
-        <segue reference="dwS-Mt-ehI"/>
+        <segue reference="BfN-i1-25Z"/>
         <segue reference="Y0j-Ov-pKA"/>
         <segue reference="CLy-Pr-DiZ"/>
         <segue reference="WeZ-xL-wBL"/>
-        <segue reference="SLY-7c-vHx"/>
-        <segue reference="ok6-VE-G5O"/>
-        <segue reference="wRz-hb-exm"/>
+        <segue reference="rxC-Ec-5mo"/>
+        <segue reference="ECH-u3-XaW"/>
+        <segue reference="Kt2-Xz-DzQ"/>
+        <segue reference="rSe-lm-c21"/>
         <segue reference="sb2-uV-5Tj"/>
         <segue reference="Mci-I7-GNE"/>
         <segue reference="C66-nA-hAQ"/>
