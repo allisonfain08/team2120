@@ -3,6 +3,26 @@
 </n>
 <h1>Release Notes Section</h1>
 
+<h2>Version 0.3.0</h2>
+<h3>Features</h3>
+<ul>
+<li> As a user, I want the fashion preference quiz to have a next button so that I can access the next question in the quiz.
+<li> As a user, I want the fashion preference quiz to have a back button so that I can change my answer to a previous question.
+<li> As a user, during the fashion preference quiz, I want to be able to swipe right or left on the screen so that I can indicate which outfit I prefer of the two shown.
+<li> As a user, I want to be able to take the fashion preference quiz multiple times so that my recommended outfits can reflect my changes in fashion sense.
+<li> As a user, I want to take a 10-question quiz to find my fashion style so that the app can give me recommendations based on what I like to wear.
+</ul>
+<h3>Bug Fixes</h3>
+<ul>
+<li> Login page no longer pops up when the "Take Style Quiz" occurs
+<li> Removed swipe feature issues and stored swipe data
+<li> Full navigation within the app
+</ul>
+<h3>Known Issues</h3>
+<ul>
+<li> Results page text box is smaller than desired
+</ul>
+
 <h2>Version 0.2.0</h2>
 <h3>Features</h3>
 <ul>
