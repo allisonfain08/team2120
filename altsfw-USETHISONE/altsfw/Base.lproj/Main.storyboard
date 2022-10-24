@@ -247,13 +247,15 @@
                                 <color key="textColor" systemColor="systemBackgroundColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q5S-W6-tdr">
-                                <rect key="frame" x="49" y="383" width="274" height="262"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="BHP-R4-qhQ">
+                                <rect key="frame" x="83" y="383" width="240" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <string key="text">The following 10 questions will help us evaluate your unique fashion style. Swipe right or left depending on which corresponding outfit BEST represents something you would regularly wear. </string>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Rd9-mO-xl2"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -561,18 +563,30 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <gestureRecognizers/>
                         <connections>
-                            <outletCollection property="gestureRecognizers" destination="wVf-Zp-MoY" appends="YES" id="WPI-ht-0hx"/>
                             <outletCollection property="gestureRecognizers" destination="1cQ-Wi-JoT" appends="YES" id="b8w-w9-6ga"/>
                         </connections>
                     </view>
                     <navigationItem key="navigationItem" id="KJB-m9-qT6"/>
                     <connections>
-                        <segue destination="mOW-zn-3xc" kind="show" identifier="Left" id="Em6-74-YpA"/>
+                        <segue destination="FFN-6r-Z0P" kind="show" id="FT6-sX-wai"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uhp-Kl-FrD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-                <swipeGestureRecognizer direction="left" id="wVf-Zp-MoY"/>
-                <swipeGestureRecognizer direction="right" id="1cQ-Wi-JoT"/>
+                <swipeGestureRecognizer direction="left" id="wVf-Zp-MoY">
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="keyPath" value="NO"/>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <outlet property="delegate" destination="wMz-2g-keC" id="ZRs-Ra-BgI"/>
+                        <segue destination="FFN-6r-Z0P" kind="showDetail" id="fda-NC-ikb"/>
+                    </connections>
+                </swipeGestureRecognizer>
+                <swipeGestureRecognizer direction="right" id="1cQ-Wi-JoT">
+                    <connections>
+                        <outlet property="delegate" destination="wMz-2g-keC" id="zMc-Gr-R0w"/>
+                        <segue destination="FFN-6r-Z0P" kind="show" id="zgc-yG-WCZ"/>
+                    </connections>
+                </swipeGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="5655" y="-741"/>
         </scene>
@@ -1279,10 +1293,10 @@
         <segue reference="CLy-Pr-DiZ"/>
         <segue reference="WeZ-xL-wBL"/>
         <segue reference="SLY-7c-vHx"/>
-        <segue reference="FHs-eW-Qc3"/>
+        <segue reference="ok6-VE-G5O"/>
         <segue reference="wRz-hb-exm"/>
-        <segue reference="Em6-74-YpA"/>
-        <segue reference="4rU-jQ-llM"/>
+        <segue reference="sb2-uV-5Tj"/>
+        <segue reference="Mci-I7-GNE"/>
         <segue reference="C66-nA-hAQ"/>
         <segue reference="NOG-KR-Ivi"/>
         <segue reference="Plo-ju-dfM"/>
