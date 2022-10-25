@@ -3,36 +3,55 @@
 </n>
 <h1>Release Notes Section</h1>
 
-<h2>Version 0.2.0</h2>
+<h2>Version 0.3.0</h2>
 <h3>Features</h3>
 <ul>
-<li> login screen via React Native app
-<li> account registration screen via React Native app
-<li> logout and create new account capabilities
-<li> database table for login capabilities
-<li> login data validation
-<li> added visual additions to sign in screen
+<li> The fashion preference quiz Next button now allows users to access the next question in the quiz.
+<li> The fashion preference quiz Back button now allows users to change answers on a previous question.
+<li> Users can now swipe right or left on the fashion preference quiz question to indicate which outfit they prefer of the two shown.
+<li> Users can now retake the fashion preference quiz mulitple times to reflect changes in their fashion sense.
+<li> Users can now take a 10-question quiz to find their fashion style so that the app can give them recommendations based on what they like to wear.
 </ul>
 <h3>Bug Fixes</h3>
 <ul>
-<li> issues with environment setup and download versions
-<li> issues with connection to database
-<li> fixed visual issue with ui bug that caused from showing too big.
+<li> Fixed Login page navigation issues when clicking Take Style Quiz Now button
+<li> Removed swipe feature issues and stored swipe data to be further manipulated
+<li> Implemented full navigation within the app
 </ul>
 <h3>Known Issues</h3>
 <ul>
-<li> changed overall design of project (switched from PostgreSQL and Python API to Firebase) so need to update and reconfigure overall design
+<li> Results page text box is smaller than desired
+<li> Stylistic issues with graphically displaying quiz results
+</ul>
+
+<h2>Version 0.2.0</h2>
+<h3>Features</h3>
+<ul>
+<li> Login screen via React Native app
+<li> Account registration screen via React Native app
+<li> Logout and create new account capabilities
+<li> Database table for login capabilities
+<li> Login data validation
+</ul>
+<h3>Bug Fixes</h3>
+<ul>
+<li> Issues with environment setup and download versions
+<li> Issues with connection to database
+</ul>
+<h3>Known Issues</h3>
+<ul>
+<li> Changed overall design of project (switched from PostgreSQL and Python API to Firebase) so need to update and reconfigure overall design
 </ul>
 
 <h2>Version 0.1.0</h2>
 <h3>Features</h3>
 <ul>
 <li> SQL database initial design
-<li> <a href= "https://www.figma.com/file/snzsmB2PUUnOGsu8471SiR/team-2120?node-id=0%3A1" >prototype final version </a>
+<li> <a href= "https://www.figma.com/file/snzsmB2PUUnOGsu8471SiR/team-2120?node-id=0%3A1" >Prototype final version </a>
 </ul>
 <h3>Bug Fixes</h3>
 <ul>
-<li> issues with SQL table integration between members
+<li> Issues with SQL table integration between members
 </ul>
 
 <h2>Open source code currently being used</h2>

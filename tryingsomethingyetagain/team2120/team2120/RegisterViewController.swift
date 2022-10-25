@@ -15,7 +15,19 @@ class RegisterViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-
+    @IBOutlet weak var user_label: UILabel!
+    
+    @IBAction func user_entryfield(_ sender: Any) {
+    }
+    
+    @IBOutlet weak var pass_label: UILabel!
+    
+    @IBAction func pass_entryfield(_ sender: Any) {
+    }
+    
+    @IBAction func submit_button(_ sender: Any) {
+    }
+    
     /*
     // MARK: - Navigation
 
