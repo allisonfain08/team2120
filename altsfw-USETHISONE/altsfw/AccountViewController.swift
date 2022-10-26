@@ -1,13 +1,13 @@
 //
-//  ClosetViewController.swift
+//  AccountViewController.swift
 //  altsfw
 //
-//  Created by Allison Fain on 10/14/22.
+//  Created by Mija Kennedy on 10/26/22.
 //
 
 import UIKit
 
-class ClosetViewController: UIViewController {
+class AccountViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
