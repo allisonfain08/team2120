@@ -11,13 +11,13 @@ class ResultsViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        let textView = UITextView(frame: CGRect(x: 20.0, y: 150, width: 240.0, height: 100.0))
+        var textView = UITextView(frame: CGRect(x: 20.0, y: 150, width: 240.0, height: 150.0))
         textView.contentInsetAdjustmentBehavior = .automatic
         textView.center = self.view.center
         textView.textAlignment = NSTextAlignment.center
         textView.textColor = UIColor.systemTeal
         textView.backgroundColor = UIColor.white
-        textView.font = UIFont(name: "Callout", size: 100)
+        textView.font = UIFont(name: "Callout", size: 1000)
         var returnString = swipeTracker.returnNumAnswers()
         returnString = String(returnString.dropFirst())
         returnString = String(returnString.dropLast())

@@ -686,7 +686,6 @@
                                 </buttonConfiguration>
                                 <connections>
                                     <action selector="styleQuiz:" destination="iMB-Mi-xCE" eventType="touchUpInside" id="UJ5-BZ-zBG"/>
-                                    <segue destination="4ni-CA-P27" kind="show" id="Svp-Zx-2j8"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PNa-M9-8hX">
@@ -1326,7 +1325,7 @@
         <segue reference="sb2-uV-5Tj"/>
         <segue reference="Mci-I7-GNE"/>
         <segue reference="C66-nA-hAQ"/>
-        <segue reference="NOG-KR-Ivi"/>
+        <segue reference="OtI-iS-ptb"/>
         <segue reference="Plo-ju-dfM"/>
     </inferredMetricsTieBreakers>
     <resources>
