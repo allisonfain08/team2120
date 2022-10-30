@@ -15,7 +15,12 @@ class ResultsViewController: UIViewController {
         textView.contentInsetAdjustmentBehavior = .automatic
         textView.center = self.view.center
         textView.textAlignment = NSTextAlignment.center
-        textView.textColor = UIColor.systemTeal
+        textView.textColor = UIColor.systemPurple
+        let fixedWidth = textView.frame.size.width
+        textView.font = UIFont.systemFont(ofSize: 45)
+        //let newSize = textView.sizeThatFits(CGSize(width: fixedWidth, height: //CGFloat.greatestFiniteMagnitude))
+        //textView.frame.size = CGSize(width: max(newSize.width, fixedWidth), height: newSize.height)
+        
         textView.backgroundColor = UIColor.white
         textView.font = UIFont(name: "Callout", size: 100)
         var returnString = swipeTracker.returnNumAnswers()

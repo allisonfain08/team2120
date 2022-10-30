@@ -247,13 +247,13 @@
                                 <color key="textColor" systemColor="systemBackgroundColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="BHP-R4-qhQ">
-                                <rect key="frame" x="83" y="383" width="240" height="128"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="BHP-R4-qhQ">
+                                <rect key="frame" x="75" y="405" width="240" height="223"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="tintColor" red="0.94901961089999998" green="0.94901961089999998" blue="0.94901961089999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <string key="text">The following 10 questions will help us evaluate your unique fashion style. Swipe right or left depending on which corresponding outfit BEST represents something you would regularly wear. </string>
                                 <color key="textColor" systemColor="labelColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                         </subviews>
@@ -303,11 +303,11 @@
                                     <segue destination="HP9-AR-WXy" kind="show" id="NOG-KR-Ivi"/>
                                 </connections>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" tag="1" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="outfit" translatesAutoresizingMaskIntoConstraints="NO" id="m6C-kl-35Z">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" tag="1" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Style Pick 9" translatesAutoresizingMaskIntoConstraints="NO" id="m6C-kl-35Z">
                                 <rect key="frame" x="16" y="100" width="159" height="559"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" tag="2" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="outfit2" translatesAutoresizingMaskIntoConstraints="NO" id="1dW-RB-05Q">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" tag="2" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Style Pick 8" translatesAutoresizingMaskIntoConstraints="NO" id="1dW-RB-05Q">
                                 <rect key="frame" x="203" y="100" width="160" height="559"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -366,11 +366,11 @@
                                     <segue destination="mOW-zn-3xc" kind="show" id="e2T-TW-JOZ"/>
                                 </connections>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" tag="3" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="outfit3" translatesAutoresizingMaskIntoConstraints="NO" id="OwR-ED-pAj">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" tag="3" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Style Pick 7" translatesAutoresizingMaskIntoConstraints="NO" id="OwR-ED-pAj">
                                 <rect key="frame" x="22" y="114" width="159" height="559"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" tag="4" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="outfit4" translatesAutoresizingMaskIntoConstraints="NO" id="Tzz-rw-EEC">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" tag="4" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Style Pick 6" translatesAutoresizingMaskIntoConstraints="NO" id="Tzz-rw-EEC">
                                 <rect key="frame" x="209" y="114" width="160" height="559"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -454,11 +454,11 @@
                                     <segue destination="V3R-Gf-qKU" kind="show" id="4rU-jQ-llM"/>
                                 </connections>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" tag="5" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="outfit5" translatesAutoresizingMaskIntoConstraints="NO" id="Ukv-c1-m1Q">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" tag="5" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Style Pick 5" translatesAutoresizingMaskIntoConstraints="NO" id="Ukv-c1-m1Q">
                                 <rect key="frame" x="16" y="114" width="159" height="559"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" tag="1" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="outfit" translatesAutoresizingMaskIntoConstraints="NO" id="BxW-1b-OGc">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" tag="1" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Style Pick 4" translatesAutoresizingMaskIntoConstraints="NO" id="BxW-1b-OGc">
                                 <rect key="frame" x="203" y="114" width="160" height="559"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -529,11 +529,11 @@
                                     <segue destination="mOW-zn-3xc" kind="show" id="sb2-uV-5Tj"/>
                                 </connections>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" tag="4" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="outfit4" translatesAutoresizingMaskIntoConstraints="NO" id="RfE-XI-Y85">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" tag="4" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Style Pick 12" translatesAutoresizingMaskIntoConstraints="NO" id="RfE-XI-Y85">
                                 <rect key="frame" x="27" y="114" width="159" height="559"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" tag="2" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="outfit2" translatesAutoresizingMaskIntoConstraints="NO" id="IM6-2K-d1m">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" tag="2" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Style Pick 11" translatesAutoresizingMaskIntoConstraints="NO" id="IM6-2K-d1m">
                                 <rect key="frame" x="214" y="114" width="160" height="559"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -612,6 +612,15 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Te2-Fx-sh9">
+                                <rect key="frame" x="16" y="104" width="358" height="166"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <string key="text">The counts below show you how many times you chose each style over another. Press end to go back the home page. You may take the quiz again anytime.</string>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="0lh-WP-q7H"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -912,7 +921,7 @@
                                     <segue destination="OVk-YU-bOx" kind="show" id="rSe-lm-c21"/>
                                 </connections>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="outfit3" translatesAutoresizingMaskIntoConstraints="NO" id="ZYt-av-teG">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Style Pick 10" translatesAutoresizingMaskIntoConstraints="NO" id="ZYt-av-teG">
                                 <rect key="frame" x="16" y="114" width="159" height="559"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -1319,8 +1328,8 @@
         <segue reference="Y0j-Ov-pKA"/>
         <segue reference="CLy-Pr-DiZ"/>
         <segue reference="WeZ-xL-wBL"/>
-        <segue reference="rxC-Ec-5mo"/>
-        <segue reference="ECH-u3-XaW"/>
+        <segue reference="SLY-7c-vHx"/>
+        <segue reference="XhI-Kd-26A"/>
         <segue reference="Kt2-Xz-DzQ"/>
         <segue reference="rSe-lm-c21"/>
         <segue reference="sb2-uV-5Tj"/>
@@ -1330,6 +1339,15 @@
         <segue reference="Plo-ju-dfM"/>
     </inferredMetricsTieBreakers>
     <resources>
+        <image name="Style Pick 10" width="1080" height="1080"/>
+        <image name="Style Pick 11" width="1080" height="1080"/>
+        <image name="Style Pick 12" width="1080" height="1080"/>
+        <image name="Style Pick 4" width="1080" height="1080"/>
+        <image name="Style Pick 5" width="1080" height="1080"/>
+        <image name="Style Pick 6" width="1080" height="1080"/>
+        <image name="Style Pick 7" width="1080" height="1080"/>
+        <image name="Style Pick 8" width="1080" height="1080"/>
+        <image name="Style Pick 9" width="1080" height="1080"/>
         <image name="Temp-1024x1024" width="1024" height="1024"/>
         <image name="arrowshape.left.fill" catalog="system" width="128" height="104"/>
         <image name="calendar" catalog="system" width="128" height="107"/>
