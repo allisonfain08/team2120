@@ -23,6 +23,8 @@
 		2A2637BA28F9217600A8D2A6 /* ClosetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A2637B928F9217600A8D2A6 /* ClosetViewController.swift */; };
 		9E304CF32905AF9C0060209F /* BeginQuizViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E304CF22905AF9C0060209F /* BeginQuizViewController.swift */; };
 		B31F0A2B28FF11370043AA85 /* SwipeTracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = B31F0A2A28FF11370043AA85 /* SwipeTracker.swift */; };
+		CED6ED7A29097B0A006CE4B7 /* SQLiteDBStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED6ED7929097B0A006CE4B7 /* SQLiteDBStore.swift */; };
+		CED6ED7C29098C1E006CE4B7 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED6ED7B29098C1E006CE4B7 /* Person.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +46,8 @@
 		2A2637B928F9217600A8D2A6 /* ClosetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClosetViewController.swift; sourceTree = "<group>"; };
 		9E304CF22905AF9C0060209F /* BeginQuizViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeginQuizViewController.swift; sourceTree = "<group>"; };
 		B31F0A2A28FF11370043AA85 /* SwipeTracker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeTracker.swift; sourceTree = "<group>"; };
+		CED6ED7929097B0A006CE4B7 /* SQLiteDBStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SQLiteDBStore.swift; sourceTree = "<group>"; };
+		CED6ED7B29098C1E006CE4B7 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +80,8 @@
 		2A26379628F9040B00A8D2A6 /* altsfw */ = {
 			isa = PBXGroup;
 			children = (
+				CED6ED7B29098C1E006CE4B7 /* Person.swift */,
+				CED6ED7929097B0A006CE4B7 /* SQLiteDBStore.swift */,
 				2A26379728F9040B00A8D2A6 /* AppDelegate.swift */,
 				2A26379928F9040B00A8D2A6 /* SceneDelegate.swift */,
 				2A26379B28F9040B00A8D2A6 /* ViewController.swift */,
@@ -170,6 +176,7 @@
 			files = (
 				2A2637B428F9213F00A8D2A6 /* CalendarViewController.swift in Sources */,
 				2A2637B628F9215700A8D2A6 /* WeatherViewController.swift in Sources */,
+				CED6ED7C29098C1E006CE4B7 /* Person.swift in Sources */,
 				2A2637AC28F90D9600A8D2A6 /* LoginViewController.swift in Sources */,
 				2A2637B228F9212F00A8D2A6 /* QuizViewController.swift in Sources */,
 				2A2637AE28F91DEF00A8D2A6 /* RegisterViewController.swift in Sources */,
@@ -177,6 +184,7 @@
 				2A2637BA28F9217600A8D2A6 /* ClosetViewController.swift in Sources */,
 				9E304CF32905AF9C0060209F /* BeginQuizViewController.swift in Sources */,
 				2A26379C28F9040B00A8D2A6 /* ViewController.swift in Sources */,
+				CED6ED7A29097B0A006CE4B7 /* SQLiteDBStore.swift in Sources */,
 				2A26379828F9040B00A8D2A6 /* AppDelegate.swift in Sources */,
 				2A26379A28F9040B00A8D2A6 /* SceneDelegate.swift in Sources */,
 				2A2637B828F9216800A8D2A6 /* RecommendedViewController.swift in Sources */,

@@ -9,7 +9,8 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    
+    var users:[Person] = []
+    var db:DBHelper = DBHelper()
 
     override func viewDidLoad() {
         super.viewDidLoad()

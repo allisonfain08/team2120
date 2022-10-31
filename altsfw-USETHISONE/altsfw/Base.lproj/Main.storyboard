@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_0" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
@@ -36,10 +36,6 @@
                                     <segue destination="4ni-CA-P27" kind="show" id="Plo-ju-dfM"/>
                                 </connections>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Temp-1024x1024" translatesAutoresizingMaskIntoConstraints="NO" id="Iu1-Rw-vR9">
-                                <rect key="frame" x="72" y="80" width="247" height="295"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="eKlozet" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cDG-a2-B2s">
                                 <rect key="frame" x="149" y="458" width="107" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -47,10 +43,15 @@
                                 <color key="textColor" red="0.57995259759999995" green="0.66206520800000002" blue="0.45879018310000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Temp-1024x1024" translatesAutoresizingMaskIntoConstraints="NO" id="Iu1-Rw-vR9">
+                                <rect key="frame" x="52" y="92" width="300" height="300"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <navigationItem key="navigationItem" id="nx6-CV-MX9"/>
                     <connections>
                         <outlet property="eklozet" destination="cDG-a2-B2s" id="LFS-FP-fhb"/>
                         <outlet property="welcome" destination="UbW-bJ-0HT" id="BLi-WA-sW2"/>
@@ -58,7 +59,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="63.076923076923073" y="-2.1327014218009479"/>
+            <point key="canvasLocation" x="992.30769230769226" y="-2.1327014218009479"/>
         </scene>
         <!--Register View Controller-->
         <scene sceneID="F2m-cc-Mvz">
@@ -129,7 +130,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3hG-dL-OS7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1011" y="406"/>
+            <point key="canvasLocation" x="1940" y="405.92417061611371"/>
         </scene>
         <!--Login View Controller-->
         <scene sceneID="nhJ-c0-8rh">
@@ -197,7 +198,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jpx-mr-lai" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="994" y="-282"/>
+            <point key="canvasLocation" x="1923.0769230769231" y="-282.22748815165875"/>
         </scene>
         <!--Quiz View Controller-->
         <scene sceneID="AK3-EM-Kro">
@@ -687,7 +688,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sfA-TG-rRo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="sdt-oa-itt" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="2523" y="-55"/>
+            <point key="canvasLocation" x="3450.7692307692305" y="-55.45023696682464"/>
         </scene>
         <!--Home View Controller-->
         <scene sceneID="4gc-ev-ypD">
@@ -778,7 +779,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WZH-Ay-eu1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1764.6153846153845" y="142.89099526066349"/>
+            <point key="canvasLocation" x="2693.8461538461538" y="142.89099526066349"/>
         </scene>
         <!--calendar view controller-->
         <scene sceneID="1On-85-Ccz">
@@ -809,7 +810,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QNQ-ED-Jc2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="Ete-Et-TL8" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="2522" y="624"/>
+            <point key="canvasLocation" x="3450.7692307692305" y="623.45971563981038"/>
         </scene>
         <!--recommended view controller-->
         <scene sceneID="d5T-ah-Zz1">
@@ -868,11 +869,6 @@
                                     <color key="baseBackgroundColor" red="0.38280608919999998" green="0.43726325760000001" blue="0.30374868150000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </buttonConfiguration>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="rectangle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="bXw-RB-WCM">
-                                <rect key="frame" x="-19" y="279.66666666666652" width="428" height="497"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="tintColor" red="0.57995259759999995" green="0.66206520800000002" blue="0.45879018310000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                            </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="rectangle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="RCk-0I-Kn6">
                                 <rect key="frame" x="-19" y="300.66666666666652" width="428" height="116"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -892,6 +888,11 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="rectangle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="bXw-RB-WCM">
+                                <rect key="frame" x="-19" y="310.66666666666674" width="428" height="497"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" red="0.57995259759999995" green="0.66206520800000002" blue="0.45879018310000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="wfx-KV-hIK"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -1287,19 +1288,19 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="j8g-LK-VmI"/>
+        <segue reference="WZ2-SS-CPF"/>
         <segue reference="dwS-Mt-ehI"/>
         <segue reference="Y0j-Ov-pKA"/>
         <segue reference="CLy-Pr-DiZ"/>
         <segue reference="WeZ-xL-wBL"/>
         <segue reference="SLY-7c-vHx"/>
-        <segue reference="ok6-VE-G5O"/>
-        <segue reference="wRz-hb-exm"/>
+        <segue reference="3Ks-GX-W7e"/>
+        <segue reference="rSe-lm-c21"/>
         <segue reference="sb2-uV-5Tj"/>
         <segue reference="Mci-I7-GNE"/>
         <segue reference="C66-nA-hAQ"/>
         <segue reference="NOG-KR-Ivi"/>
-        <segue reference="Plo-ju-dfM"/>
+        <segue reference="Ne9-w9-xix"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="Temp-1024x1024" width="1024" height="1024"/>
