@@ -37,7 +37,7 @@ class DBHelper
     }
     
     func createTable() {
-        let createTableString = "CREATE TABLE IF NOT EXISTS person(Id INTEGER PRIMARY KEY,name TEXT,age INTEGER);"
+        let createTableString = "CREATE TABLE IF NOT EXISTS person(username TEXT PRIMARY KEY, password TEXT);"
         var createTableStatement: OpaquePointer? = nil
         if sqlite3_prepare_v2(db, createTableString, -1, &createTableStatement, nil) == SQLITE_OK
         {
@@ -59,6 +59,7 @@ class DBHelper
         let persons = read()
         for p in persons
         {
+            // primary key has to be unique
             if p.username == username
             {
                 return
@@ -69,7 +70,7 @@ class DBHelper
         if sqlite3_prepare_v2(db, insertStatementString, -1, &insertStatement, nil) == SQLITE_OK {
             sqlite3_bind_text(insertStatement, 1, (username as NSString).utf8String, -1, nil)
             sqlite3_bind_text(insertStatement, 2, (password as NSString).utf8String, -1, nil)
-
+            
             if sqlite3_step(insertStatement) == SQLITE_DONE {
                 print("Successfully inserted row.")
             } else {
