@@ -65,7 +65,7 @@ class DBHelper
                 return
             }
         }
-        let insertStatementString = "INSERT INTO person (username, password) VALUES (NULL, ?);"
+        let insertStatementString = "INSERT INTO person (Id, name, age) VALUES (NULL, ?, ?);"
         var insertStatement: OpaquePointer? = nil
         if sqlite3_prepare_v2(db, insertStatementString, -1, &insertStatement, nil) == SQLITE_OK {
             sqlite3_bind_text(insertStatement, 1, (username as NSString).utf8String, -1, nil)
