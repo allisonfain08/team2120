@@ -13,7 +13,6 @@ class LoginViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
-    
 
     @IBAction func login(_ sender: Any) {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
@@ -23,6 +22,8 @@ class LoginViewController: UIViewController {
             // then call the change root view controller function to change to main tab bar
             (UIApplication.shared.connectedScenes.first?.delegate as? SceneDelegate)?.changeRootViewController(HomeViewController)
     }
+    
+    
     
     @IBAction func register(_ sender: Any) {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)

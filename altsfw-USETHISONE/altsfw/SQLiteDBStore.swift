@@ -87,12 +87,11 @@ class DBHelper
         var psns : [Person] = []
         if sqlite3_prepare_v2(db, queryStatementString, -1, &queryStatement, nil) == SQLITE_OK {
             while sqlite3_step(queryStatement) == SQLITE_ROW {
-                let id = sqlite3_column_int(queryStatement, 0)
-                let name = String(describing: String(cString: sqlite3_column_text(queryStatement, 1)))
-                let year = sqlite3_column_int(queryStatement, 2)
+                let username = String(describing: String(cString: sqlite3_column_text(queryStatement, 0)))
+                let password = String(describing: String(cString: sqlite3_column_text(queryStatement, 1)))
                 psns.append(Person(username: String(), password: String()))
                 print("Query Result:")
-                print("\(id) | \(name) | \(year)")
+                print("\(username) | \(password)")
             }
         } else {
             print("SELECT statement could not be prepared")
