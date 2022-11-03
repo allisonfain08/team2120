@@ -24,6 +24,7 @@
 		9E304CF32905AF9C0060209F /* BeginQuizViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E304CF22905AF9C0060209F /* BeginQuizViewController.swift */; };
 		AE9C8D5B2909AE14001A7534 /* AccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE9C8D5A2909AE14001A7534 /* AccountViewController.swift */; };
 		B31F0A2B28FF11370043AA85 /* SwipeTracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = B31F0A2A28FF11370043AA85 /* SwipeTracker.swift */; };
+		B378D3AB29065F2700225112 /* ResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B378D3AA29065F2700225112 /* ResultsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +47,7 @@
 		9E304CF22905AF9C0060209F /* BeginQuizViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeginQuizViewController.swift; sourceTree = "<group>"; };
 		AE9C8D5A2909AE14001A7534 /* AccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewController.swift; sourceTree = "<group>"; };
 		B31F0A2A28FF11370043AA85 /* SwipeTracker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeTracker.swift; sourceTree = "<group>"; };
+		B378D3AA29065F2700225112 /* ResultsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +94,7 @@
 				AE9C8D5A2909AE14001A7534 /* AccountViewController.swift */,
 				B31F0A2A28FF11370043AA85 /* SwipeTracker.swift */,
 				2A26379D28F9040B00A8D2A6 /* Main.storyboard */,
+				B378D3AA29065F2700225112 /* ResultsViewController.swift */,
 				2A2637A028F9040D00A8D2A6 /* Assets.xcassets */,
 				2A2637A228F9040D00A8D2A6 /* LaunchScreen.storyboard */,
 				2A2637A528F9040D00A8D2A6 /* Info.plist */,
@@ -175,6 +178,7 @@
 				2A2637B628F9215700A8D2A6 /* WeatherViewController.swift in Sources */,
 				AE9C8D5B2909AE14001A7534 /* AccountViewController.swift in Sources */,
 				2A2637AC28F90D9600A8D2A6 /* LoginViewController.swift in Sources */,
+				B378D3AB29065F2700225112 /* ResultsViewController.swift in Sources */,
 				2A2637B228F9212F00A8D2A6 /* QuizViewController.swift in Sources */,
 				2A2637AE28F91DEF00A8D2A6 /* RegisterViewController.swift in Sources */,
 				B31F0A2B28FF11370043AA85 /* SwipeTracker.swift in Sources */,
