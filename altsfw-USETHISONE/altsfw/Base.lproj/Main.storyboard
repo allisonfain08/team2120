@@ -801,7 +801,6 @@
                                 </buttonConfiguration>
                                 <connections>
                                     <action selector="recommendation:" destination="iMB-Mi-xCE" eventType="touchUpInside" id="h5X-Mf-dTa"/>
-                                    <segue destination="d85-Te-ks6" kind="show" id="sjl-Iv-Ogr"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z3V-8R-BNt">
@@ -1379,7 +1378,7 @@
             <objects>
                 <viewController storyboardIdentifier="LoginQuestionsViewController" id="d85-Te-ks6" customClass="LoginQuestionsViewController" customModule="altsfw" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="lTp-Ym-o9B">
-                        <rect key="frame" x="0.0" y="0.0" width="390" height="787"/>
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="Gs9-NO-oD9"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>

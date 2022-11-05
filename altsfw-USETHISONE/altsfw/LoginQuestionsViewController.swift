@@ -10,6 +10,8 @@ import UIKit
 class LoginQuestionsViewController: UIViewController {
     let label = UILabel()
     let scrollView = UIScrollView()
+    let verticalStackView = UIStackView()
+    let dataArray = ["English", "Maths", "History", "German", "Science"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,7 +27,7 @@ class LoginQuestionsViewController: UIViewController {
                 scrollView.backgroundColor = UIColor(white: 0.9, alpha: 1.0)
                 
                 // create a vertical stack view to hold the rows of buttons
-                let verticalStackView = UIStackView()
+
                 verticalStackView.axis = .vertical
 
                 // we're going to use auto-layout
@@ -42,6 +44,21 @@ class LoginQuestionsViewController: UIViewController {
                 // add stack view to scrollView
                 scrollView.addSubview(verticalStackView)
         
+        //add label to top of the scroll part
+        let q1View = UIStackView()
+        let q1Label = UILabel()
+        q1Label.text = "What is your usual shirt size?"
+        q1Label.textAlignment = .center
+        q1View.addArrangedSubview(q1Label)
+        verticalStackView.addArrangedSubview(q1View)
+        
+//        let a1View = UIStackView()
+        let a1PickerView = UIPickerView()
+        a1PickerView.backgroundColor = .blue
+        a1PickerView.translatesAutoresizingMaskIntoConstraints = false
+        verticalStackView.addArrangedSubview(a1PickerView)
+        
+    
         // now let's create the buttons and add them
         var idx = 1
         
@@ -100,6 +117,7 @@ class LoginQuestionsViewController: UIViewController {
                     verticalStackView.leadingAnchor.constraint(equalTo: scrollView.contentLayoutGuide.leadingAnchor, constant: 8.0),
                     verticalStackView.trailingAnchor.constraint(equalTo: scrollView.contentLayoutGuide.trailingAnchor, constant: -8.0),
                     verticalStackView.bottomAnchor.constraint(equalTo: scrollView.contentLayoutGuide.bottomAnchor, constant: -8.0),
+                    verticalStackView.centerXAnchor.constraint(equalTo: safeG.centerXAnchor),
                     
                 ])
 
@@ -109,6 +127,19 @@ class LoginQuestionsViewController: UIViewController {
                 label.text = sender.title(for: .normal)
             }
     
+    
+    func setupScrollView(){
+           
+           scrollView.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
+           scrollView.widthAnchor.constraint(equalTo: view.widthAnchor).isActive = true
+           scrollView.topAnchor.constraint(equalTo: view.topAnchor).isActive = true
+           scrollView.bottomAnchor.constraint(equalTo: view.bottomAnchor).isActive = true
+           
+           verticalStackView.centerXAnchor.constraint(equalTo: scrollView.centerXAnchor).isActive = true
+           verticalStackView.widthAnchor.constraint(equalTo: scrollView.widthAnchor).isActive = true
+           verticalStackView.topAnchor.constraint(equalTo: scrollView.topAnchor).isActive = true
+           verticalStackView.bottomAnchor.constraint(equalTo: scrollView.bottomAnchor).isActive = true
+       }
     
     
     
