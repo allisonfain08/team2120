@@ -53,11 +53,11 @@ class HomeViewController: UIViewController {
     
     @IBAction func recommendation(_ sender: Any) {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
-            let RecommendedViewController = storyboard.instantiateViewController(identifier: "RecommendedViewController")
-            
+            let LoginQuestionsViewController = storyboard.instantiateViewController(identifier: "LoginQuestionsViewController")
+
             // This is to get the SceneDelegate object from your view controller
             // then call the change root view controller function to change to main tab bar
-            (UIApplication.shared.connectedScenes.first?.delegate as? SceneDelegate)?.changeRootViewController(RecommendedViewController)
+            (UIApplication.shared.connectedScenes.first?.delegate as? SceneDelegate)?.changeRootViewController(LoginQuestionsViewController)
     }
     
     /*
