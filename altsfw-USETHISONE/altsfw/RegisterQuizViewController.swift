@@ -48,7 +48,7 @@ class RegisterQuizViewController: UIViewController {
     
     func setPopUpButton() {
         let optionClosure = {(action: UIAction) in
-            print(action.title)}
+            print(action.title)} /* Can get rid of this once button works, just to test the selection is working -> should print which option was chosen */
         
         topCostDropDown.menu = UIMenu(children : [
             UIAction(title: "Under $50", state : .on,  handler: optionClosure),
