@@ -19,7 +19,6 @@ class RegisterQuizViewController: UIViewController {
     @IBAction func datePicker(_ sender: Any) {
     }
     
-    
     @IBOutlet weak var spendingQLabel: UILabel!
     
     
@@ -52,9 +51,11 @@ class RegisterQuizViewController: UIViewController {
             print(action.title)}
         
         topCostDropDown.menu = UIMenu(children : [
-            UIAction(title: ">$50", state : .on,  handler: optionClosure),
+            UIAction(title: "Under $50", state : .on,  handler: optionClosure),
             UIAction(title: "$50 - $100",  handler: optionClosure),
-            UIAction(title: "$100 - $150",  handler: optionClosure)])
+            UIAction(title: "$100 - $150",  handler: optionClosure),
+            UIAction(title: "$150 - $200",  handler: optionClosure),
+            UIAction(title: "More than $200",  handler: optionClosure)])
         topCostDropDown.showsMenuAsPrimaryAction = true;
         topCostDropDown.changesSelectionAsPrimaryAction = true;
     }
