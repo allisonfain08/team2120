@@ -114,10 +114,10 @@
             </objects>
             <point key="canvasLocation" x="973.84615384615381" y="1097.6303317535544"/>
         </scene>
-        <!--View Controller-->
+        <!--Register Quiz View Controller-->
         <scene sceneID="eba-D3-t1c">
             <objects>
-                <viewController id="JBb-nv-y4p" sceneMemberID="viewController">
+                <viewController id="JBb-nv-y4p" customClass="RegisterQuizViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleAspectFit" id="W3I-Oz-lZ8">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -159,6 +159,10 @@
                                 <date key="maximumDate" timeIntervalSinceReferenceDate="252500400">
                                     <!--2009-01-01 11:00:00 +0000-->
                                 </date>
+                                <connections>
+                                    <action selector="datePicker:" destination="JBb-nv-y4p" eventType="valueChanged" id="4xg-a8-p6M"/>
+                                    <action selector="dateSelector:" destination="JBb-nv-y4p" eventType="valueChanged" id="iwK-gL-G6D"/>
+                                </connections>
                             </datePicker>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="How much do you typically spend on a new..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NfG-59-bHP">
                                 <rect key="frame" x="26" y="236" width="341" height="21"/>
@@ -174,39 +178,35 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" showsMenuAsPrimaryAction="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cky-88-7Wc">
-                                <rect key="frame" x="159" y="327" width="54" height="17"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" showsMenuAsPrimaryAction="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" changesSelectionAsPrimaryAction="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UUg-8R-W5I">
+                                <rect key="frame" x="168" y="312" width="41" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <menu key="menu" title="menu!" id="X9N-Pp-cLj">
-                                    <menuOptions key="menuOptions" displayInline="YES" destructive="YES" singleSelection="YES"/>
+                                <menu key="menu" id="JMW-rL-GHk">
                                     <children>
-                                        <command title="Under $50" id="yIN-xy-Dbk"/>
-                                        <command title="$50-100" id="860-Vv-LNO"/>
-                                        <command title="$100-150" id="783-Ym-7Vw"/>
-                                        <command title="$150-200" id="nVL-J7-pIb"/>
-                                        <command title="$200+" id="7Po-hk-KNz"/>
+                                        <command title="Item 1" id="85G-5G-bDM"/>
+                                        <command title="Item 2" id="xqz-fP-irM"/>
                                     </children>
                                 </menu>
-                                <state key="normal" title="Amount"/>
-                                <connections>
-                                    <action selector="Tops:" destination="PYN-T9-dyX" eventType="touchUpInside" id="XeA-kA-wiM"/>
-                                    <action selector="drop:" destination="PYN-T9-dyX" eventType="touchUpInside" id="haY-2P-rN4"/>
-                                    <action selector="opt1:" destination="PYN-T9-dyX" eventType="touchUpInside" id="ttm-Y1-WvA"/>
-                                </connections>
+                                <state key="normal" title="Button"/>
                             </button>
-                            <slider contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minValue="0.0" maxValue="200" translatesAutoresizingMaskIntoConstraints="NO" id="UMT-QJ-mCT">
-                                <rect key="frame" x="137" y="387" width="118" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <imageReference key="minimumValueImage" image="0.circle" catalog="system" variableValue="1"/>
-                            </slider>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="G28-bW-Med"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="FIS-70-91E"/>
+                    <connections>
+                        <outlet property="aboutYou" destination="DOy-W5-3Ny" id="pRE-dQ-kYO"/>
+                        <outlet property="aboutYouLabel" destination="DOy-W5-3Ny" id="eZW-W4-mBN"/>
+                        <outlet property="ageRestrictLabel" destination="SH8-6F-Tr1" id="1e2-Gy-faU"/>
+                        <outlet property="birthdayLabel" destination="cHk-p5-who" id="fy3-Za-quK"/>
+                        <outlet property="labelBirthday" destination="cHk-p5-who" id="Zho-5y-v0K"/>
+                        <outlet property="spendingQLabel" destination="NfG-59-bHP" id="aw4-cn-TYQ"/>
+                        <outlet property="spendingQuestionLabel" destination="NfG-59-bHP" id="j7B-4L-4Hm"/>
+                        <outlet property="topCostDropDown" destination="JMW-rL-GHk" id="EFW-M0-SD1"/>
+                        <outlet property="topLabel" destination="8TH-24-z4y" id="xsZ-oE-3kc"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IoV-RY-ZlE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-                <exit id="PYN-T9-dyX" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="1709.2307692307693" y="1120.3791469194312"/>
         </scene>
@@ -920,66 +920,6 @@
             </objects>
             <point key="canvasLocation" x="2523" y="1299"/>
         </scene>
-        <!--Begin Quiz View Controller-->
-        <scene sceneID="Liv-4p-LA0">
-            <objects>
-                <viewController id="x2V-QO-1hX" customClass="BeginQuizViewController" customModule="altsfw" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="FiM-3l-Xvt">
-                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aHa-xa-Oey">
-                                <rect key="frame" x="16" y="72" width="51" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" image="arrowshape.left.fill" catalog="system">
-                                    <color key="baseForegroundColor" red="0.38280608919999998" green="0.43726325760000001" blue="0.30374868150000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                </buttonConfiguration>
-                                <connections>
-                                    <action selector="back:" destination="HP9-AR-WXy" eventType="touchUpInside" id="z9z-34-CzX"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v6k-5z-tii">
-                                <rect key="frame" x="138" y="757.66666666666652" width="114" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="Let's Begin!">
-                                    <color key="baseBackgroundColor" red="0.38280608919999998" green="0.43726325760000001" blue="0.30374868150000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                </buttonConfiguration>
-                            </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="rectangle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="bXw-RB-WCM">
-                                <rect key="frame" x="-19" y="279.66666666666652" width="428" height="497"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="tintColor" red="0.57995259759999995" green="0.66206520800000002" blue="0.45879018310000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                            </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="rectangle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="RCk-0I-Kn6">
-                                <rect key="frame" x="-19" y="300.66666666666652" width="428" height="116"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="tintColor" red="0.38280608919999998" green="0.43726325760000001" blue="0.30374868150000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="How to Take the Style Quiz:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="crF-k5-3U6">
-                                <rect key="frame" x="25" y="341.66666666666652" width="340" height="32"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="26"/>
-                                <color key="textColor" systemColor="systemBackgroundColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PHP-hP-c5Z">
-                                <rect key="frame" x="49" y="441.66666666666652" width="274" height="262"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="wfx-KV-hIK"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="kFb-vj-cy0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1734" y="-741"/>
-        </scene>
         <!--Quiz View Controller-->
         <scene sceneID="aog-nc-blJ">
             <objects>
@@ -1420,7 +1360,7 @@
         <segue reference="CLy-Pr-DiZ"/>
         <segue reference="WeZ-xL-wBL"/>
         <segue reference="SLY-7c-vHx"/>
-        <segue reference="StL-Oo-Z7M"/>
+        <segue reference="oZF-AX-p2T"/>
         <segue reference="Kt2-Xz-DzQ"/>
         <segue reference="0f8-dh-4aY"/>
         <segue reference="e2T-TW-JOZ"/>
@@ -1430,7 +1370,6 @@
     </inferredMetricsTieBreakers>
     <color key="tintColor" systemColor="labelColor"/>
     <resources>
-        <image name="0.circle" catalog="system" width="128" height="123"/>
         <image name="Style Pick 10" width="1080" height="1080"/>
         <image name="Style Pick 11" width="1080" height="1080"/>
         <image name="Style Pick 12" width="1080" height="1080"/>
