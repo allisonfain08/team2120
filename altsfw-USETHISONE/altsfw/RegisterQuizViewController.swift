@@ -9,11 +9,6 @@ import UIKit
 
 class RegisterQuizViewController: UIViewController {
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
-    }
     
     @IBOutlet weak var aboutYouLabel: UILabel!
     
@@ -30,7 +25,17 @@ class RegisterQuizViewController: UIViewController {
     
     @IBOutlet weak var topLabel: UILabel!
     
-    @IBOutlet weak var topCostDropDown: UIMenu!
+    @IBOutlet weak var topCostDropDown: UIButton!
+    
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        setPopUpButton()
+
+        // Do any additional setup after loading the view.
+    }
+    
+    
     
     /*
     // MARK: - Navigation
@@ -41,5 +46,17 @@ class RegisterQuizViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
+    
+    func setPopUpButton() {
+        let optionClosure = {(action: UIAction) in
+            print(action.title)}
+        
+        topCostDropDown.menu = UIMenu(children : [
+            UIAction(title: ">$50", state : .on,  handler: optionClosure),
+            UIAction(title: "$50 - $100",  handler: optionClosure),
+            UIAction(title: "$100 - $150",  handler: optionClosure)])
+        topCostDropDown.showsMenuAsPrimaryAction = true;
+        topCostDropDown.changesSelectionAsPrimaryAction = true;
+    }
 
 }

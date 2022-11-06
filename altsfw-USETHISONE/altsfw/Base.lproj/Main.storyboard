@@ -178,16 +178,19 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" showsMenuAsPrimaryAction="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" changesSelectionAsPrimaryAction="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UUg-8R-W5I">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" showsMenuAsPrimaryAction="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" changesSelectionAsPrimaryAction="YES" translatesAutoresizingMaskIntoConstraints="NO" id="e4J-GL-ggG">
                                 <rect key="frame" x="168" y="312" width="41" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <menu key="menu" id="JMW-rL-GHk">
+                                <menu key="menu" id="azZ-gd-vxF">
                                     <children>
-                                        <command title="Item 1" id="85G-5G-bDM"/>
-                                        <command title="Item 2" id="xqz-fP-irM"/>
+                                        <command title="Item 1" id="yCC-iH-zwO"/>
+                                        <command title="Item 2" id="FXl-0f-dw5"/>
                                     </children>
                                 </menu>
                                 <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="topCostDropDown:" destination="JBb-nv-y4p" eventType="touchUpInside" id="EVj-w0-f38"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="G28-bW-Med"/>
@@ -202,7 +205,6 @@
                         <outlet property="labelBirthday" destination="cHk-p5-who" id="Zho-5y-v0K"/>
                         <outlet property="spendingQLabel" destination="NfG-59-bHP" id="aw4-cn-TYQ"/>
                         <outlet property="spendingQuestionLabel" destination="NfG-59-bHP" id="j7B-4L-4Hm"/>
-                        <outlet property="topCostDropDown" destination="JMW-rL-GHk" id="EFW-M0-SD1"/>
                         <outlet property="topLabel" destination="8TH-24-z4y" id="xsZ-oE-3kc"/>
                     </connections>
                 </viewController>
@@ -1360,7 +1362,7 @@
         <segue reference="CLy-Pr-DiZ"/>
         <segue reference="WeZ-xL-wBL"/>
         <segue reference="SLY-7c-vHx"/>
-        <segue reference="oZF-AX-p2T"/>
+        <segue reference="tXP-Rb-BTW"/>
         <segue reference="Kt2-Xz-DzQ"/>
         <segue reference="0f8-dh-4aY"/>
         <segue reference="e2T-TW-JOZ"/>
