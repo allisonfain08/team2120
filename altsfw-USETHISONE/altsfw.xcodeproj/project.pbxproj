@@ -22,7 +22,6 @@
 		2A2637B828F9216800A8D2A6 /* RecommendedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A2637B728F9216800A8D2A6 /* RecommendedViewController.swift */; };
 		2A2637BA28F9217600A8D2A6 /* ClosetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A2637B928F9217600A8D2A6 /* ClosetViewController.swift */; };
 		450FE4102917067200379AD1 /* PersonalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 450FE40F2917067200379AD1 /* PersonalViewController.swift */; };
-		AE50829729172FD1006B321E /* RegisterQuizViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE50829629172FD1006B321E /* RegisterQuizViewController.swift */; };
 		AE9C8D5B2909AE14001A7534 /* AccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE9C8D5A2909AE14001A7534 /* AccountViewController.swift */; };
 		B31F0A2B28FF11370043AA85 /* SwipeTracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = B31F0A2A28FF11370043AA85 /* SwipeTracker.swift */; };
 		B378D3AB29065F2700225112 /* ResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B378D3AA29065F2700225112 /* ResultsViewController.swift */; };
@@ -46,7 +45,6 @@
 		2A2637B728F9216800A8D2A6 /* RecommendedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendedViewController.swift; sourceTree = "<group>"; };
 		2A2637B928F9217600A8D2A6 /* ClosetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClosetViewController.swift; sourceTree = "<group>"; };
 		450FE40F2917067200379AD1 /* PersonalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalViewController.swift; sourceTree = "<group>"; };
-		AE50829629172FD1006B321E /* RegisterQuizViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterQuizViewController.swift; sourceTree = "<group>"; };
 		AE9C8D5A2909AE14001A7534 /* AccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewController.swift; sourceTree = "<group>"; };
 		B31F0A2A28FF11370043AA85 /* SwipeTracker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeTracker.swift; sourceTree = "<group>"; };
 		B378D3AA29065F2700225112 /* ResultsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsViewController.swift; sourceTree = "<group>"; };
@@ -96,7 +94,6 @@
 				AE9C8D5A2909AE14001A7534 /* AccountViewController.swift */,
 				B31F0A2A28FF11370043AA85 /* SwipeTracker.swift */,
 				2A26379D28F9040B00A8D2A6 /* Main.storyboard */,
-				AE50829629172FD1006B321E /* RegisterQuizViewController.swift */,
 				450FE40F2917067200379AD1 /* PersonalViewController.swift */,
 				B378D3AA29065F2700225112 /* ResultsViewController.swift */,
 				2A2637A028F9040D00A8D2A6 /* Assets.xcassets */,
@@ -177,7 +174,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AE50829729172FD1006B321E /* RegisterQuizViewController.swift in Sources */,
 				2A2637B428F9213F00A8D2A6 /* CalendarViewController.swift in Sources */,
 				450FE4102917067200379AD1 /* PersonalViewController.swift in Sources */,
 				2A2637B628F9215700A8D2A6 /* WeatherViewController.swift in Sources */,

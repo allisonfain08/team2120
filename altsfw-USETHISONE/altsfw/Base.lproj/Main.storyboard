@@ -114,10 +114,10 @@
             </objects>
             <point key="canvasLocation" x="973.84615384615381" y="1097.6303317535544"/>
         </scene>
-        <!--Register Quiz View Controller-->
+        <!--Personal View Controller-->
         <scene sceneID="eba-D3-t1c">
             <objects>
-                <viewController id="JBb-nv-y4p" customClass="RegisterQuizViewController" sceneMemberID="viewController">
+                <viewController id="JBb-nv-y4p" customClass="PersonalViewController" customModule="altsfw" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleAspectFit" id="W3I-Oz-lZ8">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -199,13 +199,15 @@
                     <navigationItem key="navigationItem" id="FIS-70-91E"/>
                     <connections>
                         <outlet property="aboutYou" destination="DOy-W5-3Ny" id="pRE-dQ-kYO"/>
-                        <outlet property="aboutYouLabel" destination="DOy-W5-3Ny" id="eZW-W4-mBN"/>
-                        <outlet property="ageRestrictLabel" destination="SH8-6F-Tr1" id="1e2-Gy-faU"/>
-                        <outlet property="birthdayLabel" destination="cHk-p5-who" id="fy3-Za-quK"/>
+                        <outlet property="aboutYouLabel" destination="DOy-W5-3Ny" id="nPG-Xi-vI6"/>
+                        <outlet property="ageRestrictLabel" destination="SH8-6F-Tr1" id="y4f-gm-oV0"/>
+                        <outlet property="birthdayLabel" destination="cHk-p5-who" id="qsG-Xl-8w6"/>
+                        <outlet property="datePicker" destination="KIV-aL-lMH" id="Wro-o8-udM"/>
                         <outlet property="labelBirthday" destination="cHk-p5-who" id="Zho-5y-v0K"/>
-                        <outlet property="spendingQLabel" destination="NfG-59-bHP" id="aw4-cn-TYQ"/>
+                        <outlet property="spendingQLabel" destination="NfG-59-bHP" id="baF-w2-v0I"/>
                         <outlet property="spendingQuestionLabel" destination="NfG-59-bHP" id="j7B-4L-4Hm"/>
-                        <outlet property="topLabel" destination="8TH-24-z4y" id="xsZ-oE-3kc"/>
+                        <outlet property="topCostDropDown" destination="e4J-GL-ggG" id="ZlI-85-nag"/>
+                        <outlet property="topLabel" destination="8TH-24-z4y" id="Z5R-gE-OhW"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IoV-RY-ZlE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
