@@ -15,3 +15,4 @@ struct team2120App: App {
         }
     }
 }
+#imageLiteral(resourceName: "simulator_screenshot_EAB90E90-4B05-49B3-AB61-19980693C50C.png")

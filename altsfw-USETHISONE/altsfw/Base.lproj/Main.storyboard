@@ -37,10 +37,6 @@
                                     <segue destination="4ni-CA-P27" kind="show" id="Plo-ju-dfM"/>
                                 </connections>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Temp-1024x1024" translatesAutoresizingMaskIntoConstraints="NO" id="Iu1-Rw-vR9">
-                                <rect key="frame" x="72" y="80" width="247" height="295"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="eKlozet" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cDG-a2-B2s">
                                 <rect key="frame" x="149" y="458" width="107" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -48,10 +44,15 @@
                                 <color key="textColor" red="0.57995259759999995" green="0.66206520800000002" blue="0.45879018310000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Temp-1024x1024" translatesAutoresizingMaskIntoConstraints="NO" id="Iu1-Rw-vR9">
+                                <rect key="frame" x="52" y="92" width="300" height="300"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <navigationItem key="navigationItem" id="nx6-CV-MX9"/>
                     <connections>
                         <outlet property="eklozet" destination="cDG-a2-B2s" id="LFS-FP-fhb"/>
                         <outlet property="welcome" destination="UbW-bJ-0HT" id="BLi-WA-sW2"/>
@@ -59,160 +60,78 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="48" y="-282"/>
+            <point key="canvasLocation" x="992.30769230769226" y="-2.1327014218009479"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="vSA-pm-0eY">
+        <!--Register View Controller-->
+        <scene sceneID="F2m-cc-Mvz">
             <objects>
-                <viewController id="qVz-9e-xu8" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="1tH-Ne-epY" customClass="Registration">
+                <viewController storyboardIdentifier="RegisterViewController" title="Register View Controller" id="WzQ-RO-nG0" customClass="RegisterViewController" customModule="altsfw" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5r8-9P-bGA">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="787"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6cX-rG-BTj">
-                                <rect key="frame" x="72" y="253" width="259" height="34"/>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Y8j-8a-au4">
+                                <rect key="frame" x="66" y="368" width="259" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="P4z-Vj-CPu">
-                                <rect key="frame" x="72" y="321" width="259" height="34"/>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8Mu-GU-fmY">
+                                <rect key="frame" x="66" y="436" width="259" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Username" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="krb-HU-6pf">
-                                <rect key="frame" x="162" y="224" width="79" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Username" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j28-aJ-RHn">
+                                <rect key="frame" x="156" y="339" width="79" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FGS-RI-f4U">
-                                <rect key="frame" x="164" y="295" width="74" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l7y-cT-IAP">
+                                <rect key="frame" x="158" y="410" width="74" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r97-tc-Tt3">
-                                <rect key="frame" x="149" y="428" width="93" height="35"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="omk-Tw-Z0T">
+                                <rect key="frame" x="157" y="499" width="78" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="Continue"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Submit">
+                                    <color key="baseBackgroundColor" red="0.57995259759999995" green="0.66206520800000002" blue="0.45879018310000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </buttonConfiguration>
                                 <connections>
-                                    <segue destination="kzT-C9-G1O" kind="show" id="PLD-2q-ecz"/>
+                                    <action selector="submit:" destination="WzQ-RO-nG0" eventType="touchUpInside" id="neM-76-VrS"/>
+                                    <segue destination="iMB-Mi-xCE" kind="show" id="B5C-5O-Tz5"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QSP-7U-Hoc">
+                                <rect key="frame" x="22" y="48" width="51" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="arrowshape.left.fill" catalog="system" title="">
+                                    <color key="baseForegroundColor" red="0.38280608919999998" green="0.43726325760000001" blue="0.30374868150000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="back:" destination="WzQ-RO-nG0" eventType="touchUpInside" id="KPJ-YZ-YU3"/>
+                                    <segue destination="4ni-CA-P27" kind="show" id="Ne9-w9-xix"/>
                                 </connections>
                             </button>
                         </subviews>
-                        <viewLayoutGuide key="safeArea" id="oth-i7-NQY"/>
+                        <viewLayoutGuide key="safeArea" id="GFM-yM-q6K"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <navigationItem key="navigationItem" id="Ywj-J4-LZB"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="5xK-3R-xId" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="973.84615384615381" y="1097.6303317535544"/>
-        </scene>
-        <!--Personal View Controller-->
-        <scene sceneID="eba-D3-t1c">
-            <objects>
-                <viewController id="JBb-nv-y4p" customClass="PersonalViewController" customModule="altsfw" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleAspectFit" id="W3I-Oz-lZ8">
-                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OHt-Ru-N46">
-                                <rect key="frame" x="150" y="654" width="92" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="Let's Go!"/>
-                                <connections>
-                                    <segue destination="iMB-Mi-xCE" kind="showDetail" id="tXP-Rb-BTW"/>
-                                </connections>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="About YOU: Personal Information" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DOy-W5-3Ny">
-                                <rect key="frame" x="19" y="36" width="353" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="What is your birthdate? " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cHk-p5-who">
-                                <rect key="frame" x="87" y="85" width="217" height="26"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Please note you must be 13 or older to use this app." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SH8-6F-Tr1">
-                                <rect key="frame" x="81" y="119" width="229" height="11"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="9"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <datePicker contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="fill" contentVerticalAlignment="center" datePickerMode="date" style="compact" translatesAutoresizingMaskIntoConstraints="NO" id="KIV-aL-lMH">
-                                <rect key="frame" x="5" y="151" width="375" height="77"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                                <color key="tintColor" red="0.57995235919999999" green="0.65809136629999998" blue="0.45879095790000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <date key="maximumDate" timeIntervalSinceReferenceDate="252500400">
-                                    <!--2009-01-01 11:00:00 +0000-->
-                                </date>
-                                <connections>
-                                    <action selector="datePicker:" destination="JBb-nv-y4p" eventType="valueChanged" id="4xg-a8-p6M"/>
-                                    <action selector="dateSelector:" destination="JBb-nv-y4p" eventType="valueChanged" id="iwK-gL-G6D"/>
-                                </connections>
-                            </datePicker>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="How much do you typically spend on a new..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NfG-59-bHP">
-                                <rect key="frame" x="26" y="236" width="341" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Top? " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8TH-24-z4y">
-                                <rect key="frame" x="159" y="274" width="58" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" showsMenuAsPrimaryAction="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" changesSelectionAsPrimaryAction="YES" translatesAutoresizingMaskIntoConstraints="NO" id="e4J-GL-ggG">
-                                <rect key="frame" x="168" y="312" width="41" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <menu key="menu" id="azZ-gd-vxF">
-                                    <children>
-                                        <command title="Item 1" id="yCC-iH-zwO"/>
-                                        <command title="Item 2" id="FXl-0f-dw5"/>
-                                    </children>
-                                </menu>
-                                <state key="normal" title="Button"/>
-                                <connections>
-                                    <action selector="topCostDropDown:" destination="JBb-nv-y4p" eventType="touchUpInside" id="EVj-w0-f38"/>
-                                </connections>
-                            </button>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="G28-bW-Med"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="FIS-70-91E"/>
+                    <navigationItem key="navigationItem" id="zm0-Z3-4tC"/>
                     <connections>
-                        <outlet property="aboutYou" destination="DOy-W5-3Ny" id="pRE-dQ-kYO"/>
-                        <outlet property="aboutYouLabel" destination="DOy-W5-3Ny" id="nPG-Xi-vI6"/>
-                        <outlet property="ageRestrictLabel" destination="SH8-6F-Tr1" id="y4f-gm-oV0"/>
-                        <outlet property="birthdayLabel" destination="cHk-p5-who" id="qsG-Xl-8w6"/>
-                        <outlet property="datePicker" destination="KIV-aL-lMH" id="Wro-o8-udM"/>
-                        <outlet property="labelBirthday" destination="cHk-p5-who" id="Zho-5y-v0K"/>
-                        <outlet property="spendingQLabel" destination="NfG-59-bHP" id="baF-w2-v0I"/>
-                        <outlet property="spendingQuestionLabel" destination="NfG-59-bHP" id="j7B-4L-4Hm"/>
-                        <outlet property="topCostDropDown" destination="e4J-GL-ggG" id="ZlI-85-nag"/>
-                        <outlet property="topLabel" destination="8TH-24-z4y" id="Z5R-gE-OhW"/>
+                        <outlet property="back" destination="5r8-9P-bGA" id="pkc-H6-FQR"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="IoV-RY-ZlE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3hG-dL-OS7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1709.2307692307693" y="1120.3791469194312"/>
+            <point key="canvasLocation" x="1940" y="405.92417061611371"/>
         </scene>
         <!--Login View Controller-->
         <scene sceneID="nhJ-c0-8rh">
@@ -241,6 +160,18 @@
                                     <segue destination="iMB-Mi-xCE" kind="show" id="oZF-AX-p2T"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8DI-5w-jb7">
+                                <rect key="frame" x="151" y="497" width="87" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Register">
+                                    <color key="baseBackgroundColor" red="0.38280608919999998" green="0.43726325760000001" blue="0.30374868150000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="register:" destination="4ni-CA-P27" eventType="touchUpInside" id="rVQ-bR-7Nt"/>
+                                    <segue destination="WzQ-RO-nG0" kind="show" id="gcc-Gl-Rpg"/>
+                                </connections>
+                            </button>
                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wJr-FI-hC6">
                                 <rect key="frame" x="65" y="369" width="259" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -260,15 +191,6 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6PF-Uj-zvb">
-                                <rect key="frame" x="152" y="514" width="87" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="Register"/>
-                                <connections>
-                                    <segue destination="qVz-9e-xu8" kind="show" id="7y5-xv-0lH"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="z99-d7-C1a"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -277,12 +199,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jpx-mr-lai" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="994" y="-282"/>
+            <point key="canvasLocation" x="1923.0769230769231" y="-282.22748815165875"/>
         </scene>
         <!--Quiz View Controller-->
         <scene sceneID="AK3-EM-Kro">
             <objects>
-                <viewController storyboardIdentifier="QuizViewController" title="Quiz View Controller" modalTransitionStyle="flipHorizontal" id="HP9-AR-WXy" customClass="BeginQuizViewController" customModule="altsfw" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="QuizViewController" title="Quiz View Controller" modalTransitionStyle="flipHorizontal" id="HP9-AR-WXy" customClass="QuizViewController" customModule="altsfw" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="32K-wK-NG1">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="787"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -327,19 +249,23 @@
                                 <color key="textColor" systemColor="systemBackgroundColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="BHP-R4-qhQ">
-                                <rect key="frame" x="75" y="405" width="240" height="223"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="BHP-R4-qhQ">
+                                <rect key="frame" x="83" y="383" width="240" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="tintColor" red="0.94901961089999998" green="0.94901961089999998" blue="0.94901961089999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <string key="text">The following 10 questions will help us evaluate your unique fashion style. Swipe right or left depending on which corresponding outfit BEST represents something you would regularly wear. </string>
                                 <color key="textColor" systemColor="labelColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Rd9-mO-xl2"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <gestureRecognizers/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="RQq-d9-E7p" appends="YES" id="Ccp-7X-ZvP"/>
+                            <outletCollection property="gestureRecognizers" destination="ulh-4G-7sL" appends="YES" id="nyt-c8-wdb"/>
+                        </connections>
                     </view>
                     <navigationItem key="navigationItem" id="VyZ-Uk-fb6"/>
                     <connections>
@@ -347,6 +273,16 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2oi-aW-MrM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="right" id="RQq-d9-E7p">
+                    <connections>
+                        <segue destination="h4e-yP-1tg" kind="show" identifier="nextQuestion" id="hab-l8-GzH"/>
+                    </connections>
+                </swipeGestureRecognizer>
+                <swipeGestureRecognizer direction="left" id="ulh-4G-7sL">
+                    <connections>
+                        <segue destination="h4e-yP-1tg" kind="show" identifier="nextQuestion" id="65z-6y-lCf"/>
+                    </connections>
+                </swipeGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="2523.0769230769229" y="-741.46919431279616"/>
         </scene>
@@ -383,11 +319,11 @@
                                     <segue destination="HP9-AR-WXy" kind="show" id="NOG-KR-Ivi"/>
                                 </connections>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" tag="1" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Style Pick 4" translatesAutoresizingMaskIntoConstraints="NO" id="m6C-kl-35Z">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" tag="1" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="outfit" translatesAutoresizingMaskIntoConstraints="NO" id="m6C-kl-35Z">
                                 <rect key="frame" x="16" y="100" width="159" height="559"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" tag="2" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Style Pick 5" translatesAutoresizingMaskIntoConstraints="NO" id="1dW-RB-05Q">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" tag="2" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="outfit2" translatesAutoresizingMaskIntoConstraints="NO" id="1dW-RB-05Q">
                                 <rect key="frame" x="203" y="100" width="160" height="559"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -446,11 +382,11 @@
                                     <segue destination="mOW-zn-3xc" kind="show" id="e2T-TW-JOZ"/>
                                 </connections>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" tag="3" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Style Pick 8" translatesAutoresizingMaskIntoConstraints="NO" id="OwR-ED-pAj">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" tag="3" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="outfit3" translatesAutoresizingMaskIntoConstraints="NO" id="OwR-ED-pAj">
                                 <rect key="frame" x="22" y="114" width="159" height="559"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" tag="4" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Style Pick 7" translatesAutoresizingMaskIntoConstraints="NO" id="Tzz-rw-EEC">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" tag="4" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="outfit4" translatesAutoresizingMaskIntoConstraints="NO" id="Tzz-rw-EEC">
                                 <rect key="frame" x="209" y="114" width="160" height="559"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -534,11 +470,11 @@
                                     <segue destination="V3R-Gf-qKU" kind="show" id="4rU-jQ-llM"/>
                                 </connections>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" tag="5" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Style Pick 6" translatesAutoresizingMaskIntoConstraints="NO" id="Ukv-c1-m1Q">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" tag="5" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="outfit5" translatesAutoresizingMaskIntoConstraints="NO" id="Ukv-c1-m1Q">
                                 <rect key="frame" x="16" y="114" width="159" height="559"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" tag="1" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Style Pick 9" translatesAutoresizingMaskIntoConstraints="NO" id="BxW-1b-OGc">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" tag="1" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="outfit" translatesAutoresizingMaskIntoConstraints="NO" id="BxW-1b-OGc">
                                 <rect key="frame" x="203" y="114" width="160" height="559"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -609,11 +545,11 @@
                                     <segue destination="mOW-zn-3xc" kind="show" id="sb2-uV-5Tj"/>
                                 </connections>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" tag="4" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Style Pick 12" translatesAutoresizingMaskIntoConstraints="NO" id="RfE-XI-Y85">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" tag="4" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="outfit4" translatesAutoresizingMaskIntoConstraints="NO" id="RfE-XI-Y85">
                                 <rect key="frame" x="27" y="114" width="159" height="559"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" tag="2" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Style Pick 11" translatesAutoresizingMaskIntoConstraints="NO" id="IM6-2K-d1m">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" tag="2" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="outfit2" translatesAutoresizingMaskIntoConstraints="NO" id="IM6-2K-d1m">
                                 <rect key="frame" x="214" y="114" width="160" height="559"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -639,28 +575,42 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uhp-Kl-FrD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <swipeGestureRecognizer direction="left" id="wVf-Zp-MoY">
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="keyPath" value="NO"/>
+                    </userDefinedRuntimeAttributes>
                     <connections>
                         <outlet property="delegate" destination="wMz-2g-keC" id="ZRs-Ra-BgI"/>
-                        <segue destination="FFN-6r-Z0P" kind="show" identifier="nextQuestion" id="NoX-me-Qfo"/>
+                        <segue destination="FFN-6r-Z0P" kind="showDetail" id="fda-NC-ikb"/>
                     </connections>
                 </swipeGestureRecognizer>
                 <swipeGestureRecognizer direction="right" id="1cQ-Wi-JoT">
                     <connections>
                         <outlet property="delegate" destination="wMz-2g-keC" id="zMc-Gr-R0w"/>
-                        <segue destination="FFN-6r-Z0P" kind="show" identifier="nextQuestion" id="zgc-yG-WCZ"/>
+                        <segue destination="FFN-6r-Z0P" kind="show" id="zgc-yG-WCZ"/>
                     </connections>
                 </swipeGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="5655" y="-741"/>
         </scene>
-        <!--Results View Controller-->
+        <!--Quiz View Controller-->
         <scene sceneID="cz9-Si-pwi">
             <objects>
-                <viewController modalTransitionStyle="flipHorizontal" id="1gg-Bf-vbD" customClass="ResultsViewController" customModule="altsfw" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalTransitionStyle="flipHorizontal" id="1gg-Bf-vbD" customClass="QuizViewController" customModule="altsfw" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="XU2-yP-JL9">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="787"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xGz-oX-hoU">
+                                <rect key="frame" x="73" y="125" width="245" height="253"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Your Style Quiz Resuls!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0FE-cb-xOU">
+                                <rect key="frame" x="27" y="47" width="336" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7xr-mG-3Bw">
                                 <rect key="frame" x="264" y="694" width="54" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -685,22 +635,6 @@
                                     <segue destination="aBz-WP-Vrk" kind="showDetail" id="j8g-LK-VmI"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Your Style Quiz Results!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jnK-xp-RG8">
-                                <rect key="frame" x="14" y="46" width="347" height="36"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="30"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Te2-Fx-sh9">
-                                <rect key="frame" x="16" y="104" width="358" height="166"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <string key="text">The counts below show you how many times you chose each style over another. Press end to go back the home page. You may take the quiz again anytime.</string>
-                                <color key="textColor" systemColor="labelColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="0lh-WP-q7H"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -724,7 +658,7 @@
                     </connections>
                 </swipeGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="10810.76923076923" y="-741.46919431279616"/>
+            <point key="canvasLocation" x="10812" y="-741"/>
         </scene>
         <!--weather view controller-->
         <scene sceneID="uNf-Ed-2ZI">
@@ -755,7 +689,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sfA-TG-rRo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="sdt-oa-itt" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="2523" y="-55"/>
+            <point key="canvasLocation" x="3450.7692307692305" y="-55.45023696682464"/>
         </scene>
         <!--Home View Controller-->
         <scene sceneID="4gc-ev-ypD">
@@ -775,6 +709,7 @@
                                 </buttonConfiguration>
                                 <connections>
                                     <action selector="styleQuiz:" destination="iMB-Mi-xCE" eventType="touchUpInside" id="UJ5-BZ-zBG"/>
+                                    <segue destination="4ni-CA-P27" kind="show" id="Svp-Zx-2j8"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PNa-M9-8hX">
@@ -820,7 +755,7 @@
                                 <rect key="frame" x="16" y="603" width="358" height="157"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="Today's recommended outfit">
+                                <buttonConfiguration key="configuration" style="filled" title="View Closet">
                                     <color key="baseForegroundColor" systemColor="labelColor"/>
                                     <color key="baseBackgroundColor" red="0.43921568989999998" green="0.41176474089999998" blue="0.47450977560000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </buttonConfiguration>
@@ -845,7 +780,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WZH-Ay-eu1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1764.6153846153845" y="142.89099526066349"/>
+            <point key="canvasLocation" x="2693.8461538461538" y="142.89099526066349"/>
         </scene>
         <!--calendar view controller-->
         <scene sceneID="1On-85-Ccz">
@@ -876,28 +811,12 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QNQ-ED-Jc2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="Ete-Et-TL8" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="2522" y="624"/>
-        </scene>
-        <!--Personal View Controller-->
-        <scene sceneID="M1s-yn-Gfh">
-            <objects>
-                <viewController id="kzT-C9-G1O" customClass="PersonalViewController" customModule="altsfw" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="fe7-RH-XLR">
-                        <rect key="frame" x="0.0" y="0.0" width="390" height="787"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="t2t-FX-qSt"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="pDQ-K0-mU9"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="ZT9-1I-oDk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1712" y="1815"/>
+            <point key="canvasLocation" x="3450.7692307692305" y="623.45971563981038"/>
         </scene>
         <!--recommended view controller-->
         <scene sceneID="d5T-ah-Zz1">
             <objects>
-                <viewController storyboardIdentifier="RecommendedViewController" title="recommended view controller" id="jrI-5Y-nbY" customClass="RecommendedViewController" customModule="altsfw" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ClosetViewController" title="recommended view controller" id="jrI-5Y-nbY" customClass="ClosetViewController" customModule="altsfw" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Jb9-ay-5Ms">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="787"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -914,6 +833,15 @@
                                     <segue destination="iMB-Mi-xCE" kind="show" id="StL-Oo-Z7M"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BHY-9u-GRs">
+                                <rect key="frame" x="86" y="108" width="220" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="upload a piece of clothing"/>
+                                <connections>
+                                    <segue destination="0Uq-7N-YTw" kind="show" id="VeY-gt-AvV"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="uT6-Nh-U0W"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -923,6 +851,245 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Nan-hI-4Fy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2523" y="1299"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="qUU-Y0-Ur8">
+            <objects>
+                <viewController storyboardIdentifier="uploadImage" id="0Uq-7N-YTw" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3BN-VV-2Hk">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="787"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Nzb-FY-zU8">
+                                <rect key="frame" x="16" y="47" width="358" height="182"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Size" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tZg-p3-eqE">
+                                <rect key="frame" x="16" y="380" width="39" height="26"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" showsMenuAsPrimaryAction="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" changesSelectionAsPrimaryAction="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XXO-c8-giI">
+                                <rect key="frame" x="179" y="378" width="171" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <menu key="menu" title="type" id="Kji-bl-N55">
+                                    <children>
+                                        <command title="blouse" id="cwe-zV-tW5"/>
+                                        <command title="tshirt" id="xaT-KV-3de"/>
+                                        <command title="shorts" id="Je8-gm-d0s"/>
+                                        <command title="skirt" id="SYL-2b-ZDw"/>
+                                        <command title="long pants" id="Fa5-ws-iXS"/>
+                                        <command title="dress" id="8IU-my-tWB"/>
+                                        <command title="swimsuit" id="jFb-O1-eHM"/>
+                                    </children>
+                                </menu>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="clothingTyper:" destination="YY1-nL-L0M" eventType="touchUpInside" id="s3a-eu-CRS"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Color" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kZ0-Sm-KUW">
+                                <rect key="frame" x="16" y="418" width="50" height="26"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Accent Color" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hSy-xs-kKN">
+                                <rect key="frame" x="16" y="452" width="119" height="26"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" showsMenuAsPrimaryAction="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" changesSelectionAsPrimaryAction="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mcX-Cu-pab">
+                                <rect key="frame" x="179" y="416" width="171" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <menu key="menu" title="type" id="qfA-3V-nrd">
+                                    <children>
+                                        <command title="blouse" id="8Bk-QY-UXR"/>
+                                        <command title="tshirt" id="KVp-BI-9BB"/>
+                                        <command title="shorts" id="IMT-4l-Km8"/>
+                                        <command title="skirt" id="KTS-u5-YTi"/>
+                                        <command title="long pants" id="GqR-Uq-Ord"/>
+                                        <command title="dress" id="Peu-6j-Z3M"/>
+                                        <command title="swimsuit" id="HIj-jj-jvh"/>
+                                    </children>
+                                </menu>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="clothingTyper:" destination="YY1-nL-L0M" eventType="touchUpInside" id="gam-6D-f92"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" showsMenuAsPrimaryAction="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" changesSelectionAsPrimaryAction="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fEr-Zr-UVL">
+                                <rect key="frame" x="179" y="454" width="171" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <menu key="menu" title="type" id="6gE-vS-LQu">
+                                    <children>
+                                        <command title="blouse" id="blw-G4-zuH"/>
+                                        <command title="tshirt" id="Fb3-Qt-XhK"/>
+                                        <command title="shorts" id="rHR-Ta-Gsd"/>
+                                        <command title="skirt" id="BeY-dc-Qhu"/>
+                                        <command title="long pants" id="oFW-GJ-w2J"/>
+                                        <command title="dress" id="Y7k-FA-L7Z"/>
+                                        <command title="swimsuit" id="mHH-cK-ygk"/>
+                                    </children>
+                                </menu>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="clothingTyper:" destination="YY1-nL-L0M" eventType="touchUpInside" id="523-E7-crC"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Primary Material" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RZP-aq-eSA">
+                                <rect key="frame" x="16" y="494" width="149" height="26"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" showsMenuAsPrimaryAction="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" changesSelectionAsPrimaryAction="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cUx-om-EqK">
+                                <rect key="frame" x="179" y="530" width="171" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <menu key="menu" title="type" id="zpV-TW-VTH">
+                                    <children>
+                                        <command title="blouse" id="cte-W9-K3E"/>
+                                        <command title="tshirt" id="L8u-nF-lds"/>
+                                        <command title="shorts" id="6Jr-qY-oCV"/>
+                                        <command title="skirt" id="rmf-ls-A85"/>
+                                        <command title="long pants" id="GD4-99-MXY"/>
+                                        <command title="dress" id="8iU-9l-aVb"/>
+                                        <command title="swimsuit" id="yCC-Q1-ALF"/>
+                                    </children>
+                                </menu>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="clothingTyper:" destination="YY1-nL-L0M" eventType="touchUpInside" id="0Ug-tQ-j2g"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Secondary Material" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3x5-aC-U58">
+                                <rect key="frame" x="16" y="532" width="177" height="26"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" showsMenuAsPrimaryAction="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" changesSelectionAsPrimaryAction="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kfG-mV-65H">
+                                <rect key="frame" x="179" y="492" width="171" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <menu key="menu" title="type" id="siP-sP-Scy">
+                                    <children>
+                                        <command title="blouse" id="ygc-as-xiH"/>
+                                        <command title="tshirt" id="Mht-H8-0Df"/>
+                                        <command title="shorts" id="4bb-o6-JBN"/>
+                                        <command title="skirt" id="hC3-pY-YFR"/>
+                                        <command title="long pants" id="hVW-3G-xOV"/>
+                                        <command title="dress" id="Cpo-kz-eoZ"/>
+                                        <command title="swimsuit" id="NGt-gt-Cq0"/>
+                                    </children>
+                                </menu>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="clothingTyper:" destination="YY1-nL-L0M" eventType="touchUpInside" id="bCl-q2-B0o"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Clothing type" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="19m-Gj-i8m">
+                                <rect key="frame" x="16" y="344" width="123" height="26"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" showsMenuAsPrimaryAction="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" changesSelectionAsPrimaryAction="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0wm-Qv-hjl">
+                                <rect key="frame" x="179" y="342" width="171" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <menu key="menu" title="type" id="OId-HK-rlj">
+                                    <children>
+                                        <command title="blouse" id="vwx-Lo-tCp"/>
+                                        <command title="tshirt" id="8G3-2b-Iwb"/>
+                                        <command title="shorts" id="IxR-6E-C09"/>
+                                        <command title="skirt" id="Ydv-Tv-hWV"/>
+                                        <command title="long pants" id="zKg-P3-Yp3"/>
+                                        <command title="dress" id="zUh-j0-SCn"/>
+                                        <command title="swimsuit" id="E2g-JG-4Ui"/>
+                                    </children>
+                                </menu>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="clothingTyper:" destination="YY1-nL-L0M" eventType="touchUpInside" id="cnG-s9-dWl"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="ya4-XD-4rM"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="hWj-o4-Fzn"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2HY-Xp-JCQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="YY1-nL-L0M" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="3210.7692307692305" y="1298.8151658767772"/>
+        </scene>
+        <!--Begin Quiz View Controller-->
+        <scene sceneID="Liv-4p-LA0">
+            <objects>
+                <viewController id="x2V-QO-1hX" customClass="BeginQuizViewController" customModule="altsfw" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="FiM-3l-Xvt">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aHa-xa-Oey">
+                                <rect key="frame" x="16" y="72" width="51" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="arrowshape.left.fill" catalog="system">
+                                    <color key="baseForegroundColor" red="0.38280608919999998" green="0.43726325760000001" blue="0.30374868150000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="back:" destination="HP9-AR-WXy" eventType="touchUpInside" id="z9z-34-CzX"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v6k-5z-tii">
+                                <rect key="frame" x="138" y="757.66666666666652" width="114" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Let's Begin!">
+                                    <color key="baseBackgroundColor" red="0.38280608919999998" green="0.43726325760000001" blue="0.30374868150000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </buttonConfiguration>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="rectangle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="RCk-0I-Kn6">
+                                <rect key="frame" x="-19" y="300.66666666666652" width="428" height="116"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" red="0.38280608919999998" green="0.43726325760000001" blue="0.30374868150000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="How to Take the Style Quiz:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="crF-k5-3U6">
+                                <rect key="frame" x="25" y="341.66666666666652" width="340" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="26"/>
+                                <color key="textColor" systemColor="systemBackgroundColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PHP-hP-c5Z">
+                                <rect key="frame" x="49" y="441.66666666666652" width="274" height="262"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="rectangle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="bXw-RB-WCM">
+                                <rect key="frame" x="-19" y="310.66666666666674" width="428" height="497"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" red="0.57995259759999995" green="0.66206520800000002" blue="0.45879018310000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="wfx-KV-hIK"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kFb-vj-cy0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1923" y="-1005"/>
         </scene>
         <!--Quiz View Controller-->
         <scene sceneID="aog-nc-blJ">
@@ -956,7 +1123,7 @@
                                     <segue destination="OVk-YU-bOx" kind="show" id="rSe-lm-c21"/>
                                 </connections>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Style Pick 10" translatesAutoresizingMaskIntoConstraints="NO" id="ZYt-av-teG">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="outfit3" translatesAutoresizingMaskIntoConstraints="NO" id="ZYt-av-teG">
                                 <rect key="frame" x="16" y="114" width="159" height="559"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -983,16 +1150,8 @@
                     <navigationItem key="navigationItem" id="EQY-I3-kSs"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7Eh-wn-5ne" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-                <swipeGestureRecognizer direction="right" id="Ceh-9Y-4sP">
-                    <connections>
-                        <segue destination="ppy-nM-Yth" kind="show" identifier="nextQuestion" id="Q27-fH-5kT"/>
-                    </connections>
-                </swipeGestureRecognizer>
-                <swipeGestureRecognizer direction="left" id="wGy-eU-FfS">
-                    <connections>
-                        <segue destination="ppy-nM-Yth" kind="show" identifier="nextQuestion" id="W0H-7v-Dji"/>
-                    </connections>
-                </swipeGestureRecognizer>
+                <swipeGestureRecognizer direction="right" id="Ceh-9Y-4sP"/>
+                <swipeGestureRecognizer direction="left" id="wGy-eU-FfS"/>
             </objects>
             <point key="canvasLocation" x="6369" y="-741"/>
         </scene>
@@ -1055,16 +1214,8 @@
                     <navigationItem key="navigationItem" id="M00-VJ-MUL"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kbT-KA-l3a" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-                <swipeGestureRecognizer direction="right" id="dUt-Rs-OMK">
-                    <connections>
-                        <segue destination="Eu6-54-xDC" kind="show" identifier="nextQuestion" id="d1e-gG-Fq5"/>
-                    </connections>
-                </swipeGestureRecognizer>
-                <swipeGestureRecognizer direction="left" id="jyF-2o-OPe">
-                    <connections>
-                        <segue destination="Eu6-54-xDC" kind="show" identifier="nextQuestion" id="KSm-ea-szE"/>
-                    </connections>
-                </swipeGestureRecognizer>
+                <swipeGestureRecognizer direction="right" id="dUt-Rs-OMK"/>
+                <swipeGestureRecognizer direction="left" id="jyF-2o-OPe"/>
             </objects>
             <point key="canvasLocation" x="7111" y="-741"/>
         </scene>
@@ -1127,16 +1278,8 @@
                     <navigationItem key="navigationItem" id="HJe-gI-4Hh"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BT9-MK-dZ1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-                <swipeGestureRecognizer direction="right" id="Ofj-6I-c8h">
-                    <connections>
-                        <segue destination="UnK-Gm-iMZ" kind="show" identifier="nextQuestion" id="AuX-uf-Atu"/>
-                    </connections>
-                </swipeGestureRecognizer>
-                <swipeGestureRecognizer direction="left" id="fJr-g2-V5J">
-                    <connections>
-                        <segue destination="UnK-Gm-iMZ" kind="show" identifier="nextQuestion" id="PWw-cl-WxQ"/>
-                    </connections>
-                </swipeGestureRecognizer>
+                <swipeGestureRecognizer direction="right" id="Ofj-6I-c8h"/>
+                <swipeGestureRecognizer direction="left" id="fJr-g2-V5J"/>
             </objects>
             <point key="canvasLocation" x="7840" y="-741"/>
         </scene>
@@ -1199,16 +1342,8 @@
                     <navigationItem key="navigationItem" id="pzO-Hz-ao0"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gx2-yy-ub7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-                <swipeGestureRecognizer direction="right" id="zOZ-HQ-mTa">
-                    <connections>
-                        <segue destination="OKB-Vy-g5F" kind="show" identifier="nextQuestion" id="B9b-oJ-6x8"/>
-                    </connections>
-                </swipeGestureRecognizer>
-                <swipeGestureRecognizer direction="left" id="b3t-49-Nk3">
-                    <connections>
-                        <segue destination="OKB-Vy-g5F" kind="show" identifier="nextQuestion" id="KXn-5y-lbA"/>
-                    </connections>
-                </swipeGestureRecognizer>
+                <swipeGestureRecognizer direction="right" id="zOZ-HQ-mTa"/>
+                <swipeGestureRecognizer direction="left" id="b3t-49-Nk3"/>
             </objects>
             <point key="canvasLocation" x="8578" y="-741"/>
         </scene>
@@ -1271,16 +1406,8 @@
                     <navigationItem key="navigationItem" id="GJo-h2-lXy"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9O1-WK-2db" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-                <swipeGestureRecognizer direction="right" id="8Wb-eF-iuy">
-                    <connections>
-                        <segue destination="aBz-WP-Vrk" kind="show" identifier="nextQuestion" id="VRz-BF-ixM"/>
-                    </connections>
-                </swipeGestureRecognizer>
-                <swipeGestureRecognizer direction="left" id="Hl8-nw-WUr">
-                    <connections>
-                        <segue destination="aBz-WP-Vrk" kind="show" identifier="nextQuestion" id="NCk-Pi-nOa"/>
-                    </connections>
-                </swipeGestureRecognizer>
+                <swipeGestureRecognizer direction="right" id="8Wb-eF-iuy"/>
+                <swipeGestureRecognizer direction="left" id="Hl8-nw-WUr"/>
             </objects>
             <point key="canvasLocation" x="9291" y="-741"/>
         </scene>
@@ -1343,46 +1470,29 @@
                     <navigationItem key="navigationItem" id="OTw-fm-AMT"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0ws-DT-BRz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-                <swipeGestureRecognizer direction="right" id="eLp-Hw-w4p">
-                    <connections>
-                        <segue destination="1gg-Bf-vbD" kind="show" identifier="nextQuestion" id="Kt2-Xz-DzQ"/>
-                    </connections>
-                </swipeGestureRecognizer>
-                <swipeGestureRecognizer direction="left" id="09b-PU-bP3">
-                    <connections>
-                        <segue destination="1gg-Bf-vbD" kind="show" identifier="nextQuestion" id="4Y0-Vi-RZK"/>
-                    </connections>
-                </swipeGestureRecognizer>
+                <swipeGestureRecognizer direction="right" id="eLp-Hw-w4p"/>
+                <swipeGestureRecognizer direction="left" id="09b-PU-bP3"/>
             </objects>
             <point key="canvasLocation" x="10003" y="-741"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="j8g-LK-VmI"/>
+        <segue reference="wsF-3o-sIs"/>
+        <segue reference="WZ2-SS-CPF"/>
         <segue reference="BfN-i1-25Z"/>
         <segue reference="Y0j-Ov-pKA"/>
         <segue reference="CLy-Pr-DiZ"/>
-        <segue reference="WeZ-xL-wBL"/>
-        <segue reference="SLY-7c-vHx"/>
-        <segue reference="tXP-Rb-BTW"/>
-        <segue reference="Kt2-Xz-DzQ"/>
-        <segue reference="0f8-dh-4aY"/>
-        <segue reference="e2T-TW-JOZ"/>
+        <segue reference="0HT-Cj-ETQ"/>
+        <segue reference="rxC-Ec-5mo"/>
+        <segue reference="StL-Oo-Z7M"/>
+        <segue reference="rSe-lm-c21"/>
+        <segue reference="sb2-uV-5Tj"/>
         <segue reference="Mci-I7-GNE"/>
-        <segue reference="C66-nA-hAQ"/>
+        <segue reference="Use-hJ-ysl"/>
         <segue reference="OtI-iS-ptb"/>
+        <segue reference="Svp-Zx-2j8"/>
     </inferredMetricsTieBreakers>
-    <color key="tintColor" systemColor="labelColor"/>
     <resources>
-        <image name="Style Pick 10" width="1080" height="1080"/>
-        <image name="Style Pick 11" width="1080" height="1080"/>
-        <image name="Style Pick 12" width="1080" height="1080"/>
-        <image name="Style Pick 4" width="1080" height="1080"/>
-        <image name="Style Pick 5" width="1080" height="1080"/>
-        <image name="Style Pick 6" width="1080" height="1080"/>
-        <image name="Style Pick 7" width="1080" height="1080"/>
-        <image name="Style Pick 8" width="1080" height="1080"/>
-        <image name="Style Pick 9" width="1080" height="1080"/>
         <image name="Temp-1024x1024" width="1024" height="1024"/>
         <image name="arrowshape.left.fill" catalog="system" width="128" height="104"/>
         <image name="calendar" catalog="system" width="128" height="107"/>
