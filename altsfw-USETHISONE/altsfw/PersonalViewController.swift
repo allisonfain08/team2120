@@ -26,7 +26,7 @@ class PersonalViewController: UIViewController {
             func cancelOrder() { }
         }
         
-        PersonalViewController.addChild(View)
+       
      
         // Do any additional setup after loading the view.
     }
