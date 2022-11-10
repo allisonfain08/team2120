@@ -1,6 +1,6 @@
 // components/login.js
 import React, { Component } from 'react';
-import { StyleSheet, Text, View, TextInput, Button, Alert, ActivityIndicator } from 'react-native';
+import { StyleSheet, Text, View, TextInput, Button, Image, Alert, ActivityIndicator } from 'react-native';
 import firebase from '../database/firebase';
 
 export default class Login extends Component {
@@ -51,6 +51,10 @@ export default class Login extends Component {
     }    
     return (
       <View style={styles.container}>  
+        <Image 
+          style={styles.mainLogo}
+          source={require('./eKlozet.png')}
+        /> 
         <TextInput
           style={styles.inputStyle}
           placeholder="Email"
@@ -109,6 +113,14 @@ const styles = StyleSheet.create({
     position: 'absolute',
     alignItems: 'center',
     justifyContent: 'center',
-    backgroundColor: '#BCA77E'
+    backgroundColor: '#FAF9F6'
+  },
+  mainLogo: {
+    flexDirection: 'column',
+    justifyContent: 'center', 
+    alignItems: 'center',
+    alignSelf: 'center',
+    height: 400,
+    width: 400
   }
 });

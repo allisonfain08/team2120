@@ -1,10 +1,11 @@
 //
-//  Person.swift
+//  Record.swift
 //  altsfw
 //
-//  Created by Shonjoy Bhattacharyya on 11/9/22.
+//  Created by Nelson Rodriguez on 10/26/22.
 //
-
+//  A model created to store information of a user
+//
 
 import Foundation
 
@@ -13,7 +14,7 @@ class Person {
     var username: String = ""
     var password: String = ""
     
-    init(username:String, password:String) {
+    init(username: String, password: String) {
         self.username = username
         self.password = password
     }

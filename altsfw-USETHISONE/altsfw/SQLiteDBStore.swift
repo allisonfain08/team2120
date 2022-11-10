@@ -1,9 +1,4 @@
-//
-//  SQLiteDBStore.swift
-//  altsfw
-//
-//  Created by Shonjoy Bhattacharyya on 11/9/22.
-//
+// Author: Nelson Rodriguez
 
 // This code contains the primary functionality of the database
 // and will be used to store information pertaining users logging into the app
@@ -42,7 +37,7 @@ class DBHelper
     }
     
     func createTable() {
-        let createTableString = "CREATE TABLE IF NOT EXISTS person(username TEXT PRIMARY KEY,password TEXT);"
+        let createTableString = "CREATE TABLE IF NOT EXISTS person(username TEXT PRIMARY KEY, password TEXT);"
         var createTableStatement: OpaquePointer? = nil
         if sqlite3_prepare_v2(db, createTableString, -1, &createTableStatement, nil) == SQLITE_OK
         {
@@ -70,7 +65,7 @@ class DBHelper
                 return
             }
         }
-        let insertStatementString = "INSERT INTO person (username, password) VALUES (?, ?);"
+        let insertStatementString = "INSERT INTO person (Id, name, age) VALUES (NULL, ?, ?);"
         var insertStatement: OpaquePointer? = nil
         if sqlite3_prepare_v2(db, insertStatementString, -1, &insertStatement, nil) == SQLITE_OK {
             sqlite3_bind_text(insertStatement, 1, (username as NSString).utf8String, -1, nil)
@@ -95,7 +90,7 @@ class DBHelper
             while sqlite3_step(queryStatement) == SQLITE_ROW {
                 let username = String(describing: String(cString: sqlite3_column_text(queryStatement, 0)))
                 let password = String(describing: String(cString: sqlite3_column_text(queryStatement, 1)))
-                psns.append(Person(username: String(username), password: String(password)))
+                psns.append(Person(username: String(), password: String()))
                 print("Query Result:")
                 print("\(username) | \(password)")
             }

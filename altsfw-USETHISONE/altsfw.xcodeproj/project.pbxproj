@@ -21,12 +21,10 @@
 		2A2637B628F9215700A8D2A6 /* WeatherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A2637B528F9215700A8D2A6 /* WeatherViewController.swift */; };
 		2A2637B828F9216800A8D2A6 /* RecommendedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A2637B728F9216800A8D2A6 /* RecommendedViewController.swift */; };
 		2A2637BA28F9217600A8D2A6 /* ClosetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A2637B928F9217600A8D2A6 /* ClosetViewController.swift */; };
-		450FE4102917067200379AD1 /* PersonalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 450FE40F2917067200379AD1 /* PersonalViewController.swift */; };
 		9E304CF32905AF9C0060209F /* BeginQuizViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E304CF22905AF9C0060209F /* BeginQuizViewController.swift */; };
 		B31F0A2B28FF11370043AA85 /* SwipeTracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = B31F0A2A28FF11370043AA85 /* SwipeTracker.swift */; };
-		B378D3AB29065F2700225112 /* ResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B378D3AA29065F2700225112 /* ResultsViewController.swift */; };
-		B38B63C3291CA96000494F49 /* SQLiteDBStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = B38B63C2291CA96000494F49 /* SQLiteDBStore.swift */; };
-		B38B63C5291CA98600494F49 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = B38B63C4291CA98600494F49 /* Person.swift */; };
+		CED6ED7A29097B0A006CE4B7 /* SQLiteDBStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED6ED7929097B0A006CE4B7 /* SQLiteDBStore.swift */; };
+		CED6ED7C29098C1E006CE4B7 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED6ED7B29098C1E006CE4B7 /* Person.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,12 +44,10 @@
 		2A2637B528F9215700A8D2A6 /* WeatherViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherViewController.swift; sourceTree = "<group>"; };
 		2A2637B728F9216800A8D2A6 /* RecommendedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendedViewController.swift; sourceTree = "<group>"; };
 		2A2637B928F9217600A8D2A6 /* ClosetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClosetViewController.swift; sourceTree = "<group>"; };
-		450FE40F2917067200379AD1 /* PersonalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalViewController.swift; sourceTree = "<group>"; };
 		9E304CF22905AF9C0060209F /* BeginQuizViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeginQuizViewController.swift; sourceTree = "<group>"; };
 		B31F0A2A28FF11370043AA85 /* SwipeTracker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeTracker.swift; sourceTree = "<group>"; };
-		B378D3AA29065F2700225112 /* ResultsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsViewController.swift; sourceTree = "<group>"; };
-		B38B63C2291CA96000494F49 /* SQLiteDBStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SQLiteDBStore.swift; sourceTree = "<group>"; };
-		B38B63C4291CA98600494F49 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		CED6ED7929097B0A006CE4B7 /* SQLiteDBStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SQLiteDBStore.swift; sourceTree = "<group>"; };
+		CED6ED7B29098C1E006CE4B7 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,13 +80,13 @@
 		2A26379628F9040B00A8D2A6 /* altsfw */ = {
 			isa = PBXGroup;
 			children = (
+				CED6ED7B29098C1E006CE4B7 /* Person.swift */,
+				CED6ED7929097B0A006CE4B7 /* SQLiteDBStore.swift */,
 				2A26379728F9040B00A8D2A6 /* AppDelegate.swift */,
 				2A26379928F9040B00A8D2A6 /* SceneDelegate.swift */,
 				2A26379B28F9040B00A8D2A6 /* ViewController.swift */,
-				B38B63C4291CA98600494F49 /* Person.swift */,
 				2A2637AB28F90D9600A8D2A6 /* LoginViewController.swift */,
 				2A2637AD28F91DEF00A8D2A6 /* RegisterViewController.swift */,
-				B38B63C2291CA96000494F49 /* SQLiteDBStore.swift */,
 				2A2637AF28F91EE700A8D2A6 /* HomeViewController.swift */,
 				2A2637B128F9212F00A8D2A6 /* QuizViewController.swift */,
 				2A2637B328F9213F00A8D2A6 /* CalendarViewController.swift */,
@@ -99,8 +95,6 @@
 				2A2637B928F9217600A8D2A6 /* ClosetViewController.swift */,
 				B31F0A2A28FF11370043AA85 /* SwipeTracker.swift */,
 				2A26379D28F9040B00A8D2A6 /* Main.storyboard */,
-				450FE40F2917067200379AD1 /* PersonalViewController.swift */,
-				B378D3AA29065F2700225112 /* ResultsViewController.swift */,
 				2A2637A028F9040D00A8D2A6 /* Assets.xcassets */,
 				2A2637A228F9040D00A8D2A6 /* LaunchScreen.storyboard */,
 				2A2637A528F9040D00A8D2A6 /* Info.plist */,
@@ -181,20 +175,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				2A2637B428F9213F00A8D2A6 /* CalendarViewController.swift in Sources */,
-				450FE4102917067200379AD1 /* PersonalViewController.swift in Sources */,
 				2A2637B628F9215700A8D2A6 /* WeatherViewController.swift in Sources */,
-				B38B63C3291CA96000494F49 /* SQLiteDBStore.swift in Sources */,
+				CED6ED7C29098C1E006CE4B7 /* Person.swift in Sources */,
 				2A2637AC28F90D9600A8D2A6 /* LoginViewController.swift in Sources */,
-				B378D3AB29065F2700225112 /* ResultsViewController.swift in Sources */,
 				2A2637B228F9212F00A8D2A6 /* QuizViewController.swift in Sources */,
 				2A2637AE28F91DEF00A8D2A6 /* RegisterViewController.swift in Sources */,
 				B31F0A2B28FF11370043AA85 /* SwipeTracker.swift in Sources */,
 				2A2637BA28F9217600A8D2A6 /* ClosetViewController.swift in Sources */,
 				9E304CF32905AF9C0060209F /* BeginQuizViewController.swift in Sources */,
 				2A26379C28F9040B00A8D2A6 /* ViewController.swift in Sources */,
+				CED6ED7A29097B0A006CE4B7 /* SQLiteDBStore.swift in Sources */,
 				2A26379828F9040B00A8D2A6 /* AppDelegate.swift in Sources */,
 				2A26379A28F9040B00A8D2A6 /* SceneDelegate.swift in Sources */,
-				B38B63C5291CA98600494F49 /* Person.swift in Sources */,
 				2A2637B828F9216800A8D2A6 /* RecommendedViewController.swift in Sources */,
 				2A2637B028F91EE700A8D2A6 /* HomeViewController.swift in Sources */,
 			);
