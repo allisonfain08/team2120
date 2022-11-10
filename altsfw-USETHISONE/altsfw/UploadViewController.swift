@@ -9,30 +9,30 @@ import UIKit
 
 class UploadViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     
-    @IBOutlet weak var sizePicker: UIPickerView!
-//    var sizePickerData: [String] = [String]();
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
-    }
-    
-    var sizePickerData = ["blouse", "tshirt", "shorts", "skirt", "long shorts", "dress", "swimsuit"]
-    
-//    var sizePickerData: [String] = [String]();
-    
-    
-    @IBOutlet weak var type: UIButton!
-    
-    @IBAction func typeButton(_ sender: AnyObject) {
-        print(type.menu?.title)
-    }
-    
-    
-    
-    
-    
+//    @IBOutlet weak var sizePicker: UIPickerView!
+////    var sizePickerData: [String] = [String]();
+//    
+//    override func viewDidLoad() {
+//        super.viewDidLoad()
+//
+//        // Do any additional setup after loading the view.
+//    }
+//    
+//    var sizePickerData = ["blouse", "tshirt", "shorts", "skirt", "long shorts", "dress", "swimsuit"]
+//    
+////    var sizePickerData: [String] = [String]();
+//    
+//    
+//    @IBOutlet weak var type: UIButton!
+//    
+//    @IBAction func typeButton(_ sender: AnyObject) {
+//        print(type.menu?.title)
+//    }
+//    
+//    
+//    
+//    
+//    
     
     
     
@@ -50,7 +50,7 @@ class UploadViewController: UIViewController, UIImagePickerControllerDelegate, U
 //    }
 //
     @IBAction func selectPhoto(_ sender: Any) {
-        var myPickerController = UIImagePickerController()
+        let myPickerController = UIImagePickerController()
         myPickerController.delegate = self;
         myPickerController.sourceType = UIImagePickerController.SourceType.photoLibrary
         self.present(myPickerController, animated: true, completion: nil)
