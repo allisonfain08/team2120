@@ -341,9 +341,9 @@
                     <navigationItem key="navigationItem" id="2Sf-50-HR9"/>
                     <connections>
                         <outlet property="password" destination="wJr-FI-hC6" id="una-E5-D82"/>
-                        <outlet property="passwordField" destination="wJr-FI-hC6" id="Pb4-sR-3ZL"/>
+                        <outlet property="passwordField" destination="wJr-FI-hC6" id="2fv-NC-FiW"/>
                         <outlet property="username" destination="nbe-yC-xm6" id="ijk-Mf-r9t"/>
-                        <outlet property="usernameField" destination="nbe-yC-xm6" id="UuU-ku-Mp0"/>
+                        <outlet property="usernameField" destination="nbe-yC-xm6" id="3wz-hb-MYF"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jpx-mr-lai" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

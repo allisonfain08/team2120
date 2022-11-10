@@ -25,7 +25,19 @@ class LoginViewController: UIViewController {
     
     
     
+    @IBOutlet weak var usernameField: UITextField!
+    @IBOutlet weak var passwordField: UITextField!
+    var database = DBHelper()
     @IBAction func register(_ sender: Any) {
+        print("INSERT")
+        database.insert(username: usernameField.text ?? "sad", password: passwordField.text ?? "sad")
+        print("READ")
+        var persons:[Person] = []
+        persons = database.read()
+        print(persons[0])
+        print("HARDCODED PRINT")
+        print(usernameField.text ?? "sad")
+        print(passwordField.text ?? "sad")
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
             let RegisterViewController = storyboard.instantiateViewController(identifier: "RegisterViewController")
             
