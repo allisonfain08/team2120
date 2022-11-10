@@ -19,8 +19,8 @@
 		2A2637B228F9212F00A8D2A6 /* QuizViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A2637B128F9212F00A8D2A6 /* QuizViewController.swift */; };
 		2A2637B428F9213F00A8D2A6 /* CalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A2637B328F9213F00A8D2A6 /* CalendarViewController.swift */; };
 		2A2637B628F9215700A8D2A6 /* WeatherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A2637B528F9215700A8D2A6 /* WeatherViewController.swift */; };
-		2A2637B828F9216800A8D2A6 /* RecommendedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A2637B728F9216800A8D2A6 /* RecommendedViewController.swift */; };
 		2A2637BA28F9217600A8D2A6 /* ClosetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A2637B928F9217600A8D2A6 /* ClosetViewController.swift */; };
+		2A424C9B291C8CF400847288 /* UploadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A424C9A291C8CF400847288 /* UploadViewController.swift */; };
 		450E2B1829134C6A002646D7 /* LoginQuestionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 450E2B1729134C6A002646D7 /* LoginQuestionsViewController.swift */; };
 		9E304CF32905AF9C0060209F /* BeginQuizViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E304CF22905AF9C0060209F /* BeginQuizViewController.swift */; };
 		B31F0A2B28FF11370043AA85 /* SwipeTracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = B31F0A2A28FF11370043AA85 /* SwipeTracker.swift */; };
@@ -42,8 +42,8 @@
 		2A2637B128F9212F00A8D2A6 /* QuizViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizViewController.swift; sourceTree = "<group>"; };
 		2A2637B328F9213F00A8D2A6 /* CalendarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarViewController.swift; sourceTree = "<group>"; };
 		2A2637B528F9215700A8D2A6 /* WeatherViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherViewController.swift; sourceTree = "<group>"; };
-		2A2637B728F9216800A8D2A6 /* RecommendedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendedViewController.swift; sourceTree = "<group>"; };
 		2A2637B928F9217600A8D2A6 /* ClosetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClosetViewController.swift; sourceTree = "<group>"; };
+		2A424C9A291C8CF400847288 /* UploadViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadViewController.swift; sourceTree = "<group>"; };
 		450E2B1729134C6A002646D7 /* LoginQuestionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginQuestionsViewController.swift; sourceTree = "<group>"; };
 		9E304CF22905AF9C0060209F /* BeginQuizViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeginQuizViewController.swift; sourceTree = "<group>"; };
 		B31F0A2A28FF11370043AA85 /* SwipeTracker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeTracker.swift; sourceTree = "<group>"; };
@@ -81,6 +81,7 @@
 			isa = PBXGroup;
 			children = (
 				2A26379728F9040B00A8D2A6 /* AppDelegate.swift */,
+				2A424C9A291C8CF400847288 /* UploadViewController.swift */,
 				2A26379928F9040B00A8D2A6 /* SceneDelegate.swift */,
 				2A26379B28F9040B00A8D2A6 /* ViewController.swift */,
 				2A2637AB28F90D9600A8D2A6 /* LoginViewController.swift */,
@@ -89,7 +90,6 @@
 				2A2637B128F9212F00A8D2A6 /* QuizViewController.swift */,
 				2A2637B328F9213F00A8D2A6 /* CalendarViewController.swift */,
 				2A2637B528F9215700A8D2A6 /* WeatherViewController.swift */,
-				2A2637B728F9216800A8D2A6 /* RecommendedViewController.swift */,
 				2A2637B928F9217600A8D2A6 /* ClosetViewController.swift */,
 				B31F0A2A28FF11370043AA85 /* SwipeTracker.swift */,
 				2A26379D28F9040B00A8D2A6 /* Main.storyboard */,
@@ -175,6 +175,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2A2637B428F9213F00A8D2A6 /* CalendarViewController.swift in Sources */,
+				2A424C9B291C8CF400847288 /* UploadViewController.swift in Sources */,
 				2A2637B628F9215700A8D2A6 /* WeatherViewController.swift in Sources */,
 				2A2637AC28F90D9600A8D2A6 /* LoginViewController.swift in Sources */,
 				B378D3AB29065F2700225112 /* ResultsViewController.swift in Sources */,
@@ -187,7 +188,6 @@
 				2A26379C28F9040B00A8D2A6 /* ViewController.swift in Sources */,
 				2A26379828F9040B00A8D2A6 /* AppDelegate.swift in Sources */,
 				2A26379A28F9040B00A8D2A6 /* SceneDelegate.swift in Sources */,
-				2A2637B828F9216800A8D2A6 /* RecommendedViewController.swift in Sources */,
 				2A2637B028F91EE700A8D2A6 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

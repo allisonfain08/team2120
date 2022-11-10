@@ -751,19 +751,6 @@
                                     <action selector="back:" destination="iMB-Mi-xCE" eventType="touchUpInside" id="C7s-ej-Skm"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GuD-IQ-907">
-                                <rect key="frame" x="16" y="603" width="358" height="157"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="View Closet">
-                                    <color key="baseForegroundColor" systemColor="labelColor"/>
-                                    <color key="baseBackgroundColor" red="0.43921568989999998" green="0.41176474089999998" blue="0.47450977560000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                </buttonConfiguration>
-                                <connections>
-                                    <action selector="recommendation:" destination="iMB-Mi-xCE" eventType="touchUpInside" id="h5X-Mf-dTa"/>
-                                    <segue destination="jrI-5Y-nbY" kind="show" id="wsF-3o-sIs"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z3V-8R-BNt">
                                 <rect key="frame" x="171" y="48" width="50" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -771,6 +758,17 @@
                                 <buttonConfiguration key="configuration" style="plain" image="person.circle.fill" catalog="system" title="">
                                     <color key="baseForegroundColor" red="0.57442032450000002" green="0.36189759030000002" blue="0.77947443179999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </buttonConfiguration>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dBz-Nj-4HY">
+                                <rect key="frame" x="16" y="603" width="358" height="150"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="View Closet">
+                                    <color key="baseBackgroundColor" systemColor="systemIndigoColor"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <segue destination="jrI-5Y-nbY" kind="show" id="3wc-aa-ere"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="9JS-Ix-OYF"/>
@@ -813,10 +811,10 @@
             </objects>
             <point key="canvasLocation" x="3450.7692307692305" y="623.45971563981038"/>
         </scene>
-        <!--recommended view controller-->
+        <!--closet view controller-->
         <scene sceneID="d5T-ah-Zz1">
             <objects>
-                <viewController storyboardIdentifier="ClosetViewController" title="recommended view controller" id="jrI-5Y-nbY" customClass="ClosetViewController" customModule="altsfw" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ClosetViewController" title="closet view controller" id="jrI-5Y-nbY" customClass="ClosetViewController" customModule="altsfw" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Jb9-ay-5Ms">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="787"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -888,6 +886,8 @@
                                 <state key="normal" title="Button"/>
                                 <connections>
                                     <action selector="clothingTyper:" destination="YY1-nL-L0M" eventType="touchUpInside" id="s3a-eu-CRS"/>
+                                    <action selector="size:" destination="YY1-nL-L0M" eventType="touchUpInside" id="gZu-Nu-ViL"/>
+                                    <action selector="size:" destination="YY1-nL-L0M" eventType="valueChanged" id="sq6-fR-hqA"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Color" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kZ0-Sm-KUW">
@@ -921,6 +921,7 @@
                                 <state key="normal" title="Button"/>
                                 <connections>
                                     <action selector="clothingTyper:" destination="YY1-nL-L0M" eventType="touchUpInside" id="gam-6D-f92"/>
+                                    <action selector="color:" destination="YY1-nL-L0M" eventType="valueChanged" id="f7D-Ms-ski"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" showsMenuAsPrimaryAction="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" changesSelectionAsPrimaryAction="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fEr-Zr-UVL">
@@ -939,6 +940,7 @@
                                 </menu>
                                 <state key="normal" title="Button"/>
                                 <connections>
+                                    <action selector="accentColor:" destination="YY1-nL-L0M" eventType="valueChanged" id="A9t-fT-9d9"/>
                                     <action selector="clothingTyper:" destination="YY1-nL-L0M" eventType="touchUpInside" id="523-E7-crC"/>
                                 </connections>
                             </button>
@@ -966,6 +968,7 @@
                                 <state key="normal" title="Button"/>
                                 <connections>
                                     <action selector="clothingTyper:" destination="YY1-nL-L0M" eventType="touchUpInside" id="0Ug-tQ-j2g"/>
+                                    <action selector="secondaryMaterial:" destination="YY1-nL-L0M" eventType="valueChanged" id="ljp-az-u1K"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Secondary Material" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3x5-aC-U58">
@@ -992,6 +995,8 @@
                                 <state key="normal" title="Button"/>
                                 <connections>
                                     <action selector="clothingTyper:" destination="YY1-nL-L0M" eventType="touchUpInside" id="bCl-q2-B0o"/>
+                                    <action selector="primaryMaterial:" destination="YY1-nL-L0M" eventType="touchUpInside" id="D9x-Ie-a3X"/>
+                                    <action selector="primaryMaterial:" destination="YY1-nL-L0M" eventType="valueChanged" id="k1V-zH-Jev"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Clothing type" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="19m-Gj-i8m">
@@ -1004,7 +1009,11 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" showsMenuAsPrimaryAction="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" changesSelectionAsPrimaryAction="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0wm-Qv-hjl">
                                 <rect key="frame" x="179" y="342" width="171" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <accessibility key="accessibilityConfiguration" identifier="clothingSize">
+                                    <accessibilityTraits key="traits" button="YES" updatesFrequently="YES"/>
+                                </accessibility>
                                 <menu key="menu" title="type" id="OId-HK-rlj">
+                                    <menuOptions key="menuOptions" singleSelection="YES"/>
                                     <children>
                                         <command title="blouse" id="vwx-Lo-tCp"/>
                                         <command title="tshirt" id="8G3-2b-Iwb"/>
@@ -1015,11 +1024,39 @@
                                         <command title="swimsuit" id="E2g-JG-4Ui"/>
                                     </children>
                                 </menu>
-                                <state key="normal" title="Button"/>
+                                <state key="normal" title="size"/>
                                 <connections>
+                                    <action selector="btnAllocationType:" destination="YY1-nL-L0M" eventType="touchUpInside" id="ErG-6f-4LL"/>
+                                    <action selector="clothingType:" destination="YY1-nL-L0M" eventType="valueChanged" id="2bS-ZP-FoY"/>
                                     <action selector="clothingTyper:" destination="YY1-nL-L0M" eventType="touchUpInside" id="cnG-s9-dWl"/>
+                                    <action selector="type:" destination="YY1-nL-L0M" eventType="touchUpInside" id="3sg-gI-Afz"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" showsMenuAsPrimaryAction="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" changesSelectionAsPrimaryAction="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zYU-h5-yV6">
+                                <rect key="frame" x="244" y="304" width="41" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <menu key="menu" id="s23-VV-nGT">
+                                    <children>
+                                        <command title="Item 1" id="Rdt-OE-0qf"/>
+                                        <command title="Item 2" id="oAz-Cu-eEa"/>
+                                        <command title="shorts" id="XR8-eZ-BBd"/>
+                                        <command title="skirt" id="ALw-69-nLO"/>
+                                        <command title="dress" id="VOu-9j-u1b"/>
+                                        <command title="tshirt" id="1T3-5Q-XWQ"/>
+                                        <command title="long pants" id="3W2-8W-RDB"/>
+                                        <command title="blouse" id="H21-p2-KA7"/>
+                                        <command title="swimsuit" id="tva-Ae-N5f"/>
+                                    </children>
+                                </menu>
+                                <state key="normal" title="Button"/>
+                            </button>
+                            <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eQN-aA-9fz">
+                                <rect key="frame" x="-1" y="568" width="390" height="162"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" button="YES"/>
+                                </accessibility>
+                            </pickerView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="ya4-XD-4rM"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -1477,7 +1514,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="wsF-3o-sIs"/>
         <segue reference="WZ2-SS-CPF"/>
         <segue reference="BfN-i1-25Z"/>
         <segue reference="Y0j-Ov-pKA"/>
@@ -1490,7 +1526,7 @@
         <segue reference="Mci-I7-GNE"/>
         <segue reference="Use-hJ-ysl"/>
         <segue reference="OtI-iS-ptb"/>
-        <segue reference="Svp-Zx-2j8"/>
+        <segue reference="Plo-ju-dfM"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="Temp-1024x1024" width="1024" height="1024"/>
@@ -1511,6 +1547,9 @@
         </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemIndigoColor">
+            <color red="0.34509803921568627" green="0.33725490196078434" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
