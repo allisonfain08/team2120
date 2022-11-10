@@ -4,6 +4,7 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
         <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -20,23 +21,35 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="eKlozet-logoGold-01" translatesAutoresizingMaskIntoConstraints="NO" id="Iu1-Rw-vR9">
                                 <rect key="frame" x="72" y="277" width="247" height="295"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
+                                <color key="backgroundColor" name="AccentColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="29"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DXC-rd-QFb">
                                 <rect key="frame" x="135" y="696" width="121" height="56"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Let's Go!">
-                                    <color key="baseBackgroundColor" red="0.57995259759999995" green="0.66206520800000002" blue="0.45879018310000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <color key="baseForegroundColor" systemColor="labelColor"/>
+                                    <color key="baseBackgroundColor" name="AccentColor"/>
                                 </buttonConfiguration>
                                 <connections>
                                     <action selector="letsgo:" destination="BYZ-38-t0r" eventType="touchUpInside" id="n4A-0v-MCM"/>
                                     <segue destination="4ni-CA-P27" kind="show" id="Plo-ju-dfM"/>
                                 </connections>
                             </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="eKlozet-logoGold-01" translatesAutoresizingMaskIntoConstraints="NO" id="vsS-Mi-k48">
+                                <rect key="frame" x="127" y="47" width="137" height="311"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <connections>
+                        <outlet property="welcome" destination="UbW-bJ-0HT" id="BLi-WA-sW2"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -299,7 +312,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Login">
-                                    <color key="baseBackgroundColor" red="0.57995259759999995" green="0.66206520800000002" blue="0.45879018310000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <color key="baseBackgroundColor" name="AccentColor"/>
                                 </buttonConfiguration>
                                 <connections>
                                     <action selector="login:" destination="4ni-CA-P27" eventType="touchUpInside" id="Lei-Mx-DDM"/>
@@ -357,11 +370,11 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" image="arrowshape.left.fill" catalog="system">
-                                    <color key="baseForegroundColor" red="0.38280608919999998" green="0.43726325760000001" blue="0.30374868150000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <color key="baseForegroundColor" red="0.0039215686274509803" green="0.30196078431372547" blue="0.26666666666666666" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </buttonConfiguration>
                                 <connections>
                                     <action selector="back:" destination="HP9-AR-WXy" eventType="touchUpInside" id="7al-Cj-2vH"/>
-                                    <segue destination="iMB-Mi-xCE" kind="show" id="ok6-VE-G5O"/>
+                                    <segue destination="iMB-Mi-xCE" kind="show" id="c2q-vc-Mek"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bHV-6E-YmL">
@@ -369,31 +382,25 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Let's Begin!">
-                                    <color key="baseBackgroundColor" red="0.38280608919999998" green="0.43726325760000001" blue="0.30374868150000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <color key="baseForegroundColor" systemColor="labelColor"/>
+                                    <color key="baseBackgroundColor" red="0.87450980392156863" green="0.73333333333333328" blue="0.69019607843137254" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </buttonConfiguration>
                                 <connections>
                                     <segue destination="h4e-yP-1tg" kind="show" id="UJR-9w-uSB"/>
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="rectangle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="fQM-TH-MkO">
-                                <rect key="frame" x="-19" y="221" width="428" height="497"/>
+                                <rect key="frame" x="-19" y="159.66666666666652" width="428" height="497"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="tintColor" red="0.57995259759999995" green="0.66206520800000002" blue="0.45879018310000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="tintColor" red="0.70196078431372544" green="0.59215686274509804" blue="0.37647058823529411" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="rectangle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="wrM-9d-7y3">
-                                <rect key="frame" x="-19" y="241.66666666666652" width="428" height="116"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="rectangle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="JpD-8t-oUf">
+                                <rect key="frame" x="4" y="175.66666666666652" width="383" height="464"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="tintColor" red="0.38280608919999998" green="0.43726325760000001" blue="0.30374868150000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="tintColor" red="0.94117647058823528" green="0.92941176470588238" blue="0.88627450980392153" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="How to Take the Style Quiz:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wr1-ZM-mWU">
-                                <rect key="frame" x="25" y="283" width="340" height="32"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="26"/>
-                                <color key="textColor" systemColor="systemBackgroundColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="BHP-R4-qhQ">
-                                <rect key="frame" x="75" y="405" width="240" height="223"/>
+                                <rect key="frame" x="73" y="371" width="240" height="223"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="tintColor" red="0.94901961089999998" green="0.94901961089999998" blue="0.94901961089999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <string key="text">The following 10 questions will help us evaluate your unique fashion style. Swipe right or left depending on which corresponding outfit BEST represents something you would regularly wear. </string>
@@ -401,9 +408,27 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="19"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="eKlozet-logoGold-01" translatesAutoresizingMaskIntoConstraints="NO" id="RSv-GP-pjI">
+                                <rect key="frame" x="73" y="235" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="What's Your" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bBB-DN-EyL">
+                                <rect key="frame" x="94" y="47" width="202" height="47"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="39"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Style" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ipP-Dk-R0F">
+                                <rect key="frame" x="128" y="95" width="130" height="66"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="55"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Rd9-mO-xl2"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" red="0.76862745098039209" green="0.74509803921568629" blue="0.70980392156862748" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <gestureRecognizers/>
                     </view>
                     <navigationItem key="navigationItem" id="VyZ-Uk-fb6"/>
@@ -836,7 +861,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Take style quiz now">
                                     <color key="baseForegroundColor" systemColor="labelColor"/>
-                                    <color key="baseBackgroundColor" red="0.9529411793" green="0.96470588450000005" blue="0.83529412749999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <color key="baseBackgroundColor" red="0.87450980392156863" green="0.73333333333333328" blue="0.69019607843137254" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </buttonConfiguration>
                                 <connections>
                                     <action selector="styleQuiz:" destination="iMB-Mi-xCE" eventType="touchUpInside" id="UJ5-BZ-zBG"/>
@@ -846,11 +871,9 @@
                                 <rect key="frame" x="16" y="273" width="358" height="157"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" imagePlacement="leading" title="Dress for the weather">
-                                    <imageReference key="image" image="cloud.sun.fill" catalog="system" symbolScale="large"/>
-                                    <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Dress for the weather">
                                     <color key="baseForegroundColor" systemColor="labelColor"/>
-                                    <color key="baseBackgroundColor" red="0.82745099070000006" green="0.87843137979999997" blue="0.8392156959" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <color key="baseBackgroundColor" red="0.94117647058823528" green="0.92941176470588238" blue="0.88627450980392153" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </buttonConfiguration>
                                 <connections>
                                     <action selector="weather:" destination="iMB-Mi-xCE" eventType="touchUpInside" id="OBK-9H-2Tg"/>
@@ -861,9 +884,9 @@
                                 <rect key="frame" x="16" y="438" width="358" height="157"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" image="calendar" catalog="system" title="View your calendar">
+                                <buttonConfiguration key="configuration" style="filled" title="View your calendar">
                                     <color key="baseForegroundColor" systemColor="labelColor"/>
-                                    <color key="baseBackgroundColor" red="0.87058818339999999" green="0.74901962280000001" blue="0.63529413940000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <color key="baseBackgroundColor" red="0.76862745098039209" green="0.74509803921568629" blue="0.70980392156862748" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </buttonConfiguration>
                                 <connections>
                                     <action selector="calendar:" destination="iMB-Mi-xCE" eventType="touchUpInside" id="pGv-iQ-Umc"/>
@@ -886,8 +909,8 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Today's recommended outfit">
-                                    <color key="baseForegroundColor" systemColor="labelColor"/>
-                                    <color key="baseBackgroundColor" red="0.43921568989999998" green="0.41176474089999998" blue="0.47450977560000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <color key="baseForegroundColor" systemColor="opaqueSeparatorColor"/>
+                                    <color key="baseBackgroundColor" red="0.0039215686274509803" green="0.30196078431372547" blue="0.26666666666666666" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </buttonConfiguration>
                                 <connections>
                                     <action selector="recommendation:" destination="iMB-Mi-xCE" eventType="touchUpInside" id="h5X-Mf-dTa"/>
@@ -899,7 +922,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" image="person.circle.fill" catalog="system" title="">
-                                    <color key="baseForegroundColor" red="0.57442032450000002" green="0.36189759030000002" blue="0.77947443179999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <color key="baseForegroundColor" red="0.70196078431372544" green="0.59215686274509804" blue="0.37647058823529411" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </buttonConfiguration>
                             </button>
                         </subviews>
@@ -1659,14 +1682,13 @@
         <segue reference="CLy-Pr-DiZ"/>
         <segue reference="WeZ-xL-wBL"/>
         <segue reference="SLY-7c-vHx"/>
-        <segue reference="AKu-3F-zwO"/>
+        <segue reference="c2q-vc-Mek"/>
         <segue reference="Kt2-Xz-DzQ"/>
         <segue reference="rSe-lm-c21"/>
         <segue reference="sb2-uV-5Tj"/>
         <segue reference="Mci-I7-GNE"/>
-        <segue reference="C66-nA-hAQ"/>
-        <segue reference="OtI-iS-ptb"/>
-        <segue reference="b2U-iP-DqU"/>
+        <segue reference="UJR-9w-uSB"/>
+        <segue reference="NOG-KR-Ivi"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" systemColor="labelColor"/>
     <resources>
@@ -1681,10 +1703,8 @@
         <image name="Style Pick 8" width="1080" height="1080"/>
         <image name="Style Pick 9" width="1080" height="1080"/>
         <image name="arrowshape.left.fill" catalog="system" width="128" height="104"/>
-        <image name="calendar" catalog="system" width="128" height="107"/>
         <image name="chevron.left" catalog="system" width="97" height="128"/>
         <image name="chevron.right" catalog="system" width="97" height="128"/>
-        <image name="cloud.sun.fill" catalog="system" width="128" height="96"/>
         <image name="eKlozet-logoGold-01" width="885" height="1102"/>
         <image name="outfit" width="1280" height="1600"/>
         <image name="outfit2" width="1024" height="1024"/>
@@ -1693,8 +1713,14 @@
         <image name="outfit5" width="544" height="680"/>
         <image name="person.circle.fill" catalog="system" width="128" height="123"/>
         <image name="rectangle.fill" catalog="system" width="128" height="93"/>
+        <namedColor name="AccentColor">
+            <color red="0.70980392156862748" green="0.60392156862745094" blue="0.39215686274509803" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <systemColor name="labelColor">
             <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="opaqueSeparatorColor">
+            <color red="0.77647058823529413" green="0.77647058823529413" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
