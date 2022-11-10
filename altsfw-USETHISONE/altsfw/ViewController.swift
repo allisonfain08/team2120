@@ -17,8 +17,10 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        db.insert(username: "Nelson Rodriguez", password: "interesting")
+        db.insert(username: "Allison Fain", password: "2110TA swag")
+        db.openDatabase()
         
-        persons = db.read()
         // Do any additional setup after loading the view.
     }
 
