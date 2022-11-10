@@ -831,13 +831,13 @@
                                     <segue destination="iMB-Mi-xCE" kind="show" id="StL-Oo-Z7M"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BHY-9u-GRs">
-                                <rect key="frame" x="86" y="108" width="220" height="35"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IgE-t7-Rdk">
+                                <rect key="frame" x="165" y="141" width="142" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="upload a piece of clothing"/>
+                                <buttonConfiguration key="configuration" style="plain" title="upload clothing"/>
                                 <connections>
-                                    <segue destination="0Uq-7N-YTw" kind="showDetail" id="VeY-gt-AvV"/>
+                                    <segue destination="0Uq-7N-YTw" kind="show" id="YJg-54-Bs3"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -974,27 +974,6 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" showsMenuAsPrimaryAction="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" changesSelectionAsPrimaryAction="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kfG-mV-65H">
-                                <rect key="frame" x="179" y="492" width="171" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <menu key="menu" title="type" id="siP-sP-Scy">
-                                    <children>
-                                        <command title="blouse" id="ygc-as-xiH"/>
-                                        <command title="tshirt" id="Mht-H8-0Df"/>
-                                        <command title="shorts" id="4bb-o6-JBN"/>
-                                        <command title="skirt" id="hC3-pY-YFR"/>
-                                        <command title="long pants" id="hVW-3G-xOV"/>
-                                        <command title="dress" id="Cpo-kz-eoZ"/>
-                                        <command title="swimsuit" id="NGt-gt-Cq0"/>
-                                    </children>
-                                </menu>
-                                <state key="normal" title="Button"/>
-                                <connections>
-                                    <action selector="clothingTyper:" destination="YY1-nL-L0M" eventType="touchUpInside" id="bCl-q2-B0o"/>
-                                    <action selector="primaryMaterial:" destination="YY1-nL-L0M" eventType="touchUpInside" id="D9x-Ie-a3X"/>
-                                    <action selector="primaryMaterial:" destination="YY1-nL-L0M" eventType="valueChanged" id="k1V-zH-Jev"/>
-                                </connections>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Clothing type" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="19m-Gj-i8m">
                                 <rect key="frame" x="16" y="344" width="123" height="26"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -1002,34 +981,6 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" showsMenuAsPrimaryAction="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" changesSelectionAsPrimaryAction="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0wm-Qv-hjl">
-                                <rect key="frame" x="179" y="342" width="171" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <accessibility key="accessibilityConfiguration" identifier="clothingSize">
-                                    <accessibilityTraits key="traits" button="YES" updatesFrequently="YES"/>
-                                </accessibility>
-                                <menu key="menu" title="type" id="OId-HK-rlj">
-                                    <menuOptions key="menuOptions" singleSelection="YES"/>
-                                    <children>
-                                        <command title="blouse" id="vwx-Lo-tCp"/>
-                                        <command title="tshirt" id="8G3-2b-Iwb"/>
-                                        <command title="shorts" id="IxR-6E-C09"/>
-                                        <command title="skirt" id="Ydv-Tv-hWV"/>
-                                        <command title="long pants" id="zKg-P3-Yp3"/>
-                                        <command title="dress" id="zUh-j0-SCn"/>
-                                        <command title="swimsuit" id="E2g-JG-4Ui"/>
-                                    </children>
-                                </menu>
-                                <state key="normal" title="size"/>
-                                <connections>
-                                    <action selector="btnAllocationType:" destination="YY1-nL-L0M" eventType="touchUpInside" id="ErG-6f-4LL"/>
-                                    <action selector="clothingType:" destination="YY1-nL-L0M" eventType="valueChanged" id="2bS-ZP-FoY"/>
-                                    <action selector="clothingTyper:" destination="YY1-nL-L0M" eventType="touchUpInside" id="cnG-s9-dWl"/>
-                                    <action selector="type:" destination="YY1-nL-L0M" eventType="touchUpInside" id="3sg-gI-Afz"/>
-                                    <action selector="type:" destination="0Uq-7N-YTw" eventType="touchUpInside" id="SpA-Nl-fBC"/>
-                                    <action selector="typeButton:" destination="0Uq-7N-YTw" eventType="valueChanged" id="Jbf-4d-9St"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" showsMenuAsPrimaryAction="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" changesSelectionAsPrimaryAction="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zYU-h5-yV6">
                                 <rect key="frame" x="244" y="304" width="41" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -1067,7 +1018,7 @@
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Nzb-FY-zU8">
-                                <rect key="frame" x="36" y="47" width="318" height="182"/>
+                                <rect key="frame" x="36" y="20" width="318" height="182"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
@@ -1076,8 +1027,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="hWj-o4-Fzn"/>
                     <connections>
-                        <outlet property="type" destination="0wm-Qv-hjl" id="8fN-Xg-pmO"/>
-                        <outlet property="uiImageView" destination="Nzb-FY-zU8" id="0XH-kh-c7S"/>
+                        <outlet property="myImageView" destination="Nzb-FY-zU8" id="FvT-qS-5Ju"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2HY-Xp-JCQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -1531,7 +1481,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="3wc-aa-ere"/>
         <segue reference="WZ2-SS-CPF"/>
         <segue reference="BfN-i1-25Z"/>
         <segue reference="Y0j-Ov-pKA"/>
@@ -1544,7 +1493,7 @@
         <segue reference="Mci-I7-GNE"/>
         <segue reference="Use-hJ-ysl"/>
         <segue reference="OtI-iS-ptb"/>
-        <segue reference="Plo-ju-dfM"/>
+        <segue reference="Svp-Zx-2j8"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="Temp-1024x1024" width="1024" height="1024"/>
