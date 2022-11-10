@@ -34,7 +34,7 @@ class BeginQuizViewController: UIViewController {
             (UIApplication.shared.connectedScenes.first?.delegate as? SceneDelegate)?.changeRootViewController(HomeViewController)
     }
     
-    @IBAction func beginButton(_ sender: Any) {
+    @IBAction func beginButton(_ sender: Any) { //this is the begin quiz button 
     }
     
     
