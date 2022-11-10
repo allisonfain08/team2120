@@ -9,26 +9,16 @@ import UIKit
 import SwiftUI
 
 var swipeTracker = SwipeTracker()
-class QuizViewController: UIViewController {
+
+class QuizViewController:
+    UIViewController {
+    @IBOutlet private weak var results: UILabel!
+
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        
-        switch (swipeTracker.currQuestion) {
-        case 0:
-            view.backgroundColor = .blue
-            
-        case 1:
-            view.backgroundColor = .red
-            
-        case 2:
-            view.backgroundColor = .green
-            
-        default:
-            view.backgroundColor = .purple
-        }
-        
         //swipe functionality
         let swipeRight = UISwipeGestureRecognizer(target: self, action: #selector(swipeFunc))
         swipeRight.direction = .right
@@ -36,23 +26,21 @@ class QuizViewController: UIViewController {
         let swipeLeft = UISwipeGestureRecognizer(target: self, action: #selector(swipeFunc))
         swipeLeft.direction = .left
         self.view.addGestureRecognizer(swipeLeft)
-
     }
+    
     
     @objc func swipeFunc(gesture: UISwipeGestureRecognizer){
         if gesture.direction == .right {
-            swipeTracker.addSwipe(swipeType: "Right")
-            swipeTracker.incrementQuestion()
+            swipeTracker.addSwipe(direct: .right)
             performSegue(withIdentifier: "nextQuestion", sender: self)
         } else if gesture.direction == .left {
-            swipeTracker.addSwipe(swipeType: "Left")
-            swipeTracker.incrementQuestion()
+            swipeTracker.addSwipe(direct: .left)
             performSegue(withIdentifier: "nextQuestion", sender: self)
         }
-        if(swipeTracker.getSwipeArray().count == 6){
-            swipeTracker.printSwipeArray()
-            swipeTracker.currQuizResults = swipeTracker.swipeArray
-            swipeTracker.swipeArray = [String]()
+        if(swipeTracker.currQuestion > 10){
+            print(swipeTracker.returnNumAnswers())
+            swipeTracker.currQuestion = 1
+            swipeTracker.clearAnswers()
         }
     }
     @IBAction func back(_ sender: Any) {
