@@ -25,6 +25,8 @@
 		9E304CF32905AF9C0060209F /* BeginQuizViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E304CF22905AF9C0060209F /* BeginQuizViewController.swift */; };
 		B31F0A2B28FF11370043AA85 /* SwipeTracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = B31F0A2A28FF11370043AA85 /* SwipeTracker.swift */; };
 		B378D3AB29065F2700225112 /* ResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B378D3AA29065F2700225112 /* ResultsViewController.swift */; };
+		CE4394E4291CAFBB008DBEE5 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4394E3291CAFBB008DBEE5 /* Person.swift */; };
+		CE4394E6291CAFC4008DBEE5 /* SQLiteDBStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4394E5291CAFC4008DBEE5 /* SQLiteDBStore.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +50,8 @@
 		9E304CF22905AF9C0060209F /* BeginQuizViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeginQuizViewController.swift; sourceTree = "<group>"; };
 		B31F0A2A28FF11370043AA85 /* SwipeTracker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeTracker.swift; sourceTree = "<group>"; };
 		B378D3AA29065F2700225112 /* ResultsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsViewController.swift; sourceTree = "<group>"; };
+		CE4394E3291CAFBB008DBEE5 /* Person.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		CE4394E5291CAFC4008DBEE5 /* SQLiteDBStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SQLiteDBStore.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +103,8 @@
 				2A2637A228F9040D00A8D2A6 /* LaunchScreen.storyboard */,
 				2A2637A528F9040D00A8D2A6 /* Info.plist */,
 				9E304CF22905AF9C0060209F /* BeginQuizViewController.swift */,
+				CE4394E3291CAFBB008DBEE5 /* Person.swift */,
+				CE4394E5291CAFC4008DBEE5 /* SQLiteDBStore.swift */,
 			);
 			path = altsfw;
 			sourceTree = "<group>";
@@ -179,6 +185,7 @@
 				2A2637B628F9215700A8D2A6 /* WeatherViewController.swift in Sources */,
 				2A2637AC28F90D9600A8D2A6 /* LoginViewController.swift in Sources */,
 				B378D3AB29065F2700225112 /* ResultsViewController.swift in Sources */,
+				CE4394E6291CAFC4008DBEE5 /* SQLiteDBStore.swift in Sources */,
 				2A2637B228F9212F00A8D2A6 /* QuizViewController.swift in Sources */,
 				2A2637AE28F91DEF00A8D2A6 /* RegisterViewController.swift in Sources */,
 				B31F0A2B28FF11370043AA85 /* SwipeTracker.swift in Sources */,
@@ -188,6 +195,7 @@
 				2A26379828F9040B00A8D2A6 /* AppDelegate.swift in Sources */,
 				2A26379A28F9040B00A8D2A6 /* SceneDelegate.swift in Sources */,
 				2A2637B828F9216800A8D2A6 /* RecommendedViewController.swift in Sources */,
+				CE4394E4291CAFBB008DBEE5 /* Person.swift in Sources */,
 				2A2637B028F91EE700A8D2A6 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
