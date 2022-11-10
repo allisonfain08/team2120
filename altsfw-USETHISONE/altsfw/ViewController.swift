@@ -25,7 +25,11 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     @IBOutlet weak var eklozet: UILabel!
     
     @IBOutlet weak var welcome: UILabel!
+<<<<<<< HEAD
         
+=======
+    
+>>>>>>> parent of b5f7905 (DropDownAttempt)
     @IBAction func letsgo(_ sender: Any) {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
             let LoginViewController = storyboard.instantiateViewController(identifier: "LoginViewController")
