@@ -19,7 +19,6 @@ struct testDropDownView: View {
     @State private var rating = ""
     @State private var review = 3
     
-    let topCostVals = ["Less than $50", "$50 - $100", "$100 - $150", "$150 - $200", "More than $200"]
     
     let costVals = ["Less than $50", "$50 - $100", "$100 - $150", "$150 - $200", "More than $200"]
     
@@ -28,7 +27,7 @@ struct testDropDownView: View {
             Form {
                 Section {
                     Picker("Tops: ", selection: $topBudget) {
-                        ForEach(topCostVals, id: \.self) {
+                        ForEach(costVals, id: \.self) {
                             Text($0)
                         }
                     }
