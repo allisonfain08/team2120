@@ -6,9 +6,12 @@
 //
 
 import UIKit
+import SwiftUI
 
 class WeatherViewController: UIViewController {
-
+    
+    let swiftUIController = UIHostingController(rootView: testDropDownView())
+        
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -24,6 +27,9 @@ class WeatherViewController: UIViewController {
             (UIApplication.shared.connectedScenes.first?.delegate as? SceneDelegate)?.changeRootViewController(HomeViewController)
     }
     
+    @IBSegueAction func segueToUIView(_ coder: NSCoder) -> UIViewController? {
+        return UIHostingController(coder: coder, rootView: testDropDownView())
+    }
     /*
     // MARK: - Navigation
 
