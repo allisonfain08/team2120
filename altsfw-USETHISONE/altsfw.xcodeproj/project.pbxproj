@@ -20,6 +20,8 @@
 		2A2637B428F9213F00A8D2A6 /* CalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A2637B328F9213F00A8D2A6 /* CalendarViewController.swift */; };
 		2A2637B628F9215700A8D2A6 /* WeatherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A2637B528F9215700A8D2A6 /* WeatherViewController.swift */; };
 		2A2637BA28F9217600A8D2A6 /* ClosetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A2637B928F9217600A8D2A6 /* ClosetViewController.swift */; };
+		2A424C9F291E9F9100847288 /* UploadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A424C9E291E9F9100847288 /* UploadViewController.swift */; };
+		2A424CA1291E9F9B00847288 /* ClosetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A424CA0291E9F9B00847288 /* ClosetViewController.swift */; };
 		450FE4102917067200379AD1 /* PersonalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 450FE40F2917067200379AD1 /* PersonalViewController.swift */; };
 		9E304CF32905AF9C0060209F /* BeginQuizViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E304CF22905AF9C0060209F /* BeginQuizViewController.swift */; };
 		B31F0A2B28FF11370043AA85 /* SwipeTracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = B31F0A2A28FF11370043AA85 /* SwipeTracker.swift */; };
@@ -44,6 +46,8 @@
 		2A2637B328F9213F00A8D2A6 /* CalendarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarViewController.swift; sourceTree = "<group>"; };
 		2A2637B528F9215700A8D2A6 /* WeatherViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherViewController.swift; sourceTree = "<group>"; };
 		2A2637B928F9217600A8D2A6 /* ClosetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClosetViewController.swift; sourceTree = "<group>"; };
+		2A424C9E291E9F9100847288 /* UploadViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UploadViewController.swift; sourceTree = "<group>"; };
+		2A424CA0291E9F9B00847288 /* ClosetViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClosetViewController.swift; sourceTree = "<group>"; };
 		450FE40F2917067200379AD1 /* PersonalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalViewController.swift; sourceTree = "<group>"; };
 		9E304CF22905AF9C0060209F /* BeginQuizViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeginQuizViewController.swift; sourceTree = "<group>"; };
 		B31F0A2A28FF11370043AA85 /* SwipeTracker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeTracker.swift; sourceTree = "<group>"; };
@@ -86,7 +90,9 @@
 				2A26379928F9040B00A8D2A6 /* SceneDelegate.swift */,
 				2A26379B28F9040B00A8D2A6 /* ViewController.swift */,
 				2A2637AB28F90D9600A8D2A6 /* LoginViewController.swift */,
+				2A424C9E291E9F9100847288 /* UploadViewController.swift */,
 				2A2637AD28F91DEF00A8D2A6 /* RegisterViewController.swift */,
+				2A424CA0291E9F9B00847288 /* ClosetViewController.swift */,
 				2A2637AF28F91EE700A8D2A6 /* HomeViewController.swift */,
 				2A2637B128F9212F00A8D2A6 /* QuizViewController.swift */,
 				B38B63CA291CB90300494F49 /* Person.swift */,
@@ -178,6 +184,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2A2637B428F9213F00A8D2A6 /* CalendarViewController.swift in Sources */,
+				2A424C9F291E9F9100847288 /* UploadViewController.swift in Sources */,
 				450FE4102917067200379AD1 /* PersonalViewController.swift in Sources */,
 				2A2637B628F9215700A8D2A6 /* WeatherViewController.swift in Sources */,
 				2A2637AC28F90D9600A8D2A6 /* LoginViewController.swift in Sources */,
@@ -190,6 +197,7 @@
 				9E304CF32905AF9C0060209F /* BeginQuizViewController.swift in Sources */,
 				2A26379C28F9040B00A8D2A6 /* ViewController.swift in Sources */,
 				2A26379828F9040B00A8D2A6 /* AppDelegate.swift in Sources */,
+				2A424CA1291E9F9B00847288 /* ClosetViewController.swift in Sources */,
 				2A26379A28F9040B00A8D2A6 /* SceneDelegate.swift in Sources */,
 				B38B63CB291CB90300494F49 /* Person.swift in Sources */,
 				2A2637B028F91EE700A8D2A6 /* HomeViewController.swift in Sources */,
