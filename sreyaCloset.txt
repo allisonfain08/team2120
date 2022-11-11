@@ -1,5 +1,0 @@
-INSERT INTO sreyaCloset VALUES
-	('sreya', 'zara', 'tank', 'S', 'ruffle', 'pink', 'polyester'),
-	('sreya', 'mother', 'jeans', '26', 'dark wash', 'blue', 'denim'),
-	('sreya', 'veja', 'shoes', '8', 'casual sneakers', 'white', 'leather'),
-	('sreya', 'frame', 'jeans', '26', 'light wash', 'blue', 'denim');
