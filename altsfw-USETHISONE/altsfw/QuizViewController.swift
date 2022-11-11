@@ -52,6 +52,8 @@ class QuizViewController:
             (UIApplication.shared.connectedScenes.first?.delegate as? SceneDelegate)?.changeRootViewController(HomeViewController)
     }
     
+    
+    
     /*
     // MARK: - Navigation
 
