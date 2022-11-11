@@ -24,7 +24,7 @@ function MyStack() {
       <Stack.Screen 
         name="Signup" 
         component={Signup} 
-        options={{ title: 'Sign-up' }}
+        options={{ title: 'Signup' }}
       />       
       <Stack.Screen 
         name="Login" 
@@ -50,3 +50,5 @@ export default function App() {
     </NavigationContainer>
   );
 }
+
+// figure out with shonjoy about how to be able to implement the swiping feature using images from tanjuria
