@@ -15,14 +15,14 @@ class BeginQuizViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-    @IBOutlet weak var outerRectangleFill: UIImageView!
-    @IBOutlet weak var rectangleFill: UITextView!
+    
+    @IBOutlet weak var quizInstructionsLabel: UITextView!
+    
+    @IBOutlet weak var eKlozetLogoImage: UIImageView!
+    @IBOutlet weak var innerRectangle: UIImageView!
+    @IBOutlet weak var outerRectangle: UIImageView!
     @IBOutlet weak var styleLabel: UILabel!
-    @IBOutlet weak var whatLabel: UILabel!
-    
-    @IBOutlet weak var quizDescriptionLabel: UITextView!
-    
-    @IBOutlet weak var eklozetLogo: UIImageView!
+    @IBOutlet weak var findYourLabel: UILabel!
     
     
     @IBAction func back(_ sender: Any) {
@@ -34,7 +34,8 @@ class BeginQuizViewController: UIViewController {
             (UIApplication.shared.connectedScenes.first?.delegate as? SceneDelegate)?.changeRootViewController(HomeViewController)
     }
     
-    @IBAction func beginButton(_ sender: Any) { //this is the begin quiz button 
+    
+    @IBAction func begin(_ sender: Any) {
     }
     
     
