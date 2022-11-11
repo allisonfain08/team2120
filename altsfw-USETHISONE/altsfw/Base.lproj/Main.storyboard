@@ -786,13 +786,12 @@
                                 <rect key="frame" x="16" y="603" width="358" height="157"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="Today's Recommended Outfit">
+                                <buttonConfiguration key="configuration" style="filled" title="View Your Closet">
                                     <color key="baseForegroundColor" systemColor="systemBackgroundColor"/>
                                     <color key="baseBackgroundColor" red="0.0039215686274509803" green="0.30196078431372547" blue="0.26666666666666666" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <action selector="recommendation:" destination="iMB-Mi-xCE" eventType="touchUpInside" id="h5X-Mf-dTa"/>
-                                    <segue destination="jrI-5Y-nbY" kind="show" id="wsF-3o-sIs"/>
+                                    <segue destination="jrI-5Y-nbY" kind="show" id="bDh-xz-RjL"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z3V-8R-BNt">
@@ -1033,7 +1032,7 @@
         <!--recommended view controller-->
         <scene sceneID="d5T-ah-Zz1">
             <objects>
-                <viewController storyboardIdentifier="RecommendedViewController" title="recommended view controller" id="jrI-5Y-nbY" customClass="RecommendedViewController" customModule="altsfw" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="RecommendedViewController" title="recommended view controller" id="jrI-5Y-nbY" customClass="ClosetViewController" customModule="altsfw" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Jb9-ay-5Ms">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="787"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1046,8 +1045,19 @@
                                     <color key="baseForegroundColor" red="0.38280608919999998" green="0.43726325760000001" blue="0.30374868150000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <action selector="back:" destination="jrI-5Y-nbY" eventType="touchUpInside" id="jq3-UN-hhK"/>
+                                    <action selector="back:" destination="jrI-5Y-nbY" eventType="touchUpInside" id="Peq-cH-h75"/>
                                     <segue destination="iMB-Mi-xCE" kind="show" id="StL-Oo-Z7M"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a3n-Ax-6fy">
+                                <rect key="frame" x="117" y="99" width="157" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="go to your closet!">
+                                    <color key="baseForegroundColor" name="eKlozet Teal"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <segue destination="BEO-pc-h2z" kind="show" id="KLj-Ql-pym"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -1059,6 +1069,40 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Nan-hI-4Fy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2523" y="1299"/>
+        </scene>
+        <!--Upload View Controller-->
+        <scene sceneID="yQH-88-Km9">
+            <objects>
+                <viewController id="BEO-pc-h2z" customClass="UploadViewController" customModule="altsfw" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="6y3-5t-kpw">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="787"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="T8a-eQ-Z5C">
+                                <rect key="frame" x="16" y="47" width="358" height="227"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ccb-Td-PTl">
+                                <rect key="frame" x="135" y="282" width="121" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Select Photo"/>
+                                <connections>
+                                    <action selector="selectPhoto:" destination="BEO-pc-h2z" eventType="touchUpInside" id="gkB-sV-PHD"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="cUU-bT-D3Z"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="pEX-I5-dm5"/>
+                    <connections>
+                        <outlet property="myImageView" destination="T8a-eQ-Z5C" id="5mW-u6-cfS"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vT5-9n-1Nm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3304.6153846153843" y="1298.8151658767772"/>
         </scene>
         <!--Begin Quiz View Controller-->
         <scene sceneID="Liv-4p-LA0">
@@ -1410,6 +1454,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
+        <segue reference="bDh-xz-RjL"/>
         <segue reference="VRz-BF-ixM"/>
         <segue reference="KXn-5y-lbA"/>
         <segue reference="PWw-cl-WxQ"/>
@@ -1450,6 +1495,9 @@
         <image name="rectangle.fill" catalog="system" width="128" height="93"/>
         <namedColor name="AccentColor">
             <color red="0.70999997854232788" green="0.60399997234344482" blue="0.3919999897480011" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="eKlozet Teal">
+            <color red="0.0040000001899898052" green="0.30199998617172241" blue="0.2669999897480011" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <systemColor name="labelColor">
             <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
