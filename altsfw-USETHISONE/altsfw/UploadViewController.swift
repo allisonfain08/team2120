@@ -112,6 +112,7 @@ class UploadViewController: UIViewController, UIImagePickerControllerDelegate, U
         print(img)
         print(article)
         closetArray.printCloset()
+        print(closetArray.closet[0].image)
 
 
 

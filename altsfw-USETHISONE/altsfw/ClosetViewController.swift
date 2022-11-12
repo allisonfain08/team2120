@@ -43,14 +43,49 @@ class ClosetViewController: UIViewController {
     @IBOutlet weak var img8: UIImageView!
     
     @IBAction func viewCloset(_ sender: Any) {
-        img1.image = closetArray[0].image ?? NULL
-        img2.image = closetArray[1].image ?? NULL
-        img3.image = closetArray[2].image ?? NULL
-        img4.image = closetArray[3].image ?? NULL
-        img5.image = closetArray[4].image ?? NULL
-        img6.image = closetArray[5].image ?? NULL
-        img7.image = closetArray[6].image ?? NULL
-        img8.image = closetArray[7].image ?? NULL
+      //  guard case img1.image = closetArray.closet[0].image as? UIImage else { return }
+        var size = closetArray.closet.count - 1
+        if(size > 7){
+            size = 7
+        }
+        var imgArray = [img1, img2, img3, img4, img5, img6, img7, img8]
+        for i in 0...size {
+            if (closetArray.closet[i] != nil){
+                imgArray[i]?.image = closetArray.closet[i].image
+            }
+        }
+//        if (closetArray.closet[0] != nil) {
+//            img1.image = closetArray.closet[0].image
+//        }
+//        if (closetArray.closet[1] != nil) {
+//            img2.image = closetArray.closet[1].image
+//        }
+//        if (closetArray.closet[2] != nil) {
+//            img3.image = closetArray.closet[2].image
+//        }
+//        if (closetArray.closet[3] != nil) {
+//            img4.image = closetArray.closet[3].image
+//        }
+//        if (closetArray.closet[4] != nil) {
+//            img5.image = closetArray.closet[4].image
+//        }
+//        if (closetArray.closet[5] != nil) {
+//            img6.image = closetArray.closet[5].image
+//        }
+//        if (closetArray.closet[6] != nil) {
+//            img7.image = closetArray.closet[6].image
+//        }
+//        if (closetArray.closet[7] != nil) {
+//            img8.image = closetArray.closet[7].image
+//        }
+//        img1.image = closetArray.closet[0].image ?? NULL
+//        img2.image = closetArray.closet[1].image ?? NULL
+//        img3.image = closetArray.closet[2].image ?? NULL
+//        img4.image = closetArray.closet[3].image ?? NULL
+//        img5.image = closetArray.closet[4].image ? NULL
+//        img6.image = closetArray.closet[5].image ? NULL
+//        img7.image = closetArray.closet[6].image ? NULL
+//        img8.image = closetArray.closet[7].image ? NULL
 
     }
     
