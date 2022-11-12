@@ -11,7 +11,7 @@ import UIKit
 
 struct ArticleOfClothing {
     var type,primaryMaterial,secondaryMaterial, primaryColor,secondaryColor,size : String
-    var image = UIImage
+    var image : UIImage
     
     init(type: String, primaryMaterial: String, secondaryMaterial: String, primaryColor: String, secondaryColor: String, size: String, image: UIImage) {
         self.type = type
@@ -22,7 +22,4 @@ struct ArticleOfClothing {
         self.size = size
         self.image = image
     }
-}
-func getImage() : UIImage {
-    return self.image
 }

@@ -11,16 +11,15 @@ import Foundation
 import SwiftUI
 import UIKit
 
-var closet = [ArticleOfClothing]
 class ClosetArray {
     
     
     
     
     
-    func addItem(item : ArticleOfClothing) {
-        closet.append(item)
-    }
+//    func addItem(item : ArticleOfClothing) {
+//        closet.append(item)
+//    }
 }
 
 

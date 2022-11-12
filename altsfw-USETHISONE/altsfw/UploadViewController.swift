@@ -61,31 +61,10 @@ class UploadViewController: UIViewController, UIImagePickerControllerDelegate, U
     @IBOutlet weak var size: UITextField!
 //    var size0 = size.text ?? "sad"
 
+    @IBOutlet weak var image: UIImageView!
     
     
-    @IBAction func submit(_ sender: Any) {
-        
-        var type0 = (type.text) ?? "sad"
-        var material0 = material1.text ?? "sad"
-        var material3 = material2.text ?? "sad"
-        var color0 = color1.text ?? "sad"
-        var color3 = color2.text ?? "sad"
-        var size0 = size.text ?? "sad"
-        print(size0)
-        print(type0)
-        print(material0)
-        print(material3)
-        print(color0)
-        print(color3)
-
-
-
-
-
-
-        
-        
-    }
+    
     
     
     
@@ -111,8 +90,34 @@ class UploadViewController: UIViewController, UIImagePickerControllerDelegate, U
         }
 
         self.myImageView.image = selectedImage
-
         picker.dismiss(animated: true, completion: nil)
+    }
+    @IBAction func submit(_ sender: Any) {
+        
+        let type0 = (type.text) ?? "sad"
+        let material0 = material1.text ?? "sad"
+        let material3 = material2.text ?? "sad"
+        let color0 = color1.text ?? "sad"
+        let color3 = color2.text ?? "sad"
+        let size0 = size.text ?? "sad"
+        guard let img = image.image else { fatalError("Expected a dictionary containing an image, but was provided the following: ") }
+        let article = ArticleOfClothing(type: type0, primaryMaterial: material0, secondaryMaterial: material3, primaryColor: color0, secondaryColor: color3, size: size0, image: img)
+        print(type0)
+        print(material0)
+        print(material3)
+        print(color0)
+        print(color3)
+        print(size0)
+        print(img)
+        print(article)
+
+
+
+
+
+
+        
+        
     }
     
     
