@@ -6,7 +6,7 @@
 //
 
 import UIKit
-
+var closetArray = ClosetArray()
 class UploadViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     
 //    @IBOutlet weak var sizePicker: UIPickerView!
@@ -102,6 +102,7 @@ class UploadViewController: UIViewController, UIImagePickerControllerDelegate, U
         let size0 = size.text ?? "sad"
         guard let img = image.image else { fatalError("Expected a dictionary containing an image, but was provided the following: ") }
         let article = ArticleOfClothing(type: type0, primaryMaterial: material0, secondaryMaterial: material3, primaryColor: color0, secondaryColor: color3, size: size0, image: img)
+        closetArray.addItem(item: article)
         print(type0)
         print(material0)
         print(material3)
@@ -110,6 +111,7 @@ class UploadViewController: UIViewController, UIImagePickerControllerDelegate, U
         print(size0)
         print(img)
         print(article)
+        closetArray.printCloset()
 
 
 

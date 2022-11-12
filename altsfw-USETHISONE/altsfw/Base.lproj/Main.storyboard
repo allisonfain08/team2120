@@ -1090,7 +1090,31 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="HmU-Jz-B05">
-                                <rect key="frame" x="22" y="282" width="352" height="471"/>
+                                <rect key="frame" x="16" y="282" width="145" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="u5h-rH-Lc7">
+                                <rect key="frame" x="229" y="282" width="145" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JUM-2d-hnA">
+                                <rect key="frame" x="16" y="418" width="145" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qon-qJ-kt3">
+                                <rect key="frame" x="229" y="418" width="145" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="CeR-2f-y7b">
+                                <rect key="frame" x="229" y="554" width="145" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Eje-er-ij1">
+                                <rect key="frame" x="16" y="690" width="145" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WPR-QO-zc5">
+                                <rect key="frame" x="229" y="690" width="145" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vSQ-ea-S1k">
@@ -1107,11 +1131,34 @@
                                     <segue destination="7VN-Bo-tcG" kind="show" id="KZz-q3-QWk"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KdN-dy-yJI">
+                                <rect key="frame" x="141" y="47" width="109" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="view closet"/>
+                                <connections>
+                                    <action selector="viewCloset:" destination="jrI-5Y-nbY" eventType="touchUpInside" id="o1B-rr-0mR"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="C3o-DJ-rOx">
+                                <rect key="frame" x="16" y="554" width="145" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="uT6-Nh-U0W"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="p9U-rl-zv4"/>
+                    <connections>
+                        <outlet property="img1" destination="HmU-Jz-B05" id="EEe-Ah-HiC"/>
+                        <outlet property="img2" destination="u5h-rH-Lc7" id="2pQ-tZ-kn2"/>
+                        <outlet property="img3" destination="JUM-2d-hnA" id="9KE-zF-VJz"/>
+                        <outlet property="img4" destination="qon-qJ-kt3" id="GEd-pT-my3"/>
+                        <outlet property="img5" destination="C3o-DJ-rOx" id="7gc-9a-vor"/>
+                        <outlet property="img6" destination="CeR-2f-y7b" id="9MQ-fm-5VR"/>
+                        <outlet property="img7" destination="Eje-er-ij1" id="L7Z-J3-4Pj"/>
+                        <outlet property="img8" destination="WPR-QO-zc5" id="jQB-0B-vqt"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Nan-hI-4Fy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1668,7 +1715,7 @@
         <segue reference="KSm-ea-szE"/>
         <segue reference="W0H-7v-Dji"/>
         <segue reference="FT6-sX-wai"/>
-        <segue reference="AKu-3F-zwO"/>
+        <segue reference="StL-Oo-Z7M"/>
         <segue reference="Kt2-Xz-DzQ"/>
         <segue reference="zTi-k8-meo"/>
         <segue reference="t39-OW-ASU"/>

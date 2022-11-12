@@ -12,14 +12,19 @@ import SwiftUI
 import UIKit
 
 class ClosetArray {
-    
-    
-    
-    
-    
-//    func addItem(item : ArticleOfClothing) {
-//        closet.append(item)
-//    }
+    var closet: [ArticleOfClothing] = []
+    func addItem(item : ArticleOfClothing) {
+        closet.append(item)
+    }
+    func printCloset() {
+        print(closet.description)
+    }
+    func returnClosetString() -> String {
+        return closet.description
+    }
+    func returnCloset() -> [ArticleOfClothing] {
+        return closet
+    }
 }
 
 
