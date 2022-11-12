@@ -27,6 +27,8 @@
 		AEB9853D291EBD54005F5991 /* RatingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEB9853C291EBD54005F5991 /* RatingView.swift */; };
 		AEB9853F291EBFF5005F5991 /* testDropDownView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEB9853E291EBFF5005F5991 /* testDropDownView.swift */; };
 		B31F0A2B28FF11370043AA85 /* SwipeTracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = B31F0A2A28FF11370043AA85 /* SwipeTracker.swift */; };
+		B32AE978291FF7840049AA11 /* ClosetArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = B32AE977291FF7840049AA11 /* ClosetArray.swift */; };
+		B32AE97A291FF8400049AA11 /* ArticleOfClothing.swift in Sources */ = {isa = PBXBuildFile; fileRef = B32AE979291FF8400049AA11 /* ArticleOfClothing.swift */; };
 		B378D3AB29065F2700225112 /* ResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B378D3AA29065F2700225112 /* ResultsViewController.swift */; };
 		B38B63CB291CB90300494F49 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = B38B63CA291CB90300494F49 /* Person.swift */; };
 		B38B63CD291CB96200494F49 /* SQLiteDBStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = B38B63CC291CB96200494F49 /* SQLiteDBStore.swift */; };
@@ -55,6 +57,8 @@
 		AEB9853C291EBD54005F5991 /* RatingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingView.swift; sourceTree = "<group>"; };
 		AEB9853E291EBFF5005F5991 /* testDropDownView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = testDropDownView.swift; sourceTree = "<group>"; };
 		B31F0A2A28FF11370043AA85 /* SwipeTracker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeTracker.swift; sourceTree = "<group>"; };
+		B32AE977291FF7840049AA11 /* ClosetArray.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClosetArray.swift; sourceTree = "<group>"; };
+		B32AE979291FF8400049AA11 /* ArticleOfClothing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleOfClothing.swift; sourceTree = "<group>"; };
 		B378D3AA29065F2700225112 /* ResultsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsViewController.swift; sourceTree = "<group>"; };
 		B38B63CA291CB90300494F49 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 		B38B63CC291CB96200494F49 /* SQLiteDBStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SQLiteDBStore.swift; sourceTree = "<group>"; };
@@ -95,7 +99,9 @@
 				2A26379B28F9040B00A8D2A6 /* ViewController.swift */,
 				2A2637AB28F90D9600A8D2A6 /* LoginViewController.swift */,
 				2A424C9E291E9F9100847288 /* UploadViewController.swift */,
+				B32AE977291FF7840049AA11 /* ClosetArray.swift */,
 				2A2637AD28F91DEF00A8D2A6 /* RegisterViewController.swift */,
+				B32AE979291FF8400049AA11 /* ArticleOfClothing.swift */,
 				2A424CA0291E9F9B00847288 /* ClosetViewController.swift */,
 				2A2637AF28F91EE700A8D2A6 /* HomeViewController.swift */,
 				2A2637B128F9212F00A8D2A6 /* QuizViewController.swift */,
@@ -199,12 +205,14 @@
 				2A2637B228F9212F00A8D2A6 /* QuizViewController.swift in Sources */,
 				2A2637AE28F91DEF00A8D2A6 /* RegisterViewController.swift in Sources */,
 				B31F0A2B28FF11370043AA85 /* SwipeTracker.swift in Sources */,
+				B32AE978291FF7840049AA11 /* ClosetArray.swift in Sources */,
 				2A2637BA28F9217600A8D2A6 /* ClosetViewController.swift in Sources */,
 				9E304CF32905AF9C0060209F /* BeginQuizViewController.swift in Sources */,
 				2A26379C28F9040B00A8D2A6 /* ViewController.swift in Sources */,
 				AEB9853F291EBFF5005F5991 /* testDropDownView.swift in Sources */,
 				2A26379828F9040B00A8D2A6 /* AppDelegate.swift in Sources */,
 				2A424CA1291E9F9B00847288 /* ClosetViewController.swift in Sources */,
+				B32AE97A291FF8400049AA11 /* ArticleOfClothing.swift in Sources */,
 				2A26379A28F9040B00A8D2A6 /* SceneDelegate.swift in Sources */,
 				B38B63CB291CB90300494F49 /* Person.swift in Sources */,
 				AEB9853D291EBD54005F5991 /* RatingView.swift in Sources */,

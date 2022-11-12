@@ -19,6 +19,7 @@ class SwipeTracker {
             case trendy = "Trendy"
             case feminine = "Feminine"
         }
+    
     var questions :[Int:[Styles]] =
                         [1: [Styles.trendy, Styles.casual],
                          2: [Styles.bohemian, Styles.feminine],
