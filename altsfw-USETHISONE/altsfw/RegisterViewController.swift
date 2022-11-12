@@ -24,9 +24,12 @@ class RegisterViewController: UIViewController {
             (UIApplication.shared.connectedScenes.first?.delegate as? SceneDelegate)?.changeRootViewController(LoginViewController)
     }
     
+    
     @IBOutlet weak var usernameField: UITextField!
+
     @IBOutlet weak var passwordField: UITextField!
     let database = DBHelper()
+    
     @IBAction func submit(_ sender: Any) {
             print("INSERT")
             database.insert(username: usernameField.text ?? "sad", password: passwordField.text ?? "sad")
