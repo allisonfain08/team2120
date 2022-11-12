@@ -125,7 +125,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <datePicker contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="fill" contentVerticalAlignment="center" datePickerMode="date" style="compact" translatesAutoresizingMaskIntoConstraints="NO" id="KIV-aL-lMH">
-                                <rect key="frame" x="2" y="151" width="377" height="77"/>
+                                <rect key="frame" x="1" y="151" width="376" height="77"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <color key="tintColor" red="0.57995235919999999" green="0.65809136629999998" blue="0.45879095790000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <date key="maximumDate" timeIntervalSinceReferenceDate="252500400">
@@ -1050,14 +1050,56 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a3n-Ax-6fy">
-                                <rect key="frame" x="117" y="99" width="157" height="35"/>
+                                <rect key="frame" x="115" y="99" width="161" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="go to your closet!">
+                                <buttonConfiguration key="configuration" style="plain" title="add to your closet">
+                                    <backgroundConfiguration key="background">
+                                        <color key="backgroundColor" name="eKlozet Off White"/>
+                                    </backgroundConfiguration>
                                     <color key="baseForegroundColor" name="eKlozet Teal"/>
                                 </buttonConfiguration>
                                 <connections>
                                     <segue destination="BEO-pc-h2z" kind="show" id="KLj-Ql-pym"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3RO-a3-eCr">
+                                <rect key="frame" x="125" y="142" width="140" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="create an outfit">
+                                    <backgroundConfiguration key="background">
+                                        <color key="backgroundColor" name="eKlozet Off White"/>
+                                    </backgroundConfiguration>
+                                    <color key="baseForegroundColor" name="eKlozet Teal"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <segue destination="flx-n3-DP3" kind="show" id="DV0-NN-GRy"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Allison's closet" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K1w-uk-acv">
+                                <rect key="frame" x="115" y="244" width="160" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="HmU-Jz-B05">
+                                <rect key="frame" x="22" y="282" width="352" height="471"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vSQ-ea-S1k">
+                                <rect key="frame" x="115" y="185" width="161" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="view saved outfits">
+                                    <backgroundConfiguration key="background">
+                                        <color key="backgroundColor" name="eKlozet Off White"/>
+                                    </backgroundConfiguration>
+                                    <color key="baseForegroundColor" name="eKlozet Teal"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <segue destination="7VN-Bo-tcG" kind="show" id="KZz-q3-QWk"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -1068,7 +1110,69 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Nan-hI-4Fy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2523" y="1299"/>
+            <point key="canvasLocation" x="2521.5384615384614" y="1298.8151658767772"/>
+        </scene>
+        <!--createOutfitViewController-->
+        <scene sceneID="9aD-eF-EdM">
+            <objects>
+                <viewController title="createOutfitViewController" id="flx-n3-DP3" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="wcd-Y7-30h">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="787"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="6" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="85n-yi-ohz">
+                                <rect key="frame" x="28" y="54" width="334" height="185"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">Take array of all photos and allow users to tap three to form an outfit when they click submit. allow them to name the outfit as well. ex arr = [["outfit1", img723, img945, img433], ...]</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8bc-9q-u2m">
+                                <rect key="frame" x="157" y="687" width="76" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="submit">
+                                    <backgroundConfiguration key="background">
+                                        <color key="backgroundColor" name="eKlozet Off White"/>
+                                    </backgroundConfiguration>
+                                    <color key="baseForegroundColor" name="eKlozet Teal"/>
+                                </buttonConfiguration>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="PtC-SF-Ccv"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="5sd-rF-MkL"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2a1-H5-deW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2521.5384615384614" y="2012.5592417061609"/>
+        </scene>
+        <!--viewOutfitsViewcontroller-->
+        <scene sceneID="OLZ-Gd-xQ4">
+            <objects>
+                <viewController title="viewOutfitsViewcontroller" id="7VN-Bo-tcG" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="QIE-Sm-sv5">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="787"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="take array from  createOutfitViewController and pull images from there." textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="6" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5T4-yc-G08">
+                                <rect key="frame" x="40" y="47" width="539" height="185"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="3Ay-Lw-C3A"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="VEn-sU-jhu"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="06n-Cx-ezq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3305" y="2013"/>
         </scene>
         <!--Upload View Controller-->
         <scene sceneID="yQH-88-Km9">
@@ -1091,6 +1195,13 @@
                                     <action selector="selectPhoto:" destination="BEO-pc-h2z" eventType="touchUpInside" id="gkB-sV-PHD"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ow0-Fy-pkk">
+                                <rect key="frame" x="16" y="338" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="cUU-bT-D3Z"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -1454,7 +1565,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="bDh-xz-RjL"/>
         <segue reference="VRz-BF-ixM"/>
         <segue reference="KXn-5y-lbA"/>
         <segue reference="PWw-cl-WxQ"/>
@@ -1495,6 +1605,9 @@
         <image name="rectangle.fill" catalog="system" width="128" height="93"/>
         <namedColor name="AccentColor">
             <color red="0.70999997854232788" green="0.60399997234344482" blue="0.3919999897480011" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="eKlozet Off White">
+            <color red="0.94099998474121094" green="0.92900002002716064" blue="0.88599997758865356" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="eKlozet Teal">
             <color red="0.0040000001899898052" green="0.30199998617172241" blue="0.2669999897480011" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
