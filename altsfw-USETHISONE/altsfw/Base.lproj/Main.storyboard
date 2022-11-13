@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_0" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -83,7 +83,7 @@
                                 <buttonConfiguration key="configuration" style="filled" title="Continue"/>
                                 <connections>
                                     <action selector="submit:" destination="qVz-9e-xu8" eventType="touchUpInside" id="ShI-ve-osC"/>
-                                    <segue destination="JBb-nv-y4p" kind="show" id="XPS-af-KeH"/>
+                                    <segue destination="Ifb-ls-FiU" kind="show" destinationCreationSelector="segueToViewQuiz:" id="i7V-oR-hYV"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -130,7 +130,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <datePicker contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="fill" contentVerticalAlignment="center" datePickerMode="date" style="compact" translatesAutoresizingMaskIntoConstraints="NO" id="KIV-aL-lMH">
-                                <rect key="frame" x="0.0" y="151" width="374" height="77"/>
+                                <rect key="frame" x="0.0" y="151" width="372" height="77"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <color key="tintColor" red="0.57995235919999999" green="0.65809136629999998" blue="0.45879095790000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <date key="maximumDate" timeIntervalSinceReferenceDate="252500400">
@@ -1707,21 +1707,31 @@
             </objects>
             <point key="canvasLocation" x="10003" y="-741"/>
         </scene>
+        <!--Hosting Controller-->
+        <scene sceneID="J9O-yp-aOp">
+            <objects>
+                <hostingController id="Ifb-ls-FiU" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="rpu-60-09Z"/>
+                </hostingController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HBo-NC-Nk1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="235" y="1897"/>
+        </scene>
     </scenes>
     <inferredMetricsTieBreakers>
+        <segue reference="b2U-iP-DqU"/>
         <segue reference="VRz-BF-ixM"/>
         <segue reference="KXn-5y-lbA"/>
         <segue reference="PWw-cl-WxQ"/>
         <segue reference="KSm-ea-szE"/>
         <segue reference="W0H-7v-Dji"/>
         <segue reference="FT6-sX-wai"/>
-        <segue reference="StL-Oo-Z7M"/>
+        <segue reference="GOK-9p-YjL"/>
         <segue reference="Kt2-Xz-DzQ"/>
         <segue reference="zTi-k8-meo"/>
         <segue reference="t39-OW-ASU"/>
         <segue reference="Mci-I7-GNE"/>
         <segue reference="UJR-9w-uSB"/>
-        <segue reference="XPS-af-KeH"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" systemColor="labelColor"/>
     <resources>

@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import SwiftUI
 
 class RegisterViewController: UIViewController {
 
@@ -40,13 +41,13 @@ class RegisterViewController: UIViewController {
             print("HARDCODED PRINT")
             print(usernameField.text ?? "sad")
             print(passwordField.text ?? "sad")
-        let storyboard = UIStoryboard(name: "Main", bundle: nil)
-            let HomeViewController = storyboard.instantiateViewController(identifier: "HomeViewController")
-            
-            // This is to get the SceneDelegate object from your view controller
-            // then call the change root view controller function to change to main tab bar
-            (UIApplication.shared.connectedScenes.first?.delegate as? SceneDelegate)?.changeRootViewController(HomeViewController)
+        
     }
+    
+    @IBSegueAction func segueToViewQuiz(_ coder: NSCoder) -> UIViewController? {
+        return UIHostingController(coder: coder, rootView: testDropDownView())
+    }
+    
     /*
     // MARK: - Navigation
 

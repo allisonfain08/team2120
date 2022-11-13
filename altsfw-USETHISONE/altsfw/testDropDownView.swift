@@ -64,11 +64,10 @@ struct testDropDownView: View {
                 } header: {
                     Text("Budget")
                 }
-
+                //under Button(action: add the budget where needed
                 Section {
-                    Button("Save") {
-                        // add the budget wherever it is needed
-                    }
+                    Button(action: {segueToPersonal()},label: {Text("Next")
+                    })
                 }
             }
             .navigationTitle("Account Information")
@@ -76,6 +75,11 @@ struct testDropDownView: View {
     }
 }
 
+func segueToPersonal() {
+    let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let HomeViewController = storyboard.instantiateViewController(identifier: "HomeViewController")
+    (UIApplication.shared.connectedScenes.first?.delegate as? SceneDelegate)?.changeRootViewController(HomeViewController)
+}
 struct testDropDownView_Previews: PreviewProvider {
     static var previews: some View {
         testDropDownView()
