@@ -851,7 +851,7 @@
         <!--Personal View Controller-->
         <scene sceneID="M1s-yn-Gfh">
             <objects>
-                <viewController id="kzT-C9-G1O" customClass="PersonalViewController" customModule="altsfw" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="PersonalViewController" id="kzT-C9-G1O" customClass="PersonalViewController" customModule="altsfw" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="fe7-RH-XLR">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="787"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

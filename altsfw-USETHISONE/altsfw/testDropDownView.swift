@@ -77,8 +77,8 @@ struct testDropDownView: View {
 
 func segueToPersonal() {
     let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        let HomeViewController = storyboard.instantiateViewController(identifier: "HomeViewController")
-    (UIApplication.shared.connectedScenes.first?.delegate as? SceneDelegate)?.changeRootViewController(HomeViewController)
+        let PersonalViewController = storyboard.instantiateViewController(identifier: "PersonalViewController")
+    (UIApplication.shared.connectedScenes.first?.delegate as? SceneDelegate)?.changeRootViewController(PersonalViewController)
 }
 struct testDropDownView_Previews: PreviewProvider {
     static var previews: some View {
