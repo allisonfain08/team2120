@@ -61,28 +61,31 @@ class PersonalViewController: UIViewController {
         let HomeViewController = storyboard.instantiateViewController(identifier: "HomeViewController")
         
         //use below to set db values:
-        let bustMeasurement = bustEntryField.text
-        let waistMeasurement = waistEntryField.text
-        let hipMeasurement = hipEntryField.text
-        let backWaistMeasurement = backWaistEntryField.text
-        let frontWaistMeasurement = frontWaistEntryField.text
-        let highBustMeasurement = highBustEntryField.text
-        let highHipMeasurement = highHipEntryField.text
-        let skirtLengthMeasurement = skirtLengthEntryField.text
-        let inseamMeasurement = inseamEntryField.text
-        let sleeveLengthMeasurement = sleeveLengthEntryField.text
+//        let bustMeasurement = bustEntryField.text
+//        let waistMeasurement = waistEntryField.text
+//        let hipMeasurement = hipEntryField.text
+//        let backWaistMeasurement = backWaistEntryField.text
+//        let frontWaistMeasurement = frontWaistEntryField.text
+//        let highBustMeasurement = highBustEntryField.text
+//        let highHipMeasurement = highHipEntryField.text
+//        let skirtLengthMeasurement = skirtLengthEntryField.text
+//        let inseamMeasurement = inseamEntryField.text
+//        let sleeveLengthMeasurement = sleeveLengthEntryField.text
+        (UIApplication.shared.connectedScenes.first?.delegate as? SceneDelegate)?.changeRootViewController(HomeViewController)
     }
     
     @IBAction func skipButton(_ sender: Any) {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         let HomeViewController = storyboard.instantiateViewController(identifier: "HomeViewController")
+        (UIApplication.shared.connectedScenes.first?.delegate as? SceneDelegate)?.changeRootViewController(HomeViewController)
     }
     
     
-    @IBSegueAction func segueBackToUIView(_ coder: NSCoder) -> UIViewController? {
+
+    
+    @IBSegueAction func segueToUIView(_ coder: NSCoder) -> UIViewController? {
         return UIHostingController(coder: coder, rootView: testDropDownView())
     }
-    
     /*
     // MARK: - Navigation
 
