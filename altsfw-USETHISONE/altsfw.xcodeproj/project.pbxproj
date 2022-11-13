@@ -24,6 +24,10 @@
 		2A424CA1291E9F9B00847288 /* ClosetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A424CA0291E9F9B00847288 /* ClosetViewController.swift */; };
 		450FE4102917067200379AD1 /* PersonalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 450FE40F2917067200379AD1 /* PersonalViewController.swift */; };
 		9E304CF32905AF9C0060209F /* BeginQuizViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E304CF22905AF9C0060209F /* BeginQuizViewController.swift */; };
+		9E7E9A402921893E00DC49E7 /* CreateOutfitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E7E9A3F2921893E00DC49E7 /* CreateOutfitViewController.swift */; };
+		9E7E9A4429218D4E00DC49E7 /* Outfit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E7E9A4329218D4E00DC49E7 /* Outfit.swift */; };
+		9E7E9A4629218EAD00DC49E7 /* OutfitsArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E7E9A4529218EAD00DC49E7 /* OutfitsArray.swift */; };
+		9E7E9A4829219FA700DC49E7 /* ViewOutfitsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E7E9A4729219FA700DC49E7 /* ViewOutfitsViewController.swift */; };
 		AEB9853D291EBD54005F5991 /* RatingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEB9853C291EBD54005F5991 /* RatingView.swift */; };
 		AEB9853F291EBFF5005F5991 /* testDropDownView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEB9853E291EBFF5005F5991 /* testDropDownView.swift */; };
 		B31F0A2B28FF11370043AA85 /* SwipeTracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = B31F0A2A28FF11370043AA85 /* SwipeTracker.swift */; };
@@ -54,6 +58,10 @@
 		2A424CA0291E9F9B00847288 /* ClosetViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClosetViewController.swift; sourceTree = "<group>"; };
 		450FE40F2917067200379AD1 /* PersonalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalViewController.swift; sourceTree = "<group>"; };
 		9E304CF22905AF9C0060209F /* BeginQuizViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeginQuizViewController.swift; sourceTree = "<group>"; };
+		9E7E9A3F2921893E00DC49E7 /* CreateOutfitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateOutfitViewController.swift; sourceTree = "<group>"; };
+		9E7E9A4329218D4E00DC49E7 /* Outfit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Outfit.swift; sourceTree = "<group>"; };
+		9E7E9A4529218EAD00DC49E7 /* OutfitsArray.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OutfitsArray.swift; sourceTree = "<group>"; };
+		9E7E9A4729219FA700DC49E7 /* ViewOutfitsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewOutfitsViewController.swift; sourceTree = "<group>"; };
 		AEB9853C291EBD54005F5991 /* RatingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingView.swift; sourceTree = "<group>"; };
 		AEB9853E291EBFF5005F5991 /* testDropDownView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = testDropDownView.swift; sourceTree = "<group>"; };
 		B31F0A2A28FF11370043AA85 /* SwipeTracker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeTracker.swift; sourceTree = "<group>"; };
@@ -120,6 +128,10 @@
 				2A2637A228F9040D00A8D2A6 /* LaunchScreen.storyboard */,
 				2A2637A528F9040D00A8D2A6 /* Info.plist */,
 				9E304CF22905AF9C0060209F /* BeginQuizViewController.swift */,
+				9E7E9A3F2921893E00DC49E7 /* CreateOutfitViewController.swift */,
+				9E7E9A4329218D4E00DC49E7 /* Outfit.swift */,
+				9E7E9A4529218EAD00DC49E7 /* OutfitsArray.swift */,
+				9E7E9A4729219FA700DC49E7 /* ViewOutfitsViewController.swift */,
 			);
 			path = altsfw;
 			sourceTree = "<group>";
@@ -205,9 +217,11 @@
 				2A2637B228F9212F00A8D2A6 /* QuizViewController.swift in Sources */,
 				2A2637AE28F91DEF00A8D2A6 /* RegisterViewController.swift in Sources */,
 				B31F0A2B28FF11370043AA85 /* SwipeTracker.swift in Sources */,
+				9E7E9A4829219FA700DC49E7 /* ViewOutfitsViewController.swift in Sources */,
 				B32AE978291FF7840049AA11 /* ClosetArray.swift in Sources */,
 				2A2637BA28F9217600A8D2A6 /* ClosetViewController.swift in Sources */,
 				9E304CF32905AF9C0060209F /* BeginQuizViewController.swift in Sources */,
+				9E7E9A4429218D4E00DC49E7 /* Outfit.swift in Sources */,
 				2A26379C28F9040B00A8D2A6 /* ViewController.swift in Sources */,
 				AEB9853F291EBFF5005F5991 /* testDropDownView.swift in Sources */,
 				2A26379828F9040B00A8D2A6 /* AppDelegate.swift in Sources */,
@@ -215,7 +229,9 @@
 				B32AE97A291FF8400049AA11 /* ArticleOfClothing.swift in Sources */,
 				2A26379A28F9040B00A8D2A6 /* SceneDelegate.swift in Sources */,
 				B38B63CB291CB90300494F49 /* Person.swift in Sources */,
+				9E7E9A4629218EAD00DC49E7 /* OutfitsArray.swift in Sources */,
 				AEB9853D291EBD54005F5991 /* RatingView.swift in Sources */,
+				9E7E9A402921893E00DC49E7 /* CreateOutfitViewController.swift in Sources */,
 				2A2637B028F91EE700A8D2A6 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
