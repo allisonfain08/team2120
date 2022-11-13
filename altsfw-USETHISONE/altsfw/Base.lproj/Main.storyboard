@@ -105,7 +105,7 @@
             <objects>
                 <viewController id="JBb-nv-y4p" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleAspectFit" id="W3I-Oz-lZ8">
-                        <rect key="frame" x="0.0" y="0.0" width="390" height="787"/>
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="About YOU: Personal Information" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DOy-W5-3Ny">
@@ -879,6 +879,9 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                <connections>
+                                    <action selector="bustEntryField:" destination="kzT-C9-G1O" eventType="editingDidEnd" id="Wls-ur-Yo6"/>
+                                </connections>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="B" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hM6-1s-2pt">
                                 <rect key="frame" x="16" y="489" width="11" height="21"/>
@@ -892,6 +895,9 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                <connections>
+                                    <action selector="waistEntryField:" destination="kzT-C9-G1O" eventType="editingDidEnd" id="QEC-xW-DaF"/>
+                                </connections>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="C" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fNO-Jn-9km">
                                 <rect key="frame" x="16" y="531" width="12" height="21"/>
@@ -905,6 +911,9 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                <connections>
+                                    <action selector="hipEntryField:" destination="kzT-C9-G1O" eventType="editingDidEnd" id="60Q-5h-4Ba"/>
+                                </connections>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="D" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eHq-1l-6dT">
                                 <rect key="frame" x="16" y="573" width="12" height="21"/>
@@ -918,6 +927,9 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                <connections>
+                                    <action selector="backWaistEntryField:" destination="kzT-C9-G1O" eventType="editingDidEnd" id="Nju-LI-y2N"/>
+                                </connections>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="E" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fN3-gq-Szy">
                                 <rect key="frame" x="16" y="620" width="10" height="21"/>
@@ -931,6 +943,9 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                <connections>
+                                    <action selector="frontWaistEntryField:" destination="kzT-C9-G1O" eventType="editingDidEnd" id="Z7C-bv-txU"/>
+                                </connections>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="F" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tqu-X5-xm3">
                                 <rect key="frame" x="224" y="447" width="10" height="21"/>
@@ -944,6 +959,9 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                <connections>
+                                    <action selector="highBustEntryField:" destination="kzT-C9-G1O" eventType="editingDidEnd" id="qwv-HR-lIl"/>
+                                </connections>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="G" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RQD-fq-MXE">
                                 <rect key="frame" x="224" y="489" width="13" height="21"/>
@@ -957,6 +975,9 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                <connections>
+                                    <action selector="highHipEntryField:" destination="kzT-C9-G1O" eventType="editingDidEnd" id="KXr-Cc-cLh"/>
+                                </connections>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="H" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HjU-z4-tmk">
                                 <rect key="frame" x="224" y="531" width="13" height="21"/>
@@ -970,6 +991,9 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                <connections>
+                                    <action selector="skirtLengthEntryField:" destination="kzT-C9-G1O" eventType="editingDidEnd" id="maE-Ue-Ji3"/>
+                                </connections>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="I" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w7G-UW-EcG">
                                 <rect key="frame" x="224" y="573" width="5" height="21"/>
@@ -983,6 +1007,9 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                <connections>
+                                    <action selector="inseamEntryField:" destination="kzT-C9-G1O" eventType="editingDidEnd" id="Cfb-Hr-JaV"/>
+                                </connections>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="J" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Whs-n3-cty">
                                 <rect key="frame" x="224" y="620" width="9" height="21"/>
@@ -996,6 +1023,9 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                <connections>
+                                    <action selector="sleeveLengthEntryField:" destination="kzT-C9-G1O" eventType="editingDidEnd" id="gRk-P2-sc7"/>
+                                </connections>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mNh-CH-CMH">
                                 <rect key="frame" x="296" y="718" width="60" height="35"/>
@@ -1003,6 +1033,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Next"/>
                                 <connections>
+                                    <action selector="nextButton:" destination="kzT-C9-G1O" eventType="touchUpInside" id="v8h-5b-C1B"/>
                                     <segue destination="iMB-Mi-xCE" kind="show" id="q1k-JL-6wM"/>
                                 </connections>
                             </button>
@@ -1012,6 +1043,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Skip"/>
                                 <connections>
+                                    <action selector="skipButton:" destination="kzT-C9-G1O" eventType="touchUpInside" id="q4y-eE-6JN"/>
                                     <segue destination="iMB-Mi-xCE" kind="show" id="GOK-9p-YjL"/>
                                 </connections>
                             </button>
@@ -1021,7 +1053,8 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Back"/>
                                 <connections>
-                                    <segue destination="JBb-nv-y4p" kind="show" id="b2U-iP-DqU"/>
+                                    <action selector="backButton:" destination="kzT-C9-G1O" eventType="touchUpInside" id="oBE-lV-mN7"/>
+                                    <segue destination="Ifb-ls-FiU" kind="show" destinationCreationSelector="segueBackToUIView:" id="pvi-Fm-Bo7"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -1029,6 +1062,28 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="pDQ-K0-mU9"/>
+                    <connections>
+                        <outlet property="aLabel" destination="fXC-7s-PeD" id="2AZ-dy-FZI"/>
+                        <outlet property="bLabel" destination="hM6-1s-2pt" id="iQ0-Kt-Pqr"/>
+                        <outlet property="backWaistEntryField" destination="u6w-9V-UpK" id="wMS-Bj-Js2"/>
+                        <outlet property="bustEntryField" destination="mvq-X4-lBd" id="dys-7f-r9S"/>
+                        <outlet property="cLabel" destination="fNO-Jn-9km" id="mQK-uQ-Ogk"/>
+                        <outlet property="dLabel" destination="eHq-1l-6dT" id="Vyb-Eu-XCA"/>
+                        <outlet property="eLabel" destination="fN3-gq-Szy" id="ISy-uF-EcT"/>
+                        <outlet property="fLabel" destination="Tqu-X5-xm3" id="TIo-KK-Vuy"/>
+                        <outlet property="frontWaistEntryField" destination="b0P-Ro-45b" id="njg-Br-L2q"/>
+                        <outlet property="gLabel" destination="RQD-fq-MXE" id="Y5K-qO-WX1"/>
+                        <outlet property="hLabel" destination="HjU-z4-tmk" id="TUD-cf-mds"/>
+                        <outlet property="highBustEntryField" destination="hLS-7n-vGG" id="O7i-Y6-hml"/>
+                        <outlet property="highHipEntryField" destination="HtN-bI-ibK" id="XBJ-Gi-297"/>
+                        <outlet property="iLabel" destination="w7G-UW-EcG" id="8go-Wt-joa"/>
+                        <outlet property="inseamEntryField" destination="jHZ-Ob-qQ9" id="ptx-1R-RtX"/>
+                        <outlet property="jLabel" destination="Whs-n3-cty" id="AxF-Zw-9mg"/>
+                        <outlet property="measurementImage" destination="tcl-2w-Fd9" id="Wri-zh-jNt"/>
+                        <outlet property="skirtLengthEntryField" destination="rrE-ya-s7G" id="cot-2w-U0w"/>
+                        <outlet property="sleeveLengthEntryField" destination="OOW-S5-0fM" id="SSQ-mo-Js5"/>
+                        <outlet property="waistEntryField" destination="eKu-4C-duw" id="dCp-Mh-GQJ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZT9-1I-oDk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1719,14 +1774,14 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="b2U-iP-DqU"/>
+        <segue reference="pvi-Fm-Bo7"/>
         <segue reference="VRz-BF-ixM"/>
         <segue reference="KXn-5y-lbA"/>
         <segue reference="PWw-cl-WxQ"/>
         <segue reference="KSm-ea-szE"/>
         <segue reference="W0H-7v-Dji"/>
         <segue reference="FT6-sX-wai"/>
-        <segue reference="StL-Oo-Z7M"/>
+        <segue reference="GOK-9p-YjL"/>
         <segue reference="Kt2-Xz-DzQ"/>
         <segue reference="zTi-k8-meo"/>
         <segue reference="t39-OW-ASU"/>

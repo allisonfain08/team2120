@@ -20,6 +20,16 @@ class Person {
     var shoeBudget: String = ""
     var accBudget: String = ""
     var jewelryBudget: String = ""
+    var bustMeasurement = ""
+    var waistMeasurement = ""
+    var hipMeasurement = ""
+    var backWaistMeasurement = ""
+    var frontWaistMeasurement = ""
+    var highBustMeasurement = ""
+    var highHipMeasurement = ""
+    var skirtLengthMeasurement = ""
+    var inseamMeasurement = ""
+    var sleeveLengthMeasurement = ""
     
     init(username:String, password:String) {
         self.username = username
@@ -50,5 +60,42 @@ class Person {
     
     func setJewelryBudget(jewelryBudget:String) {
         self.jewelryBudget = jewelryBudget
+    }
+    func setBustMeasurement(bustMeasure:String) {
+        self.bustMeasurement = bustMeasure
+    }
+    
+    func setWaistMeasurement(waistMeasure:String) {
+        self.waistMeasurement = waistMeasure
+    }
+    func setHipMeasurement(hipMeasure:String) {
+        self.hipMeasurement = hipMeasure
+    }
+    
+    func setBackWaistMeasurement(backWaistMeasure:String) {
+        self.backWaistMeasurement = backWaistMeasure
+    }
+    func setFrontWaistMeasurement(frontWaistMeasure:String) {
+        self.frontWaistMeasurement = frontWaistMeasure
+    }
+    
+    func setHighBustMeasurement(highBustMeasure:String) {
+        self.highBustMeasurement = highBustMeasure
+    }
+    
+    func setHighHipMeasurement(highHipMeasure:String) {
+        self.highHipMeasurement = highHipMeasure
+    }
+    
+    func setSkirtLengthMeasurement(skirtLengthMeasure:String) {
+        self.skirtLengthMeasurement = skirtLengthMeasure
+    }
+    
+    func setInseamMeasurement(inseamMeasure:String) {
+        self.inseamMeasurement = inseamMeasure
+    }
+    
+    func setSleeveLengthMeasurement(sleeveLengthMeasure:String) {
+        self.sleeveLengthMeasurement = sleeveLengthMeasure
     }
 }
