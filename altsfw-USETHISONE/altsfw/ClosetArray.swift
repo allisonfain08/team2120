@@ -25,6 +25,10 @@ class ClosetArray {
     func returnCloset() -> [ArticleOfClothing] {
         return closet
     }
+    
+    func getArticleOfClothing(index: Int) -> ArticleOfClothing {
+        return closet[index]
+    }
 }
 
 

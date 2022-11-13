@@ -8,14 +8,15 @@
 import SwiftUI
 
 struct testDropDownView: View {
+    let database = DBHelper()
     
-    @State private var topBudget = ""
-    @State private var bottomBudget = ""
-    @State private var outerBudget = ""
-    @State private var dressBudget = ""
-    @State private var shoeBudget = ""
-    @State private var accBudget = ""
-    @State private var jewelryBudget = ""
+    @State private var topBudget = "Less than $50"
+    @State private var bottomBudget = "Less than $50"
+    @State private var outerBudget = "Less than $50"
+    @State private var dressBudget = "Less than $50"
+    @State private var shoeBudget = "Less than $50"
+    @State private var accBudget = "Less than $50"
+    @State private var jewelryBudget = "Less than $50"
     @State private var rating = ""
     @State private var review = 3
     
@@ -66,8 +67,16 @@ struct testDropDownView: View {
                 }
                 //under Button(action: add the budget where needed
                 Section {
-                    Button(action: {segueToPersonal()},label: {Text("Next")
-                    })
+                    Button("Next") {
+                        segueToPersonal()
+//                        Person.setTopBudget(topBudget)
+//                        Person.setBottomBudget(bottomBudget)
+//                        Person.setOuterBudget(outerBudget)
+//                        Person.setAccBudget(accBudget)
+//                        Person.setDressBudget(dressBudget)
+//                        Person.setShoeBudget(shoeBudget)
+//                        Person.setJewelryBudget(jewelryBudget)
+                    }
                 }
             }
             .navigationTitle("Account Information")
@@ -76,6 +85,8 @@ struct testDropDownView: View {
 }
 
 func segueToPersonal() {
+    
+    
     let storyboard = UIStoryboard(name: "Main", bundle: nil)
         let PersonalViewController = storyboard.instantiateViewController(identifier: "PersonalViewController")
     (UIApplication.shared.connectedScenes.first?.delegate as? SceneDelegate)?.changeRootViewController(PersonalViewController)

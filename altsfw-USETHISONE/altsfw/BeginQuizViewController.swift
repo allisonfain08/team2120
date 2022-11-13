@@ -36,6 +36,12 @@ class BeginQuizViewController: UIViewController {
     
     
     @IBAction func begin(_ sender: Any) {
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let QuizViewController = storyboard.instantiateViewController(identifier: "FirstStyleQuizQuestion")
+        
+        // This is to get the SceneDelegate object from your view controller
+        // then call the change root view controller function to change to main tab bar
+        (UIApplication.shared.connectedScenes.first?.delegate as? SceneDelegate)?.changeRootViewController(QuizViewController)
     }
     
     
