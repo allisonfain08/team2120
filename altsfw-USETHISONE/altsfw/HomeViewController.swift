@@ -33,6 +33,9 @@ class HomeViewController: UIViewController {
             (UIApplication.shared.connectedScenes.first?.delegate as? SceneDelegate)?.changeRootViewController(QuizViewController)
     }
     
+    @IBAction func account(_ sender: Any) {
+    }
+    
     @IBAction func weather(_ sender: Any) {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
             let WeatherViewController = storyboard.instantiateViewController(identifier: "WeatherViewController")
