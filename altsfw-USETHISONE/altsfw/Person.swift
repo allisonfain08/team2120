@@ -42,64 +42,112 @@ class Person {
     func setTopBudget(topBudget:String) {
         self.topBudget = topBudget
     }
-    
+    func getTopBudget() -> String {
+        return self.topBudget
+    }
     func setBottomBudget(bottomBudget:String) {
         self.bottomBudget = bottomBudget
     }
-    
+    func getBottomBudget() -> String {
+        return self.bottomBudget
+    }
     func setOuterBudget(outerBudget:String) {
         self.outerBudget = outerBudget
+    }
+    func getOuterBudget() -> String {
+        return self.outerBudget
     }
     
     func setDressBudget(dressBudget:String) {
         self.dressBudget = dressBudget
     }
-    
+    func getDressBudget() -> String {
+        return self.dressBudget
+    }
     func setShoeBudget(shoeBudget:String) {
         self.shoeBudget = shoeBudget
+    }
+    func getShoeBudget() -> String {
+        return self.shoeBudget
     }
     func setAccBudget(accBudget:String) {
         self.accBudget = accBudget
     }
-    
+    func getAccBudget() -> String {
+        return self.accBudget
+    }
     func setJewelryBudget(jewelryBudget:String) {
         self.jewelryBudget = jewelryBudget
     }
+    func getJewelryBudget() -> String {
+        return self.jewelryBudget
+    }
+    
     func setBustMeasurement(bustMeasure:String) {
         self.bustMeasurement = bustMeasure
+    }
+    func getBustMeasurement() -> String {
+        return self.bustMeasurement
     }
     
     func setWaistMeasurement(waistMeasure:String) {
         self.waistMeasurement = waistMeasure
     }
+    func getWaistMeasurement() -> String {
+        return self.waistMeasurement
+    }
+    
     func setHipMeasurement(hipMeasure:String) {
         self.hipMeasurement = hipMeasure
     }
-    
+    func getHipMeasurement() -> String {
+        return self.hipMeasurement
+    }
     func setBackWaistMeasurement(backWaistMeasure:String) {
         self.backWaistMeasurement = backWaistMeasure
     }
+    func getBackWaistMeasurement() -> String {
+        return self.backWaistMeasurement
+    }
+    
     func setFrontWaistMeasurement(frontWaistMeasure:String) {
         self.frontWaistMeasurement = frontWaistMeasure
+    }
+    func getFrontWaistMeasurement() -> String {
+        return self.frontWaistMeasurement
     }
     
     func setHighBustMeasurement(highBustMeasure:String) {
         self.highBustMeasurement = highBustMeasure
     }
+    func getHighBustMeasurement() -> String {
+        return self.highBustMeasurement
+    }
     
     func setHighHipMeasurement(highHipMeasure:String) {
         self.highHipMeasurement = highHipMeasure
+    }
+    func getHighHipMeasurement() -> String {
+        return self.highHipMeasurement
     }
     
     func setSkirtLengthMeasurement(skirtLengthMeasure:String) {
         self.skirtLengthMeasurement = skirtLengthMeasure
     }
-    
+    func getSkirtLengthMeasurement() -> String {
+        return self.skirtLengthMeasurement
+    }
     func setInseamMeasurement(inseamMeasure:String) {
         self.inseamMeasurement = inseamMeasure
+    }
+    func getInseamMeasurement() -> String {
+        return self.inseamMeasurement
     }
     
     func setSleeveLengthMeasurement(sleeveLengthMeasure:String) {
         self.sleeveLengthMeasurement = sleeveLengthMeasure
+    }
+    func getSleeveLengthMeasurement() -> String {
+        return self.sleeveLengthMeasurement
     }
 }
