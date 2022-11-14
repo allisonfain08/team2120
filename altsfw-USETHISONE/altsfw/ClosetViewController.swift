@@ -54,6 +54,7 @@ class ClosetViewController: UIViewController {
                 imgArray[i]?.image = closetArray.closet[i].image
             }
         }
+        
 //        if (closetArray.closet[0] != nil) {
 //            img1.image = closetArray.closet[0].image
 //        }
