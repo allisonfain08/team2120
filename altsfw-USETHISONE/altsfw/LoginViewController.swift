@@ -13,8 +13,11 @@ class LoginViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
-
+    @IBOutlet weak var username: UITextField!
+    @IBOutlet weak var password: UITextField!
+    
     @IBAction func login(_ sender: Any) {
+        print(db.checkIfExists(username: username.text, password: password.text))
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
             let HomeViewController = storyboard.instantiateViewController(identifier: "HomeViewController")
             

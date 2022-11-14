@@ -91,8 +91,8 @@ class DBHelper
                 let username = String(describing: String(cString: sqlite3_column_text(queryStatement, 0)))
                 let password = String(describing: String(cString: sqlite3_column_text(queryStatement, 1)))
                 psns.append(Person(username: String(username), password: String(password)))
-                print("Query Result:")
-                print("\(username) | \(password)")
+//                print("Query Result:")
+//                print("\(username) | \(password)")
             }
         } else {
             print("SELECT statement could not be prepared")
@@ -115,6 +115,32 @@ class DBHelper
             print("DELETE statement could not be prepared")
         }
         sqlite3_finalize(deleteStatement)
+    }
+    func checkIfExists(username:String, password:String) -> Bool {
+        let queryStatementString = "SELECT * FROM person WHERE username = ? && password = ?;"
+        //let queryStatementUser = "SELECT * FROM person WHERE username = ?;"
+        //let queryStatementPassword = "SELECT * FROM person WHERE password = ?;"
+        var queryStatement: OpaquePointer? = nil
+        var exists = false;
+        if sqlite3_prepare_v2(db, queryStatementString, -1, &queryStatement, nil) == SQLITE_OK {
+            sqlite3_bind_text(queryStatement, 1, (username as NSString).utf8String, -1, nil)
+            sqlite3_bind_text(queryStatement, 2, (password as NSString).utf8String, -1, nil)
+            let username = String(describing: String(cString: sqlite3_column_text(queryStatement, 0)))
+            let password = String(describing: String(cString: sqlite3_column_text(queryStatement, 1)))
+            if sqlite3_step(queryStatement) == SQLITE_DONE {
+                exists = true;
+            } else {
+                exists = false;
+            }
+            
+//                print("Query Result:")
+//                print("\(username) | \(password)")
+            
+        } else {
+            print("SELECT statement could not be prepared")
+        }
+        sqlite3_finalize(queryStatement)
+        return exists
     }
     
 }

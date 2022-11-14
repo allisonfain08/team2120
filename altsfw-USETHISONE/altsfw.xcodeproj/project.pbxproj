@@ -34,6 +34,7 @@
 		B32AE978291FF7840049AA11 /* ClosetArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = B32AE977291FF7840049AA11 /* ClosetArray.swift */; };
 		B32AE97A291FF8400049AA11 /* ArticleOfClothing.swift in Sources */ = {isa = PBXBuildFile; fileRef = B32AE979291FF8400049AA11 /* ArticleOfClothing.swift */; };
 		B378D3AB29065F2700225112 /* ResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B378D3AA29065F2700225112 /* ResultsViewController.swift */; };
+		B37DBCF42921B5FC00F107E2 /* InitialScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B37DBCF32921B5FC00F107E2 /* InitialScreenViewController.swift */; };
 		B38B63CB291CB90300494F49 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = B38B63CA291CB90300494F49 /* Person.swift */; };
 		B38B63CD291CB96200494F49 /* SQLiteDBStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = B38B63CC291CB96200494F49 /* SQLiteDBStore.swift */; };
 /* End PBXBuildFile section */
@@ -68,6 +69,7 @@
 		B32AE977291FF7840049AA11 /* ClosetArray.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClosetArray.swift; sourceTree = "<group>"; };
 		B32AE979291FF8400049AA11 /* ArticleOfClothing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleOfClothing.swift; sourceTree = "<group>"; };
 		B378D3AA29065F2700225112 /* ResultsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsViewController.swift; sourceTree = "<group>"; };
+		B37DBCF32921B5FC00F107E2 /* InitialScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialScreenViewController.swift; sourceTree = "<group>"; };
 		B38B63CA291CB90300494F49 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 		B38B63CC291CB96200494F49 /* SQLiteDBStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SQLiteDBStore.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -107,6 +109,7 @@
 				2A26379B28F9040B00A8D2A6 /* ViewController.swift */,
 				2A2637AB28F90D9600A8D2A6 /* LoginViewController.swift */,
 				2A424C9E291E9F9100847288 /* UploadViewController.swift */,
+				B37DBCF32921B5FC00F107E2 /* InitialScreenViewController.swift */,
 				B32AE977291FF7840049AA11 /* ClosetArray.swift */,
 				2A2637AD28F91DEF00A8D2A6 /* RegisterViewController.swift */,
 				B32AE979291FF8400049AA11 /* ArticleOfClothing.swift */,
@@ -208,6 +211,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2A2637B428F9213F00A8D2A6 /* CalendarViewController.swift in Sources */,
+				B37DBCF42921B5FC00F107E2 /* InitialScreenViewController.swift in Sources */,
 				2A424C9F291E9F9100847288 /* UploadViewController.swift in Sources */,
 				450FE4102917067200379AD1 /* PersonalViewController.swift in Sources */,
 				2A2637B628F9215700A8D2A6 /* WeatherViewController.swift in Sources */,

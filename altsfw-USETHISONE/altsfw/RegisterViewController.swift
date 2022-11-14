@@ -8,6 +8,7 @@
 import UIKit
 import SwiftUI
 
+var database:DBHelper = DBHelper()
 class RegisterViewController: UIViewController {
 
 
@@ -29,7 +30,7 @@ class RegisterViewController: UIViewController {
     @IBOutlet weak var usernameField: UITextField!
 
     @IBOutlet weak var passwordField: UITextField!
-    let database = DBHelper()
+//    var database:DBHelper = db //from InitialScreenViewController
     
     @IBAction func submit(_ sender: Any) {
             print("INSERT")
@@ -37,10 +38,8 @@ class RegisterViewController: UIViewController {
             print("READ")
             var persons:[Person] = []
             persons = database.read()
-            print(persons[0])
-            print("HARDCODED PRINT")
-            print(usernameField.text ?? "sad")
-            print(passwordField.text ?? "sad")
+            print(persons)
+
         
     }
     
