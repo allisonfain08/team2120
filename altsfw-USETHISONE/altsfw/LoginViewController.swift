@@ -18,7 +18,7 @@ class LoginViewController: UIViewController {
     @IBOutlet weak var usernameExistsLabel: UILabel!
     
     @IBAction func login(_ sender: Any) {
-        if (db.checkIfExists(username: username.text ?? "sad")) {
+        if (db.checkIfExists(username: username.text ?? "sad", password: password.text ?? "sad")) {
             let storyboard = UIStoryboard(name: "Main", bundle: nil)
                 let HomeViewController = storyboard.instantiateViewController(identifier: "HomeViewController")
                 
@@ -26,7 +26,7 @@ class LoginViewController: UIViewController {
                 // then call the change root view controller function to change to main tab bar
                 (UIApplication.shared.connectedScenes.first?.delegate as? SceneDelegate)?.changeRootViewController(HomeViewController)
         } else {
-            usernameExistsLabel.text = "Username not found, register for an account"
+            usernameExistsLabel.text = "Account not found, register for an account"
         }
     }
     
