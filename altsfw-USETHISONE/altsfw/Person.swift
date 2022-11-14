@@ -35,6 +35,10 @@ class Person {
         self.username = username
         self.password = password
     }
+    
+    func getUsername() -> String {
+        return self.username
+    }
     func setTopBudget(topBudget:String) {
         self.topBudget = topBudget
     }
