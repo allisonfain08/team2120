@@ -15,7 +15,13 @@ class AccountViewController: ViewController {
         // Do any additional setup after loading the view.
     }
     
-
+    @IBAction func homeButton(_ sender: Any) {
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let HomeViewController = storyboard.instantiateViewController(identifier: "HomeViewController")
+            
+        (UIApplication.shared.connectedScenes.first?.delegate as? SceneDelegate)?.changeRootViewController(HomeViewController)
+    }
+    
     /*
     // MARK: - Navigation
 

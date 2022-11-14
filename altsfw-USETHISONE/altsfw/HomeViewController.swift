@@ -34,6 +34,9 @@ class HomeViewController: UIViewController {
     }
     
     @IBAction func account(_ sender: Any) {
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let AccountViewController = storyboard.instantiateViewController(identifier: "AccountViewController")
+        (UIApplication.shared.connectedScenes.first?.delegate as? SceneDelegate)?.changeRootViewController(AccountViewController)
     }
     
     @IBAction func weather(_ sender: Any) {
