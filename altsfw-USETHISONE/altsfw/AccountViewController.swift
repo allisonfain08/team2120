@@ -15,6 +15,8 @@ class AccountViewController: ViewController {
         // Do any additional setup after loading the view.
     }
     
+    @IBOutlet weak var usernameLabel: UILabel!
+    
     @IBAction func homeButton(_ sender: Any) {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         let HomeViewController = storyboard.instantiateViewController(identifier: "HomeViewController")
