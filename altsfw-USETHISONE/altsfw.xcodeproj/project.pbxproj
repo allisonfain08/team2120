@@ -29,6 +29,7 @@
 		9E7E9A4629218EAD00DC49E7 /* OutfitsArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E7E9A4529218EAD00DC49E7 /* OutfitsArray.swift */; };
 		9E7E9A4829219FA700DC49E7 /* ViewOutfitsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E7E9A4729219FA700DC49E7 /* ViewOutfitsViewController.swift */; };
 		AEAF69AD2921C704001D8A2A /* StarRating in Frameworks */ = {isa = PBXBuildFile; productRef = AEAF69AC2921C704001D8A2A /* StarRating */; };
+		AEAF69AF2921CD26001D8A2A /* AccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEAF69AE2921CD26001D8A2A /* AccountViewController.swift */; };
 		AEB9853D291EBD54005F5991 /* RatingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEB9853C291EBD54005F5991 /* RatingView.swift */; };
 		AEB9853F291EBFF5005F5991 /* testDropDownView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEB9853E291EBFF5005F5991 /* testDropDownView.swift */; };
 		B31F0A2B28FF11370043AA85 /* SwipeTracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = B31F0A2A28FF11370043AA85 /* SwipeTracker.swift */; };
@@ -63,6 +64,7 @@
 		9E7E9A4329218D4E00DC49E7 /* Outfit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Outfit.swift; sourceTree = "<group>"; };
 		9E7E9A4529218EAD00DC49E7 /* OutfitsArray.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OutfitsArray.swift; sourceTree = "<group>"; };
 		9E7E9A4729219FA700DC49E7 /* ViewOutfitsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewOutfitsViewController.swift; sourceTree = "<group>"; };
+		AEAF69AE2921CD26001D8A2A /* AccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewController.swift; sourceTree = "<group>"; };
 		AEB9853C291EBD54005F5991 /* RatingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingView.swift; sourceTree = "<group>"; };
 		AEB9853E291EBFF5005F5991 /* testDropDownView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = testDropDownView.swift; sourceTree = "<group>"; };
 		B31F0A2A28FF11370043AA85 /* SwipeTracker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeTracker.swift; sourceTree = "<group>"; };
@@ -122,6 +124,7 @@
 				2A2637B928F9217600A8D2A6 /* ClosetViewController.swift */,
 				B31F0A2A28FF11370043AA85 /* SwipeTracker.swift */,
 				2A26379D28F9040B00A8D2A6 /* Main.storyboard */,
+				AEAF69AE2921CD26001D8A2A /* AccountViewController.swift */,
 				AEB9853E291EBFF5005F5991 /* testDropDownView.swift */,
 				450FE40F2917067200379AD1 /* PersonalViewController.swift */,
 				AEB9853C291EBD54005F5991 /* RatingView.swift */,
@@ -223,6 +226,7 @@
 				B378D3AB29065F2700225112 /* ResultsViewController.swift in Sources */,
 				B38B63CD291CB96200494F49 /* SQLiteDBStore.swift in Sources */,
 				2A2637B228F9212F00A8D2A6 /* QuizViewController.swift in Sources */,
+				AEAF69AF2921CD26001D8A2A /* AccountViewController.swift in Sources */,
 				2A2637AE28F91DEF00A8D2A6 /* RegisterViewController.swift in Sources */,
 				B31F0A2B28FF11370043AA85 /* SwipeTracker.swift in Sources */,
 				9E7E9A4829219FA700DC49E7 /* ViewOutfitsViewController.swift in Sources */,

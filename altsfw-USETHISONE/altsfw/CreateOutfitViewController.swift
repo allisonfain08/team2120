@@ -83,6 +83,7 @@ class CreateOutfitViewController: UIViewController {
 
     
     var rating = StarRating(initialRating: 3.5, onRatingChanged: {print($0)})
+    
     /*
     // MARK: - Navigation
 
