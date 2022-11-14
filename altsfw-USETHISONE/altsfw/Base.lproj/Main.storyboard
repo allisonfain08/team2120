@@ -1283,22 +1283,6 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9ng-Av-CYb" customClass="StarRatingView">
-                                <rect key="frame" x="106" y="644" width="192" height="72"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="starColor">
-                                        <color key="value" name="eKlozet Gold"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="rating">
-                                        <real key="value" value="0.0"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="starRoundingRawValue">
-                                        <integer key="value" value="1"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="PtC-SF-Ccv"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -1310,8 +1294,6 @@
                         <outlet property="img2" destination="qVt-u2-NPc" id="jMC-zK-jCF"/>
                         <outlet property="img3" destination="Gpd-Ct-u5M" id="0EJ-fh-emc"/>
                         <outlet property="outfitName" destination="7dx-K3-oOg" id="uEm-7k-cmc"/>
-                        <outlet property="starRating" destination="9ng-Av-CYb" id="MV3-hg-T4J"/>
-                        <outlet property="starRatingView" destination="9ng-Av-CYb" id="Z0F-5i-ABj"/>
                         <outlet property="switch0" destination="BiG-pC-65f" id="ybi-iF-xJV"/>
                         <outlet property="switch1" destination="Vo6-fT-FWe" id="G6i-HH-nnJ"/>
                         <outlet property="switch2" destination="azs-l3-gWy" id="kNI-fx-gWs"/>
@@ -2049,9 +2031,6 @@
         <image name="pick3" width="512" height="512"/>
         <image name="rectangle.fill" catalog="system" width="128" height="93"/>
         <namedColor name="AccentColor">
-            <color red="0.70999997854232788" green="0.60399997234344482" blue="0.3919999897480011" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </namedColor>
-        <namedColor name="eKlozet Gold">
             <color red="0.70999997854232788" green="0.60399997234344482" blue="0.3919999897480011" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="eKlozet Off White">

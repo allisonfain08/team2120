@@ -113,6 +113,8 @@ class UploadViewController: UIViewController, UIImagePickerControllerDelegate, U
         print(article)
         closetArray.printCloset()
         print(closetArray.closet[0].image)
+        navigationController?.popViewController(animated: true)
+        dismiss(animated: true, completion: nil)
 
 
 

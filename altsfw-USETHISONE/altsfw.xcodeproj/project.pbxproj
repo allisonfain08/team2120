@@ -28,9 +28,7 @@
 		9E7E9A4429218D4E00DC49E7 /* Outfit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E7E9A4329218D4E00DC49E7 /* Outfit.swift */; };
 		9E7E9A4629218EAD00DC49E7 /* OutfitsArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E7E9A4529218EAD00DC49E7 /* OutfitsArray.swift */; };
 		9E7E9A4829219FA700DC49E7 /* ViewOutfitsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E7E9A4729219FA700DC49E7 /* ViewOutfitsViewController.swift */; };
-		AEAF69A82921B422001D8A2A /* StarRatingStackView.xib in Resources */ = {isa = PBXBuildFile; fileRef = AEAF69A52921B421001D8A2A /* StarRatingStackView.xib */; };
-		AEAF69A92921B422001D8A2A /* StarRatingStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEAF69A62921B421001D8A2A /* StarRatingStackView.swift */; };
-		AEAF69AA2921B422001D8A2A /* StarRatingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEAF69A72921B422001D8A2A /* StarRatingView.swift */; };
+		AEAF69AD2921C704001D8A2A /* StarRating in Frameworks */ = {isa = PBXBuildFile; productRef = AEAF69AC2921C704001D8A2A /* StarRating */; };
 		AEB9853D291EBD54005F5991 /* RatingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEB9853C291EBD54005F5991 /* RatingView.swift */; };
 		AEB9853F291EBFF5005F5991 /* testDropDownView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEB9853E291EBFF5005F5991 /* testDropDownView.swift */; };
 		B31F0A2B28FF11370043AA85 /* SwipeTracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = B31F0A2A28FF11370043AA85 /* SwipeTracker.swift */; };
@@ -65,9 +63,6 @@
 		9E7E9A4329218D4E00DC49E7 /* Outfit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Outfit.swift; sourceTree = "<group>"; };
 		9E7E9A4529218EAD00DC49E7 /* OutfitsArray.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OutfitsArray.swift; sourceTree = "<group>"; };
 		9E7E9A4729219FA700DC49E7 /* ViewOutfitsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewOutfitsViewController.swift; sourceTree = "<group>"; };
-		AEAF69A52921B421001D8A2A /* StarRatingStackView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = StarRatingStackView.xib; sourceTree = "<group>"; };
-		AEAF69A62921B421001D8A2A /* StarRatingStackView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StarRatingStackView.swift; sourceTree = "<group>"; };
-		AEAF69A72921B422001D8A2A /* StarRatingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StarRatingView.swift; sourceTree = "<group>"; };
 		AEB9853C291EBD54005F5991 /* RatingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingView.swift; sourceTree = "<group>"; };
 		AEB9853E291EBFF5005F5991 /* testDropDownView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = testDropDownView.swift; sourceTree = "<group>"; };
 		B31F0A2A28FF11370043AA85 /* SwipeTracker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeTracker.swift; sourceTree = "<group>"; };
@@ -83,6 +78,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AEAF69AD2921C704001D8A2A /* StarRating in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,9 +134,6 @@
 				9E7E9A4329218D4E00DC49E7 /* Outfit.swift */,
 				9E7E9A4529218EAD00DC49E7 /* OutfitsArray.swift */,
 				9E7E9A4729219FA700DC49E7 /* ViewOutfitsViewController.swift */,
-				AEAF69A62921B421001D8A2A /* StarRatingStackView.swift */,
-				AEAF69A52921B421001D8A2A /* StarRatingStackView.xib */,
-				AEAF69A72921B422001D8A2A /* StarRatingView.swift */,
 			);
 			path = altsfw;
 			sourceTree = "<group>";
@@ -161,6 +154,9 @@
 			dependencies = (
 			);
 			name = altsfw;
+			packageProductDependencies = (
+				AEAF69AC2921C704001D8A2A /* StarRating */,
+			);
 			productName = altsfw;
 			productReference = 2A26379428F9040B00A8D2A6 /* altsfw.app */;
 			productType = "com.apple.product-type.application";
@@ -189,6 +185,9 @@
 				Base,
 			);
 			mainGroup = 2A26378B28F9040A00A8D2A6;
+			packageReferences = (
+				AEAF69AB2921C704001D8A2A /* XCRemoteSwiftPackageReference "StarRating" */,
+			);
 			productRefGroup = 2A26379528F9040B00A8D2A6 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -203,7 +202,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AEAF69A82921B422001D8A2A /* StarRatingStackView.xib in Resources */,
 				2A2637A428F9040D00A8D2A6 /* LaunchScreen.storyboard in Resources */,
 				2A2637A128F9040D00A8D2A6 /* Assets.xcassets in Resources */,
 				2A26379F28F9040B00A8D2A6 /* Main.storyboard in Resources */,
@@ -236,9 +234,7 @@
 				AEB9853F291EBFF5005F5991 /* testDropDownView.swift in Sources */,
 				2A26379828F9040B00A8D2A6 /* AppDelegate.swift in Sources */,
 				2A424CA1291E9F9B00847288 /* ClosetViewController.swift in Sources */,
-				AEAF69A92921B422001D8A2A /* StarRatingStackView.swift in Sources */,
 				B32AE97A291FF8400049AA11 /* ArticleOfClothing.swift in Sources */,
-				AEAF69AA2921B422001D8A2A /* StarRatingView.swift in Sources */,
 				2A26379A28F9040B00A8D2A6 /* SceneDelegate.swift in Sources */,
 				B38B63CB291CB90300494F49 /* Person.swift in Sources */,
 				9E7E9A4629218EAD00DC49E7 /* OutfitsArray.swift in Sources */,
@@ -460,6 +456,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		AEAF69AB2921C704001D8A2A /* XCRemoteSwiftPackageReference "StarRating" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/dkk/StarRating";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		AEAF69AC2921C704001D8A2A /* StarRating */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AEAF69AB2921C704001D8A2A /* XCRemoteSwiftPackageReference "StarRating" */;
+			productName = StarRating;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 2A26378C28F9040A00A8D2A6 /* Project object */;
 }
