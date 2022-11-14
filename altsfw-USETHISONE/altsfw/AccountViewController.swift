@@ -15,7 +15,7 @@ class AccountViewController: ViewController {
         // Do any additional setup after loading the view.
     }
     
-    @IBOutlet weak var usernameLabel: UILabel!
+   
     
     //unmodified labels:
     @IBOutlet weak var topLabel: UILabel!
@@ -42,6 +42,8 @@ class AccountViewController: ViewController {
     
     //modified labels:
     
+    @IBOutlet weak var usernameLabel: UILabel!
+    
     @IBOutlet weak var topBudgetLabel: UILabel!
     @IBOutlet weak var bottomBudgetLabel: UILabel!
     @IBOutlet weak var outerBudgetLabel: UILabel!
@@ -62,8 +64,9 @@ class AccountViewController: ViewController {
     @IBOutlet weak var sleeveLengthMeasurementLabel: UILabel!
     
     func setBudgetVals() {
-        
-        
+        //use getters in Person to get the string value: set label.text to the output of getter
+        //this may not work if our storage isn't working.
+
     }
     
     @IBAction func homeButton(_ sender: Any) {
