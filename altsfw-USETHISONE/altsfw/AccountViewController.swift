@@ -11,7 +11,7 @@ class AccountViewController: ViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        usernameLabel.text = Person.getUsername()
+        //usernameLabel.text = Person.getUsername()
         // Do any additional setup after loading the view.
     }
     

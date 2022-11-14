@@ -9,6 +9,7 @@
 <li> Users can now enter personal budget and measurement information after registering a new account. 
 <li> Users can now add images from the Photos app as clothing and add identifying information on each piece of clothing. 
 <li> Users can now use multiple pieces of clothing to create an outfit. 
+<li> Users can name outfits and create Calendar events for daily outfits or specific event outfits. 
 <li> Users can now rate outfits to demonstrate their preferences in the app.
 </ul>
 <h3>Bug Fixes</h3>
@@ -17,8 +18,8 @@
 </ul>
 <h3>Known Issues</h3>
 <ul>
-<li> Issue 1
-<li> Issue 2
+<li> View Closet button should automatically populate the page with images but currently needs to be pressed.
+<li> Issues with populating account page with previously entered values. 
 </ul>
 
 <h2>Version 0.3.0</h2>
