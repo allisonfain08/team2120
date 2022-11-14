@@ -3,6 +3,25 @@
 </n>
 <h1>Release Notes Section</h1>
 
+<h2>Version 0.4.0</h2>
+<h3>Features</h3>
+<ul>
+<li> Users can now enter personal budget and measurement information after registering a new account. 
+<li> Users can now add images from the Photos app as clothing and add identifying information on each piece of clothing. 
+<li> Users can now use multiple pieces of clothing to create an outfit. 
+<li> Users can name outfits and create Calendar events for daily outfits or specific event outfits. 
+<li> Users can now rate outfits to demonstrate their preferences in the app.
+</ul>
+<h3>Bug Fixes</h3>
+<ul>
+<li> Fixed BeginQuiz back button failing to send user back to Home page correctly. 
+</ul>
+<h3>Known Issues</h3>
+<ul>
+<li> View Closet button should automatically populate the page with images but currently needs to be pressed.
+<li> Issues with populating account page with budget and measurement user input. 
+</ul>
+
 <h2>Version 0.3.0</h2>
 <h3>Features</h3>
 <ul>
