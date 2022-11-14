@@ -29,6 +29,8 @@ class CreateOutfitViewController: UIViewController {
     
     @IBOutlet weak var outfitName: UITextField!
     
+    @IBOutlet weak var rating: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         populateImageViews()
@@ -66,9 +68,9 @@ class CreateOutfitViewController: UIViewController {
                 //if it's on, add the ArticleOfClothing
                 clothingItems.append(closetArray.getArticleOfClothing(index: idx))
             }
-        }
+        } 
         
-        var outfit = Outfit(name: outfitName.text ?? "outfit", clothingItems: clothingItems)
+        var outfit = Outfit(name: outfitName.text ?? "outfit", clothingItems: clothingItems, rating: rating.text ?? "none")
         outfitsArray.addItem(item: outfit)
     }
     
@@ -82,7 +84,7 @@ class CreateOutfitViewController: UIViewController {
     }
 
     
-    var rating = StarRating(initialRating: 3.5, onRatingChanged: {print($0)})
+    //var rating = StarRating(initialRating: 3.5, onRatingChanged: //{print($0)})
     
     /*
     // MARK: - Navigation

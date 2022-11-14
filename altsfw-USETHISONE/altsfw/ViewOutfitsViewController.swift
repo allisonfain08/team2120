@@ -19,12 +19,24 @@ class ViewOutfitsViewController: UIViewController {
     
     @IBOutlet weak var outfitName: UILabel!
     
+    @IBOutlet weak var rated: UILabel!
+    
+    
+    @IBOutlet weak var materialP: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
         var outfit = outfitsArray.outfits[0]
         outfitName.text = outfit.name
+        rated.text = outfit.rating
+        var primary = [String]()
+        for x in outfit.clothingItems {
+            primary.append(x.primaryMaterial)
+        }
+        var primaryString = primary.joined(separator: " ")
+        materialP.text = primaryString
         populateImageViews(outfit: outfit)
     }
     

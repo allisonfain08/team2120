@@ -130,7 +130,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <datePicker contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="fill" contentVerticalAlignment="center" datePickerMode="date" style="compact" translatesAutoresizingMaskIntoConstraints="NO" id="KIV-aL-lMH">
-                                <rect key="frame" x="-1" y="151" width="371" height="77"/>
+                                <rect key="frame" x="-3" y="151" width="371" height="77"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <color key="tintColor" red="0.57995235919999999" green="0.65809136629999998" blue="0.45879095790000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <date key="maximumDate" timeIntervalSinceReferenceDate="252500400">
@@ -1283,6 +1283,19 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sod-g2-8Fx">
+                                <rect key="frame" x="145" y="674" width="97" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Out of 1-5 (perfect style match), rate this outfit: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BgR-9r-bHC">
+                                <rect key="frame" x="16" y="645" width="366" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="PtC-SF-Ccv"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -1294,6 +1307,7 @@
                         <outlet property="img2" destination="qVt-u2-NPc" id="jMC-zK-jCF"/>
                         <outlet property="img3" destination="Gpd-Ct-u5M" id="0EJ-fh-emc"/>
                         <outlet property="outfitName" destination="7dx-K3-oOg" id="uEm-7k-cmc"/>
+                        <outlet property="rating" destination="sod-g2-8Fx" id="ObW-5c-MxM"/>
                         <outlet property="switch0" destination="BiG-pC-65f" id="ybi-iF-xJV"/>
                         <outlet property="switch1" destination="Vo6-fT-FWe" id="G6i-HH-nnJ"/>
                         <outlet property="switch2" destination="azs-l3-gWy" id="kNI-fx-gWs"/>
@@ -1356,6 +1370,34 @@
                                     <action selector="submit:" destination="BEO-pc-h2z" eventType="touchUpInside" id="kWe-rh-hnl"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="You Rated this Outfit: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OQp-9C-XMy">
+                                <rect key="frame" x="128" y="461" width="166" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sgH-VM-qzS">
+                                <rect key="frame" x="186" y="498" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UFh-jf-Cqv">
+                                <rect key="frame" x="34" y="581" width="340" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Primary Materials in this Outfit:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ENN-xb-ULg">
+                                <rect key="frame" x="92" y="539" width="234" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="3Ay-Lw-C3A"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -1366,7 +1408,9 @@
                         <outlet property="img1" destination="Q8L-fg-fT4" id="vZl-zv-VYO"/>
                         <outlet property="img2" destination="W5p-Nm-Pej" id="FwK-Wk-tun"/>
                         <outlet property="img3" destination="fa3-BJ-T5Z" id="tWr-hi-CAe"/>
+                        <outlet property="materialP" destination="UFh-jf-Cqv" id="hLn-Ms-j1S"/>
                         <outlet property="outfitName" destination="Bdi-xK-VYu" id="tig-r9-u1O"/>
+                        <outlet property="rated" destination="sgH-VM-qzS" id="oEH-fR-PSN"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="06n-Cx-ezq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -2342,7 +2386,7 @@
         <image name="pick3" width="512" height="512"/>
         <image name="rectangle.fill" catalog="system" width="128" height="93"/>
         <namedColor name="AccentColor">
-            <color red="0.70999997854232788" green="0.60399997234344482" blue="0.3919999897480011" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="eKlozet Off White">
             <color red="0.94099998474121094" green="0.92900002002716064" blue="0.88599997758865356" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

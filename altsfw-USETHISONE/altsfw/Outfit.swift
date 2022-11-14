@@ -12,10 +12,12 @@ import UIKit
 struct Outfit {
     var name : String
     var clothingItems : [ArticleOfClothing]
+    var rating : String
     
-    init(name: String, clothingItems: [ArticleOfClothing]) {
+    init(name: String, clothingItems: [ArticleOfClothing], rating: String) {
         self.name = name
         self.clothingItems = clothingItems
+        self.rating = rating
     }
     
     
