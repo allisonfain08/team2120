@@ -31,6 +31,9 @@ class Person {
     var inseamMeasurement = ""
     var sleeveLengthMeasurement = ""
     
+    // when you create a username and password, automatically create a new personArray. have an array that holds all those arrays. for each array, have all the fields but initialize to 0 until they fix it
+    
+    
     init(username:String, password:String) {
         self.username = username
         self.password = password

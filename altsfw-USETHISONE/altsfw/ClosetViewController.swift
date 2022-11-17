@@ -26,6 +26,9 @@ class ClosetViewController: UIViewController {
     }
     
     
+    @IBOutlet weak var closetLabel: UILabel!
+    
+    
     @IBOutlet weak var img1: UIImageView!
     
     @IBOutlet weak var img2: UIImageView!
@@ -42,8 +45,13 @@ class ClosetViewController: UIViewController {
     
     @IBOutlet weak var img8: UIImageView!
     
+    //person = new Person(username: <#T##String#>, password: <#T##String#>)
+    
     @IBAction func viewCloset(_ sender: Any) {
       //  guard case img1.image = closetArray.closet[0].image as? UIImage else { return }
+        
+        //closetLabel.text = Person.getUsername(<#T##self: Person##Person#>) + "closet"
+        
         var size = closetArray.closet.count - 1
         if(size > 7){
             size = 7
@@ -54,6 +62,8 @@ class ClosetViewController: UIViewController {
                 imgArray[i]?.image = closetArray.closet[i].image
             }
         }
+        
+        
         
 //        if (closetArray.closet[0] != nil) {
 //            img1.image = closetArray.closet[0].image

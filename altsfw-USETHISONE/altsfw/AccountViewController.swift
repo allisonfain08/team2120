@@ -9,8 +9,75 @@ import UIKit
 
 class AccountViewController: ViewController {
 
+    @IBOutlet weak var topsVal: UILabel!
+    
+    @IBOutlet weak var bottomsVal: UILabel!
+    
+    @IBOutlet weak var jacketsVal: UILabel!
+    
+    @IBOutlet weak var dressesVal: UILabel!
+    
+    @IBOutlet weak var shoesVal: UILabel!
+    
+    @IBOutlet weak var accVal: UILabel!
+    
+    @IBOutlet weak var jewelryVal: UILabel!
+    
+    @IBOutlet weak var topBVal: UILabel!
+    
+    @IBOutlet weak var bottomBVal: UILabel!
+    
+    @IBOutlet weak var outerBVal: UILabel!
+    
+    @IBOutlet weak var dressBVal: UILabel!
+    
+    @IBOutlet weak var shoeBVal: UILabel!
+    
+    @IBOutlet weak var accBVal: UILabel!
+    
+    @IBOutlet weak var jewelryBVal: UILabel!
+    
+    @IBOutlet weak var bustVal: UILabel!
+    
+    @IBOutlet weak var waistVal: UILabel!
+    
+    @IBOutlet weak var hipsVal: UILabel!
+    
+    @IBOutlet weak var backWaistVal: UILabel!
+    
+    @IBOutlet weak var frontWaistVal: UILabel!
+    
+    @IBOutlet weak var highBustVal: UILabel!
+    
+    @IBOutlet weak var highHipsVal: UILabel!
+    
+    @IBOutlet weak var skirtLengthVal: UILabel!
+    
+    @IBOutlet weak var inseamVal: UILabel!
+    
+    @IBOutlet weak var sleeveLengthVal: UILabel!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        var indx = personArray.returnIndex()
+        topBVal.text = personArray.person[indx].topBudget
+        bottomBVal.text = personArray.person[indx].bottomBudget
+        outerBVal.text = personArray.person[indx].outerBudget
+        dressBVal.text = personArray.person[indx].dressBudget
+        shoeBVal.text = personArray.person[indx].shoeBudget
+        accBVal.text = personArray.person[indx].accBudget
+        jewelryBVal.text = personArray.person[indx].jewelryBudget
+        bustVal.text = personArray.person[indx].bustMeasurement
+        waistVal.text = personArray.person[indx].waistMeasurement
+        hipsVal.text = personArray.person[indx].hipMeasurement
+        backWaistVal.text = personArray.person[indx].backWaistMeasurement
+        frontWaistVal.text = personArray.person[indx].frontWaistMeasurement
+        highBustVal.text = personArray.person[indx].highBustMeasurement
+        highHipsVal.text = personArray.person[indx].highHipMeasurement
+        skirtLengthVal.text = personArray.person[indx].skirtLengthMeasurement
+        inseamVal.text = personArray.person[indx].inseamMeasurement
+        sleeveLengthVal.text = personArray.person[indx].sleeveLengthMeasurement
         //usernameLabel.text = Person.getUsername()
         // Do any additional setup after loading the view.
     }

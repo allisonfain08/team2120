@@ -8,7 +8,6 @@
 import UIKit
 import SwiftUI
 
-
 class PersonalViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -19,7 +18,10 @@ class PersonalViewController: UIViewController {
     
     @IBOutlet weak var measurementImage: UIImageView!
     
+    var indx = personArray.returnIndex()
+    
     @IBOutlet weak var aLabel: UILabel!
+    
     @IBOutlet weak var bLabel: UILabel!
     @IBOutlet weak var cLabel: UILabel!
     @IBOutlet weak var dLabel: UILabel!
@@ -57,6 +59,19 @@ class PersonalViewController: UIViewController {
     
     
     @IBAction func nextButton(_ sender: Any) {
+        
+        personArray.person[indx].bustMeasurement = bustEntryField.text ?? "not given"
+        personArray.person[indx].waistMeasurement = waistEntryField.text ?? "not given"
+        personArray.person[indx].hipMeasurement = hipEntryField.text ?? "not given"
+        personArray.person[indx].backWaistMeasurement = backWaistEntryField.text ?? "not given"
+        personArray.person[indx].frontWaistMeasurement = frontWaistEntryField.text ?? "not given"
+        personArray.person[indx].highBustMeasurement = highBustEntryField.text ?? "not given"
+        personArray.person[indx].highHipMeasurement = highHipEntryField.text ?? "not given"
+        personArray.person[indx].skirtLengthMeasurement = skirtLengthEntryField.text ?? "not given"
+        personArray.person[indx].inseamMeasurement = inseamEntryField.text ?? "not given"
+        personArray.person[indx].sleeveLengthMeasurement = sleeveLengthEntryField.text ?? "not given"
+        
+        
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         let HomeViewController = storyboard.instantiateViewController(identifier: "HomeViewController")
         

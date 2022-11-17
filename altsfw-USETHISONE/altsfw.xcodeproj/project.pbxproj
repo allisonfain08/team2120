@@ -22,6 +22,8 @@
 		2A2637BA28F9217600A8D2A6 /* ClosetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A2637B928F9217600A8D2A6 /* ClosetViewController.swift */; };
 		2A424C9F291E9F9100847288 /* UploadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A424C9E291E9F9100847288 /* UploadViewController.swift */; };
 		2A424CA1291E9F9B00847288 /* ClosetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A424CA0291E9F9B00847288 /* ClosetViewController.swift */; };
+		2AEE273F2925E56E005F4B73 /* PersonArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AEE273E2925E56E005F4B73 /* PersonArray.swift */; };
+		2AEE27412925E590005F4B73 /* PersonInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AEE27402925E590005F4B73 /* PersonInfo.swift */; };
 		450FE4102917067200379AD1 /* PersonalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 450FE40F2917067200379AD1 /* PersonalViewController.swift */; };
 		9E304CF32905AF9C0060209F /* BeginQuizViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E304CF22905AF9C0060209F /* BeginQuizViewController.swift */; };
 		9E7E9A402921893E00DC49E7 /* CreateOutfitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E7E9A3F2921893E00DC49E7 /* CreateOutfitViewController.swift */; };
@@ -58,6 +60,8 @@
 		2A2637B928F9217600A8D2A6 /* ClosetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClosetViewController.swift; sourceTree = "<group>"; };
 		2A424C9E291E9F9100847288 /* UploadViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UploadViewController.swift; sourceTree = "<group>"; };
 		2A424CA0291E9F9B00847288 /* ClosetViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClosetViewController.swift; sourceTree = "<group>"; };
+		2AEE273E2925E56E005F4B73 /* PersonArray.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonArray.swift; sourceTree = "<group>"; };
+		2AEE27402925E590005F4B73 /* PersonInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonInfo.swift; sourceTree = "<group>"; };
 		450FE40F2917067200379AD1 /* PersonalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalViewController.swift; sourceTree = "<group>"; };
 		9E304CF22905AF9C0060209F /* BeginQuizViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeginQuizViewController.swift; sourceTree = "<group>"; };
 		9E7E9A3F2921893E00DC49E7 /* CreateOutfitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateOutfitViewController.swift; sourceTree = "<group>"; };
@@ -112,6 +116,8 @@
 				2A2637AB28F90D9600A8D2A6 /* LoginViewController.swift */,
 				2A424C9E291E9F9100847288 /* UploadViewController.swift */,
 				B32AE977291FF7840049AA11 /* ClosetArray.swift */,
+				2AEE273E2925E56E005F4B73 /* PersonArray.swift */,
+				2AEE27402925E590005F4B73 /* PersonInfo.swift */,
 				2A2637AD28F91DEF00A8D2A6 /* RegisterViewController.swift */,
 				B32AE979291FF8400049AA11 /* ArticleOfClothing.swift */,
 				2A424CA0291E9F9B00847288 /* ClosetViewController.swift */,
@@ -230,12 +236,14 @@
 				2A2637AE28F91DEF00A8D2A6 /* RegisterViewController.swift in Sources */,
 				B31F0A2B28FF11370043AA85 /* SwipeTracker.swift in Sources */,
 				9E7E9A4829219FA700DC49E7 /* ViewOutfitsViewController.swift in Sources */,
+				2AEE27412925E590005F4B73 /* PersonInfo.swift in Sources */,
 				B32AE978291FF7840049AA11 /* ClosetArray.swift in Sources */,
 				2A2637BA28F9217600A8D2A6 /* ClosetViewController.swift in Sources */,
 				9E304CF32905AF9C0060209F /* BeginQuizViewController.swift in Sources */,
 				9E7E9A4429218D4E00DC49E7 /* Outfit.swift in Sources */,
 				2A26379C28F9040B00A8D2A6 /* ViewController.swift in Sources */,
 				AEB9853F291EBFF5005F5991 /* testDropDownView.swift in Sources */,
+				2AEE273F2925E56E005F4B73 /* PersonArray.swift in Sources */,
 				2A26379828F9040B00A8D2A6 /* AppDelegate.swift in Sources */,
 				2A424CA1291E9F9B00847288 /* ClosetViewController.swift in Sources */,
 				B32AE97A291FF8400049AA11 /* ArticleOfClothing.swift in Sources */,

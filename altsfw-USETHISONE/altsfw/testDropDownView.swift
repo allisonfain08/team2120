@@ -10,6 +10,9 @@ import SwiftUI
 struct testDropDownView: View {
     let database = DBHelper()
     
+    var indx = personArray.returnIndex()
+
+    
     @State private var topBudget = "Less than $50"
     @State private var bottomBudget = "Less than $50"
     @State private var outerBudget = "Less than $50"
@@ -68,6 +71,27 @@ struct testDropDownView: View {
                 //under Button(action: add the budget where needed
                 Section {
                     Button("Next") {
+                        
+                        //yeah next button currently does nothing ...
+                        
+                        var top1 = topBudget
+                        var bottom1 = bottomBudget
+                        var outer1 = outerBudget
+                        var dress1 = dressBudget
+                        var shoe1 = shoeBudget
+                        var acc1 = accBudget
+                        var jewelry1 = jewelryBudget
+
+
+
+                        personArray.person[indx].topBudget = top1
+                        personArray.person[indx].bottomBudget = bottom1
+                        personArray.person[indx].outerBudget = outer1
+                        personArray.person[indx].dressBudget = dress1
+                        personArray.person[indx].shoeBudget = shoe1
+                        personArray.person[indx].accBudget = acc1
+                        personArray.person[indx].jewelryBudget = jewelry1
+                        
                         segueToPersonal()
 //                        Person.setTopBudget(topBudget)
 //                        Person.setBottomBudget(bottomBudget)

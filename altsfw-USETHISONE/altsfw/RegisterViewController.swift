@@ -8,6 +8,8 @@
 import UIKit
 import SwiftUI
 
+
+var personArray = PersonArray()
 class RegisterViewController: UIViewController {
 
 
@@ -41,6 +43,8 @@ class RegisterViewController: UIViewController {
             print("HARDCODED PRINT")
             print(usernameField.text ?? "sad")
             print(passwordField.text ?? "sad")
+//        personArray.addItem(item: PersonInfo(username: usernameField.text ?? "not given", password: passwordField.text ?? "not given"))
+        //PersonInfo(username: usernameField.text ?? "invalid", password: passwordField.text ?? "invalid")
         
     }
     
