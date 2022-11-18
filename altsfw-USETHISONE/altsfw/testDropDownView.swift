@@ -73,25 +73,8 @@ struct testDropDownView: View {
                     Button("Next") {
                         
                         //yeah next button currently does nothing ...
-                        
-                        var top1 = topBudget
-                        var bottom1 = bottomBudget
-                        var outer1 = outerBudget
-                        var dress1 = dressBudget
-                        var shoe1 = shoeBudget
-                        var acc1 = accBudget
-                        var jewelry1 = jewelryBudget
-
-
-
-                        personArray.person[indx].topBudget = top1
-                        personArray.person[indx].bottomBudget = bottom1
-                        personArray.person[indx].outerBudget = outer1
-                        personArray.person[indx].dressBudget = dress1
-                        personArray.person[indx].shoeBudget = shoe1
-                        personArray.person[indx].accBudget = acc1
-                        personArray.person[indx].jewelryBudget = jewelry1
-                        
+                        addBudgetVals(topBudget: topBudget, bottomBudget: bottomBudget, outerBudget: outerBudget, dressBudget: dressBudget, shoeBudget: shoeBudget, accBudget: accBudget, jewelryBudget: jewelryBudget, indx: indx)
+        
                         segueToPersonal()
 //                        Person.setTopBudget(topBudget)
 //                        Person.setBottomBudget(bottomBudget)
@@ -108,6 +91,15 @@ struct testDropDownView: View {
     }
 }
 
+func addBudgetVals(topBudget: String, bottomBudget: String, outerBudget: String, dressBudget: String, shoeBudget: String, accBudget: String, jewelryBudget: String, indx: Int) {
+    personArray.person[indx].topBudget = topBudget
+    personArray.person[indx].bottomBudget = bottomBudget
+    personArray.person[indx].outerBudget = outerBudget
+    personArray.person[indx].dressBudget = dressBudget
+    personArray.person[indx].shoeBudget = shoeBudget
+    personArray.person[indx].accBudget = accBudget
+    personArray.person[indx].jewelryBudget = jewelryBudget
+}
 func segueToPersonal() {
     
     
