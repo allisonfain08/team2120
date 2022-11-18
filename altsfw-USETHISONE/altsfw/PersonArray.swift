@@ -35,9 +35,11 @@ class PersonArray {
         return person
     }
     func returnIndex() -> Int {
-        for i in 0...person.count-1 {
-            if (person[i].username == username && person[i].password == password) {
-                return i
+        if (person.count > 0) {
+            for i in 0...person.count-1 {
+                if (person[i].username == username && person[i].password == password) {
+                    return i
+                }
             }
         }
         return -1

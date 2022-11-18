@@ -39,7 +39,7 @@ class RegisterViewController: UIViewController {
             print("READ")
             var persons:[Person] = []
             persons = database.read()
-            print(persons[0])
+            //print(persons[0])
             print("HARDCODED PRINT")
             print(usernameField.text ?? "sad")
             print(passwordField.text ?? "sad")

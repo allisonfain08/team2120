@@ -51,7 +51,7 @@ struct PersonInfo {
         self.hipMeasurement = "NA"
         self.backWaistMeasurement = "NA"
         self.frontWaistMeasurement = "NA"
-        self.highBustMeasurement = "vNA"
+        self.highBustMeasurement = "NA"
         self.highHipMeasurement = "NA"
         self.skirtLengthMeasurement = "NA"
         self.inseamMeasurement = "NA"
