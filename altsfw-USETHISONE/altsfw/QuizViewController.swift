@@ -37,7 +37,7 @@ class QuizViewController:
             swipeTracker.addSwipe(direct: .left)
             performSegue(withIdentifier: "nextQuestion", sender: self)
         }
-        if(swipeTracker.currQuestion > 10){
+        if(swipeTracker.currQuestion > 20){
             print(swipeTracker.returnNumAnswers())
             swipeTracker.currQuestion = 1
             swipeTracker.clearAnswers()
