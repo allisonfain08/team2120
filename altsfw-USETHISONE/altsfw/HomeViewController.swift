@@ -38,7 +38,7 @@ class HomeViewController: UIViewController {
     
     @IBAction func weather(_ sender: Any) {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
-            let WeatherViewController = storyboard.instantiateViewController(identifier: "WeatherViewController")
+            let WeatherViewController = storyboard.instantiateViewController(identifier: "ResultsViewController")
             
             // This is to get the SceneDelegate object from your view controller
             // then call the change root view controller function to change to main tab bar

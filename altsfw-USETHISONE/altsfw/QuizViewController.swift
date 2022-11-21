@@ -33,12 +33,15 @@ class QuizViewController:
         if gesture.direction == .right {
             swipeTracker.addSwipe(direct: .right)
             performSegue(withIdentifier: "nextQuestion", sender: self)
+            print(swipeTracker.currQuestion)
         } else if gesture.direction == .left {
             swipeTracker.addSwipe(direct: .left)
             performSegue(withIdentifier: "nextQuestion", sender: self)
+            print(swipeTracker.currQuestion)
         }
-        if(swipeTracker.currQuestion > 20){
+        if(swipeTracker.currQuestion > swipeTracker.numQuestions()){
             print(swipeTracker.returnNumAnswers())
+            swipeTracker.prevAnswers = swipeTracker.numAnswers
             swipeTracker.currQuestion = 1
             swipeTracker.clearAnswers()
         }

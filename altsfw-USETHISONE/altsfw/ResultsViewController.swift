@@ -28,8 +28,8 @@ class ResultsViewController: UIViewController {
         //textView.backgroundColor = UIColor.white
         //textView.font = UIFont(name: "Callout", size: 1000)
         
-        var returnString = swipeTracker.returnNumAnswers()
-
+        var returnString = swipeTracker.returnPrevAnswers()
+        print(returnString)
         returnString = String(returnString.dropFirst())
         returnString = String(returnString.dropLast())
         //chicText.text = returnString
@@ -46,8 +46,8 @@ class ResultsViewController: UIViewController {
         chicText.text = returnArray.joined(separator: "\n")
         //self.view.addSubview(textView)
         // Do any additional setup after loading the view.
-        swipeTracker.clearAnswers()
-        returnString = ""
+        //swipeTracker.clearAnswers()
+        //returnString = ""
     }
     
 
