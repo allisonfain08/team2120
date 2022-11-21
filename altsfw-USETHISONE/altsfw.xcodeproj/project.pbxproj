@@ -22,6 +22,7 @@
 		2A2637BA28F9217600A8D2A6 /* ClosetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A2637B928F9217600A8D2A6 /* ClosetViewController.swift */; };
 		2A424C9F291E9F9100847288 /* UploadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A424C9E291E9F9100847288 /* UploadViewController.swift */; };
 		2A424CA1291E9F9B00847288 /* ClosetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A424CA0291E9F9B00847288 /* ClosetViewController.swift */; };
+		2A5A0C60292BC46B00DE49A6 /* ContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A5A0C5F292BC46B00DE49A6 /* ContactViewController.swift */; };
 		2AEE273F2925E56E005F4B73 /* PersonArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AEE273E2925E56E005F4B73 /* PersonArray.swift */; };
 		2AEE27412925E590005F4B73 /* PersonInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AEE27402925E590005F4B73 /* PersonInfo.swift */; };
 		450FE4102917067200379AD1 /* PersonalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 450FE40F2917067200379AD1 /* PersonalViewController.swift */; };
@@ -60,6 +61,7 @@
 		2A2637B928F9217600A8D2A6 /* ClosetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClosetViewController.swift; sourceTree = "<group>"; };
 		2A424C9E291E9F9100847288 /* UploadViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UploadViewController.swift; sourceTree = "<group>"; };
 		2A424CA0291E9F9B00847288 /* ClosetViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClosetViewController.swift; sourceTree = "<group>"; };
+		2A5A0C5F292BC46B00DE49A6 /* ContactViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactViewController.swift; sourceTree = "<group>"; };
 		2AEE273E2925E56E005F4B73 /* PersonArray.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonArray.swift; sourceTree = "<group>"; };
 		2AEE27402925E590005F4B73 /* PersonInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonInfo.swift; sourceTree = "<group>"; };
 		450FE40F2917067200379AD1 /* PersonalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalViewController.swift; sourceTree = "<group>"; };
@@ -118,6 +120,7 @@
 				B32AE977291FF7840049AA11 /* ClosetArray.swift */,
 				2AEE273E2925E56E005F4B73 /* PersonArray.swift */,
 				2AEE27402925E590005F4B73 /* PersonInfo.swift */,
+				2A5A0C5F292BC46B00DE49A6 /* ContactViewController.swift */,
 				2A2637AD28F91DEF00A8D2A6 /* RegisterViewController.swift */,
 				B32AE979291FF8400049AA11 /* ArticleOfClothing.swift */,
 				2A424CA0291E9F9B00847288 /* ClosetViewController.swift */,
@@ -253,6 +256,7 @@
 				AEB9853D291EBD54005F5991 /* RatingView.swift in Sources */,
 				9E7E9A402921893E00DC49E7 /* CreateOutfitViewController.swift in Sources */,
 				2A2637B028F91EE700A8D2A6 /* HomeViewController.swift in Sources */,
+				2A5A0C60292BC46B00DE49A6 /* ContactViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
