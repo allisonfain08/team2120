@@ -13,7 +13,7 @@ class ResultsViewController: UIViewController {
     //@IBOutlet weak var chicText: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        swipeTracker.prevAnswers = swipeTracker.numAnswers
         //var textView = UITextView(frame: CGRect(x: 150.0, y: 150, width: 240.0, height: 240.0))
         //self.view.addSubview(textView)
         //textView.contentInsetAdjustmentBehavior = .automatic
@@ -28,7 +28,7 @@ class ResultsViewController: UIViewController {
         //textView.backgroundColor = UIColor.white
         //textView.font = UIFont(name: "Callout", size: 1000)
         
-        var returnString = swipeTracker.returnPrevAnswers()
+        var returnString = swipeTracker.returnNumAnswers()
         print(returnString)
         returnString = String(returnString.dropFirst())
         returnString = String(returnString.dropLast())

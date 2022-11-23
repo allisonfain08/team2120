@@ -25,6 +25,7 @@ class HomeViewController: UIViewController {
     }
     
     @IBAction func styleQuiz(_ sender: Any) {
+        swipeTracker.clearAnswers()
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
             let QuizViewController = storyboard.instantiateViewController(identifier: "QuizViewController")
             

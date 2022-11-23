@@ -39,12 +39,7 @@ class QuizViewController:
             performSegue(withIdentifier: "nextQuestion", sender: self)
             print(swipeTracker.currQuestion)
         }
-        if(swipeTracker.currQuestion > swipeTracker.numQuestions()){
-            print(swipeTracker.returnNumAnswers())
-            swipeTracker.prevAnswers = swipeTracker.numAnswers
-            swipeTracker.currQuestion = 1
-            swipeTracker.clearAnswers()
-        }
+    
     }
     @IBAction func back(_ sender: Any) {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)

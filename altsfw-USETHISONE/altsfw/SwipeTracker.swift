@@ -11,7 +11,14 @@ import UIKit
 
 class SwipeTracker {
     var currQuestion = 1
-    var prevAnswers : [Styles: Int] = [:]
+    var prevAnswers : [Styles: Int] = [Styles.Classic: 0,
+            Styles.Chic: 0,
+            Styles.Casual: 0,
+            Styles.Bohemian: 0,
+            Styles.Trendy: 0,
+            Styles.Feminine: 0,
+            Styles.Modern: 0,
+            Styles.Preppy: 0]
     enum Styles : String {
             case Classic = "Classic"
             case Chic = "Chic"
@@ -167,6 +174,7 @@ class SwipeTracker {
                           Styles.Feminine: 0,
                           Styles.Modern: 0,
                           Styles.Preppy: 0]
+        self.currQuestion = 1
     }
     
 }
