@@ -34,6 +34,7 @@ class RegisterViewController: UIViewController {
     let database = DBHelper()
     
     @IBAction func submit(_ sender: Any) {
+        passwordField.passwordRules = UITextInputPasswordRules(descriptor: "required: upper; required: lower; required: digit; minlength: 8;") // Should allow auto-generated passwords to meet pass requirements
             print("INSERT")
             database.insert(username: usernameField.text ?? "sad", password: passwordField.text ?? "sad")
             print("READ")
@@ -52,6 +53,11 @@ class RegisterViewController: UIViewController {
         return UIHostingController(coder: coder, rootView: testDropDownView())
     }
     
+    
+    func isValidPass(inputStr: String) -> Bool {
+        let passwordTest = NSPredicate(format: "SELF MATCHES %@", "^(?=.*[a-z])(?=.*[A-Z])(?=.*\\d)(?=.*[d$@$!%*?&#])[A-Za-z\\dd$@$!%*?&#]{8,}")
+        return passwordTest.evaluate(with: inputStr)
+    }
     /*
     // MARK: - Navigation
 
