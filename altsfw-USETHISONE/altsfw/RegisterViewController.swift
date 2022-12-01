@@ -35,6 +35,7 @@ class RegisterViewController: UIViewController {
     
     @IBAction func submit(_ sender: Any) {
         passwordField.passwordRules = UITextInputPasswordRules(descriptor: "required: upper; required: lower; required: digit; minlength: 8;") // Should allow auto-generated passwords to meet pass requirements
+        if (isValidPass(inputStr: passwordField.text ?? "sad")) {
             print("INSERT")
             database.insert(username: usernameField.text ?? "sad", password: passwordField.text ?? "sad")
             print("READ")
@@ -44,6 +45,18 @@ class RegisterViewController: UIViewController {
             print("HARDCODED PRINT")
             print(usernameField.text ?? "sad")
             print(passwordField.text ?? "sad")
+        } else {
+            let wrongPassAlert = UIAlertController(title: "Invalid Password",
+                                                                    message: "Password must have upper",
+                                                           preferredStyle: .alert)
+                            
+                     let cancelAction = UIAlertAction(title: "OK", style: .cancel, handler: nil)
+                     
+                     wrongPassAlert.addAction(cancelAction)
+
+                     self.present(wrongPassAlert, animated: true, completion: nil)
+        }
+        
 //        personArray.addItem(item: PersonInfo(username: usernameField.text ?? "not given", password: passwordField.text ?? "not given"))
         //PersonInfo(username: usernameField.text ?? "invalid", password: passwordField.text ?? "invalid")
         
