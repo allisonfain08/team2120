@@ -21,7 +21,7 @@ class PersonArray {
         person.append(item)
         username = user
         password = pass
-        print("yo")
+        print("Item added.")
         print(username)
         print(password)
     }
