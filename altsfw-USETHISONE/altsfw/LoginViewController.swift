@@ -14,9 +14,10 @@ class LoginViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
+    
     @IBOutlet weak var username: UITextField!
     @IBOutlet weak var password: UITextField!
-
+    
     @IBOutlet weak var usernameExistsLabel: UILabel!
     
     @IBAction func login(_ sender: Any) {
