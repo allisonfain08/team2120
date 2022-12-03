@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_0" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Initial Screen View Controller-->
+        <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController storyboardIdentifier="BaseViewController" id="BYZ-38-t0r" customClass="InitialScreenViewController" customModule="altsfw" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="BaseViewController" id="BYZ-38-t0r" customClass="ViewController" customModule="altsfw" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -130,7 +130,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <datePicker contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="fill" contentVerticalAlignment="center" datePickerMode="date" style="compact" translatesAutoresizingMaskIntoConstraints="NO" id="KIV-aL-lMH">
-                                <rect key="frame" x="-2" y="151" width="370" height="77"/>
+                                <rect key="frame" x="-2" y="151" width="371" height="77"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <color key="tintColor" red="0.57995235919999999" green="0.65809136629999998" blue="0.45879095790000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <date key="maximumDate" timeIntervalSinceReferenceDate="252500400">
@@ -304,7 +304,8 @@
                                     <color key="baseBackgroundColor" name="AccentColor"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <action selector="login:" destination="4ni-CA-P27" eventType="touchUpInside" id="QB6-lA-7BE"/>
+                                    <action selector="login:" destination="4ni-CA-P27" eventType="touchUpInside" id="Lei-Mx-DDM"/>
+                                    <segue destination="iMB-Mi-xCE" kind="show" id="AKu-3F-zwO"/>
                                 </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wJr-FI-hC6">
@@ -339,23 +340,11 @@
                                 <rect key="frame" x="68" y="47" width="240" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VLA-O4-Tci">
-                                <rect key="frame" x="16" y="425" width="358" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="z99-d7-C1a"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="2Sf-50-HR9"/>
-                    <connections>
-                        <outlet property="password" destination="wJr-FI-hC6" id="Nv0-W8-JtW"/>
-                        <outlet property="username" destination="nbe-yC-xm6" id="yax-Gh-orU"/>
-                        <outlet property="usernameExistsLabel" destination="VLA-O4-Tci" id="ffo-Zk-KaE"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jpx-mr-lai" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -451,17 +440,18 @@
                         <rect key="frame" x="0.0" y="0.0" width="390" height="787"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" tag="1" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="pick1" translatesAutoresizingMaskIntoConstraints="NO" id="m6C-kl-35Z">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" tag="1" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Trendy_1" translatesAutoresizingMaskIntoConstraints="NO" id="m6C-kl-35Z">
                                 <rect key="frame" x="16" y="100" width="159" height="559"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" tag="2" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="pick2" translatesAutoresizingMaskIntoConstraints="NO" id="1dW-RB-05Q">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" tag="2" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Casual_1" translatesAutoresizingMaskIntoConstraints="NO" id="1dW-RB-05Q">
                                 <rect key="frame" x="203" y="100" width="160" height="559"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Question 1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LK2-Zk-mLd">
-                                <rect key="frame" x="113" y="33" width="165" height="39"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="-1-" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LK2-Zk-mLd">
+                                <rect key="frame" x="0.0" y="33" width="390" height="37"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" name="eKlozet Pink"/>
                                 <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="32"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -502,17 +492,18 @@
                         <rect key="frame" x="0.0" y="0.0" width="390" height="787"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" tag="3" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Style Pick 5" translatesAutoresizingMaskIntoConstraints="NO" id="OwR-ED-pAj">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" tag="3" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Bohemian_1" translatesAutoresizingMaskIntoConstraints="NO" id="OwR-ED-pAj">
                                 <rect key="frame" x="22" y="114" width="159" height="559"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" tag="4" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Style Pick 4" translatesAutoresizingMaskIntoConstraints="NO" id="Tzz-rw-EEC">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" tag="4" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Femenine_1" translatesAutoresizingMaskIntoConstraints="NO" id="Tzz-rw-EEC">
                                 <rect key="frame" x="209" y="114" width="160" height="559"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Question 2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IGv-yh-Umy">
-                                <rect key="frame" x="113" y="47" width="169" height="39"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="-2-" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vgE-30-DFX">
+                                <rect key="frame" x="0.0" y="34" width="390" height="39"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" name="eKlozet Pink"/>
                                 <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="32"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -553,17 +544,18 @@
                         <rect key="frame" x="0.0" y="0.0" width="390" height="787"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" tag="5" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="pick3" translatesAutoresizingMaskIntoConstraints="NO" id="Ukv-c1-m1Q">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" tag="5" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Trendy_2" translatesAutoresizingMaskIntoConstraints="NO" id="Ukv-c1-m1Q">
                                 <rect key="frame" x="16" y="114" width="159" height="559"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" tag="1" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Style Pick 6" translatesAutoresizingMaskIntoConstraints="NO" id="BxW-1b-OGc">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" tag="1" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Classic_1" translatesAutoresizingMaskIntoConstraints="NO" id="BxW-1b-OGc">
                                 <rect key="frame" x="203" y="114" width="160" height="559"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Question 3" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ac3-u4-Cw0">
-                                <rect key="frame" x="110" y="47" width="170" height="39"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="-3-" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="msi-Pf-gNS">
+                                <rect key="frame" x="0.0" y="36" width="390" height="39"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" name="eKlozet Pink"/>
                                 <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="32"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -604,17 +596,18 @@
                         <rect key="frame" x="0.0" y="0.0" width="390" height="787"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" tag="4" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Style Pick 7" translatesAutoresizingMaskIntoConstraints="NO" id="RfE-XI-Y85">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" tag="4" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Classic_2" translatesAutoresizingMaskIntoConstraints="NO" id="RfE-XI-Y85">
                                 <rect key="frame" x="27" y="114" width="159" height="559"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" tag="2" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Style Pick 8" translatesAutoresizingMaskIntoConstraints="NO" id="IM6-2K-d1m">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" tag="2" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Chic_1" translatesAutoresizingMaskIntoConstraints="NO" id="IM6-2K-d1m">
                                 <rect key="frame" x="214" y="114" width="160" height="559"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Question 4" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1gY-Hb-iYO">
-                                <rect key="frame" x="125" y="47" width="171" height="39"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="-4-" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jXW-EG-4HE">
+                                <rect key="frame" x="0.0" y="36" width="390" height="39"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" name="eKlozet Pink"/>
                                 <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="32"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -644,21 +637,47 @@
                     </connections>
                 </swipeGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="5655" y="-741"/>
+            <point key="canvasLocation" x="5653.8461538461534" y="-741.46919431279616"/>
         </scene>
         <!--Results View Controller-->
         <scene sceneID="cz9-Si-pwi">
             <objects>
-                <viewController modalTransitionStyle="flipHorizontal" id="1gg-Bf-vbD" customClass="ResultsViewController" customModule="altsfw" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ResultsViewController" modalTransitionStyle="flipHorizontal" id="1gg-Bf-vbD" customClass="ResultsViewController" customModule="altsfw" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="XU2-yP-JL9">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="787"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Your Style Quiz Results!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jnK-xp-RG8">
+                                <rect key="frame" x="0.0" y="46" width="390" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" name="eKlozet Pink"/>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Te2-Fx-sh9">
+                                <rect key="frame" x="16" y="125" width="358" height="148"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <string key="text">The counts below show you how many times you chose each style over another. Press Home to go back the home page. You may take the quiz again anytime.</string>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="center" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Sa5-pG-8ln">
+                                <rect key="frame" x="44" y="311" width="297" height="389"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.  in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="allCharacters"/>
+                            </textView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7xr-mG-3Bw">
-                                <rect key="frame" x="264" y="694" width="54" height="35"/>
+                                <rect key="frame" x="157" y="718" width="70" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="End">
+                                <buttonConfiguration key="configuration" style="filled" title="Home">
                                     <color key="baseForegroundColor" systemColor="systemBackgroundColor"/>
                                     <color key="baseBackgroundColor" red="0.57995259759999995" green="0.66206520800000002" blue="0.45879018310000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </buttonConfiguration>
@@ -666,22 +685,6 @@
                                     <segue destination="iMB-Mi-xCE" kind="show" id="XhI-Kd-26A"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Your Style Quiz Results!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jnK-xp-RG8">
-                                <rect key="frame" x="14" y="46" width="347" height="36"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="30"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Te2-Fx-sh9">
-                                <rect key="frame" x="16" y="104" width="358" height="166"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <string key="text">The counts below show you how many times you chose each style over another. Press end to go back the home page. You may take the quiz again anytime.</string>
-                                <color key="textColor" systemColor="labelColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="0lh-WP-q7H"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -692,27 +695,22 @@
                         </connections>
                     </view>
                     <navigationItem key="navigationItem" id="LJ8-Xk-Trq"/>
+                    <connections>
+                        <outlet property="chicText" destination="Sa5-pG-8ln" id="u7g-uw-KNt"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sHL-ts-6bQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-                <swipeGestureRecognizer direction="right" id="2xr-8t-mKd">
-                    <connections>
-                        <segue destination="iMB-Mi-xCE" kind="show" identifier="nextQuestion" id="ECH-u3-XaW"/>
-                    </connections>
-                </swipeGestureRecognizer>
-                <swipeGestureRecognizer direction="left" id="ybO-yv-SAy">
-                    <connections>
-                        <segue destination="iMB-Mi-xCE" kind="show" identifier="nextQuestion" id="FHs-eW-Qc3"/>
-                    </connections>
-                </swipeGestureRecognizer>
+                <swipeGestureRecognizer direction="right" id="2xr-8t-mKd"/>
+                <swipeGestureRecognizer direction="left" id="ybO-yv-SAy"/>
             </objects>
-            <point key="canvasLocation" x="10810.76923076923" y="-741.46919431279616"/>
+            <point key="canvasLocation" x="11630.76923076923" y="-741.46919431279616"/>
         </scene>
         <!--weather view controller-->
         <scene sceneID="uNf-Ed-2ZI">
             <objects>
                 <viewController storyboardIdentifier="WeatherViewController" title="weather view controller" id="bvO-HN-FiE" customClass="WeatherViewController" customModule="altsfw" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="7Sp-h0-qhg">
-                        <rect key="frame" x="0.0" y="0.0" width="390" height="787"/>
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UEW-60-xxg">
@@ -724,7 +722,6 @@
                                 </buttonConfiguration>
                                 <connections>
                                     <action selector="back:" destination="sdt-oa-itt" eventType="touchUpInside" id="ra9-9S-wEy"/>
-                                    <segue destination="iMB-Mi-xCE" kind="show" id="Vf9-3m-PLk"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -736,7 +733,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sfA-TG-rRo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="sdt-oa-itt" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="2523" y="-55"/>
+            <point key="canvasLocation" x="2623" y="-14"/>
         </scene>
         <!--Home View Controller-->
         <scene sceneID="4gc-ev-ypD">
@@ -762,13 +759,12 @@
                                 <rect key="frame" x="16" y="273" width="358" height="157"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="Dress for the Weather">
+                                <buttonConfiguration key="configuration" style="filled" title="My Syle Information">
                                     <color key="baseForegroundColor" systemColor="labelColor"/>
                                     <color key="baseBackgroundColor" red="0.94117647058823528" green="0.92941176470588238" blue="0.88627450980392153" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </buttonConfiguration>
                                 <connections>
                                     <action selector="weather:" destination="iMB-Mi-xCE" eventType="touchUpInside" id="OBK-9H-2Tg"/>
-                                    <segue destination="bvO-HN-FiE" kind="show" id="VKd-HM-p9D"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QQz-JC-iYi">
@@ -1585,17 +1581,18 @@
                         <rect key="frame" x="0.0" y="0.0" width="390" height="787"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Style Pick 9" translatesAutoresizingMaskIntoConstraints="NO" id="ZYt-av-teG">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Classic_3" translatesAutoresizingMaskIntoConstraints="NO" id="ZYt-av-teG">
                                 <rect key="frame" x="16" y="114" width="159" height="559"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Style Pick 10" translatesAutoresizingMaskIntoConstraints="NO" id="Bzw-AX-qkY">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Femenine_2" translatesAutoresizingMaskIntoConstraints="NO" id="Bzw-AX-qkY">
                                 <rect key="frame" x="203" y="114" width="160" height="559"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Question 5" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ar9-G6-Meh">
-                                <rect key="frame" x="110" y="47" width="170" height="39"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="-5-" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Edh-W9-87E">
+                                <rect key="frame" x="0.0" y="36" width="390" height="39"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" name="eKlozet Pink"/>
                                 <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="32"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -1633,17 +1630,18 @@
                         <rect key="frame" x="0.0" y="0.0" width="390" height="787"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Style Pick 11" translatesAutoresizingMaskIntoConstraints="NO" id="Nw8-9H-X8z">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Bohemian_2" translatesAutoresizingMaskIntoConstraints="NO" id="Nw8-9H-X8z">
                                 <rect key="frame" x="27" y="114" width="159" height="559"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Style Pick 12" translatesAutoresizingMaskIntoConstraints="NO" id="zt6-6z-46Y">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Chic_2" translatesAutoresizingMaskIntoConstraints="NO" id="zt6-6z-46Y">
                                 <rect key="frame" x="214" y="114" width="160" height="559"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Question 6" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aN4-xH-ozZ">
-                                <rect key="frame" x="125" y="47" width="171" height="39"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="-6-" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O4F-AA-AYM">
+                                <rect key="frame" x="0.0" y="36" width="390" height="39"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" name="eKlozet Pink"/>
                                 <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="32"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -1671,7 +1669,7 @@
                     </connections>
                 </swipeGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="7111" y="-741"/>
+            <point key="canvasLocation" x="7110.7692307692305" y="-741.46919431279616"/>
         </scene>
         <!--Quiz View Controller-->
         <scene sceneID="AjF-Fa-8Ez">
@@ -1681,17 +1679,18 @@
                         <rect key="frame" x="0.0" y="0.0" width="390" height="787"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="outfit" translatesAutoresizingMaskIntoConstraints="NO" id="RNV-Di-Ffx">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Classic_4" translatesAutoresizingMaskIntoConstraints="NO" id="RNV-Di-Ffx">
                                 <rect key="frame" x="27" y="114" width="159" height="559"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="outfit4" translatesAutoresizingMaskIntoConstraints="NO" id="dhD-0n-ouD">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Bohemian_1" translatesAutoresizingMaskIntoConstraints="NO" id="dhD-0n-ouD">
                                 <rect key="frame" x="214" y="114" width="160" height="559"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Question 7" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ibg-vp-afu">
-                                <rect key="frame" x="125" y="47" width="168" height="39"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="-7-" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VJh-kw-7k0">
+                                <rect key="frame" x="0.0" y="36" width="390" height="39"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" name="eKlozet Pink"/>
                                 <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="32"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -1729,17 +1728,25 @@
                         <rect key="frame" x="0.0" y="0.0" width="390" height="787"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="outfit5" translatesAutoresizingMaskIntoConstraints="NO" id="rSN-ci-72g">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Casual_2" translatesAutoresizingMaskIntoConstraints="NO" id="rSN-ci-72g">
                                 <rect key="frame" x="27" y="114" width="159" height="559"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="outfit3" translatesAutoresizingMaskIntoConstraints="NO" id="iHN-ha-5Bi">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Trendy_3" translatesAutoresizingMaskIntoConstraints="NO" id="iHN-ha-5Bi">
                                 <rect key="frame" x="214" y="114" width="160" height="559"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Question 8" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6CC-wI-G0r">
-                                <rect key="frame" x="125" y="47" width="171" height="39"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6CC-wI-G0r">
+                                <rect key="frame" x="125" y="47" width="0.0" height="0.0"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="32"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="-8-" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J3f-g2-qRp">
+                                <rect key="frame" x="0.0" y="35" width="390" height="39"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" name="eKlozet Pink"/>
                                 <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="32"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -1777,17 +1784,18 @@
                         <rect key="frame" x="0.0" y="0.0" width="390" height="787"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="outfit2" translatesAutoresizingMaskIntoConstraints="NO" id="5f9-jn-6lw">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Femenine_3" translatesAutoresizingMaskIntoConstraints="NO" id="5f9-jn-6lw">
                                 <rect key="frame" x="27" y="114" width="159" height="559"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="outfit3" translatesAutoresizingMaskIntoConstraints="NO" id="CoK-5u-t2e">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Casual_3" translatesAutoresizingMaskIntoConstraints="NO" id="CoK-5u-t2e">
                                 <rect key="frame" x="214" y="114" width="160" height="559"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Question 9" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e2G-YO-R4m">
-                                <rect key="frame" x="125" y="47" width="171" height="39"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="-9-" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4I5-Wo-NHm">
+                                <rect key="frame" x="0.0" y="34" width="390" height="39"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" name="eKlozet Pink"/>
                                 <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="32"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -1825,17 +1833,18 @@
                         <rect key="frame" x="0.0" y="0.0" width="390" height="787"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="outfit4" translatesAutoresizingMaskIntoConstraints="NO" id="IC8-ci-1ea">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Classic_5" translatesAutoresizingMaskIntoConstraints="NO" id="IC8-ci-1ea">
                                 <rect key="frame" x="27" y="114" width="159" height="559"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="outfit5" translatesAutoresizingMaskIntoConstraints="NO" id="fJv-Cp-K3u">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Trendy_4" translatesAutoresizingMaskIntoConstraints="NO" id="fJv-Cp-K3u">
                                 <rect key="frame" x="214" y="114" width="160" height="559"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Question 10" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X5G-fx-crJ">
-                                <rect key="frame" x="125" y="47" width="187" height="39"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="-10-" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b8t-yg-Kkp">
+                                <rect key="frame" x="0.0" y="36" width="390" height="39"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" name="eKlozet Pink"/>
                                 <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="32"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -1844,22 +1853,18 @@
                         <viewLayoutGuide key="safeArea" id="8q5-FB-nem"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <gestureRecognizers/>
-                        <connections>
-                            <outletCollection property="gestureRecognizers" destination="eLp-Hw-w4p" appends="YES" id="9aN-26-txg"/>
-                            <outletCollection property="gestureRecognizers" destination="09b-PU-bP3" appends="YES" id="aqJ-1A-HNI"/>
-                        </connections>
                     </view>
                     <navigationItem key="navigationItem" id="OTw-fm-AMT"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0ws-DT-BRz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-                <swipeGestureRecognizer direction="right" id="eLp-Hw-w4p">
+                <swipeGestureRecognizer direction="left" id="wZE-YP-WB5">
                     <connections>
-                        <segue destination="1gg-Bf-vbD" kind="show" identifier="nextQuestion" id="Kt2-Xz-DzQ"/>
+                        <segue destination="gzG-F4-2Qu" kind="show" identifier="nextQuestion" id="EEc-Ze-B9N"/>
                     </connections>
                 </swipeGestureRecognizer>
-                <swipeGestureRecognizer direction="left" id="09b-PU-bP3">
+                <swipeGestureRecognizer direction="right" id="JDg-gS-yfX">
                     <connections>
-                        <segue destination="1gg-Bf-vbD" kind="show" identifier="nextQuestion" id="4Y0-Vi-RZK"/>
+                        <segue destination="gzG-F4-2Qu" kind="show" identifier="nextQuestion" id="aYj-8h-Xhi"/>
                     </connections>
                 </swipeGestureRecognizer>
             </objects>
@@ -1890,50 +1895,107 @@
             </objects>
             <point key="canvasLocation" x="3360" y="101"/>
         </scene>
+        <!--Quiz View Controller-->
+        <scene sceneID="RmM-Yt-Byk">
+            <objects>
+                <viewController modalTransitionStyle="flipHorizontal" id="gzG-F4-2Qu" customClass="QuizViewController" customModule="altsfw" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="GLg-rp-mYO">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="787"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Chic_3" translatesAutoresizingMaskIntoConstraints="NO" id="DlO-0P-7gQ">
+                                <rect key="frame" x="27" y="114" width="159" height="559"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Trendy_5" translatesAutoresizingMaskIntoConstraints="NO" id="SGr-a1-vwr">
+                                <rect key="frame" x="214" y="114" width="160" height="559"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="-11-" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v9t-cJ-nF9">
+                                <rect key="frame" x="0.0" y="36" width="390" height="39"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" name="eKlozet Pink"/>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="32"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="55D-6R-kPK"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <gestureRecognizers/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="4gE-Gn-knx" appends="YES" id="PKD-6c-lSs"/>
+                            <outletCollection property="gestureRecognizers" destination="7GC-uy-wPW" appends="YES" id="veQ-KR-Qta"/>
+                        </connections>
+                    </view>
+                    <navigationItem key="navigationItem" id="GAh-y6-yna"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sHS-Hv-Rro" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="right" id="4gE-Gn-knx">
+                    <connections>
+                        <segue destination="1gg-Bf-vbD" kind="show" identifier="nextQuestion" id="Mq7-OF-QNu"/>
+                    </connections>
+                </swipeGestureRecognizer>
+                <swipeGestureRecognizer direction="left" id="7GC-uy-wPW">
+                    <connections>
+                        <segue destination="1gg-Bf-vbD" kind="show" identifier="nextQuestion" id="5Qz-kc-CVO"/>
+                    </connections>
+                </swipeGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="10795" y="-741"/>
+        </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="VRz-BF-ixM"/>
+        <segue reference="aYj-8h-Xhi"/>
+        <segue reference="NCk-Pi-nOa"/>
         <segue reference="KXn-5y-lbA"/>
         <segue reference="PWw-cl-WxQ"/>
         <segue reference="KSm-ea-szE"/>
         <segue reference="W0H-7v-Dji"/>
         <segue reference="FT6-sX-wai"/>
-        <segue reference="3Ks-GX-W7e"/>
-        <segue reference="Kt2-Xz-DzQ"/>
+        <segue reference="XhI-Kd-26A"/>
+        <segue reference="5Qz-kc-CVO"/>
         <segue reference="zTi-k8-meo"/>
         <segue reference="t39-OW-ASU"/>
-        <segue reference="P9B-ea-pzl"/>
+        <segue reference="Mci-I7-GNE"/>
         <segue reference="C66-nA-hAQ"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" systemColor="labelColor"/>
     <resources>
         <image name="Body Measurement Chart" width="1080" height="1080"/>
-        <image name="Style Pick 10" width="1080" height="1080"/>
-        <image name="Style Pick 11" width="1080" height="1080"/>
-        <image name="Style Pick 12" width="1080" height="1080"/>
-        <image name="Style Pick 4" width="1080" height="1080"/>
-        <image name="Style Pick 5" width="1080" height="1080"/>
-        <image name="Style Pick 6" width="1080" height="1080"/>
-        <image name="Style Pick 7" width="1080" height="1080"/>
-        <image name="Style Pick 8" width="1080" height="1080"/>
-        <image name="Style Pick 9" width="1080" height="1080"/>
+        <image name="Bohemian_1" width="720" height="1280"/>
+        <image name="Bohemian_2" width="720" height="1280"/>
+        <image name="Casual_1" width="720" height="1280"/>
+        <image name="Casual_2" width="720" height="1280"/>
+        <image name="Casual_3" width="720" height="1280"/>
+        <image name="Chic_1" width="720" height="1280"/>
+        <image name="Chic_2" width="720" height="1280"/>
+        <image name="Chic_3" width="720" height="1280"/>
+        <image name="Classic_1" width="720" height="1280"/>
+        <image name="Classic_2" width="720" height="1280"/>
+        <image name="Classic_3" width="720" height="1280"/>
+        <image name="Classic_4" width="720" height="1280"/>
+        <image name="Classic_5" width="720" height="1280"/>
+        <image name="Femenine_1" width="720" height="1280"/>
+        <image name="Femenine_2" width="720" height="1280"/>
+        <image name="Femenine_3" width="720" height="1280"/>
+        <image name="Trendy_1" width="720" height="1280"/>
+        <image name="Trendy_2" width="720" height="1280"/>
+        <image name="Trendy_3" width="720" height="1280"/>
+        <image name="Trendy_4" width="720" height="1280"/>
+        <image name="Trendy_5" width="720" height="1280"/>
         <image name="arrowshape.left.fill" catalog="system" width="128" height="104"/>
         <image name="eKlozet-logoGold-01" width="885" height="1102"/>
-        <image name="outfit" width="1280" height="1600"/>
-        <image name="outfit2" width="1024" height="1024"/>
-        <image name="outfit3" width="736" height="989"/>
-        <image name="outfit4" width="640" height="960"/>
-        <image name="outfit5" width="544" height="680"/>
         <image name="person.circle.fill" catalog="system" width="128" height="123"/>
-        <image name="pick1" width="512" height="512"/>
-        <image name="pick2" width="512" height="512"/>
-        <image name="pick3" width="512" height="512"/>
         <image name="rectangle.fill" catalog="system" width="128" height="93"/>
         <namedColor name="AccentColor">
             <color red="0.70999997854232788" green="0.60399997234344482" blue="0.3919999897480011" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="eKlozet Off White">
             <color red="0.94099998474121094" green="0.92900002002716064" blue="0.88599997758865356" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="eKlozet Pink">
+            <color red="0.875" green="0.73299998044967651" blue="0.68999999761581421" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="eKlozet Teal">
             <color red="0.0040000001899898052" green="0.30199998617172241" blue="0.2669999897480011" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
