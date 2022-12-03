@@ -43,6 +43,8 @@ class RegisterViewController: UIViewController {
             print("HARDCODED PRINT")
             print(usernameField.text ?? "sad")
             print(passwordField.text ?? "sad")
+        
+        personArray.addItem(item: PersonInfo(username: usernameField.text ?? "invalid", password: passwordField.text ?? "invalid"), user: usernameField.text ?? "invalid", pass: passwordField.text ?? "invalid")
 //        personArray.addItem(item: PersonInfo(username: usernameField.text ?? "not given", password: passwordField.text ?? "not given"))
         //PersonInfo(username: usernameField.text ?? "invalid", password: passwordField.text ?? "invalid")
         
