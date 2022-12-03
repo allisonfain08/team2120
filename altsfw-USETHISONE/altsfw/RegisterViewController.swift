@@ -8,7 +8,8 @@
 import UIKit
 import SwiftUI
 
-var database:DBHelper = DBHelper()
+
+var personArray = PersonArray()
 class RegisterViewController: UIViewController {
 
 
@@ -30,7 +31,7 @@ class RegisterViewController: UIViewController {
     @IBOutlet weak var usernameField: UITextField!
 
     @IBOutlet weak var passwordField: UITextField!
-//    var database:DBHelper = db //from InitialScreenViewController
+    let database = DBHelper()
     
     @IBAction func submit(_ sender: Any) {
             print("INSERT")
@@ -38,8 +39,12 @@ class RegisterViewController: UIViewController {
             print("READ")
             var persons:[Person] = []
             persons = database.read()
-            print(persons)
-
+            //print(persons[0])
+            print("HARDCODED PRINT")
+            print(usernameField.text ?? "sad")
+            print(passwordField.text ?? "sad")
+//        personArray.addItem(item: PersonInfo(username: usernameField.text ?? "not given", password: passwordField.text ?? "not given"))
+        //PersonInfo(username: usernameField.text ?? "invalid", password: passwordField.text ?? "invalid")
         
     }
     

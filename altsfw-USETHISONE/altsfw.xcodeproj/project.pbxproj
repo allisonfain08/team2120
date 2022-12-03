@@ -22,12 +22,17 @@
 		2A2637BA28F9217600A8D2A6 /* ClosetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A2637B928F9217600A8D2A6 /* ClosetViewController.swift */; };
 		2A424C9F291E9F9100847288 /* UploadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A424C9E291E9F9100847288 /* UploadViewController.swift */; };
 		2A424CA1291E9F9B00847288 /* ClosetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A424CA0291E9F9B00847288 /* ClosetViewController.swift */; };
+		2A5A0C60292BC46B00DE49A6 /* ContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A5A0C5F292BC46B00DE49A6 /* ContactViewController.swift */; };
+		2AEE273F2925E56E005F4B73 /* PersonArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AEE273E2925E56E005F4B73 /* PersonArray.swift */; };
+		2AEE27412925E590005F4B73 /* PersonInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AEE27402925E590005F4B73 /* PersonInfo.swift */; };
 		450FE4102917067200379AD1 /* PersonalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 450FE40F2917067200379AD1 /* PersonalViewController.swift */; };
 		9E304CF32905AF9C0060209F /* BeginQuizViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E304CF22905AF9C0060209F /* BeginQuizViewController.swift */; };
 		9E7E9A402921893E00DC49E7 /* CreateOutfitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E7E9A3F2921893E00DC49E7 /* CreateOutfitViewController.swift */; };
 		9E7E9A4429218D4E00DC49E7 /* Outfit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E7E9A4329218D4E00DC49E7 /* Outfit.swift */; };
 		9E7E9A4629218EAD00DC49E7 /* OutfitsArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E7E9A4529218EAD00DC49E7 /* OutfitsArray.swift */; };
 		9E7E9A4829219FA700DC49E7 /* ViewOutfitsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E7E9A4729219FA700DC49E7 /* ViewOutfitsViewController.swift */; };
+		AEAF69AD2921C704001D8A2A /* StarRating in Frameworks */ = {isa = PBXBuildFile; productRef = AEAF69AC2921C704001D8A2A /* StarRating */; };
+		AEAF69AF2921CD26001D8A2A /* AccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEAF69AE2921CD26001D8A2A /* AccountViewController.swift */; };
 		AEB9853D291EBD54005F5991 /* RatingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEB9853C291EBD54005F5991 /* RatingView.swift */; };
 		AEB9853F291EBFF5005F5991 /* testDropDownView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEB9853E291EBFF5005F5991 /* testDropDownView.swift */; };
 		B31F0A2B28FF11370043AA85 /* SwipeTracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = B31F0A2A28FF11370043AA85 /* SwipeTracker.swift */; };
@@ -57,12 +62,16 @@
 		2A2637B928F9217600A8D2A6 /* ClosetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClosetViewController.swift; sourceTree = "<group>"; };
 		2A424C9E291E9F9100847288 /* UploadViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UploadViewController.swift; sourceTree = "<group>"; };
 		2A424CA0291E9F9B00847288 /* ClosetViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClosetViewController.swift; sourceTree = "<group>"; };
+		2A5A0C5F292BC46B00DE49A6 /* ContactViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactViewController.swift; sourceTree = "<group>"; };
+		2AEE273E2925E56E005F4B73 /* PersonArray.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonArray.swift; sourceTree = "<group>"; };
+		2AEE27402925E590005F4B73 /* PersonInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonInfo.swift; sourceTree = "<group>"; };
 		450FE40F2917067200379AD1 /* PersonalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalViewController.swift; sourceTree = "<group>"; };
 		9E304CF22905AF9C0060209F /* BeginQuizViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeginQuizViewController.swift; sourceTree = "<group>"; };
 		9E7E9A3F2921893E00DC49E7 /* CreateOutfitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateOutfitViewController.swift; sourceTree = "<group>"; };
 		9E7E9A4329218D4E00DC49E7 /* Outfit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Outfit.swift; sourceTree = "<group>"; };
 		9E7E9A4529218EAD00DC49E7 /* OutfitsArray.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OutfitsArray.swift; sourceTree = "<group>"; };
 		9E7E9A4729219FA700DC49E7 /* ViewOutfitsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewOutfitsViewController.swift; sourceTree = "<group>"; };
+		AEAF69AE2921CD26001D8A2A /* AccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewController.swift; sourceTree = "<group>"; };
 		AEB9853C291EBD54005F5991 /* RatingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingView.swift; sourceTree = "<group>"; };
 		AEB9853E291EBFF5005F5991 /* testDropDownView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = testDropDownView.swift; sourceTree = "<group>"; };
 		B31F0A2A28FF11370043AA85 /* SwipeTracker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeTracker.swift; sourceTree = "<group>"; };
@@ -79,6 +88,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AEAF69AD2921C704001D8A2A /* StarRating in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -111,6 +121,9 @@
 				2A424C9E291E9F9100847288 /* UploadViewController.swift */,
 				B37DBCF32921B5FC00F107E2 /* InitialScreenViewController.swift */,
 				B32AE977291FF7840049AA11 /* ClosetArray.swift */,
+				2AEE273E2925E56E005F4B73 /* PersonArray.swift */,
+				2AEE27402925E590005F4B73 /* PersonInfo.swift */,
+				2A5A0C5F292BC46B00DE49A6 /* ContactViewController.swift */,
 				2A2637AD28F91DEF00A8D2A6 /* RegisterViewController.swift */,
 				B32AE979291FF8400049AA11 /* ArticleOfClothing.swift */,
 				2A424CA0291E9F9B00847288 /* ClosetViewController.swift */,
@@ -123,6 +136,7 @@
 				2A2637B928F9217600A8D2A6 /* ClosetViewController.swift */,
 				B31F0A2A28FF11370043AA85 /* SwipeTracker.swift */,
 				2A26379D28F9040B00A8D2A6 /* Main.storyboard */,
+				AEAF69AE2921CD26001D8A2A /* AccountViewController.swift */,
 				AEB9853E291EBFF5005F5991 /* testDropDownView.swift */,
 				450FE40F2917067200379AD1 /* PersonalViewController.swift */,
 				AEB9853C291EBD54005F5991 /* RatingView.swift */,
@@ -155,6 +169,9 @@
 			dependencies = (
 			);
 			name = altsfw;
+			packageProductDependencies = (
+				AEAF69AC2921C704001D8A2A /* StarRating */,
+			);
 			productName = altsfw;
 			productReference = 2A26379428F9040B00A8D2A6 /* altsfw.app */;
 			productType = "com.apple.product-type.application";
@@ -183,6 +200,9 @@
 				Base,
 			);
 			mainGroup = 2A26378B28F9040A00A8D2A6;
+			packageReferences = (
+				AEAF69AB2921C704001D8A2A /* XCRemoteSwiftPackageReference "StarRating" */,
+			);
 			productRefGroup = 2A26379528F9040B00A8D2A6 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -219,15 +239,18 @@
 				B378D3AB29065F2700225112 /* ResultsViewController.swift in Sources */,
 				B38B63CD291CB96200494F49 /* SQLiteDBStore.swift in Sources */,
 				2A2637B228F9212F00A8D2A6 /* QuizViewController.swift in Sources */,
+				AEAF69AF2921CD26001D8A2A /* AccountViewController.swift in Sources */,
 				2A2637AE28F91DEF00A8D2A6 /* RegisterViewController.swift in Sources */,
 				B31F0A2B28FF11370043AA85 /* SwipeTracker.swift in Sources */,
 				9E7E9A4829219FA700DC49E7 /* ViewOutfitsViewController.swift in Sources */,
+				2AEE27412925E590005F4B73 /* PersonInfo.swift in Sources */,
 				B32AE978291FF7840049AA11 /* ClosetArray.swift in Sources */,
 				2A2637BA28F9217600A8D2A6 /* ClosetViewController.swift in Sources */,
 				9E304CF32905AF9C0060209F /* BeginQuizViewController.swift in Sources */,
 				9E7E9A4429218D4E00DC49E7 /* Outfit.swift in Sources */,
 				2A26379C28F9040B00A8D2A6 /* ViewController.swift in Sources */,
 				AEB9853F291EBFF5005F5991 /* testDropDownView.swift in Sources */,
+				2AEE273F2925E56E005F4B73 /* PersonArray.swift in Sources */,
 				2A26379828F9040B00A8D2A6 /* AppDelegate.swift in Sources */,
 				2A424CA1291E9F9B00847288 /* ClosetViewController.swift in Sources */,
 				B32AE97A291FF8400049AA11 /* ArticleOfClothing.swift in Sources */,
@@ -237,6 +260,7 @@
 				AEB9853D291EBD54005F5991 /* RatingView.swift in Sources */,
 				9E7E9A402921893E00DC49E7 /* CreateOutfitViewController.swift in Sources */,
 				2A2637B028F91EE700A8D2A6 /* HomeViewController.swift in Sources */,
+				2A5A0C60292BC46B00DE49A6 /* ContactViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -452,6 +476,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		AEAF69AB2921C704001D8A2A /* XCRemoteSwiftPackageReference "StarRating" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/dkk/StarRating";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		AEAF69AC2921C704001D8A2A /* StarRating */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AEAF69AB2921C704001D8A2A /* XCRemoteSwiftPackageReference "StarRating" */;
+			productName = StarRating;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 2A26378C28F9040A00A8D2A6 /* Project object */;
 }
