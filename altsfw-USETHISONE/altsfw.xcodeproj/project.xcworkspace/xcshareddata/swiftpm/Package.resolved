@@ -1,0 +1,14 @@
+{
+  "pins" : [
+    {
+      "identity" : "starrating",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/dkk/StarRating",
+      "state" : {
+        "revision" : "89dba504097ddd4166bb118d615e201619a1602f",
+        "version" : "2.0.0"
+      }
+    }
+  ],
+  "version" : 2
+}
