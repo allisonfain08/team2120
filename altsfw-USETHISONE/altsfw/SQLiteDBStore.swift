@@ -116,5 +116,26 @@ class DBHelper
         }
         sqlite3_finalize(deleteStatement)
     }
+    func checkIfExists(username:String, password:String) -> Bool {
+        let queryStatementString = "SELECT * FROM person WHERE username = ? AND password = ?;"
+//        let queryStatementString = "SELECT * FROM person WHERE username = ?;"
+        //let queryStatementPassword = "SELECT * FROM person WHERE password = ?;"
+        var queryStatement: OpaquePointer? = nil
+        var exists = false;
+        if sqlite3_prepare_v2(db, queryStatementString, -1, &queryStatement, nil) == SQLITE_OK {
+            sqlite3_bind_text(queryStatement, 1, (username as NSString).utf8String, -1, nil)
+            sqlite3_bind_text(queryStatement, 2, (password as NSString).utf8String, -1, nil)
+            
+            if sqlite3_step(queryStatement) == SQLITE_ROW {
+                exists = true
+            } else {
+               exists = false
+            }
+        } else {
+            print("SELECT statement could not be prepared.")
+        }
+        sqlite3_finalize(queryStatement)
+        return exists
+    }
     
 }

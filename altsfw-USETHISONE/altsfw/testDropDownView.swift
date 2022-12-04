@@ -8,14 +8,18 @@
 import SwiftUI
 
 struct testDropDownView: View {
+    let database = DBHelper()
     
-    @State private var topBudget = ""
-    @State private var bottomBudget = ""
-    @State private var outerBudget = ""
-    @State private var dressBudget = ""
-    @State private var shoeBudget = ""
-    @State private var accBudget = ""
-    @State private var jewelryBudget = ""
+    var indx = personArray.returnIndex()
+
+    
+    @State private var topBudget = "Less than $50"
+    @State private var bottomBudget = "Less than $50"
+    @State private var outerBudget = "Less than $50"
+    @State private var dressBudget = "Less than $50"
+    @State private var shoeBudget = "Less than $50"
+    @State private var accBudget = "Less than $50"
+    @State private var jewelryBudget = "Less than $50"
     @State private var rating = ""
     @State private var review = 3
     
@@ -64,10 +68,21 @@ struct testDropDownView: View {
                 } header: {
                     Text("Budget")
                 }
-
+                //under Button(action: add the budget where needed
                 Section {
-                    Button("Save") {
-                        // add the budget wherever it is needed
+                    Button("Next") {
+                        
+                        //yeah next button currently does nothing ...
+                        addBudgetVals(topBudget: topBudget, bottomBudget: bottomBudget, outerBudget: outerBudget, dressBudget: dressBudget, shoeBudget: shoeBudget, accBudget: accBudget, jewelryBudget: jewelryBudget, indx: indx)
+        
+                        segueToPersonal()
+//                        Person.setTopBudget(topBudget)
+//                        Person.setBottomBudget(bottomBudget)
+//                        Person.setOuterBudget(outerBudget)
+//                        Person.setAccBudget(accBudget)
+//                        Person.setDressBudget(dressBudget)
+//                        Person.setShoeBudget(shoeBudget)
+//                        Person.setJewelryBudget(jewelryBudget)
                     }
                 }
             }
@@ -76,6 +91,22 @@ struct testDropDownView: View {
     }
 }
 
+func addBudgetVals(topBudget: String, bottomBudget: String, outerBudget: String, dressBudget: String, shoeBudget: String, accBudget: String, jewelryBudget: String, indx: Int) {
+    personArray.person[indx].topBudget = topBudget
+    personArray.person[indx].bottomBudget = bottomBudget
+    personArray.person[indx].outerBudget = outerBudget
+    personArray.person[indx].dressBudget = dressBudget
+    personArray.person[indx].shoeBudget = shoeBudget
+    personArray.person[indx].accBudget = accBudget
+    personArray.person[indx].jewelryBudget = jewelryBudget
+}
+func segueToPersonal() {
+    
+    
+    let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let PersonalViewController = storyboard.instantiateViewController(identifier: "PersonalViewController")
+    (UIApplication.shared.connectedScenes.first?.delegate as? SceneDelegate)?.changeRootViewController(PersonalViewController)
+}
 struct testDropDownView_Previews: PreviewProvider {
     static var previews: some View {
         testDropDownView()

@@ -33,15 +33,13 @@ class QuizViewController:
         if gesture.direction == .right {
             swipeTracker.addSwipe(direct: .right)
             performSegue(withIdentifier: "nextQuestion", sender: self)
+            print(swipeTracker.currQuestion)
         } else if gesture.direction == .left {
             swipeTracker.addSwipe(direct: .left)
             performSegue(withIdentifier: "nextQuestion", sender: self)
+            print(swipeTracker.currQuestion)
         }
-        if(swipeTracker.currQuestion > 10){
-            print(swipeTracker.returnNumAnswers())
-            swipeTracker.currQuestion = 1
-            swipeTracker.clearAnswers()
-        }
+    
     }
     @IBAction func back(_ sender: Any) {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)

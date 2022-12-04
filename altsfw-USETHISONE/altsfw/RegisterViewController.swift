@@ -6,7 +6,10 @@
 //
 
 import UIKit
+import SwiftUI
 
+
+var personArray = PersonArray()
 class RegisterViewController: UIViewController {
 
 
@@ -24,26 +27,33 @@ class RegisterViewController: UIViewController {
             (UIApplication.shared.connectedScenes.first?.delegate as? SceneDelegate)?.changeRootViewController(LoginViewController)
     }
     
+    
     @IBOutlet weak var usernameField: UITextField!
+
     @IBOutlet weak var passwordField: UITextField!
     let database = DBHelper()
+    
     @IBAction func submit(_ sender: Any) {
             print("INSERT")
             database.insert(username: usernameField.text ?? "sad", password: passwordField.text ?? "sad")
             print("READ")
             var persons:[Person] = []
             persons = database.read()
-            print(persons[0])
+            //print(persons[0])
             print("HARDCODED PRINT")
             print(usernameField.text ?? "sad")
             print(passwordField.text ?? "sad")
-        let storyboard = UIStoryboard(name: "Main", bundle: nil)
-            let HomeViewController = storyboard.instantiateViewController(identifier: "HomeViewController")
-            
-            // This is to get the SceneDelegate object from your view controller
-            // then call the change root view controller function to change to main tab bar
-            (UIApplication.shared.connectedScenes.first?.delegate as? SceneDelegate)?.changeRootViewController(HomeViewController)
+        
+        personArray.addItem(item: PersonInfo(username: usernameField.text ?? "invalid", password: passwordField.text ?? "invalid"), user: usernameField.text ?? "invalid", pass: passwordField.text ?? "invalid")
+//        personArray.addItem(item: PersonInfo(username: usernameField.text ?? "not given", password: passwordField.text ?? "not given"))
+        //PersonInfo(username: usernameField.text ?? "invalid", password: passwordField.text ?? "invalid")
+        
     }
+    
+    @IBSegueAction func segueToViewQuiz(_ coder: NSCoder) -> UIViewController? {
+        return UIHostingController(coder: coder, rootView: testDropDownView())
+    }
+    
     /*
     // MARK: - Navigation
 
