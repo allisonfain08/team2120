@@ -41,9 +41,8 @@ class PersonArray {
                     return i
                 }
             }
-            person.append(PersonInfo(username: "", password: ""))
+        }else{ person.append(PersonInfo(username: "", password: ""))
             return person.count
-            
         }
         return -1
     }
