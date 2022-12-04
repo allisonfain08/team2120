@@ -125,7 +125,11 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <datePicker contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="fill" contentVerticalAlignment="center" datePickerMode="date" style="compact" translatesAutoresizingMaskIntoConstraints="NO" id="KIV-aL-lMH">
+<<<<<<< Updated upstream
                                 <rect key="frame" x="2" y="151" width="377" height="77"/>
+=======
+                                <rect key="frame" x="-6" y="151" width="372" height="77"/>
+>>>>>>> Stashed changes
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <color key="tintColor" red="0.57995235919999999" green="0.65809136629999998" blue="0.45879095790000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <date key="maximumDate" timeIntervalSinceReferenceDate="252500400">
@@ -376,6 +380,7 @@
                                     <color key="baseBackgroundColor" red="0.87450980392156863" green="0.73333333333333328" blue="0.69019607843137254" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </buttonConfiguration>
                                 <connections>
+                                    <action selector="begin:" destination="HP9-AR-WXy" eventType="touchUpInside" id="6zK-Pk-BPA"/>
                                     <segue destination="h4e-yP-1tg" kind="show" id="UJR-9w-uSB"/>
                                 </connections>
                             </button>
@@ -423,6 +428,12 @@
                     </view>
                     <navigationItem key="navigationItem" id="VyZ-Uk-fb6"/>
                     <connections>
+                        <outlet property="eKlozetLogoImage" destination="LHL-WO-SDn" id="qyB-6h-S1f"/>
+                        <outlet property="findYourLabel" destination="oPQ-o4-mic" id="wI0-YG-Twj"/>
+                        <outlet property="innerRectangle" destination="hST-v4-KMI" id="7uJ-zv-aqI"/>
+                        <outlet property="outerRectangle" destination="fQM-TH-MkO" id="ZIV-Zp-emz"/>
+                        <outlet property="quizInstructionsLabel" destination="BHP-R4-qhQ" id="MdP-IB-CIh"/>
+                        <outlet property="styleLabel" destination="DKe-wO-21f" id="BCX-mb-vFj"/>
                         <outlet property="view" destination="32K-wK-NG1" id="BVQ-25-iyb"/>
                     </connections>
                 </viewController>
@@ -1461,13 +1472,21 @@
         <segue reference="KSm-ea-szE"/>
         <segue reference="W0H-7v-Dji"/>
         <segue reference="FT6-sX-wai"/>
+<<<<<<< Updated upstream
         <segue reference="StL-Oo-Z7M"/>
         <segue reference="Kt2-Xz-DzQ"/>
+=======
+        <segue reference="ok6-VE-G5O"/>
+        <segue reference="5Qz-kc-CVO"/>
+>>>>>>> Stashed changes
         <segue reference="zTi-k8-meo"/>
         <segue reference="t39-OW-ASU"/>
         <segue reference="Mci-I7-GNE"/>
         <segue reference="UJR-9w-uSB"/>
+<<<<<<< Updated upstream
         <segue reference="b2U-iP-DqU"/>
+=======
+>>>>>>> Stashed changes
     </inferredMetricsTieBreakers>
     <color key="tintColor" systemColor="labelColor"/>
     <resources>
