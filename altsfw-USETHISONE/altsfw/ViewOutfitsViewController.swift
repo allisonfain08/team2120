@@ -30,13 +30,13 @@ class ViewOutfitsViewController: UIViewController {
         // Do any additional setup after loading the view.
         var outfit = outfitsArray.outfits[0]
         outfitName.text = outfit.name
-        rated.text = outfit.rating
+        //rated.text = outfit.rating
         var primary = [String]()
         for x in outfit.clothingItems {
             primary.append(x.primaryMaterial)
         }
         var primaryString = primary.joined(separator: " ")
-        materialP.text = primaryString
+        //materialP.text = primaryString
         populateImageViews(outfit: outfit)
     }
     

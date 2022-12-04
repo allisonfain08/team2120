@@ -772,15 +772,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="390" height="787"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k6b-1O-1ux">
-                                <rect key="frame" x="168" y="20" width="55" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" image="homekit" catalog="system"/>
-                                <connections>
-                                    <segue destination="iMB-Mi-xCE" kind="show" id="YQc-wq-rEN"/>
-                                </connections>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Username" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xdT-I5-aN9">
                                 <rect key="frame" x="111" y="63" width="169" height="26"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -1040,29 +1031,38 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k6b-1O-1ux">
+                                <rect key="frame" x="19" y="59" width="55" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="homekit" catalog="system"/>
+                                <connections>
+                                    <segue destination="iMB-Mi-xCE" kind="show" id="YQc-wq-rEN"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="ycQ-Ar-z9e"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="jeZ-OL-YhR"/>
                     <connections>
-                        <outlet property="accBVal" destination="AOI-TL-Zqp" id="eJu-no-ocR"/>
-                        <outlet property="backWaistVal" destination="A7b-Bb-AHf" id="AEd-qx-jim"/>
-                        <outlet property="bottomBVal" destination="nXm-U5-awN" id="1T4-xj-igg"/>
-                        <outlet property="bustVal" destination="Dhe-Ar-yhj" id="qkX-H6-w7x"/>
-                        <outlet property="dressBVal" destination="mu5-aB-FhR" id="Hkf-kA-SFx"/>
-                        <outlet property="frontWaistVal" destination="AVi-2a-egq" id="lK7-t3-wmt"/>
-                        <outlet property="highBustVal" destination="ELO-Y9-1V5" id="AeE-f9-52J"/>
-                        <outlet property="highHipsVal" destination="ya4-eO-x2a" id="Kni-FM-Bon"/>
-                        <outlet property="hipsVal" destination="tVE-Un-mJn" id="x2g-nj-SuV"/>
-                        <outlet property="inseamVal" destination="7tw-ts-exp" id="8T5-pX-hX4"/>
-                        <outlet property="jewelryBVal" destination="Rkw-SJ-gPp" id="wNk-mT-VOc"/>
-                        <outlet property="outerBVal" destination="NTJ-Rk-s4r" id="crg-mV-z4A"/>
-                        <outlet property="shoeBVal" destination="Jgs-0k-ua8" id="dET-0u-Ptu"/>
-                        <outlet property="skirtLengthVal" destination="1eZ-Cp-S4b" id="f9C-z3-wju"/>
-                        <outlet property="sleeveLengthVal" destination="PFh-4J-lET" id="F3g-e1-pHV"/>
-                        <outlet property="topBVal" destination="dec-sq-xGm" id="sa0-mY-iad"/>
-                        <outlet property="waistVal" destination="NqV-r5-np4" id="0W5-Ok-Blq"/>
+                        <outlet property="accBVal" destination="DFz-Ll-apR" id="ltf-Vy-Vg2"/>
+                        <outlet property="backWaistVal" destination="8zu-Q2-cCt" id="GfJ-Ok-JVk"/>
+                        <outlet property="bottomBVal" destination="d1u-g0-LJw" id="ho2-FX-Sme"/>
+                        <outlet property="bustVal" destination="Y8F-z5-0aD" id="TDG-xy-vXk"/>
+                        <outlet property="dressBVal" destination="FCE-3k-fC8" id="3Tq-nL-hag"/>
+                        <outlet property="frontWaistVal" destination="mOZ-Bs-Wnj" id="Zkn-af-tLi"/>
+                        <outlet property="highBustVal" destination="dZm-8x-U3x" id="DQh-xH-KV0"/>
+                        <outlet property="highHipsVal" destination="7fC-2Z-q9P" id="LsZ-Xw-YQs"/>
+                        <outlet property="hipsVal" destination="C7H-hZ-mzh" id="U1O-IY-IzG"/>
+                        <outlet property="inseamVal" destination="wTW-rY-M9h" id="Hge-91-epX"/>
+                        <outlet property="jewelryBVal" destination="a2h-XJ-gJY" id="kbh-fv-52l"/>
+                        <outlet property="outerBVal" destination="u5q-vd-2tk" id="7fd-4J-DXw"/>
+                        <outlet property="shoeBVal" destination="JCp-Ha-CtV" id="Q12-8B-Mje"/>
+                        <outlet property="skirtLengthVal" destination="TdG-iH-jLZ" id="zNC-bC-kCj"/>
+                        <outlet property="sleeveLengthVal" destination="83p-WT-vPc" id="9PQ-by-E5Q"/>
+                        <outlet property="topBVal" destination="EIV-iZ-Rsx" id="URD-H0-cjO"/>
+                        <outlet property="waistVal" destination="r93-rw-E2v" id="Yzz-xG-d2F"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Mpw-ye-F5S" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -1602,6 +1602,19 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Rate the outfit" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t1o-Zs-3eV">
+                                <rect key="frame" x="55" y="94" width="108" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dkQ-Sa-eHQ">
+                                <rect key="frame" x="201" y="94" width="97" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="PtC-SF-Ccv"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -1613,6 +1626,7 @@
                         <outlet property="img2" destination="qVt-u2-NPc" id="jMC-zK-jCF"/>
                         <outlet property="img3" destination="Gpd-Ct-u5M" id="0EJ-fh-emc"/>
                         <outlet property="outfitName" destination="7dx-K3-oOg" id="uEm-7k-cmc"/>
+                        <outlet property="rating" destination="dkQ-Sa-eHQ" id="bnd-r9-gBy"/>
                         <outlet property="switch0" destination="BiG-pC-65f" id="ybi-iF-xJV"/>
                         <outlet property="switch1" destination="Vo6-fT-FWe" id="G6i-HH-nnJ"/>
                         <outlet property="switch2" destination="azs-l3-gWy" id="kNI-fx-gWs"/>
@@ -1672,7 +1686,7 @@
                                     <color key="baseForegroundColor" name="eKlozet Teal"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <action selector="submit:" destination="BEO-pc-h2z" eventType="touchUpInside" id="kWe-rh-hnl"/>
+                                    <segue destination="iMB-Mi-xCE" kind="show" id="IRZ-Vu-eVy"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -2265,7 +2279,7 @@
         <segue reference="KSm-ea-szE"/>
         <segue reference="W0H-7v-Dji"/>
         <segue reference="FT6-sX-wai"/>
-        <segue reference="YQc-wq-rEN"/>
+        <segue reference="IRZ-Vu-eVy"/>
         <segue reference="5Qz-kc-CVO"/>
         <segue reference="zTi-k8-meo"/>
         <segue reference="t39-OW-ASU"/>
