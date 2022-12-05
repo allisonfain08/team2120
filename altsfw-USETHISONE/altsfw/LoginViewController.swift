@@ -13,8 +13,27 @@ class LoginViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
-
+    
+    @IBOutlet weak var personTable: UITableView!
+    let cellReuseIdentifier = "cell"
+    var db:DBHelper = DBHelper()
+    var persons:[Person] = []
+    
+    @IBOutlet weak var textField: UITextField!
+    @IBOutlet weak var passwordField: UITextField!
+    
+    // any logic that pertains to the login button will be written
+    // here in this function
     @IBAction func login(_ sender: Any) {
+        var username_text: String = textField.text!
+        var password_text: String = passwordField.text!
+        
+        // if (username_text != db.queryUser(username_text)) {
+            // print("user does not exist")
+        // }
+        
+        
+        
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
             let HomeViewController = storyboard.instantiateViewController(identifier: "HomeViewController")
             
