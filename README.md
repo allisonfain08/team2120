@@ -14,6 +14,9 @@ The app we will develop will allow people to take a quiz to determine their pers
 <li> xCode ver 14.0
 <h2> Dependent Libraries</h2>
 <h2> Run Instructions</h2>
+
+![xcode](xcode.png) 
+
 <h2> Troubleshooting</h2>
 <h1>Release Notes Section</h1>
 
