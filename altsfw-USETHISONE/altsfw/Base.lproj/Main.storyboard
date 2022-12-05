@@ -26,7 +26,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Let's Go!">
-                                    <color key="baseBackgroundColor" name="AccentColor"/>
+                                    <color key="baseBackgroundColor" name="eKlozet Gold"/>
                                 </buttonConfiguration>
                                 <connections>
                                     <action selector="letsgo:" destination="BYZ-38-t0r" eventType="touchUpInside" id="n4A-0v-MCM"/>
@@ -313,7 +313,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Login">
-                                    <color key="baseBackgroundColor" name="AccentColor"/>
+                                    <color key="baseBackgroundColor" name="eKlozet Gold"/>
                                 </buttonConfiguration>
                                 <connections>
                                     <action selector="login:" destination="4ni-CA-P27" eventType="touchUpInside" id="Lei-Mx-DDM"/>
@@ -422,7 +422,7 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="rectangle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="fQM-TH-MkO">
                                 <rect key="frame" x="-19" y="173.66666666666652" width="428" height="497"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="tintColor" name="AccentColor"/>
+                                <color key="tintColor" name="eKlozet Pink"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="rectangle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="hST-v4-KMI">
                                 <rect key="frame" x="-7" y="195.66666666666652" width="404" height="451"/>
@@ -2279,7 +2279,7 @@
         <segue reference="KSm-ea-szE"/>
         <segue reference="W0H-7v-Dji"/>
         <segue reference="FT6-sX-wai"/>
-        <segue reference="IRZ-Vu-eVy"/>
+        <segue reference="ok6-VE-G5O"/>
         <segue reference="5Qz-kc-CVO"/>
         <segue reference="zTi-k8-meo"/>
         <segue reference="t39-OW-ASU"/>
@@ -2315,8 +2315,8 @@
         <image name="homekit" catalog="system" width="128" height="104"/>
         <image name="person.circle.fill" catalog="system" width="128" height="123"/>
         <image name="rectangle.fill" catalog="system" width="128" height="93"/>
-        <namedColor name="AccentColor">
-            <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        <namedColor name="eKlozet Gold">
+            <color red="0.70999997854232788" green="0.60399997234344482" blue="0.3919999897480011" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="eKlozet Off White">
             <color red="0.94099998474121094" green="0.92900002002716064" blue="0.88599997758865356" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
