@@ -34,15 +34,10 @@ class RegisterViewController: UIViewController {
     let database = DBHelper()
     
     @IBAction func submit(_ sender: Any) {
-            print("INSERT")
             database.insert(username: usernameField.text ?? "sad", password: passwordField.text ?? "sad")
-            print("READ")
             var persons:[Person] = []
             persons = database.read()
             //print(persons[0])
-            print("HARDCODED PRINT")
-            print(usernameField.text ?? "sad")
-            print(passwordField.text ?? "sad")
         
         personArray.addItem(item: PersonInfo(username: usernameField.text ?? "invalid", password: passwordField.text ?? "invalid"), user: usernameField.text ?? "invalid", pass: passwordField.text ?? "invalid")
 //        personArray.addItem(item: PersonInfo(username: usernameField.text ?? "not given", password: passwordField.text ?? "not given"))

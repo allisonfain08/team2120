@@ -116,6 +116,20 @@ class DBHelper
         }
         sqlite3_finalize(deleteStatement)
     }
+//    func clearDB() {
+//        let deleteStatementStirng = "DELETE FROM person;"
+//        var deleteStatement: OpaquePointer? = nil
+//        if sqlite3_prepare_v2(db, deleteStatementStirng, -1, &deleteStatement, nil) == SQLITE_OK {
+//            if sqlite3_step(deleteStatement) == SQLITE_DONE {
+//                print("Successfully cleared db.")
+//            } else {
+//                print("Could not clear db.")
+//            }
+//        } else {
+//            print("DELETE statement could not be prepared")
+//        }
+//        sqlite3_finalize(deleteStatement)
+//    }
     func checkIfExists(username:String, password:String) -> Bool {
         let queryStatementString = "SELECT * FROM person WHERE username = ? AND password = ?;"
 //        let queryStatementString = "SELECT * FROM person WHERE username = ?;"
