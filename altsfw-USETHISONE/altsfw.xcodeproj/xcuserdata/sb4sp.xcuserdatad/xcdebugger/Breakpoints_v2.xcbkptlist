@@ -3,4 +3,114 @@
    uuid = "1CAE688E-0DFB-4418-AFCD-21BB2E70B4F2"
    type = "1"
    version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "CF956AB5-1461-4710-9BD0-6FB6F19EF22C"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "altsfw/LoginViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "17"
+            endingLineNumber = "17"
+            landmarkName = "LoginViewController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  uuid = "CF956AB5-1461-4710-9BD0-6FB6F19EF22C - d46fca7b8fa0bdef"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "altsfw.LoginViewController.username.getter : Swift.Optional&lt;__C.UITextField&gt;"
+                  moduleName = "altsfw"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/sb4sp/Desktop/Fall%2022/Junior%20Design%20Pt%202/team2120/altsfw-USETHISONE/altsfw/LoginViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "17"
+                  endingLineNumber = "17"
+                  offsetFromSymbolStart = "85">
+               </Location>
+               <Location
+                  uuid = "CF956AB5-1461-4710-9BD0-6FB6F19EF22C - f8d81b4b23a1c9db"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "altsfw.LoginViewController.username.setter : Swift.Optional&lt;__C.UITextField&gt;"
+                  moduleName = "altsfw"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/sb4sp/Desktop/Fall%2022/Junior%20Design%20Pt%202/team2120/altsfw-USETHISONE/altsfw/LoginViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "17"
+                  endingLineNumber = "17"
+                  offsetFromSymbolStart = "136">
+               </Location>
+               <Location
+                  uuid = "CF956AB5-1461-4710-9BD0-6FB6F19EF22C - d9bece92f1dc20e8"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "altsfw.LoginViewController.username.modify : Swift.Optional&lt;__C.UITextField&gt;"
+                  moduleName = "altsfw"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/sb4sp/Desktop/Fall%2022/Junior%20Design%20Pt%202/team2120/altsfw-USETHISONE/altsfw/LoginViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "17"
+                  endingLineNumber = "17"
+                  offsetFromSymbolStart = "0">
+               </Location>
+               <Location
+                  uuid = "CF956AB5-1461-4710-9BD0-6FB6F19EF22C - 8b4345899bfe92f7"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "altsfw.LoginViewController.username.modify : Swift.Optional&lt;__C.UITextField&gt; with unmangled suffix &quot;.resume.0&quot;"
+                  moduleName = "altsfw"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/sb4sp/Desktop/Fall%2022/Junior%20Design%20Pt%202/team2120/altsfw-USETHISONE/altsfw/LoginViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "17"
+                  endingLineNumber = "17"
+                  offsetFromSymbolStart = "26">
+               </Location>
+               <Location
+                  uuid = "CF956AB5-1461-4710-9BD0-6FB6F19EF22C - 1d59a7b5551cadd2"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "altsfw.LoginViewController.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; altsfw.LoginViewController"
+                  moduleName = "altsfw"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/sb4sp/Desktop/Fall%2022/Junior%20Design%20Pt%202/team2120/altsfw-USETHISONE/altsfw/LoginViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "17"
+                  endingLineNumber = "17"
+                  offsetFromSymbolStart = "137">
+               </Location>
+               <Location
+                  uuid = "CF956AB5-1461-4710-9BD0-6FB6F19EF22C - be887c3e653f7c93"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "altsfw.LoginViewController.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;altsfw.LoginViewController&gt;"
+                  moduleName = "altsfw"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/sb4sp/Desktop/Fall%2022/Junior%20Design%20Pt%202/team2120/altsfw-USETHISONE/altsfw/LoginViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "17"
+                  endingLineNumber = "17"
+                  offsetFromSymbolStart = "94">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
 </Bucket>

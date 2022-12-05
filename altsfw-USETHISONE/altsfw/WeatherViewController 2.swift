@@ -1,5 +1,5 @@
 //
-//  RecommendedViewController.swift
+//  WeatherViewController.swift
 //  altsfw
 //
 //  Created by Allison Fain on 10/14/22.
@@ -7,7 +7,7 @@
 
 import UIKit
 
-class RecommendedViewController: UIViewController {
+class WeatherViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

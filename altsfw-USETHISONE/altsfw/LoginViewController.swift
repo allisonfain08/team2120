@@ -6,7 +6,7 @@
 //
 
 import UIKit
-
+var db:DBHelper = DBHelper()
 class LoginViewController: UIViewController {
 
     override func viewDidLoad() {
@@ -14,32 +14,23 @@ class LoginViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-    @IBOutlet weak var personTable: UITableView!
-    let cellReuseIdentifier = "cell"
-    var db:DBHelper = DBHelper()
-    var persons:[Person] = []
     
-    @IBOutlet weak var textField: UITextField!
-    @IBOutlet weak var passwordField: UITextField!
+    @IBOutlet weak var username: UITextField!
+    @IBOutlet weak var password: UITextField!
     
-    // any logic that pertains to the login button will be written
-    // here in this function
+    @IBOutlet weak var usernameExistsLabel: UILabel!
+    
     @IBAction func login(_ sender: Any) {
-        var username_text: String = textField.text!
-        var password_text: String = passwordField.text!
-        
-        // if (username_text != db.queryUser(username_text)) {
-            // print("user does not exist")
-        // }
-        
-        
-        
-        let storyboard = UIStoryboard(name: "Main", bundle: nil)
-            let HomeViewController = storyboard.instantiateViewController(identifier: "HomeViewController")
-            
-            // This is to get the SceneDelegate object from your view controller
-            // then call the change root view controller function to change to main tab bar
-            (UIApplication.shared.connectedScenes.first?.delegate as? SceneDelegate)?.changeRootViewController(HomeViewController)
+        if (db.checkIfExists(username: username.text ?? "sad", password: password.text ?? "sad")) {
+            let storyboard = UIStoryboard(name: "Main", bundle: nil)
+                let HomeViewController = storyboard.instantiateViewController(identifier: "HomeViewController")
+                
+                // This is to get the SceneDelegate object from your view controller
+                // then call the change root view controller function to change to main tab bar
+                (UIApplication.shared.connectedScenes.first?.delegate as? SceneDelegate)?.changeRootViewController(HomeViewController)
+        } else {
+            usernameExistsLabel.text = "Account not found, register for an account"
+        }
     }
     
     

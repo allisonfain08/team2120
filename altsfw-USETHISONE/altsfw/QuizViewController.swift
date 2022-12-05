@@ -33,15 +33,13 @@ class QuizViewController:
         if gesture.direction == .right {
             swipeTracker.addSwipe(direct: .right)
             performSegue(withIdentifier: "nextQuestion", sender: self)
+            print(swipeTracker.currQuestion)
         } else if gesture.direction == .left {
             swipeTracker.addSwipe(direct: .left)
             performSegue(withIdentifier: "nextQuestion", sender: self)
+            print(swipeTracker.currQuestion)
         }
-        if(swipeTracker.currQuestion > 10){
-            print(swipeTracker.returnNumAnswers())
-            swipeTracker.currQuestion = 1
-            swipeTracker.clearAnswers()
-        }
+    
     }
     @IBAction func back(_ sender: Any) {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
@@ -51,6 +49,8 @@ class QuizViewController:
             // then call the change root view controller function to change to main tab bar
             (UIApplication.shared.connectedScenes.first?.delegate as? SceneDelegate)?.changeRootViewController(HomeViewController)
     }
+    
+    
     
     /*
     // MARK: - Navigation

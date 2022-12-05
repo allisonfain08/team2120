@@ -25,6 +25,7 @@ class HomeViewController: UIViewController {
     }
     
     @IBAction func styleQuiz(_ sender: Any) {
+        swipeTracker.clearAnswers()
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
             let QuizViewController = storyboard.instantiateViewController(identifier: "QuizViewController")
             
@@ -33,9 +34,15 @@ class HomeViewController: UIViewController {
             (UIApplication.shared.connectedScenes.first?.delegate as? SceneDelegate)?.changeRootViewController(QuizViewController)
     }
     
+    @IBAction func account(_ sender: Any) {
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let AccountViewController = storyboard.instantiateViewController(identifier: "AccountViewController")
+        (UIApplication.shared.connectedScenes.first?.delegate as? SceneDelegate)?.changeRootViewController(AccountViewController)
+    }
+    
     @IBAction func weather(_ sender: Any) {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
-            let WeatherViewController = storyboard.instantiateViewController(identifier: "WeatherViewController")
+            let WeatherViewController = storyboard.instantiateViewController(identifier: "ResultsViewController")
             
             // This is to get the SceneDelegate object from your view controller
             // then call the change root view controller function to change to main tab bar
@@ -51,15 +58,15 @@ class HomeViewController: UIViewController {
             (UIApplication.shared.connectedScenes.first?.delegate as? SceneDelegate)?.changeRootViewController(CalendarViewController)
     }
     
-    @IBAction func recommendation(_ sender: Any) {
-        let storyboard = UIStoryboard(name: "Main", bundle: nil)
-            let RecommendedViewController = storyboard.instantiateViewController(identifier: "RecommendedViewController")
-            
-            // This is to get the SceneDelegate object from your view controller
-            // then call the change root view controller function to change to main tab bar
-            (UIApplication.shared.connectedScenes.first?.delegate as? SceneDelegate)?.changeRootViewController(RecommendedViewController)
-    }
-    
+//    @IBAction func closet(_ sender: Any) {
+//        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+//            let ClosetViewController = storyboard.instantiateViewController(identifier: "ClosetViewController")
+//            
+//            // This is to get the SceneDelegate object from your view controller
+//            // then call the change root view controller function to change to main tab bar
+//            (UIApplication.shared.connectedScenes.first?.delegate as? SceneDelegate)?.changeRootViewController(ClosetViewController)
+//    }
+//    
     /*
     // MARK: - Navigation
 
