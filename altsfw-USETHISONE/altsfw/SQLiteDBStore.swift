@@ -138,17 +138,4 @@ class DBHelper
         return exists
     }
     
-    // function should return true if name exists
-    func queryName(username:String) {
-        let queryStatementString = "SELECT username FROM person WHERE username = \(username);"
-        var queryStatement: OpaquePointer? = nil
-        if sqlite3_prepare_v2(db, queryStatementString, -1, &queryStatement, nil) == SQLITE_OK {
-            let username = String(describing: String(cString: sqlite3_column_text(queryStatement, 0)))
-        }
-        
-        print("Query Result:")
-        print("\(username)")
-        
-    }
-    
 }
