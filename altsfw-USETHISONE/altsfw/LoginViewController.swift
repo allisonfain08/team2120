@@ -6,25 +6,31 @@
 //
 
 import UIKit
-
+var db:DBHelper = DBHelper()
 class LoginViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
-
-    @IBOutlet weak var usernameField: UITextField!
-    @IBOutlet weak var passwordField: UITextField!
+    
+    
+    @IBOutlet weak var username: UITextField!
+    @IBOutlet weak var password: UITextField!
+    
+    @IBOutlet weak var usernameExistsLabel: UILabel!
+    
     @IBAction func login(_ sender: Any) {
-        personArray.addItem(item: PersonInfo(username: usernameField.text ?? "invalid", password: passwordField.text ?? "invalid"), user: usernameField.text ?? "invalid", pass: passwordField.text ?? "invalid")
-        
-        let storyboard = UIStoryboard(name: "Main", bundle: nil)
-            let HomeViewController = storyboard.instantiateViewController(identifier: "HomeViewController")
-            
-            // This is to get the SceneDelegate object from your view controller
-            // then call the change root view controller function to change to main tab bar
-            (UIApplication.shared.connectedScenes.first?.delegate as? SceneDelegate)?.changeRootViewController(HomeViewController)
+        if (db.checkIfExists(username: username.text ?? "sad", password: password.text ?? "sad")) {
+            let storyboard = UIStoryboard(name: "Main", bundle: nil)
+                let HomeViewController = storyboard.instantiateViewController(identifier: "HomeViewController")
+                
+                // This is to get the SceneDelegate object from your view controller
+                // then call the change root view controller function to change to main tab bar
+                (UIApplication.shared.connectedScenes.first?.delegate as? SceneDelegate)?.changeRootViewController(HomeViewController)
+        } else {
+            usernameExistsLabel.text = "Account not found, register for an account"
+        }
     }
     
     
