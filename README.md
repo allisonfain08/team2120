@@ -11,8 +11,8 @@ The app we will develop will allow people to take a quiz to determine their pers
 
 <h1>Installation Guide</h1>
 <h2>Prerequisites for Installation and Running</h2>
-<li> xCode ver 14.0 [Install Guide](https://support.apple.com/en-us/HT211683)
-<li> macOS Monterey 12.5 or newer [Install through App Store](https://developer.apple.com/xcode/)
+<li> xCode ver 14.0 ![Install Guide](https://support.apple.com/en-us/HT211683)
+<li> macOS Monterey 12.5 or newer ![Install through App Store](https://developer.apple.com/xcode/)
 <li> iOS 16 or newer (for mac PC)
 <h2> Dependent Libraries</h2>
 <h2> Run Instructions</h2>
