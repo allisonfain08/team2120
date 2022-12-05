@@ -4,16 +4,16 @@
 </n>
 The client, Tanjuria Willis, leads the planning and execution of ASFW, as well as running a luxury consignment store and styling service under the brand name “EKlozet”. The iOS mobile application, in addition to supporting ASFW, is geared towards her existing and future clients and customers at EKlozet.
 </n>
-The app we will develop will allow people to take a quiz to determine their personal style and advise them on how to use existing pieces in combination with sustainably sourced new clothes. Users will be able to see which sustainability metrics are being met by clothing suggestions and make outfits linked to a calendar of personal and professional events.
+The app we will develop will allow people to take a quiz to determine their personal style and advise them on how to use existing pieces in combination with sustainably sourced new clothes. Users will be able to see which sustainability metrics are being met by clothing suggestions and make outfits linked to a calendar of personal and professional events. 
 
 </h5>
 </n>
 
 <h1>Installation Guide</h1>
 <h2>Prerequisites for Installation and Running</h2>
-<li> xCode ver 14.0
-<li> macOS Monterey 12.5 or newer
-<li> iOS 16 or newer
+<li> xCode ver 14.0 [Install Guide](https://support.apple.com/en-us/HT211683)
+<li> macOS Monterey 12.5 or newer [Install through App Store](https://developer.apple.com/xcode/)
+<li> iOS 16 or newer (for mac PC)
 <h2> Dependent Libraries</h2>
 <h2> Run Instructions</h2>
 
