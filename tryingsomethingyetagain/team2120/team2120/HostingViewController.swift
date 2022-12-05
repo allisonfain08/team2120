@@ -15,7 +15,15 @@ class HostingViewController: UIHostingController {
         // Do any additional setup after loading the view.
     }
     
-
+    @IBAction func back(_ sender: Any) {
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+            let HomeViewController = storyboard.instantiateViewController(identifier: "HomeViewController")
+            
+            // This is to get the SceneDelegate object from your view controller
+            // then call the change root view controller function to change to main tab bar
+            (UIApplication.shared.connectedScenes.first?.delegate as? SceneDelegate)?.changeRootViewController(HomeViewController)
+    }
+    
     /*
     // MARK: - Navigation
 

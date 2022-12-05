@@ -6,8 +6,6 @@
 //
 
 import UIKit
-var sqliteDBStore = DBHelper()
-
 
 class LoginViewController: UIViewController {
 
@@ -15,21 +13,8 @@ class LoginViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
-<<<<<<< Updated upstream
-=======
-    
-    @IBOutlet weak var usernameField: UITextField!
-    @IBOutlet weak var passwordField: UITextField!
 
-    @IBAction func login(sender:UIButton!) {
-        //var sqliteDBStore = DBHelper()
-        let username = String(usernameField.text!) 
-        let password = String(passwordField.text!) 
-
-
->>>>>>> Stashed changes
-
-        //sqliteDBStore.insert(username: username, password: password)
+    @IBAction func login(_ sender: Any) {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
             let HomeViewController = storyboard.instantiateViewController(identifier: "HomeViewController")
             

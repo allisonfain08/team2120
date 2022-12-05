@@ -1,2 +1,0 @@
-INSERT INTO mijaCloset VALUES 
-('mija','old navy', 'jeans', '4', 'dark wash', 'blue', 'denim'), ('mija', 'Gap', 'shirt', 'S', 'striped', 'blue', 'cotton'), ('mija', 'Universal Thread', 'pants', '4', 'tapered', 'green', NULL), ('mija', 'Gap', 'sweater', 'XS', 'cardigan', 'beige', 'cotton');

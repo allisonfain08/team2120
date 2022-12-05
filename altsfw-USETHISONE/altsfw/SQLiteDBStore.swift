@@ -16,10 +16,16 @@ class DBHelper
         createTable()
     }
 
+<<<<<<< HEAD
+    let dbPath: String = "myDb.sqlite"
+    var db:OpaquePointer?
+
+=======
     let dbPath: String = "loginData.sqlite"
     var db:OpaquePointer?
 
     
+>>>>>>> AllisonFain
     func openDatabase() -> OpaquePointer?
     {
         let fileURL = try! FileManager.default.url(for: .documentDirectory, in: .userDomainMask, appropriateFor: nil, create: false)
@@ -38,7 +44,11 @@ class DBHelper
     }
     
     func createTable() {
+<<<<<<< HEAD
+        let createTableString = "CREATE TABLE IF NOT EXISTS person(username TEXT PRIMARY KEY,password TEXT);"
+=======
         let createTableString = "CREATE TABLE IF NOT EXISTS person(Id INTEGER PRIMARY KEY,name TEXT,age INTEGER);"
+>>>>>>> AllisonFain
         var createTableStatement: OpaquePointer? = nil
         if sqlite3_prepare_v2(db, createTableString, -1, &createTableStatement, nil) == SQLITE_OK
         {
@@ -60,17 +70,29 @@ class DBHelper
         let persons = read()
         for p in persons
         {
+<<<<<<< HEAD
+            // primary key has to be unique
+=======
+>>>>>>> AllisonFain
             if p.username == username
             {
                 return
             }
         }
+<<<<<<< HEAD
+        let insertStatementString = "INSERT INTO person (username, password) VALUES (?, ?);"
+=======
         let insertStatementString = "INSERT INTO person (username, password) VALUES (NULL, ?);"
+>>>>>>> AllisonFain
         var insertStatement: OpaquePointer? = nil
         if sqlite3_prepare_v2(db, insertStatementString, -1, &insertStatement, nil) == SQLITE_OK {
             sqlite3_bind_text(insertStatement, 1, (username as NSString).utf8String, -1, nil)
             sqlite3_bind_text(insertStatement, 2, (password as NSString).utf8String, -1, nil)
+<<<<<<< HEAD
+            
+=======
 
+>>>>>>> AllisonFain
             if sqlite3_step(insertStatement) == SQLITE_DONE {
                 print("Successfully inserted row.")
             } else {
@@ -90,7 +112,11 @@ class DBHelper
             while sqlite3_step(queryStatement) == SQLITE_ROW {
                 let username = String(describing: String(cString: sqlite3_column_text(queryStatement, 0)))
                 let password = String(describing: String(cString: sqlite3_column_text(queryStatement, 1)))
+<<<<<<< HEAD
+                psns.append(Person(username: String(username), password: String(password)))
+=======
                 psns.append(Person(username: String(), password: String()))
+>>>>>>> AllisonFain
                 print("Query Result:")
                 print("\(username) | \(password)")
             }

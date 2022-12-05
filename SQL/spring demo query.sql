@@ -27,6 +27,54 @@ color varchar(255) not null,
 material varchar(255)
 );
 
+DROP TABLE IF EXISTS mija;
+CREATE TABLE mijaCloset(
+uname varchar(255) not null,
+-- primary key needs to be username
+brand varchar(255) not null,
+style varchar(255) not null,
+size varchar(255) not null,
+notes varchar(255),
+color varchar(255) not null,
+material varchar(255)
+);
+
+DROP TABLE IF EXISTS sreya;
+CREATE TABLE sreyaCloset(
+uname varchar(255) not null,
+-- primary key needs to be username
+brand varchar(255) not null,
+style varchar(255) not null,
+size varchar(255) not null,
+notes varchar(255),
+color varchar(255) not null,
+material varchar(255)
+);
+
+DROP TABLE IF EXISTS olivia;
+CREATE TABLE oliviaCloset(
+uname varchar(255) not null,
+-- primary key needs to be username
+brand varchar(255) not null,
+style varchar(255) not null,
+size varchar(255) not null,
+notes varchar(255),
+color varchar(255) not null,
+material varchar(255)
+);
+
+DROP TABLE IF EXISTS shonjoy;
+CREATE TABLE shonjoyCloset(
+uname varchar(255) not null,
+-- primary key needs to be username
+brand varchar(255) not null,
+style varchar(255) not null,
+size varchar(255) not null,
+notes varchar(255),
+color varchar(255) not null,
+material varchar(255)
+);
+
 INSERT INTO allisonCloset VALUES
 -- INSERT INTO yournameCloset VALUES
     ('allison','old navy','jeans','4','dark wash','blue','denim'),
@@ -58,7 +106,32 @@ INSERT INTO nelsonCloset VALUES
     ('nelson','UNIQLO','dress shirt','L',NULL,'light blue','linen'),
     ('nelson','UNIQLO','button down shirt','M','dotted','black','linen'),
     ('nelson','UNIQLO','dress shirt','M','flamingos','grey','linen'),
-    ('nelson','mango','shirt','M','ribbed with sleeves','green','polyester');
+    ('nelson','mango','shirt','M','ribbed with sleeves','green','polyester'),
+    ('nelson', 'UNIQLO', 'shirt', 'S', 'casual', 'white', 'cotton'),
+	('nelson', 'akashi kama', 'cardigan', 'S', 'formal', 'green', 'cotton'),
+	('nelson', 'Roen', 'jacket', 'S', 'casual', 'black', 'leather');
+    
+INSERT INTO mijaCloset VALUES 
+('mija','old navy', 'jeans', '4', 'dark wash', 'blue', 'denim'), 
+('mija', 'Gap', 'shirt', 'S', 'striped', 'blue', 'cotton'), 
+('mija', 'Universal Thread', 'pants', '4', 'tapered', 'green', NULL),
+('mija', 'Gap', 'sweater', 'XS', 'cardigan', 'beige', 'cotton');
+
+INSERT INTO oliviaCloset VALUES
+('olivia', 'zara', 'dress', '4', 'short sleeve', 'yellow', 'cotton'), 
+('olivia', 'gucci', 'slides', '10', 'shoes', 'black', 'leather'), 
+('olivia', 'chloe', 'purse', 'NULL', 'NULL', 'brown', 'leather'); 
+
+INSERT INTO sreyaCloset VALUES
+	('sreya', 'zara', 'tank', 'S', 'ruffle', 'pink', 'polyester'),
+	('sreya', 'mother', 'jeans', '26', 'dark wash', 'blue', 'denim'),
+	('sreya', 'veja', 'shoes', '8', 'casual sneakers', 'white', 'leather'),
+	('sreya', 'frame', 'jeans', '26', 'light wash', 'blue', 'denim');
+    
+INSERT INTO shonjoyCloset VALUES 
+('shonjoy', 'UNIQLO', 'shirt', 'L', 'casual', 'lilac', 'cotton'),
+('shonjoy', 'hollister', 'shorts', 'L', 'casual', 'black', 'polyester'),
+('shonjoy', 'ASOS', 'jacket', 'L', 'casual', 'blue', 'jean');
 
 CREATE VIEW `display jeans` AS
 SELECT *
@@ -91,6 +164,19 @@ SELECT *
 FROM nelsonCloset
 WHERE brand = 'UNIQLO';
 
+CREATE VIEW `display Mija Closet` AS
+SELECT * 
+FROM mijaCloset
+WHERE uname = 'mija';
+
+CREATE VIEW `display Olivia Closet` AS
+SELECT * FROM OliviaCloset;
+
+CREATE VIEW `display Sreya Closet` AS
+SELECT * FROM SreyaCloset;
+
+CREATE VIEW `display Shonjoy Closet` AS
+SELECT * FROM shonjoyCloset;
 
 -- select * from `display jeans`;
 -- select * from `display mediums`;
