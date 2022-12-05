@@ -10,7 +10,7 @@ The app we will develop will allow people to take a quiz to determine their pers
 </n>
 
 <h1>Installation Guide</h1>
-<h2>Prerequesites for Installation and Running</h2>
+<h2>Prerequisites for Installation and Running</h2>
 <li> xCode ver 14.0
 <h2> Dependent Libraries</h2>
 <h2> Run Instructions</h2>
