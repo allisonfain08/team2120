@@ -4,6 +4,8 @@
 //
 //  Created by Sreya Atmuri on 11/13/22.
 //
+// An Outfit object represents a collection of ArticleOfClothing items that make up one outfit.
+// It has a name and outfit associated with it.
 
 import Foundation
 import SwiftUI

@@ -52,6 +52,7 @@ class CreateOutfitViewController: UIViewController {
             (UIApplication.shared.connectedScenes.first?.delegate as? SceneDelegate)?.changeRootViewController(ViewOutfitsViewController)
     }
     
+    //This function checks which switches are toggled 'on' so that article of clothing can be added to the Outfit
     func checkSwitches() {
         var switchArray = [UISwitch]()
         switchArray.append(switch0)
