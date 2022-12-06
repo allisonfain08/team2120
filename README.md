@@ -4,7 +4,7 @@
 </n>
 The client, Tanjuria Willis, leads the planning and execution of ASFW, as well as running a luxury consignment store and styling service under the brand name “EKlozet”. The iOS mobile application, in addition to supporting ASFW, is geared towards her existing and future clients and customers at EKlozet.
 </n>
-The app we will develop will allow people to take a quiz to determine their personal style and advise them on how to use existing pieces in combination with sustainably sourced new clothes. Users will be able to see which sustainability metrics are being met by clothing suggestions and make outfits linked to a calendar of personal and professional events. 
+The app we are developing will allow people to take a quiz to determine their personal style and advise them on how to use existing pieces in combination with sustainably sourced new clothes. Users will be able to see which sustainability metrics are being met by clothing suggestions and make outfits linked to a calendar of personal and professional events. 
 
 </h5>
 </n>
