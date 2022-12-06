@@ -12,7 +12,7 @@ The app we are developing will allow people to take a quiz to determine their pe
 <h1>Installation Guide</h1>
 <h2>Prerequisites for Installation and Running</h2>
 <li> iOS 16 or newer (for mac PC)
-<li> macOS Monterey 12.5 or newer <a href="https://support.apple.com/en-us/HT21168">(Install Guide)</a>
+<li> macOS Monterey 12.5 or newer <a href="[https://support.apple.com/en-us/HT21168](https://support.apple.com/en-us/HT211683)">(Install Guide)</a>
     <ul>
       <li>To see what macOS version you have:</li>
           <ol>
