@@ -47,6 +47,15 @@ The app we will develop will allow people to take a quiz to determine their pers
 
 5. After the file is opened (see Figure 1.2 below), press the triangle in the upper left hand corner to launch the iOS simulator. It is circled in red. Once the build has succeeded, the iOS simulator will launch automatically.
 
+![triangle](triangle.png) 
+*Figure 1.2 Main Project File*
+
+6. Figure 1.3 shows the initial launch screen of the simulator. From here, you now have the current version of the application running and can begin interacting with it. You’re all set!  
+
+<img src="simulator.png" width="125" height="250" />
+
+7. If you close out of the simulator, you must re-press the run button shown in Figure 1.2.  
+
 <h2> Troubleshooting</h2>
 <h1>Release Notes Section</h1>
 
