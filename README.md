@@ -57,6 +57,46 @@ The app we will develop will allow people to take a quiz to determine their pers
 7. If you close out of the simulator, you must re-press the run button shown in Figure 1.2.  
 
 <h2> Troubleshooting</h2>
+<li> <strong>Problem: </strong> Xcode will not open the project correctly
+    <ul>
+      <li><strong>Solution</strong> The first step to solving this issue would be to double check iOS is updated to the correct version and all installed files are correct</li>
+    </ul>
+<li> <strong>Problem: </strong> Xcode will not open the project correctly and all prerequisites are up to date
+    <ul>
+      <li><strong>Solution</strong> Double check that the correct Xcode project file is being opened</li>
+    </ul>
+<li> <strong>Problem: </strong> If you are having trouble re-running the application after closing out of the simulator
+    <ul>
+      <li><strong>Solution</strong> Check to see if there is a square button next to the “run” triangle in Xcode. If so, press the square to kill the current run before trying to build again.</li>
+    </ul>
+ <li> <strong>Problem: </strong> Need to change/updated images (as requested by client)
+    <ul>
+      <li><strong>Solution</strong> If you are trying to add new images to the style quiz (or anywhere in the app), make sure you upload the image to the “assets” folder within the project file structure. See screenshots below for how to change images in the application. </li>
+    </ul>
+    
+![asset](asset.png) 
+*Figure 1.4 Uploading New Assets*
+
+If there is an image you would like to be added to the app, make sure to navigate to the  assets folder (left of screen in Figure 1.4) and place the image there. Figure 1.5 below illustrates how to change an image over an existing image. Navigate to the “Main (Base)” document and press on any ImageView. On the right side of the screen, the Image dropdown menu will display the name and preview of any image you have added to the assets folder. 
+
+<h2> Deployment/Future Download Instructions</h2>
+
+<ol>
+  <li>See below for the instructions on how to <strong>prepare the application for deployment</strong>, once you are satisfied with the current version of the application. This step must be completed before beta testing begins. 
+  </li>
+    <ol>
+        <li><a href="https://developer.apple.com/documentation/xcode/preparing-your-app-for-distribution">Apple Documentation</a></li>
+    </ol>
+  <li>Once you have completed step 1 above, you are now ready to <strong>release the application beta testers.</strong> See instructions below:</li>
+     <ol>
+        <li><a href="https://developer.apple.com/documentation/xcode/distributing-your-app-for-beta-testing-and-releases">Beta Testing Documentation</a></li>
+    </ol>
+  <li>After the Beta testing period is over, the application can be <strong>published on the app store.</strong> Apple has an in-depth guide on the steps to get the application approved.   </li>
+    <ol>
+        <li><a href="https://help.apple.com/app-store-connect/#/dev34e9bbb5a">Publishing an Application to the App Store</a></li>
+    </ol>
+</ol>
+      
 <h1>Release Notes Section</h1>
 
 <h2>Version 1.0</h2>
