@@ -79,6 +79,10 @@ The app we will develop will allow people to take a quiz to determine their pers
 
 If there is an image you would like to be added to the app, make sure to navigate to the  assets folder (left of screen in Figure 1.4) and place the image there. Figure 1.5 below illustrates how to change an image over an existing image. Navigate to the “Main (Base)” document and press on any ImageView. On the right side of the screen, the Image dropdown menu will display the name and preview of any image you have added to the assets folder. 
 
+![dropdown](dropdown.png) 
+*Figure 1.5 Changing an Image*
+
+
 <h2> Deployment/Future Download Instructions</h2>
 
 <ol>
@@ -102,14 +106,56 @@ If there is an image you would like to be added to the app, make sure to navigat
 <h2>Version 1.0</h2>
 <h3>Features</h3>
 <ul>
-<li> Users can 
+<li> Style Quiz
+    <ul>
+      <li>Users can take a Style Quiz to find their personal style</li>
+      <li>Users can retake the Style Quiz to replace earlier results</li>
+      <li>Users can indicate their preference between pairs of outfits by swiping on the screen</li>
+    </ul>
+</ul>
+<ul>
+<li> User Accounts
+    <ul>
+      <li>Users can create accounts with which they can login for future interactions with the application </li>
+      <li>Users must follow the password requirements to successfully create an account</li>
+      <li>During registration, users can enter their budget and measurement information to be linked with their account</li>
+      <li>Account page displays budget and measurement information linked with their account</li>
+    </ul>
+</ul>
+<ul>
+<li> Closet
+    <ul>
+      <li>Using Photos on device, users can upload clothing to their personal closet </li>
+      <li>Users can tag clothing in their closet with clothing material </li>
+      <li>Users can tag clothing in their closet with clothing color </li>
+      <li>Users can tag clothing in their closet with clothing size</li>
+      <li>Users can create outfits using clothing added to the closet</li>
+      <li>Users can label outfits to distinguish between them when creating calendar events</li>
+      <li>Users can rate outfits on a scale from 1-5</li>
+    </ul>
+</ul>
+<ul>
+<li> Calendar
+    <ul>
+      <li>Users can create Google Calendar events in-app and add notes detailing which outfit they plan to use for day to day use</li>
+      <li>Users can create Google Calendar events in-app and add notes detailing which outfit they plan to use for special events</li>
+    </ul>
 </ul>
 <h3>Bug Fixes</h3>
 <ul>
-<li> Fixed BeginQuiz back button failing to send user back to Home page correctly. 
+<li> Fixed BeginQuiz back button failing to send the user back to the Home page correctly. Users should now be redirected correctly when pressing the back button on the BeginQuiz screen.
+<li> Fixed Style Quiz Results page failing to display updated results from retaking the Style Quiz.
+<li> Registration no longer allows users to access the application without entering account information. 
+<li> Style quiz results page text was made more readable. 
+<li> Overall design was changed when the project shifted from React Native to Swift.
+<li> Fixed home screen flashing when the Take Style Quiz button was pressed.
 </ul>
 <h3>Known Issues</h3>
-<ul>
-<li> Issue 1
-<li> Issue 2
+<ul> 
+<li> After adding a calendar event users have to press a back button to get back to the Home page instead of being redirected automatically. 
+<li> Only four articles of clothing can be selected from for outfits. 
+<li> The first four articles of clothing added to the closet are the only clothing usable in outfit creation. 
+<li> Users cannot retake the budget or measurement questionnaires. 
+<li> Users cannot go back to a prior question without retaking the Style Quiz. 
+<li> Users cannot skip questions on the Style Quiz.
 </ul>
