@@ -11,11 +11,26 @@ The app we will develop will allow people to take a quiz to determine their pers
 
 <h1>Installation Guide</h1>
 <h2>Prerequisites for Installation and Running</h2>
-<li> xCode ver 14.0 ![Install Guide](https://support.apple.com/en-us/HT211683)
-<li> macOS Monterey 12.5 or newer ![Install through App Store](https://developer.apple.com/xcode/)
 <li> iOS 16 or newer (for mac PC)
+<li> macOS Monterey 12.5 or newer <a href="https://support.apple.com/en-us/HT21168">(Install Guide)</a>
+    <ul>
+      <li>To see what macOS version you have:</li>
+          <ol>
+            <li>Click on Apple icon in the top left of your mac screen</li>
+            <li>Click 'About This Mac'</li>
+            <li>The 'Overview' tab (default) displays your mac's current OS</li>
+          </ol>
+    </ul>
+<li> Xcode v14.0 <a href="https://developer.apple.com/xcode/">(Install through App Store)</a>
+    <ul>
+      <li><strong>Note:</strong> If you are downloading Xcode from the App Store, you will need at least 20-25 GB of storage available to run Xcode and build the project. </li>
+    </ul>
+    
+**Note:** All of these prerequisites will be installed through the App Store, so no install script is necessary. No script can be written because downloads from the App Store need users' unique Apple ID and password.
+
 <h2> Dependent Libraries</h2>
 <h2> Run Instructions</h2>
+
 
 ![xcode](xcode.png) 
 
