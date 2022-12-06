@@ -29,10 +29,23 @@ The app we will develop will allow people to take a quiz to determine their pers
 **Note:** All of these prerequisites will be installed through the App Store, so no install script is necessary. No script can be written because downloads from the App Store need users' unique Apple ID and password.
 
 <h2> Dependent Libraries</h2>
-<h2> Run Instructions</h2>
+<li> Git <a href="https://github.com/git-guides/install-git">(Install Git)</a>
+<li> Swift.sqlite3 package <a href="https://www.sqlite.org/download.html">(already built into Swift, comes pre-installed on every mac)</a>
+<h2> Build/Run Instructions</h2>
+<p><strong>Note:</strong> Xcode intuitively builds the application and runs it when the run project button has been pressed. </p>
 
+<ol>
+  <li>Before running the app simulator, you must first download the prerequisites detailed in the previous section. These only need to be installed once before working through the steps below.</li>
+  <li>Using the provided admin-access link to this GitHub repository (emailed separately), follow the instructions in this <a href="https://www.gitkraken.com/learn/git/github-download#:~:text=Click%20on%20the%20file%20you,the%20file%2C%20and%20select%20Save%20.">link</a> to properly download the <strong>main branch</strong> onto your device. This is the most updated version of the code. </li>
+  <li>After installing Xcode ver 14.0, open the Xcode IDE in your applications folder. See image below for what the icon looks like. </li>
+</ol>
 
 ![xcode](xcode.png) 
+*Figure 1.1 Xcode Application*
+
+4. Open the desired file (navigate to the directory where you downloaded the main branch). In this case, the file is called “altsfw.xcodeproj”
+
+5. After the file is opened (see Figure 1.2 below), press the triangle in the upper left hand corner to launch the iOS simulator. It is circled in red. Once the build has succeeded, the iOS simulator will launch automatically.
 
 <h2> Troubleshooting</h2>
 <h1>Release Notes Section</h1>
